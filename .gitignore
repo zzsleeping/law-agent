@@ -1,0 +1,15 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+data/tm.db
+data/chroma/
+data/models/
+outputs/
+.DS_Store
+data/open_index.sqlite
+data/open_index.building
+deploy/
+tests/fixtures/simulated_marks.json
+.claude/
+*.building

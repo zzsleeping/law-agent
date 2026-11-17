@@ -1,0 +1,58 @@
+[
+  {
+    "code": "C290093",
+    "name": "以果蔬为主的零食小吃",
+    "nice_class": 29,
+    "group": "2911",
+    "part": null,
+    "page": 186
+  },
+  {
+    "code": "300069",
+    "name": "糖*",
+    "nice_class": 30,
+    "group": "3004",
+    "part": null,
+    "page": 190
+  },
+  {
+    "code": "300042",
+    "name": "甜食",
+    "nice_class": 30,
+    "group": "3006",
+    "part": null,
+    "page": 190
+  },
+  {
+    "code": "300213",
+    "name": "人食用小麦胚芽",
+    "nice_class": 30,
+    "group": "3008",
+    "part": null,
+    "page": 191
+  },
+  {
+    "code": "300195",
+    "name": "以谷物为主的零食小吃",
+    "nice_class": 30,
+    "group": "3010",
+    "part": null,
+    "page": 192
+  },
+  {
+    "code": "300196",
+    "name": "以米为主的零食小吃",
+    "nice_class": 30,
+    "group": "3010",
+    "part": null,
+    "page": 192
+  },
+  {
+    "code": "300268",
+    "name": "脆米饼",
+    "nice_class": 30,
+    "group": "3010",
+    "part": null,
+    "page": 192
+  }
+]

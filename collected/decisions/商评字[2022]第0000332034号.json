@@ -1,0 +1,301 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2022]第0000332034号",
+  "decision_date": "2022-10-25",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=589c75eac5f354a7",
+  "retrieved_at": "2026-11-17",
+  "applicant_mark": {
+    "text": "优香ENJOY及图",
+    "app_no": "57694488",
+    "app_date": null,
+    "priority_date": null,
+    "owner": "广东喜之郎集团有限公司",
+    "goods": [
+      {
+        "name": "加奶的茶饮料",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "饼干",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "糕点",
+        "nice_class": 30,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "text": "优香1号",
+      "reg_no": "27341799",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在同一种或者类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "优香源",
+      "reg_no": "32783605",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在同一种或者类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "鲜优香",
+      "reg_no": "15391147",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在同一种或者类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "优香园及图",
+      "reg_no": "9345710",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在同一种或者类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "优优香",
+      "reg_no": "11566099",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在同一种或者类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "香优288",
+      "reg_no": "12381224",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在同一种或者类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "优之香",
+      "reg_no": "12546485",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在同一种或者类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "优香源",
+      "reg_no": "17022392",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "不类似",
+      "reasoning_excerpt": "不属于类似商品",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "优香坊",
+      "reg_no": "53323086",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在同一种或者类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "优香B香",
+      "reg_no": "35332587",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在同一种或者类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "优香源",
+      "reg_no": "36092360",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在同一种或者类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "一品优香及图",
+      "reg_no": "57479276",
+      "app_date": null,
+      "status": "审理时已无效",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "已无效",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "优香粳",
+      "reg_no": "43248220",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在同一种或者类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "优尔香YOU ER XIANG FOOD及图",
+      "reg_no": "18596964",
+      "app_date": null,
+      "status": "审理时已无效",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "已无效",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "享有",
+      "reg_no": "1679249",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "未构成近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "共享ENJOY",
+      "reg_no": "3570284",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "未构成近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "乐融ENJOY",
+      "reg_no": "7028971",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "未构成近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "欧利金ENJOY",
+      "reg_no": "9785937",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "未构成近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "艾卓尔ENJOY",
+      "reg_no": "10946796",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "未构成近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "喜瑞园　ENJOY",
+      "reg_no": "17199623",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "未构成近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "CF CROLEY FOODS　ENJOY CRISPY THIN YUMMY ALL IN ONE SUNFLOWER CRACKERS",
+      "reg_no": "32511580",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "未构成近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。中文文字未核实或原文为非中文标识，留档。"
+    },
+    {
+      "text": "ENJOY SUSHI",
+      "reg_no": "56742012",
+      "app_date": null,
+      "status": "审理时已无效",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "已无效",
+      "notes": "文书未逐件载明具体商品或服务，留空。中文文字未核实或原文为非中文标识，留档。"
+    }
+  ],
+  "outcome": "部分驳回",
+  "outcome_scope": "加奶的茶饮料、饼干、糕点初步审定。其余复审商品驳回。",
+  "notes": "来源为标库网公开转载的中国商标网决定书原文，编号、日期、结论按页面记载。申请商品或服务按原文明确记载节选，类别按原文明示或依据列明项目对照官方区分表确定。类似群无逐项证据时留空。合并认定的引证保留合并结论，未逐项推定商品对应。申请日期原文未载时留空。初步审定组三项与其他认定标识近似的引证核定商品不类似。"
+}

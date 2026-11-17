@@ -1,0 +1,139 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2022]第0000235434号",
+  "decision_date": "2022-07-26",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=2fa9fdd2e43b0bcc",
+  "retrieved_at": "2026-11-17",
+  "applicant_mark": {
+    "text": "上品煌记",
+    "app_no": "56948873",
+    "app_date": null,
+    "priority_date": null,
+    "owner": "自然人",
+    "goods": [
+      {
+        "name": "茶",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "茶饮料",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "糖",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "冰糖燕窝",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "主要由米制成的冻干食品",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "冰淇淋",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "酱油",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "酵母",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "除香精油外的食物用调味品",
+        "nice_class": 30,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "text": "煌记HUANGJI",
+      "reg_no": "5021933",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在相同或类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "煌记",
+      "reg_no": "32093380",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在相同或类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "煌记",
+      "reg_no": "37784607",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在相同或类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "煌记",
+      "reg_no": "45731726",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在相同或类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "煌记",
+      "reg_no": "53572513",
+      "app_date": null,
+      "status": "已驳回且决定生效",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "予以驳回",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "煌记HUANGJI",
+      "reg_no": "53966799",
+      "app_date": null,
+      "status": "处于驳回复审程序中",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "予以驳回",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    }
+  ],
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "notes": "来源为标库网公开转载的中国商标网决定书原文，编号、日期、结论按页面记载。申请商品或服务按原文明确记载节选，类别按原文明示或依据列明项目对照官方区分表确定。类似群无逐项证据时留空。合并认定的引证保留合并结论，未逐项推定商品对应。申请日期原文未载时留空。对引证六因该程序结果不影响本案而未作评价。"
+}

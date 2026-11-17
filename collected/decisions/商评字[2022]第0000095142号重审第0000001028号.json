@@ -1,0 +1,390 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2022]第0000095142号重审第0000001028号",
+  "decision_date": "2023-02-09",
+  "authority": "国家知识产权局",
+  "source_url": "https://pub.sbj.cnipa.gov.cn/toas-pub-prod/portalui-pub-prod/trademarkAssessmentView?id=e48b88358725f282018727465bce42c2",
+  "retrieved_at": "2026-11-17",
+  "applicant_mark": {
+    "text": "喜茶",
+    "app_no": "53338949",
+    "app_date": null,
+    "priority_date": null,
+    "owner": "深圳美西西餐饮管理有限公司",
+    "goods": [
+      {
+        "name": "肉脯",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "食用海藻提取物",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "加工过的鱼子",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "水果罐头",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "以果蔬为主的零食小吃",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "蛋",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "加工过的坚果",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "烹饪用蛋白",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "豆腐制品",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "水果片",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "果肉",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "水果蜜饯",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "油炸土豆片",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "加工过的槟榔",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "薯饼",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "奶饮料（以奶为主）",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "豆浆",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "奶酪",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "燕麦浆",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "豆奶",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "可可奶（以奶为主）",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "奶油（奶制品）",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "奶",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "椰子油脂",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "食用可可脂",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "天然或人造的香肠肠衣",
+        "nice_class": 29,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "text": "喜茶 XICHA",
+      "reg_no": "19266072",
+      "app_date": "2016-03-10",
+      "owner": "自然人",
+      "status": "复审审理时有效注册",
+      "goods": [
+        {
+          "name": "水果罐头",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "糖渍水果",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "奶粉",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "奶昔",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "牛奶制品",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "奶茶（以奶为主）",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "牛奶饮料（以牛奶为主）",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "食用果冻",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "加工过的花生",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "豆腐制品",
+          "nice_class": 29,
+          "group": null
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "申请商标与引证商标一、三、四分别构成相同或近似标识。",
+      "notes": "图样、申请日期和商品见 19266072.pdf 第 1 页。"
+    },
+    {
+      "text": "喜茶",
+      "reg_no": "20266296",
+      "app_date": "2016-06-12",
+      "owner": "自然人",
+      "status": "在无效宣告程序中被宣告无效并公告",
+      "goods": [
+        {
+          "name": "涂面包用脂肪混合物",
+          "nice_class": 29,
+          "group": null
+        }
+      ],
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "现上述引证商标均已丧失在先权利，不再构成申请商标获准注册的的在先权利障碍。",
+      "notes": "历史商品见 20266296电子公告系统.pdf 附图，第 1570 期第 356 页。"
+    },
+    {
+      "text": "喜茶",
+      "reg_no": "21654131",
+      "app_date": "2016-10-24",
+      "owner": "上海翼拍网络科技有限公司",
+      "status": "复审审理时有效注册",
+      "goods": [
+        {
+          "name": "肉",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "龙虾（非活）",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "食用海藻提取物",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "蔬菜罐头",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "水果罐头",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "蛋",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "食用油",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "加工过的坚果",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "豆腐制品",
+          "nice_class": 29,
+          "group": null
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "申请商标与引证商标一、三、四分别构成相同或近似标识。",
+      "notes": "图样、申请日期和商品见 21654131.pdf 第 1 页。"
+    },
+    {
+      "text": "喜茶 XICHA",
+      "reg_no": "41423586",
+      "app_date": "2019-09-30",
+      "owner": "自然人",
+      "status": "复审审理时有效注册",
+      "goods": [
+        {
+          "name": "水果罐头",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "蔬菜罐头",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "肉罐头",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "加工过的坚果",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "加工过的花生",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "加工过的开心果",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "豆腐制品",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "食用面筋",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "加工过的种子",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "水产罐头",
+          "nice_class": 29,
+          "group": null
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "申请商标与引证商标一、三、四分别构成相同或近似标识。",
+      "notes": "图样、申请日期和商品见 41423586电子公告系统.pdf 附图，第 1688 期。2026-11-17查询详情显示当前无效，结论保留复审审理时状态。"
+    },
+    {
+      "text": "喜茶 XICHA",
+      "reg_no": "51586254",
+      "app_date": "2020-11-25",
+      "owner": "自然人",
+      "status": "注册申请被驳回",
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "现上述引证商标均已丧失在先权利，不再构成申请商标获准注册的的在先权利障碍。",
+      "notes": "51586254.pdf 第 1 页，商品栏为空。重审决定书第1页确认其注册申请被驳回，已丧失在先权利，未参与实体比对。"
+    },
+    {
+      "text": "喜茶 XICHA",
+      "reg_no": "52060017",
+      "app_date": "2020-12-10",
+      "owner": "自然人",
+      "status": "注册申请被驳回",
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "现上述引证商标均已丧失在先权利，不再构成申请商标获准注册的的在先权利障碍。",
+      "notes": "52060017.pdf 第 1 页，商品栏为空。重审决定书第1页确认其注册申请被驳回，已丧失在先权利，未参与实体比对。"
+    },
+    {
+      "text": "喜之茶",
+      "reg_no": "51127579",
+      "app_date": "2020-11-10",
+      "owner": null,
+      "status": "注册申请被驳回",
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "现上述引证商标均已丧失在先权利，不再构成申请商标获准注册的的在先权利障碍。",
+      "notes": "51127579.pdf 第 1 页，商品栏为空。重审决定书第1页确认其注册申请被驳回，已丧失在先权利，未参与实体比对。"
+    }
+  ],
+  "outcome": "部分驳回",
+  "outcome_scope": "予以初步审定：水果片;果肉;水果蜜饯;油炸土豆片;加工过的槟榔;薯饼;奶饮料（以奶为主）;豆浆;奶酪;燕麦浆;豆奶;可可奶（以奶为主）;奶油（奶制品）;奶;椰子油脂;食用可可脂;天然或人造的香肠肠衣。予以驳回：肉脯;食用海藻提取物;加工过的鱼子;水果罐头;以果蔬为主的零食小吃;蛋;加工过的坚果;烹饪用蛋白;豆腐制品。",
+  "notes": "原文及补充档案位于 用户本地存档 喜茶。商标局对引证一、三、四作合并认定，原文标识措辞为“相同或近似”。结构字段 goods_similar 的“类似”仅对应驳回的商品范围，初步审定的商品与该三件引证商标的商品均不类似；没有逐件、逐商品的配对结论。未核实申请商标申请日期及优先权日期。逐商品类似群未见于决定书，留空。原文七件引证均保留。引证五、六、七商品明细未查到，按文书明确排除的引证记录。"
+}

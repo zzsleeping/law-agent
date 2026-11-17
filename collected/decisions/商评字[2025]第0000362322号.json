@@ -1,0 +1,139 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2025]第0000362322号",
+  "decision_date": "2025-12-08",
+  "authority": "国家知识产权局",
+  "source_url": "https://pub.sbj.cnipa.gov.cn/toas-pub-prod/portalui-pub-prod/trademarkAssessmentView?id=2005462129532669952",
+  "retrieved_at": "2026-11-17",
+  "applicant_mark": {
+    "text": "喜悦荟",
+    "app_no": "73513467",
+    "app_date": null,
+    "priority_date": null,
+    "owner": "自然人",
+    "goods": [
+      {
+        "name": "备办宴席",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "自助餐厅",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "餐厅",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "饭店",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "餐馆",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "自助餐馆",
+        "nice_class": 43,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "text": "喜悦",
+      "reg_no": "1487996",
+      "app_date": "1999-11-22",
+      "status": null,
+      "owner": "自然人",
+      "goods": [
+        {
+          "name": "住所(旅馆，供膳寄宿处)",
+          "nice_class": 42,
+          "group": null
+        },
+        {
+          "name": "餐厅",
+          "nice_class": 42,
+          "group": null
+        },
+        {
+          "name": "饭店",
+          "nice_class": 42,
+          "group": null
+        },
+        {
+          "name": "快餐馆",
+          "nice_class": 42,
+          "group": null
+        },
+        {
+          "name": "餐馆",
+          "nice_class": 42,
+          "group": null
+        },
+        {
+          "name": "酒吧",
+          "nice_class": 42,
+          "group": null
+        },
+        {
+          "name": "茶馆",
+          "nice_class": 42,
+          "group": null
+        },
+        {
+          "name": "咖啡馆",
+          "nice_class": 42,
+          "group": null
+        },
+        {
+          "name": "自动餐馆",
+          "nice_class": 42,
+          "group": null
+        },
+        {
+          "name": "备办宴席",
+          "nice_class": 42,
+          "group": null
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "在文字构成、呼叫等方面相近",
+      "notes": "商品或服务按原文可归属该引证的项目记录。"
+    },
+    {
+      "text": "喜悦 AMRIKIM",
+      "reg_no": "60536109",
+      "app_date": null,
+      "status": "已驳回且决定生效",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "引证商标二、三已被驳回",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "喜悦",
+      "reg_no": "72789976",
+      "app_date": null,
+      "status": "已驳回且决定生效",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "引证商标二、三已被驳回",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    }
+  ],
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "notes": "来源及核验说明见后。申请商品或服务按原文明确记载节选，类别按原文明示或依据列明项目对照官方区分表确定。类似群无逐项证据时留空。合并认定的引证保留合并结论，未逐项推定商品对应。申请日期原文未载时留空。本地官网打印件 用户本地存档 4.pdf，第1页。引证一的历史类别42、日期和服务来自 用户本地存档 喜悦荟/1487996.pdf。与已收第60421187号同名但申请号不同。"
+}

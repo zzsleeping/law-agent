@@ -1,0 +1,24 @@
+# 依据映射表（项目组起草；法条按在先状态、指南按命中维度，均对应指南或法条原文）
+# 作用：决定一次评估允许引用哪些依据。这里把新旧两版的 ID 都列上，
+# 代码按评估日期自动筛掉不适用的版本（app/tools/basis.py）。
+
+# 法条：按 场景 × 在先状态 选择
+law:
+  pre_filing:
+    valid:        [TML2019-30, TML2026-20]   # 已注册或初步审定的在先商标
+    earlier_app:  [TML2019-31, TML2026-20]   # 申请在先、尚未注册；新法第二十条已涵盖“在先申请”
+  rejection_review:                          # 第二步实现，先占位
+    valid:        [TML2019-30, TML2026-20]
+    earlier_app:  [TML2019-31, TML2026-20]
+
+# 指南：按命中维度选择
+guide:
+  always:    [GUIDE2021-5.2, GUIDE2021-5.3]
+  exact:     [GUIDE2021-5.4.1]
+  shape:     [GUIDE2021-5.5.1.5, GUIDE2021-5.5.1.7]
+  sound:     [GUIDE2021-5.5.1.4]
+  meaning:   [GUIDE2021-5.5.1.6]
+  contains:  [GUIDE2021-5.5.1.12, GUIDE2021-5.5.1.13, GUIDE2021-5.5.1.14, GUIDE2021-5.5.1.16]
+  shared:    [GUIDE2021-5.5.1.15]
+  transpose: [GUIDE2021-5.5.1.2]
+  redup:     [GUIDE2021-5.5.1.3]

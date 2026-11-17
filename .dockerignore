@@ -1,0 +1,15 @@
+.git
+.env
+.claude
+.pytest_cache
+__pycache__
+outputs
+collected
+tasks
+deploy
+data/tm.db
+data/chroma
+data/models
+data/open_index.sqlite
+data/open_index.building
+data/goods/legacy

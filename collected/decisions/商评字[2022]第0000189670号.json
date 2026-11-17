@@ -1,0 +1,109 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2022]第0000189670号",
+  "decision_date": "2022-06-24",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=15951acfd7f8f17e",
+  "retrieved_at": "2026-11-17",
+  "applicant_mark": {
+    "text": "良作茗及图",
+    "app_no": "57162272",
+    "app_date": null,
+    "priority_date": null,
+    "owner": "湖北良作茶叶有限公司",
+    "goods": [
+      {
+        "name": "茶饮料",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "饺子",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "茶",
+        "nice_class": 30,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "text": "52度　良作",
+      "reg_no": "46554301",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "构成使用在同一种或类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "良作",
+      "reg_no": "51805261",
+      "app_date": null,
+      "status": "经驳回复审程序初步审定",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "构成使用在同一种或类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "六步溪千百两及图",
+      "reg_no": "52044161",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "有所区别",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "秦楚漫川及图",
+      "reg_no": "29857838",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "有所区别",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "茶棉居及图",
+      "reg_no": "32875085",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "有所区别",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "经十茶宴　一叶百味一世倾香及图",
+      "reg_no": "19922510",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "有所区别",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    }
+  ],
+  "outcome": "部分驳回",
+  "outcome_scope": "茶饮料、饺子驳回。其余复审商品初步审定。",
+  "notes": "来源为标库网公开转载的中国商标网决定书原文，编号、日期、结论按页面记载。申请商品或服务按原文明确记载节选，类别按原文明示或依据列明项目对照官方区分表确定。类似群无逐项证据时留空。合并认定的引证保留合并结论，未逐项推定商品对应。申请日期原文未载时留空。引证一、二与茶等其余复审商品不属于类似商品。"
+}

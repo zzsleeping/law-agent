@@ -1,0 +1,216 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2023]第0000103099号",
+  "decision_date": "2023-04-12",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=a3071fe6d8b2bbc5",
+  "retrieved_at": "2026-11-17",
+  "applicant_mark": {
+    "text": "益杯FUN享时刻",
+    "app_no": "57503691",
+    "app_date": null,
+    "priority_date": null,
+    "owner": "武汉熠汇饮科技有限公司",
+    "goods": [
+      {
+        "name": "咖啡饮料",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "可可饮料",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "茶饮料",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "加奶的茶饮料",
+        "nice_class": 30,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "text": "FUN＋",
+      "reg_no": "41087734",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": [
+        {
+          "name": "奶茶（以奶为主）",
+          "nice_class": 29,
+          "group": null
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成近似商标",
+      "notes": "商品或服务按原文可归属该引证的项目记录。中文文字未核实或原文为非中文标识，留档。"
+    },
+    {
+      "text": "FUN",
+      "reg_no": "8717025",
+      "app_date": null,
+      "status": "撤销复审决定生效",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "予以撤销",
+      "notes": "文书未逐件载明具体商品或服务，留空。中文文字未核实或原文为非中文标识，留档。"
+    },
+    {
+      "text": "FUN",
+      "reg_no": "17308384",
+      "app_date": null,
+      "status": "撤销复审决定生效",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "予以撤销",
+      "notes": "文书未逐件载明具体商品或服务，留空。中文文字未核实或原文为非中文标识，留档。"
+    },
+    {
+      "text": "FUN",
+      "reg_no": "768523",
+      "app_date": null,
+      "status": "撤销复审决定生效",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "予以撤销",
+      "notes": "文书未逐件载明具体商品或服务，留空。中文文字未核实或原文为非中文标识，留档。"
+    },
+    {
+      "text": "FUN　COFFEE",
+      "reg_no": "38306717",
+      "app_date": null,
+      "status": "商标注册申请驳回决定生效",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "予以驳回",
+      "notes": "文书未逐件载明具体商品或服务，留空。原文「及图」为描述语，文字部分按原文记录，该引证留档。"
+    },
+    {
+      "text": "100 FUN",
+      "reg_no": "4507652",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "未构成近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。原文「及图」为描述语，文字部分按原文记录，该引证留档。"
+    },
+    {
+      "text": "非饭不可 FUN及图",
+      "reg_no": "6181082",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "未构成近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "薯假　FUN",
+      "reg_no": "10391915",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "未构成近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "康师傅　薯假　FUN",
+      "reg_no": "10535842",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "未构成近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "FUN　肆装",
+      "reg_no": "20563122",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "未构成近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "小馍　FUN",
+      "reg_no": "30940740",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "未构成近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "诺梵　NOW!FUN!及图",
+      "reg_no": "30803360",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "未构成近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "趣畅学　EXPLORE　LEARNING　FUN",
+      "reg_no": "56227379",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "未构成近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "FUN2　BAKE　OVEN",
+      "reg_no": "49868857",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "未构成近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。中文文字未核实或原文为非中文标识，留档。"
+    }
+  ],
+  "outcome": "部分驳回",
+  "outcome_scope": "咖啡饮料、可可饮料、茶饮料、加奶的茶饮料驳回。其余复审商品初步审定。",
+  "notes": "来源为标库网公开转载的中国商标网决定书原文，编号、日期、结论按页面记载。申请商品或服务按原文明确记载节选，类别按原文明示或依据列明项目对照官方区分表确定。类似群无逐项证据时留空。合并认定的引证保留合并结论，未逐项推定商品对应。申请日期原文未载时留空。审理时已核准转让至记录中的申请人。引证一仅英文可识别，按原近似结论留档。"
+}

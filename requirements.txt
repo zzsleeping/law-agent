@@ -1,0 +1,16 @@
+# 版本与开发机（Python 3.12）一致，部署时不要放开版本号
+langgraph==1.2.20
+langchain-core==1.7.6
+pydantic==2.14.3
+pypinyin==0.55.0
+opencc-python-reimplemented==0.1.7
+chromadb==1.5.9
+fastembed==0.9.1
+openai==3.49.0
+streamlit==1.67.0
+pandas==3.1.1
+python-docx==1.2.0
+PyYAML==6.0.3
+openpyxl==3.1.5
+python-dotenv==1.2.4
+pytest==9.2.0

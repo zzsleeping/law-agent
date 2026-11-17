@@ -1,0 +1,20 @@
+# 未经实际测试，首次部署时验证。用法：docker compose up -d --build
+services:
+  app:
+    build: .
+    ports:
+      - "8501:8501"
+    env_file: .env                 # LLM_API_KEY、LLM_MODEL 等，不进镜像
+    environment:
+      TM_LIBRARY: sqlite
+      TM_OPEN_DB: /data/open/cnipa_29_30_32_43.sqlite3
+      TM_OPEN_INDEX: /data/open/open_index.sqlite
+      TM_DB_PATH: /app/data/runtime/tm.db
+      TM_CHROMA_DIR: /app/data/runtime/chroma
+      TM_OUTPUT_DIR: /app/outputs
+    volumes:
+      - ./deploy/open:/data/open:ro          # 开放数据原库与检索索引（约 15 GB，rsync 上传）
+      - ./deploy/runtime:/app/data/runtime   # 本地建的小库与向量库（容器里运行 build_db 生成）
+      - ./deploy/models:/app/data/models     # 向量模型缓存
+      - ./deploy/outputs:/app/outputs        # 导出的 Word 报告
+    restart: unless-stopped

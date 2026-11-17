@@ -1,0 +1,17 @@
+{"id": "guide-01", "query": "坤星文具", "cited": "星坤", "label": "近似", "source": "GUIDE2021-5.5.1.2", "composite": false}
+{"id": "guide-02", "query": "亚美航空", "cited": "美亚医疗", "label": "不近似", "source": "GUIDE2021-5.5.1.2", "composite": false}
+{"id": "guide-03", "query": "星星", "cited": "星", "label": "近似", "source": "GUIDE2021-5.5.1.3", "composite": false}
+{"id": "guide-04", "query": "哈罗哈罗", "cited": "哈罗", "label": "近似", "source": "GUIDE2021-5.5.1.3", "composite": false}
+{"id": "guide-05", "query": "蕙特曼", "cited": "惠特曼", "label": "近似", "source": "GUIDE2021-5.5.1.4", "composite": false}
+{"id": "guide-06", "query": "好歌", "cited": "好哥", "label": "不近似", "source": "GUIDE2021-5.5.1.4", "composite": false}
+{"id": "guide-07", "query": "玫瑰花", "cited": "玫瑰", "label": "近似", "source": "GUIDE2021-5.5.1.6", "composite": false}
+{"id": "guide-08", "query": "心之必达", "cited": "心至必达", "label": "近似", "source": "GUIDE2021-5.5.1.7", "composite": false}
+{"id": "guide-09", "query": "北欧风情", "cited": "北美风情", "label": "不近似", "source": "GUIDE2021-5.5.1.7", "composite": false}
+{"id": "guide-10", "query": "乐曼啤酒", "cited": "乐曼", "label": "近似", "source": "GUIDE2021-5.5.1.12", "composite": false}
+{"id": "guide-11", "query": "老龙潭山泉", "cited": "老龙潭", "label": "近似", "source": "GUIDE2021-5.5.1.12", "composite": false}
+{"id": "guide-12", "query": "汇源一桶", "cited": "汇源", "label": "近似", "source": "GUIDE2021-5.5.1.12", "composite": false}
+{"id": "guide-13", "query": "云趣店", "cited": "云趣", "label": "近似", "source": "GUIDE2021-5.5.1.13", "composite": false}
+{"id": "guide-14", "query": "大洋房", "cited": "大洋", "label": "不近似", "source": "GUIDE2021-5.5.1.13", "composite": false}
+{"id": "guide-15", "query": "新吉澳", "cited": "吉澳", "label": "近似", "source": "GUIDE2021-5.5.1.14", "composite": false}
+{"id": "guide-16", "query": "球王", "cited": "球", "label": "不近似", "source": "GUIDE2021-5.5.1.14", "composite": false}
+{"id": "guide-17", "query": "华为海思", "cited": "华为", "label": "近似", "source": "GUIDE2021-5.5.1.16", "composite": false}

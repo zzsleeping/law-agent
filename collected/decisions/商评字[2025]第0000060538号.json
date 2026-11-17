@@ -1,0 +1,87 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2025]第0000060538号",
+  "decision_date": "2025-03-13",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=6ac22357dc011721",
+  "retrieved_at": "2026-11-17",
+  "applicant_mark": {
+    "text": "摩登东方茶",
+    "app_no": "79253122",
+    "app_date": null,
+    "priority_date": null,
+    "owner": "沪上阿姨（上海）实业股份有限公司",
+    "goods": [
+      {
+        "name": "餐厅",
+        "nice_class": 43,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "text": "摩登东方",
+      "reg_no": "11217611",
+      "app_date": null,
+      "status": "已丧失商标专用权",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "引证商标一已丧失商标专用权",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "摩登融合菜",
+      "reg_no": "25416091",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在同一种或类似服务上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "摩登工坊",
+      "reg_no": "28837796",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在同一种或类似服务上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "摩登艺术",
+      "reg_no": "20269019",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在同一种或类似服务上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "摩登咖喱 MODERN CURRY",
+      "reg_no": "46516211",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在同一种或类似服务上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    }
+  ],
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "notes": "来源为标库网公开转载的中国商标网决定书原文，编号、日期、结论按页面记载。申请商品或服务按原文明确记载节选，类别按原文明示或依据列明项目对照官方区分表确定。类似群无逐项证据时留空。合并认定的引证保留合并结论，未逐项推定商品对应。申请日期原文未载时留空。"
+}

@@ -1,0 +1,189 @@
+{
+  "doc_type": "驳回复审行政诉讼二审判决书",
+  "doc_no": "（2023）京行终9386号",
+  "decision_date": "2023-12-25",
+  "authority": "北京市高级人民法院",
+  "source_url": "https://zh.wikisource.org/w/index.php?oldid=7298272",
+  "retrieved_at": "2026-11-17",
+  "applicant_mark": {
+    "text": "啊哈",
+    "app_no": "61683570",
+    "app_date": "2021-12-24",
+    "priority_date": null,
+    "owner": "啊哈娱乐（上海）有限公司",
+    "goods": [
+      {
+        "name": "餐厅",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "咖啡馆",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "自助餐厅",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "酒吧服务",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "酒店住宿服务",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "会议室出租",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "养老院",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "托儿所服务",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "宠物寄养",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "出租椅子、桌子、桌布和玻璃器皿",
+        "nice_class": 43,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "text": "啊哈",
+      "reg_no": "16811881",
+      "app_date": null,
+      "status": "第43类全部服务上的注册已撤销",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "不再构成诉争商标申请注册的权利障碍",
+      "notes": "一审查明引证商标一在第43类全部服务上的注册已撤销并公告（第1853期）。判决书未载申请日期、注册人、具体服务，留空。"
+    },
+    {
+      "text": null,
+      "reg_no": "16811986",
+      "app_date": null,
+      "status": "第44类全部服务上的注册已撤销",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "不再构成诉争商标申请注册的权利障碍",
+      "notes": "一审查明引证商标二在第44类全部服务上的注册已撤销并公告（第1839期）。判决书未载标识、申请日期、注册人、具体服务，留空。"
+    },
+    {
+      "text": "阿哈",
+      "reg_no": "23192124",
+      "app_date": "2017-03-17",
+      "status": "二审审理终结时为在先有效注册商标",
+      "owner": "北京阿哈科技有限公司",
+      "goods": [
+        {
+          "name": "旅馆预订",
+          "nice_class": 43,
+          "group": null
+        },
+        {
+          "name": "假日野营住宿服务",
+          "nice_class": 43,
+          "group": null
+        },
+        {
+          "name": "汽车旅馆",
+          "nice_class": 43,
+          "group": null
+        },
+        {
+          "name": "住所代理（旅馆、供膳寄宿处）",
+          "nice_class": 43,
+          "group": null
+        },
+        {
+          "name": "托儿所服务",
+          "nice_class": 43,
+          "group": null
+        },
+        {
+          "name": "烹饪设备出租",
+          "nice_class": 43,
+          "group": null
+        },
+        {
+          "name": "照明设备出租",
+          "nice_class": 43,
+          "group": null
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "在文字构成、呼叫、含义等方面相近",
+      "notes": "二审审理终结时处于撤销复审一审诉讼程序中，仍属有效。判决确认有同一种或类似服务，未逐项建立对应关系。"
+    },
+    {
+      "text": "阿哈小厨",
+      "reg_no": "37084651",
+      "app_date": "2019-03-26",
+      "status": "已注册",
+      "owner": "上海毅信商务咨询有限公司",
+      "goods": [
+        {
+          "name": "帐篷出租",
+          "nice_class": 43,
+          "group": null
+        },
+        {
+          "name": "养老院",
+          "nice_class": 43,
+          "group": null
+        },
+        {
+          "name": "动物寄养",
+          "nice_class": 43,
+          "group": null
+        },
+        {
+          "name": "出租椅子、桌子、桌布和玻璃器皿",
+          "nice_class": 43,
+          "group": null
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "在文字构成、呼叫、含义等方面相近",
+      "notes": "法院维持判决书所述同一种或类似服务的认定，未逐项建立对应关系。"
+    },
+    {
+      "text": null,
+      "reg_no": "16608683",
+      "app_date": null,
+      "status": "全部服务上的注册已撤销",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "不再构成诉争商标申请注册的权利障碍",
+      "notes": "一审查明引证商标五在全部服务上的注册已撤销并公告（第1823期）。判决书未载标识、申请日期、注册人、具体服务，留空。"
+    }
+  ],
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "notes": "来源为公开的二审判决上网稿存档。被诉决定编号按判决书原样记为商评字[2022]第311557号。二审驳回上诉、维持原判，本记录的 outcome 表示复审服务上的注册申请维持驳回。已撤销的三件引证仅按判决书所载事实保留，未认定近似。文书所列类似群多为整组范围，未为每项服务推定群号。"
+}

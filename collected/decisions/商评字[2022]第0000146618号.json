@@ -1,0 +1,342 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2022]第0000146618号",
+  "decision_date": "2022-04-29",
+  "authority": "国家知识产权局",
+  "source_url": "https://pub.sbj.cnipa.gov.cn/toas-pub-prod/portalui-pub-prod/trademarkAssessmentView?id=e48b8835813b9cf501813d2f7e0d008f",
+  "retrieved_at": "2026-11-17",
+  "applicant_mark": {
+    "text": "聚豐園",
+    "app_no": "52450052",
+    "app_date": "2020-12-24",
+    "priority_date": null,
+    "owner": "无锡产业发展集团有限公司",
+    "goods": [
+      {
+        "name": "流动饮食供应",
+        "nice_class": 43,
+        "group": "4301"
+      },
+      {
+        "name": "寄宿处预订",
+        "nice_class": 43,
+        "group": "4301"
+      },
+      {
+        "name": "餐馆",
+        "nice_class": 43,
+        "group": "4301"
+      },
+      {
+        "name": "饭店",
+        "nice_class": 43,
+        "group": "4301"
+      },
+      {
+        "name": "餐厅",
+        "nice_class": 43,
+        "group": "4301"
+      },
+      {
+        "name": "自助餐厅",
+        "nice_class": 43,
+        "group": "4301"
+      },
+      {
+        "name": "咖啡馆",
+        "nice_class": 43,
+        "group": "4301"
+      },
+      {
+        "name": "备办宴席",
+        "nice_class": 43,
+        "group": "4301"
+      },
+      {
+        "name": "住所代理（旅馆、供膳寄宿处）",
+        "nice_class": 43,
+        "group": "4301"
+      },
+      {
+        "name": "茶馆",
+        "nice_class": 43,
+        "group": "4301"
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "text": "聚豐園",
+      "reg_no": "22395432",
+      "app_date": "2016-12-26",
+      "owner": "无锡市聚丰园大酒店有限责任公司",
+      "status": "复审时为在先有效注册商标",
+      "goods": [
+        {
+          "name": "流动饮食供应",
+          "nice_class": 43,
+          "group": "4301"
+        },
+        {
+          "name": "茶馆",
+          "nice_class": 43,
+          "group": "4301"
+        },
+        {
+          "name": "住所代理(旅馆、供膳寄宿处)",
+          "nice_class": 43,
+          "group": "4301"
+        },
+        {
+          "name": "备办宴席",
+          "nice_class": 43,
+          "group": "4301"
+        },
+        {
+          "name": "咖啡馆",
+          "nice_class": 43,
+          "group": "4301"
+        },
+        {
+          "name": "自助餐厅",
+          "nice_class": 43,
+          "group": "4301"
+        },
+        {
+          "name": "餐厅",
+          "nice_class": 43,
+          "group": "4301"
+        },
+        {
+          "name": "饭店",
+          "nice_class": 43,
+          "group": "4301"
+        },
+        {
+          "name": "餐馆",
+          "nice_class": 43,
+          "group": "4301"
+        },
+        {
+          "name": "寄宿处预订",
+          "nice_class": 43,
+          "group": "4301"
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "申请商标与引证商标一、二、五及引证商标三可独立识别部分“聚丰源”在文字构成、识读发音等方面相同或相近",
+      "notes": "日期和类别见 22395432.pdf 第1页，服务由二审判决书补齐。复审后注册在全部服务上被宣告无效，见2022年11月6日第1814期公告（据判决书）。"
+    },
+    {
+      "text": "聚豐園",
+      "reg_no": "31168233",
+      "app_date": "2018-05-25",
+      "owner": "无锡市聚丰园大酒店有限责任公司",
+      "status": "复审时为在先申请商标",
+      "goods": [
+        {
+          "name": "流动饮食供应",
+          "nice_class": 43,
+          "group": "4301"
+        },
+        {
+          "name": "茶馆",
+          "nice_class": 43,
+          "group": "4301"
+        },
+        {
+          "name": "住所代理(旅馆、供膳寄宿处)",
+          "nice_class": 43,
+          "group": "4301"
+        },
+        {
+          "name": "备办宴席",
+          "nice_class": 43,
+          "group": "4301"
+        },
+        {
+          "name": "咖啡馆",
+          "nice_class": 43,
+          "group": "4301"
+        },
+        {
+          "name": "自助餐厅",
+          "nice_class": 43,
+          "group": "4301"
+        },
+        {
+          "name": "餐厅",
+          "nice_class": 43,
+          "group": "4301"
+        },
+        {
+          "name": "饭店",
+          "nice_class": 43,
+          "group": "4301"
+        },
+        {
+          "name": "餐馆",
+          "nice_class": 43,
+          "group": "4301"
+        },
+        {
+          "name": "寄宿处预订",
+          "nice_class": 43,
+          "group": "4301"
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "申请商标与引证商标一、二、五及引证商标三可独立识别部分“聚丰源”在文字构成、识读发音等方面相同或相近",
+      "notes": "日期和类别见 31168233.pdf 第1页，服务由二审判决书补齐。详情页现时显示无效，记录复审时状态。"
+    },
+    {
+      "text": "聚丰源及图",
+      "reg_no": "1499722",
+      "app_date": "1999-12-06",
+      "owner": "杭州海港澳门豆捞餐饮有限公司",
+      "status": "复审时为在先有效注册商标",
+      "goods": [
+        {
+          "name": "提供食宿旅馆",
+          "nice_class": 42,
+          "group": "4201"
+        },
+        {
+          "name": "咖啡馆",
+          "nice_class": 42,
+          "group": "4201"
+        },
+        {
+          "name": "餐厅",
+          "nice_class": 42,
+          "group": "4201"
+        },
+        {
+          "name": "饭店",
+          "nice_class": 42,
+          "group": "4201"
+        },
+        {
+          "name": "自助餐馆",
+          "nice_class": 42,
+          "group": "4201"
+        },
+        {
+          "name": "快餐馆",
+          "nice_class": 42,
+          "group": "4201"
+        },
+        {
+          "name": "酒吧",
+          "nice_class": 42,
+          "group": "4201"
+        },
+        {
+          "name": "茶馆",
+          "nice_class": 42,
+          "group": "4201"
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "申请商标与引证商标一、二、五及引证商标三可独立识别部分“聚丰源”在文字构成、识读发音等方面相同或相近",
+      "notes": "类别、日期和图样见 1499722.pdf 第1页。服务采用二审判决书列明的4201范围，详情页另列公共保健浴室和美容院。决定书以可独立识别的中文“聚丰源”比较。"
+    },
+    {
+      "text": "聚丰缘及图",
+      "reg_no": "52289767",
+      "app_date": "2020-12-18",
+      "owner": "自然人",
+      "status": "复审时为在先有效注册商标",
+      "goods": [
+        {
+          "name": "照明设备出租",
+          "nice_class": 43,
+          "group": "4306"
+        },
+        {
+          "name": "饮水机出租",
+          "nice_class": 43,
+          "group": "4306"
+        },
+        {
+          "name": "烹饪设备出租",
+          "nice_class": 43,
+          "group": "4306"
+        }
+      ],
+      "mark_similar": "未认定",
+      "goods_similar": "不类似",
+      "reasoning_excerpt": "申请商标指定使用的“流动饮食供应”等全部复审服务与引证商标四核定使用的服务不属于同一种或类似服务",
+      "notes": "核定服务见决定书第1页与 52289767.pdf 第1页，申请日与群组见详情。决定书只认定服务不类似，未单独评价标识近似。"
+    },
+    {
+      "text": "聚豐園",
+      "reg_no": "19103026",
+      "app_date": "2016-02-16",
+      "owner": "无锡市聚丰园大酒店有限责任公司",
+      "status": "复审时为在先申请商标",
+      "goods": [
+        {
+          "name": "住所代理(旅馆、供膳寄宿处)",
+          "nice_class": 43,
+          "group": "4301"
+        },
+        {
+          "name": "备办宴席",
+          "nice_class": 43,
+          "group": "4301"
+        },
+        {
+          "name": "咖啡馆",
+          "nice_class": 43,
+          "group": "4301"
+        },
+        {
+          "name": "自助餐厅",
+          "nice_class": 43,
+          "group": "4301"
+        },
+        {
+          "name": "餐厅",
+          "nice_class": 43,
+          "group": "4301"
+        },
+        {
+          "name": "饭店",
+          "nice_class": 43,
+          "group": "4301"
+        },
+        {
+          "name": "餐馆",
+          "nice_class": 43,
+          "group": "4301"
+        },
+        {
+          "name": "寄宿处预订",
+          "nice_class": 43,
+          "group": "4301"
+        },
+        {
+          "name": "流动饮食供应",
+          "nice_class": 43,
+          "group": "4301"
+        },
+        {
+          "name": "茶馆",
+          "nice_class": 43,
+          "group": "4301"
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "申请商标与引证商标一、二、五及引证商标三可独立识别部分“聚丰源”在文字构成、识读发音等方面相同或相近",
+      "notes": "日期和类别见 19103026.pdf 第1页，服务由二审判决书补齐。详情页现时显示无效，记录复审时状态。"
+    }
+  ],
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "notes": "来源为 用户本地存档 聚豐園 的决定书（第1至2页）及商标档案。复审服务和引证一、二、五的核定或指定服务按（2023）京行终7030号二审判决书所载录入（https://zh.wikisource.org/wiki/北京市高级人民法院（2023）京行终7030号行政判决书）。申请号、日期和类别另见 52450052.pdf 第1页。二审驳回上诉，维持原判。引证三的历史第42类按原档案保留。引证一、二、三、五的服务类似性来自决定书合并认定，未逐项配对。优先权日期未见。"
+}

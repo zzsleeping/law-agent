@@ -1,0 +1,175 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2020]第0000220345号",
+  "decision_date": "2020-08-05",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=3cdc5ab5a0cdccf7",
+  "retrieved_at": "2026-11-17",
+  "applicant_mark": {
+    "text": "浪",
+    "app_no": "39793198",
+    "app_date": null,
+    "priority_date": null,
+    "owner": "北京创新壹舟投资管理有限公司",
+    "goods": [
+      {
+        "name": "肉汤",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "鱼制食品",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "食用海藻提取物",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "以果蔬为主的零食小吃",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "腌制蔬菜",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "牛奶饮料（以牛奶为主）",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "果冻",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "加工过的坚果",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "豆腐制品",
+        "nice_class": 29,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "text": "浪浪八圈LANG BA QUAN及图",
+      "reg_no": "5407379",
+      "app_date": null,
+      "status": "因连续三年不使用被撤销",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "予以撤销",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "速浪及图",
+      "reg_no": "6392964",
+      "app_date": null,
+      "status": "2020年3月13日期满，审理时在宽展期",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "构成使用在同一种或类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "浪及图",
+      "reg_no": "21132231",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "构成使用在同一种或类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "浪么享",
+      "reg_no": "25559456",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "构成使用在同一种或类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "浪 白浪哥优选BAI LONG GE YOU XUAN及图",
+      "reg_no": "32504109",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "构成使用在同一种或类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "浪e浪 LONGeLONG及图",
+      "reg_no": "32568886",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "构成使用在同一种或类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "浪",
+      "reg_no": "33685886",
+      "app_date": null,
+      "status": "驳回复审中，在先有效",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "构成使用在同一种或类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "浪",
+      "reg_no": "39616166",
+      "app_date": null,
+      "status": "驳回复审中，在先有效",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "构成使用在同一种或类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "浪及图",
+      "reg_no": "34275477",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "构成使用在同一种或类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    }
+  ],
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "notes": "来源为标库网公开转载的中国商标网决定书原文，编号、日期、结论按页面记载。申请商品或服务按原文明确记载节选，类别按原文明示或依据列明项目对照官方区分表确定。类似群无逐项证据时留空。合并认定的引证保留合并结论，未逐项推定商品对应。申请日期原文未载时留空。"
+}

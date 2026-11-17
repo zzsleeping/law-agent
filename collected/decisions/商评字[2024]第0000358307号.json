@@ -1,0 +1,258 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2024]第0000358307号",
+  "decision_date": "2024-12-11",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=9c9fa56cd84bd496",
+  "retrieved_at": "2026-11-17",
+  "applicant_mark": {
+    "text": "云燕YUNYAN SEASONING及图",
+    "app_no": "77119580",
+    "app_date": null,
+    "priority_date": null,
+    "owner": "温州云燕调味食品有限公司",
+    "goods": [
+      {
+        "name": "肉",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "加工过的坚果",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "干食用菌",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "腌制水果",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "腌制蔬菜",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "冬菇",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "豆腐制品",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "蛋",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "奶",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "食用油脂",
+        "nice_class": 29,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "text": "雲燕及图",
+      "reg_no": "20348872",
+      "app_date": null,
+      "status": "已撤销",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "已被撤销",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "燕云",
+      "reg_no": "18308058",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": [
+        {
+          "name": "蛋",
+          "nice_class": 29,
+          "group": null
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在同一种或类似商品上的近似商标",
+      "notes": "商品或服务按原文可归属该引证的项目记录。"
+    },
+    {
+      "text": "燕雲及图",
+      "reg_no": "1478400",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": [
+        {
+          "name": "烤鸭",
+          "nice_class": 29,
+          "group": null
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在同一种或类似商品上的近似商标",
+      "notes": "商品或服务按原文可归属该引证的项目记录。"
+    },
+    {
+      "text": "燕云轩",
+      "reg_no": "41875808",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": [
+        {
+          "name": "婴儿食品",
+          "nice_class": 5,
+          "group": null
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在同一种或类似商品上的近似商标",
+      "notes": "商品或服务按原文可归属该引证的项目记录。"
+    },
+    {
+      "text": "燕雲樓 创始于1928及图",
+      "reg_no": "76472944",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": [
+        {
+          "name": "烤鸭",
+          "nice_class": 29,
+          "group": null
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在同一种或类似商品上的近似商标",
+      "notes": "商品或服务按原文可归属该引证的项目记录。"
+    },
+    {
+      "text": "云之燕",
+      "reg_no": "27308031",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": [
+        {
+          "name": "加工过的肉",
+          "nice_class": 29,
+          "group": null
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在同一种或类似商品上的近似商标",
+      "notes": "商品或服务按原文可归属该引证的项目记录。"
+    },
+    {
+      "text": "云燕本草",
+      "reg_no": "38575510",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": [
+        {
+          "name": "蛋",
+          "nice_class": 29,
+          "group": null
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在同一种或类似商品上的近似商标",
+      "notes": "商品或服务按原文可归属该引证的项目记录。"
+    },
+    {
+      "text": "云燕尔及图",
+      "reg_no": "71695492",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": [
+        {
+          "name": "干桂圆",
+          "nice_class": 29,
+          "group": null
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在同一种或类似商品上的近似商标",
+      "notes": "商品或服务按原文可归属该引证的项目记录。"
+    },
+    {
+      "text": "云燕尔",
+      "reg_no": "72569780",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": [
+        {
+          "name": "婴儿食品",
+          "nice_class": 5,
+          "group": null
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在同一种或类似商品上的近似商标",
+      "notes": "商品或服务按原文可归属该引证的项目记录。"
+    },
+    {
+      "text": "YunYan",
+      "reg_no": "11142939",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": [
+        {
+          "name": "肉",
+          "nice_class": 29,
+          "group": null
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在同一种或类似商品上的近似商标",
+      "notes": "商品或服务按原文可归属该引证的项目记录。中文文字未核实或原文为非中文标识，留档。"
+    },
+    {
+      "text": null,
+      "reg_no": "16099635",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "在文字构成、呼叫、含义以及整体外观上有所不同",
+      "notes": "文书未逐件载明具体商品或服务，留空。中文文字未核实或原文为非中文标识，留档。"
+    }
+  ],
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "notes": "来源为标库网公开转载的中国商标网决定书原文，编号、日期、结论按页面记载。申请商品或服务按原文明确记载节选，类别按原文明示或依据列明项目对照官方区分表确定。类似群无逐项证据时留空。合并认定的引证保留合并结论，未逐项推定商品对应。申请日期原文未载时留空。"
+}

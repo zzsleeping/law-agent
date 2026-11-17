@@ -1,0 +1,200 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2021]第0000343483号",
+  "decision_date": "2021-12-08",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=599960f9cb447104",
+  "retrieved_at": "2026-11-17",
+  "applicant_mark": {
+    "text": "广野集团 GUANGYE GROUP",
+    "app_no": "53563713",
+    "app_date": null,
+    "priority_date": null,
+    "owner": "唐山广野食品集团有限公司",
+    "goods": [
+      {
+        "name": "啤酒",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "茶饮料",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "八宝饭",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "烹饪食品用增稠剂",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "食用冰",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "餐馆",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "出租椅子、桌子、桌布和玻璃器皿",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "烹饪设备出租",
+        "nice_class": 43,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "text": "广野",
+      "reg_no": "40780648",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在同一种或类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "广嘢 KWTON及图",
+      "reg_no": "32128830",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": [
+        {
+          "name": "啤酒",
+          "nice_class": 32,
+          "group": null
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在同一种或类似商品上的近似商标",
+      "notes": "商品或服务按原文可归属该引证的项目记录。"
+    },
+    {
+      "text": "广埜",
+      "reg_no": "7416521",
+      "app_date": null,
+      "status": "期满未续展",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "期满未续展",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "广野",
+      "reg_no": "7935122",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": [
+        {
+          "name": "谷（谷类）",
+          "nice_class": 31,
+          "group": null
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在同一种或类似商品上的近似商标",
+      "notes": "商品或服务按原文可归属该引证的项目记录。"
+    },
+    {
+      "text": "广野",
+      "reg_no": "32473059",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": [
+        {
+          "name": "果酒（含酒精）",
+          "nice_class": 33,
+          "group": null
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在同一种或类似商品上的近似商标",
+      "notes": "商品或服务按原文可归属该引证的项目记录。"
+    },
+    {
+      "text": "广嘢 KWTON及图",
+      "reg_no": "32142892",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在同一种或类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "广野会社 HIRONO KAISYA及图",
+      "reg_no": "22054630",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在同一种或类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "广野",
+      "reg_no": "22011979",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": [
+        {
+          "name": "质量控制",
+          "nice_class": 42,
+          "group": null
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在同一种或类似商品上的近似商标",
+      "notes": "商品或服务按原文可归属该引证的项目记录。"
+    },
+    {
+      "text": "广嘢 KWTON及图",
+      "reg_no": "32134599",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": [
+        {
+          "name": "餐厅",
+          "nice_class": 43,
+          "group": null
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在同一种或类似商品上的近似商标",
+      "notes": "商品或服务按原文可归属该引证的项目记录。"
+    }
+  ],
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "notes": "来源为标库网公开转载的中国商标网决定书原文，编号、日期、结论按页面记载。申请商品或服务按原文明确记载节选，类别按原文明示或依据列明项目对照官方区分表确定。类似群无逐项证据时留空。合并认定的引证保留合并结论，未逐项推定商品对应。申请日期原文未载时留空。同一注册号40780648对应引证一、二，32128830对应引证三、六，各按一件列档。第32类比较为啤酒等商品。第30类和第43类部分项目经认定不类似。全部类别最终因标识另有不良影响而驳回。"
+}

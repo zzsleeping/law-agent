@@ -1,0 +1,67 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2019]第0000194890号",
+  "decision_date": "2019-08-16",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=e473c2b35938aa34",
+  "retrieved_at": "2026-11-17",
+  "applicant_mark": {
+    "text": "茉莉冰泉",
+    "app_no": "31753385",
+    "app_date": null,
+    "priority_date": null,
+    "owner": "宿州市皖晨商贸有限公司",
+    "goods": [
+      {
+        "name": "果汁",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "啤酒",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "饮料制作配料",
+        "nice_class": 32,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "text": "小茉莉XIAOMOLI",
+      "reg_no": "27478470",
+      "app_date": null,
+      "status": "驳回复审中注册申请被驳回",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "在驳回复审程序中驳回其注册申请",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "康师傅 茉莉清茶及图",
+      "reg_no": "5319456",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": [
+        {
+          "name": "茶饮料",
+          "nice_class": 30,
+          "group": null
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "在文字构成、呼叫等方面相近，构成近似",
+      "notes": "商品或服务按原文可归属该引证的项目记录。"
+    }
+  ],
+  "outcome": "部分驳回",
+  "outcome_scope": "啤酒、饮料制作配料初步审定，其余复审商品驳回。",
+  "notes": "来源为标库网公开转载的中国商标网决定书原文，编号、日期、结论按页面记载。申请商品或服务按原文明确记载节选，类别按原文明示或依据列明项目对照官方区分表确定。类似群无逐项证据时留空。合并认定的引证保留合并结论，未逐项推定商品对应。申请日期原文未载时留空。引证二商品类似的结论针对果汁等商品，啤酒和饮料制作配料被认定为不类似。"
+}

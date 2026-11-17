@@ -1,0 +1,140 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2024]第0000317382号",
+  "decision_date": "2024-11-21",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=8b574351a793bd8b",
+  "retrieved_at": "2026-11-17",
+  "applicant_mark": {
+    "text": "青藏冰泉",
+    "app_no": "74950095",
+    "app_date": null,
+    "priority_date": null,
+    "owner": "青海高原特色资源开发有限责任公司",
+    "goods": [
+      {
+        "name": "啤酒",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "果汁",
+        "nice_class": 32,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "text": "青藏及图",
+      "reg_no": "1341838",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "在文字构成、呼叫等方面相近",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "青藏老酸奶",
+      "reg_no": "7858144",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "在文字构成、呼叫等方面相近",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "青藏金方",
+      "reg_no": "73990742",
+      "app_date": null,
+      "status": "注册申请被驳回",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "不再构成申请商标获准注册的在先权利障碍",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "青藏鲜品",
+      "reg_no": "74678423",
+      "app_date": null,
+      "status": "注册申请被驳回",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "不再构成申请商标获准注册的在先权利障碍",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "青藏鲜品",
+      "reg_no": "74700782",
+      "app_date": null,
+      "status": "注册申请被驳回",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "不再构成申请商标获准注册的在先权利障碍",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "青藏好牧场",
+      "reg_no": "20689420",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "在文字构成、呼叫等方面相近",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "青藏山庄及图",
+      "reg_no": "7696830",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "在文字构成、呼叫等方面相近",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "青藏果园",
+      "reg_no": "12661517",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "在文字构成、呼叫等方面相近",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "青藏牧场QINGZANGMUCHANG",
+      "reg_no": "5887679",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "在文字构成、呼叫等方面相近",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    }
+  ],
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "notes": "来源为标库网公开转载的中国商标网决定书原文，编号、日期、结论按页面记载。申请商品或服务按原文明确记载节选，类别按原文明示或依据列明项目对照官方区分表确定。类似群无逐项证据时留空。合并认定的引证保留合并结论，未逐项推定商品对应。申请日期原文未载时留空。使用于啤酒等商品还被认定可能使消费者对商品来源产生误认。"
+}

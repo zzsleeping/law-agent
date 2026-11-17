@@ -1,0 +1,67 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2023]第0000326916号",
+  "decision_date": "2023-11-20",
+  "authority": "国家知识产权局",
+  "source_url": "https://pub.sbj.cnipa.gov.cn/toas-pub-prod/portalui-pub-prod/trademarkAssessmentView?id=e48b88358c0f8537018c9092455e09b5",
+  "retrieved_at": "2026-11-17",
+  "applicant_mark": {
+    "text": "丹妮茶叶",
+    "app_no": "69075906",
+    "app_date": null,
+    "priority_date": null,
+    "owner": "自然人",
+    "goods": [
+      {
+        "name": "茶叶",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "茶",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "用作茶叶代用品的花或叶",
+        "nice_class": 30,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "text": "丹妮斯",
+      "reg_no": "59689243",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": [
+        {
+          "name": "茶",
+          "nice_class": 30,
+          "group": null
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "在文字组成、排列、呼叫上近似",
+      "notes": "商品或服务按原文可归属该引证的项目记录。"
+    },
+    {
+      "text": "丹妮斯DANNISI及图",
+      "reg_no": "59686917",
+      "app_date": null,
+      "status": "第30类商品上的无效宣告已生效",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "已不再构成申请商标获准注册的在先权利障碍",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    }
+  ],
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "notes": "来源及核验说明见后。申请商品或服务按原文明确记载节选，类别按原文明示或依据列明项目对照官方区分表确定。类似群无逐项证据时留空。合并认定的引证保留合并结论，未逐项推定商品对应。申请日期原文未载时留空。本地官网打印件 用户本地存档 5.pdf，第1页。"
+}

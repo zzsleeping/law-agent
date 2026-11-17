@@ -1,0 +1,220 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2023]第0000135476号",
+  "decision_date": "2023-05-10",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=d4c6164914540337",
+  "retrieved_at": "2026-11-17",
+  "applicant_mark": {
+    "text": "龙吟水语 茶LONG YIN SHUI YU及图",
+    "app_no": "61805595",
+    "app_date": null,
+    "priority_date": null,
+    "owner": "勐海龙吟水语茶业有限公司",
+    "goods": [
+      {
+        "name": "水（饮料）",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "纯净水（饮料）",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "蒸馏水（饮料）",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "矿泉水（饮料）",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "植物饮料",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "茶味非酒精饮料",
+        "nice_class": 32,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "text": null,
+      "reg_no": "9576302",
+      "app_date": null,
+      "status": "期满未续展失效尚未满一年",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "在整体构成、呼叫、含义及外观等方面存在区别",
+      "notes": "文书未逐件载明具体商品或服务，留空。中文文字未核实或原文为非中文标识，留档。"
+    },
+    {
+      "text": "龙常",
+      "reg_no": "12349773",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "在整体构成、呼叫、含义及外观等方面存在区别",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "东澳矿泉",
+      "reg_no": "35737171",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "在整体构成、呼叫、含义及外观等方面存在区别",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": null,
+      "reg_no": "34387650",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "在整体构成、呼叫、含义及外观等方面存在区别",
+      "notes": "文书未逐件载明具体商品或服务，留空。中文文字未核实或原文为非中文标识，留档。"
+    },
+    {
+      "text": "龙凤隆堂",
+      "reg_no": "32372065",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "在整体构成、呼叫、含义及外观等方面存在区别",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "龙眠河韵",
+      "reg_no": "38641644",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "在整体构成、呼叫、含义及外观等方面存在区别",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "辰骏",
+      "reg_no": "13084282",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "在整体构成、呼叫、含义及外观等方面存在区别",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "龙健玉龙",
+      "reg_no": "45076397",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "在整体构成、呼叫、含义及外观等方面存在区别",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "龙常",
+      "reg_no": "12474660",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "在整体构成、呼叫、含义及外观等方面存在区别",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "东湖三凤",
+      "reg_no": "39887784",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "在整体构成、呼叫、含义及外观等方面存在区别",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "龙凤隆堂",
+      "reg_no": "32381573",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "在整体构成、呼叫、含义及外观等方面存在区别",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "龙场春",
+      "reg_no": "18264820",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "在整体构成、呼叫、含义及外观等方面存在区别",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": null,
+      "reg_no": "15465090",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "在整体构成、呼叫、含义及外观等方面存在区别",
+      "notes": "文书未逐件载明具体商品或服务，留空。中文文字未核实或原文为非中文标识，留档。"
+    },
+    {
+      "text": "星龙食汇",
+      "reg_no": "53360945",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "在整体构成、呼叫、含义及外观等方面存在区别",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    }
+  ],
+  "outcome": "部分驳回",
+  "outcome_scope": "第32类水（饮料）、纯净水（饮料）、蒸馏水（饮料）、矿泉水（饮料）、植物饮料驳回。第30类商品、第32类茶味非酒精饮料、第35类与第40类服务初步审定。",
+  "notes": "来源为标库网公开转载的中国商标网决定书原文，编号、日期、结论按页面记载。申请商品或服务按原文明确记载节选，类别按原文明示或依据列明项目对照官方区分表确定。类似群无逐项证据时留空。合并认定的引证保留合并结论，未逐项推定商品对应。申请日期原文未载时留空。重复编号9576302、12349773、32372065各归并为一个档案记录。各类引证均经整体区分认定。第32类部分申请被驳回系误认原料等特点的独立理由。"
+}

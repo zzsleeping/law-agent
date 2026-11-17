@@ -1,0 +1,136 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2020]第0000202146号重审第0000004110号",
+  "decision_date": "2021-10-28",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=c9dfbc416a53a649",
+  "retrieved_at": "2026-11-17",
+  "applicant_mark": {
+    "text": "浪",
+    "app_no": "39793078",
+    "app_date": null,
+    "priority_date": null,
+    "owner": "北京创新壹舟投资管理有限公司",
+    "goods": [
+      {
+        "name": "糖",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "燕麦粥",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "以谷物为主的零食小吃",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "以米为主的零食小吃",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "茶",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "咖啡",
+        "nice_class": 30,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "text": "浪　浪八圈lang ba quan及图",
+      "reg_no": "5407379",
+      "app_date": null,
+      "status": "因连续三年未使用被撤销",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "因连续三年停止使用被撤销",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "浪",
+      "reg_no": "21134923",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "浪 WANDERING 及图",
+      "reg_no": "26300580",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "浪",
+      "reg_no": "33685886",
+      "app_date": null,
+      "status": "部分商品初步审定，为在先有效申请",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "浪",
+      "reg_no": "39616166",
+      "app_date": null,
+      "status": "部分商品初步审定，为在先有效申请",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "速浪及图",
+      "reg_no": "6392964",
+      "app_date": null,
+      "status": "期满未续展",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "未在法定期限内申请商标续展",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "浪 及图",
+      "reg_no": "21132231",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    }
+  ],
+  "outcome": "部分驳回",
+  "outcome_scope": "糖、燕麦粥、以谷物为主的零食小吃、以米为主的零食小吃初步审定。其余复审商品驳回。",
+  "notes": "来源为标库网公开转载的中国商标网决定书原文，编号、日期、结论按页面记载。申请商品或服务按原文明确记载节选，类别按原文明示或依据列明项目对照官方区分表确定。类似群无逐项证据时留空。合并认定的引证保留合并结论，未逐项推定商品对应。申请日期原文未载时留空。近似认定适用于茶、咖啡等商品。初步审定组与引证二、三、四、五、七的核定商品不类似。"
+}

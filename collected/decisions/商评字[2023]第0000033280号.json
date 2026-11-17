@@ -1,0 +1,216 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2023]第0000033280号",
+  "decision_date": "2023-02-08",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=3c4ee67dd564c0b5",
+  "retrieved_at": "2026-11-17",
+  "applicant_mark": {
+    "text": "鲜喔喔及图",
+    "app_no": "48683365",
+    "app_date": null,
+    "priority_date": null,
+    "owner": "重庆市长寿区标杆养鸡股份合作社",
+    "goods": [
+      {
+        "name": "鱼（非活）",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "加工过的水果",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "果冻",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "加工过的坚果",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "豆腐制品",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "家禽（非活）",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "水果罐头",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "加工过的蔬菜",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "食用油",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "干食用菌",
+        "nice_class": 29,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "text": "鲜喔",
+      "reg_no": "44381694",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在相同或类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "喔喔WOWO及图",
+      "reg_no": "3009635",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在相同或类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "喔喔及图",
+      "reg_no": "3247671",
+      "app_date": null,
+      "status": "撤销决定生效",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "予以撤销",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "喔喔WOO",
+      "reg_no": "3483283",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在相同或类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "喔喔",
+      "reg_no": "43689332",
+      "app_date": null,
+      "status": "异议决定不予核准注册并生效",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "异议决定不予核准注册",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "喔喔",
+      "reg_no": "16621065",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在相同或类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "喔喔WOWO及图",
+      "reg_no": "37356043",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在相同或类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "喔喔WOWO及图",
+      "reg_no": "29943331",
+      "app_date": null,
+      "status": "驳回决定生效",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "予以驳回",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "喔喔WOWO及图",
+      "reg_no": "26839241",
+      "app_date": null,
+      "status": "不予注册复审决定生效",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "不予注册复审决定不予核准注册",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "喔喔WOWO及图",
+      "reg_no": "27411132",
+      "app_date": null,
+      "status": "无效宣告裁定生效",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "无效宣告裁定宣告无效",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "喔喔WOWO及图",
+      "reg_no": "29879023",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在相同或类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "喔喔WOWO及图",
+      "reg_no": "29959316",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在相同或类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    }
+  ],
+  "outcome": "部分驳回",
+  "outcome_scope": "家禽（非活）、水果罐头、加工过的蔬菜、食用油、干食用菌初步审定。鱼（非活）、加工过的水果、果冻、加工过的坚果、豆腐制品驳回。",
+  "notes": "来源为标库网公开转载的中国商标网决定书原文，编号、日期、结论按页面记载。申请商品或服务按原文明确记载节选，类别按原文明示或依据列明项目对照官方区分表确定。类似群无逐项证据时留空。合并认定的引证保留合并结论，未逐项推定商品对应。申请日期原文未载时留空。已比较的七件引证与初步审定组商品不类似。"
+}

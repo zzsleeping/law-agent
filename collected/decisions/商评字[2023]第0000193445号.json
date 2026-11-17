@@ -1,0 +1,95 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2023]第0000193445号",
+  "decision_date": "2023-07-11",
+  "authority": "国家知识产权局",
+  "source_url": "https://pub.sbj.cnipa.gov.cn/toas-pub-prod/portalui-pub-prod/trademarkAssessmentView?id=e48b8835894eb7f00189f32e39ae0a19",
+  "retrieved_at": "2026-11-17",
+  "applicant_mark": {
+    "text": "上山食府",
+    "app_no": "65641813",
+    "app_date": null,
+    "priority_date": null,
+    "owner": "重庆顺势而为品牌管理有限公司",
+    "goods": [
+      {
+        "name": "餐厅",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "会议室出租",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "养老院",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "宠物寄养",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "出租椅子、桌子、桌布和玻璃器皿",
+        "nice_class": 43,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "text": "上山文化",
+      "reg_no": "46802278",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "上山文化",
+      "reg_no": "53952647",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "上山现场 上山",
+      "reg_no": "58932733",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "山上",
+      "reg_no": "4155752",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    }
+  ],
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "notes": "来源及核验说明见后。申请商品或服务按原文明确记载节选，类别按原文明示或依据列明项目对照官方区分表确定。类似群无逐项证据时留空。合并认定的引证保留合并结论，未逐项推定商品对应。申请日期原文未载时留空。本地官网打印件 用户本地存档 3.pdf，第1–2页。引证近似结论针对餐厅等类似服务。会议室出租被认定为不类似服务，该项与其他数项另因可能造成误认被驳回。"
+}

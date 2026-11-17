@@ -1,0 +1,179 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2020]第0000232602号",
+  "decision_date": "2020-09-10",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=fa80530a585d88e0",
+  "retrieved_at": "2026-11-17",
+  "applicant_mark": {
+    "text": "BESTAI柏泰",
+    "app_no": "35621263",
+    "app_date": null,
+    "priority_date": null,
+    "owner": "深圳市柏泰粮油有限公司",
+    "goods": [
+      {
+        "name": "酸奶",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "加工过的坚果",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "加工过的花生",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "加工过的开心果",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "肉脯",
+        "nice_class": 29,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "text": "BEST",
+      "reg_no": "5646866",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "整体文字构成、呼叫区别较为明显",
+      "notes": "文书未逐件载明具体商品或服务，留空。中文文字未核实或原文为非中文标识，留档。"
+    },
+    {
+      "text": "BEST",
+      "reg_no": "5646867",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "整体文字构成、呼叫区别较为明显",
+      "notes": "文书未逐件载明具体商品或服务，留空。中文文字未核实或原文为非中文标识，留档。"
+    },
+    {
+      "text": "BESTO",
+      "reg_no": "5835559",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "整体文字构成、呼叫区别较为明显",
+      "notes": "文书未逐件载明具体商品或服务，留空。中文文字未核实或原文为非中文标识，留档。"
+    },
+    {
+      "text": "BEST",
+      "reg_no": "8173228",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "整体文字构成、呼叫区别较为明显",
+      "notes": "文书未逐件载明具体商品或服务，留空。中文文字未核实或原文为非中文标识，留档。"
+    },
+    {
+      "text": "BESTVA",
+      "reg_no": "9944288",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "整体文字构成、呼叫区别较为明显",
+      "notes": "文书未逐件载明具体商品或服务，留空。中文文字未核实或原文为非中文标识，留档。"
+    },
+    {
+      "text": "BESTRA",
+      "reg_no": "3850320",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "整体文字构成、呼叫区别较为明显",
+      "notes": "文书未逐件载明具体商品或服务，留空。中文文字未核实或原文为非中文标识，留档。"
+    },
+    {
+      "text": "BESTRA",
+      "reg_no": "3850319",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "整体文字构成、呼叫区别较为明显",
+      "notes": "文书未逐件载明具体商品或服务，留空。中文文字未核实或原文为非中文标识，留档。"
+    },
+    {
+      "text": "百示麦BESMAI",
+      "reg_no": "20914588",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "整体文字构成、呼叫区别较为明显",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "BEST",
+      "reg_no": "8173230",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "整体文字构成、呼叫区别较为明显",
+      "notes": "文书未逐件载明具体商品或服务，留空。中文文字未核实或原文为非中文标识，留档。"
+    },
+    {
+      "text": "柏泰BOTAI",
+      "reg_no": "32498259",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在同一种或类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "柏斯泰BST",
+      "reg_no": "13322207",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在同一种或类似商品上的近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    }
+  ],
+  "outcome": "部分驳回",
+  "outcome_scope": "酸奶、加工过的坚果、加工过的花生、加工过的开心果初步审定。其余复审商品驳回。",
+  "notes": "来源为标库网公开转载的中国商标网决定书原文，编号、日期、结论按页面记载。申请商品或服务按原文明确记载节选，类别按原文明示或依据列明项目对照官方区分表确定。类似群无逐项证据时留空。合并认定的引证保留合并结论，未逐项推定商品对应。申请日期原文未载时留空。引证十、十一在初步审定所列商品上不类似，在其他商品上认定近似。引证一至九即使共同用于同一种或类似商品上，文书仍认定商标不近似。"
+}

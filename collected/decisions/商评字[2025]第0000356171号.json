@@ -1,0 +1,330 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2025]第0000356171号",
+  "decision_date": "2025-12-25",
+  "authority": "国家知识产权局",
+  "source_url": "https://pub.sbj.cnipa.gov.cn/toas-pub-prod/portalui-pub-prod/trademarkAssessmentView?id=2004010519119872000",
+  "retrieved_at": "2026-11-17",
+  "applicant_mark": {
+    "text": "古茗",
+    "app_no": "78820193",
+    "app_date": "2024-05-24",
+    "priority_date": null,
+    "owner": "古茗科技集团有限公司",
+    "goods": [
+      {
+        "name": "蛋",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "木耳",
+        "nice_class": 29,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "text": "古铭茶业",
+      "reg_no": "58648591",
+      "app_date": "2021-08-20",
+      "owner": "福州市世纪鑫盛实业有限公司",
+      "status": "宣告无效并公告",
+      "goods": [
+        {
+          "name": "咖啡",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "果味茶饮料",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "茶饮料",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "非医用草本茶",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "乌龙茶",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "红茶",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "蛋糕",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "绿茶",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "用作茶叶代用品的花或叶",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "茶",
+          "nice_class": 30,
+          "group": null
+        }
+      ],
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "引证商标一经无效宣告程序裁定予以宣告无效，并刊登了无效公告",
+      "notes": "历史商品见 58648591电子公告系统.pdf 第1页内嵌第1767期商标初步审定公告。"
+    },
+    {
+      "text": "十口茗",
+      "reg_no": "42467798",
+      "app_date": "2019-11-20",
+      "owner": "温岭市固茗企业管理咨询有限公司",
+      "status": "经异议程序不予核准注册，裁定已生效",
+      "goods": [
+        {
+          "name": "猪肉食品",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "热狗肠",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "水果罐头",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "以水果为主的零食小吃",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "以果蔬为主的零食小吃",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "牛奶饮料（以牛奶为主）",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "奶昔",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "奶茶（以奶为主）",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "豆浆",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "食用果冻",
+          "nice_class": 29,
+          "group": null
+        }
+      ],
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "引证商标二经异议程序裁定不予核准注册，该裁定已生效",
+      "notes": "商品明细见 42467798.pdf 第1页。详情页显示异议中，复审时状态以决定书为准。"
+    },
+    {
+      "text": "古名",
+      "reg_no": "74561016",
+      "app_date": "2023-10-13",
+      "owner": "江西名古堂茶叶有限公司",
+      "status": "经异议程序予以核准注册，裁定已生效",
+      "goods": [
+        {
+          "name": "话梅",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "陈皮梅",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "莲子",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "糖玫瑰",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "桂花",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "茶泡饭用海苔",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "茶叶蛋",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "奶茶（以奶为主）",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "干食用菌",
+          "nice_class": 29,
+          "group": null
+        },
+        {
+          "name": "干茶树菇",
+          "nice_class": 29,
+          "group": null
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "申请商标与引证商标三在文字构成、呼叫等方面相近或相同，整体不易区分，已构成近似商标。申请商标指定使用的蛋、木耳复审商品与引证商标三核定使用的茶叶蛋、干茶树菇等商品属于类似商品",
+      "notes": "商品明细见 74561016.pdf 第1页。类似结论对应申请商品蛋、木耳与引证商品茶叶蛋、干茶树菇等的合并认定。申请商标的猪肉食品等其余复审商品与本引证核定使用的全部商品不类似。"
+    },
+    {
+      "text": "古名",
+      "reg_no": "12136496",
+      "app_date": "2013-01-31",
+      "owner": "上海彪马服饰有限公司",
+      "status": "期满未续展，丧失商标专用权",
+      "goods": [
+        {
+          "name": "手杖",
+          "nice_class": 18,
+          "group": null
+        },
+        {
+          "name": "宠物服装",
+          "nice_class": 18,
+          "group": null
+        },
+        {
+          "name": "制香肠用肠衣",
+          "nice_class": 18,
+          "group": null
+        }
+      ],
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "引证商标四因期满未续展已丧失商标专用权",
+      "notes": "历史商品见 12136496电子公告系统.pdf 第1页内嵌第1410期初审公告第2395页右下。商标文字按决定书记录，图样另含 GUMING。"
+    },
+    {
+      "text": "滇古茗",
+      "reg_no": "13276729",
+      "app_date": "2013-09-23",
+      "owner": "勐腊县佳仁农林发展有限公司",
+      "status": "部分商品被撤销，茶仍为核定商品",
+      "goods": [
+        {
+          "name": "茶",
+          "nice_class": 30,
+          "group": null
+        }
+      ],
+      "mark_similar": "未认定",
+      "goods_similar": "不类似",
+      "reasoning_excerpt": "申请商标指定使用的复审商品与引证商标五核定使用的茶商品不属于类似商品",
+      "notes": "保留商品见决定书和 13276729.pdf 第1页。图样含图形和 DIAN GU MING，文字按决定书记录。决定书未单独判断标识近似。被撤销注册的商品为咖啡、冰茶、茶饮料、糖、蜂蜜、面包、豆浆、除香精油外的调味品、食盐。"
+    },
+    {
+      "text": "蜀古茗",
+      "reg_no": "31870108",
+      "app_date": "2018-06-27",
+      "owner": "自然人",
+      "status": "因连续三年不使用被撤销注册并公告",
+      "goods": [
+        {
+          "name": "咖啡",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "茶",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "茶饮料",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "用作茶叶代用品的花或叶",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "以茶为主的饮料",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "蜂蜜",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "盒饭",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "谷类制品",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "面条",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "调味料",
+          "nice_class": 30,
+          "group": null
+        }
+      ],
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "引证商标六经撤销三年不使用程序决定予以撤销注册，并刊登了撤销公告",
+      "notes": "历史商品见 31870108电子公告系统.pdf 第1页内嵌第1628期商标初步审定公告。复审时状态以决定书为准。"
+    }
+  ],
+  "outcome": "部分驳回",
+  "outcome_scope": "蛋、木耳复审商品予以驳回，其余复审商品予以初步审定。",
+  "notes": "来源为 用户本地存档 古茗 中用户保存的官方决定书（商标评审文书.pdf 第1至2页）、商标详情和历史公告。商品已节选。申请商品录入决定书明确列出的冲突项，申请日期和类别见 78820193.pdf 第1页。申请详情页商品列表被截断，决定书未逐项列明其余获初审的复审商品。优先权日期及类似群未见于决定书。引证一、二、四、六无独立近似结论，不作正负标签。"
+}

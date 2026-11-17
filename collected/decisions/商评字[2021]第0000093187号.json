@@ -1,0 +1,63 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2021]第0000093187号",
+  "decision_date": "2021-04-08",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=67d801bf4f10e24e",
+  "retrieved_at": "2026-11-17",
+  "applicant_mark": {
+    "text": "栖号",
+    "app_no": "43944650",
+    "app_date": null,
+    "priority_date": null,
+    "owner": "杭州艺栈科技有限公司",
+    "goods": [
+      {
+        "name": "餐厅",
+        "nice_class": 43,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "text": "栖",
+      "reg_no": "17784314",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "在文字构成、呼叫等方面相近",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "栖及图",
+      "reg_no": "17618739",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "在文字构成、呼叫等方面相近",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "栖心",
+      "reg_no": "17585398",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "在文字构成、呼叫等方面相近",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    }
+  ],
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "notes": "来源为标库网公开转载的中国商标网决定书原文，编号、日期、结论按页面记载。申请商品或服务按原文明确记载节选，类别按原文明示或依据列明项目对照官方区分表确定。类似群无逐项证据时留空。合并认定的引证保留合并结论，未逐项推定商品对应。申请日期原文未载时留空。"
+}

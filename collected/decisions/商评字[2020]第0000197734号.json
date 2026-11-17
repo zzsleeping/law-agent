@@ -1,0 +1,240 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2020]第0000197734号",
+  "decision_date": "2020-07-24",
+  "authority": "国家知识产权局",
+  "source_url": "https://pub.sbj.cnipa.gov.cn/toas-pub-prod/portalui-pub-prod/trademarkAssessmentView?id=e48b883574420b14017448b5dbc4156e",
+  "retrieved_at": "2026-11-17",
+  "applicant_mark": {
+    "text": "王老吉 1828",
+    "app_no": "38631163",
+    "app_date": "2019-06-03",
+    "priority_date": null,
+    "owner": "广州白云山医药集团股份有限公司",
+    "goods": [
+      {
+        "name": "茶",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "茶饮料",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "糖",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "糖果",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "甜食",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "蜂蜜",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "方便米饭",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "谷类制品",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "食用豆粉",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "方便面",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "玉米花",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "食用淀粉",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "调味品",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "酵母",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "搅稠奶油制剂",
+        "nice_class": 30,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "text": "1828",
+      "reg_no": "23483010",
+      "app_date": "2017-04-10",
+      "owner": "一八二八圣点食品（长春）有限公司",
+      "status": null,
+      "goods": [
+        {
+          "name": "茶",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "糖",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "蜂蜜",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "糕点",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "以谷物为主的零食小吃",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "方便米饭",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "谷类制品",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "面条",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "食用淀粉",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "酵母",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "搅稠奶油制剂",
+          "nice_class": 30,
+          "group": null
+        }
+      ],
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "在文字构成、呼叫、整体视觉效果上存在一定差异，未构成《中华人民共和国商标法》第三十条所指的情形。",
+      "notes": "标识取自 23483010.pdf 第1页图样，含麦穗等图形及数字1828。档案日期和商品见同页，仅留档。"
+    },
+    {
+      "text": "中坝 1828",
+      "reg_no": "23140961",
+      "app_date": "2017-03-14",
+      "owner": "四川清香园调味品股份有限公司",
+      "status": null,
+      "goods": [
+        {
+          "name": "以米为主的零食小吃",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "以谷物为主的零食小吃",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "醋",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "酱油",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "调味料",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "酱菜（调味品）",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "佐料（调味品）",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "料酒",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "辣椒（调味品）",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "调味品",
+          "nice_class": 30,
+          "group": null
+        }
+      ],
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "在文字构成、呼叫、整体视觉效果上存在一定差异，未构成《中华人民共和国商标法》第三十条所指的情形。",
+      "notes": "标识取自 23140961.pdf 第1页图样，申请日期、商品见同页。"
+    },
+    {
+      "text": null,
+      "reg_no": "354315",
+      "app_date": null,
+      "owner": null,
+      "status": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "在文字构成、呼叫、整体视觉效果上存在一定差异，未构成《中华人民共和国商标法》第三十条所指的情形。",
+      "notes": "国际注册号和合并结论见决定书第1页。决定书仅给出注册号，提供的详情页与公开检索均未核实其图样、日期、权利人或商品。"
+    }
+  ],
+  "outcome": "初步审定",
+  "outcome_scope": null,
+  "notes": "来源为 用户本地存档 王老吉 中的官方决定书第1页及各商标详情第1页。申请商标文字按决定书记录，图样中文字排列为1828王老吉。申请商品清单来自 38631163.pdf，决定书未逐项列出复审商品。三件引证的标识结论来自决定书合并认定，商品类似性未单独认定。申请商标的优先权和逐商品类似群未见于决定书。"
+}

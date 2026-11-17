@@ -1,0 +1,210 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2022]第0000249384号",
+  "decision_date": "2022-08-05",
+  "authority": "国家知识产权局",
+  "source_url": "https://pub.sbj.cnipa.gov.cn/toas-pub-prod/portalui-pub-prod/trademarkAssessmentView?id=e48b8835831af4e101831c270f3105e4",
+  "retrieved_at": "2026-11-17",
+  "applicant_mark": {
+    "text": "喜悦荟",
+    "app_no": "60421187",
+    "app_date": "2021-11-09",
+    "priority_date": null,
+    "owner": "自然人",
+    "goods": [
+      {
+        "name": "备办宴席",
+        "nice_class": 43,
+        "group": "4301"
+      },
+      {
+        "name": "自助餐厅",
+        "nice_class": 43,
+        "group": "4301"
+      },
+      {
+        "name": "餐厅",
+        "nice_class": 43,
+        "group": "4301"
+      },
+      {
+        "name": "饭店",
+        "nice_class": 43,
+        "group": "4301"
+      },
+      {
+        "name": "餐馆",
+        "nice_class": 43,
+        "group": "4301"
+      },
+      {
+        "name": "自助餐馆",
+        "nice_class": 43,
+        "group": "4301"
+      },
+      {
+        "name": "食物雕刻",
+        "nice_class": 43,
+        "group": "4301"
+      },
+      {
+        "name": "食品装饰",
+        "nice_class": 43,
+        "group": "4301"
+      },
+      {
+        "name": "流动饮食供应",
+        "nice_class": 43,
+        "group": "4301"
+      },
+      {
+        "name": "茶馆",
+        "nice_class": 43,
+        "group": "4301"
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "text": "喜悦会 JOY CLUB及图",
+      "reg_no": "9904919",
+      "app_date": "2011-08-29",
+      "owner": "海南海航国际酒店管理股份有限公司",
+      "status": "复审时为在先有效注册商标",
+      "goods": [
+        {
+          "name": "鸡尾酒会服务",
+          "nice_class": 43,
+          "group": null
+        },
+        {
+          "name": "假日野营住宿服务",
+          "nice_class": 43,
+          "group": null
+        },
+        {
+          "name": "餐厅",
+          "nice_class": 43,
+          "group": null
+        },
+        {
+          "name": "酒吧",
+          "nice_class": 43,
+          "group": null
+        },
+        {
+          "name": "住所(旅馆、供膳寄宿处)",
+          "nice_class": 43,
+          "group": null
+        },
+        {
+          "name": "咖啡馆",
+          "nice_class": 43,
+          "group": null
+        },
+        {
+          "name": "饭店",
+          "nice_class": 43,
+          "group": null
+        },
+        {
+          "name": "旅馆预订",
+          "nice_class": 43,
+          "group": null
+        },
+        {
+          "name": "会议室出租",
+          "nice_class": 43,
+          "group": null
+        },
+        {
+          "name": "提供营地设施",
+          "nice_class": 43,
+          "group": null
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "申请商标与引证商标一、二在呼叫、文字构成、含义等方面相近",
+      "notes": "申请日期和核定服务见 9904919.pdf 第1页，两群组未逐项对应。诉讼阶段部分服务的注册被撤销（第1824期），法院认定其余有效服务不再构成障碍。标签和状态记录2022年复审时的认定。"
+    },
+    {
+      "text": "喜悦",
+      "reg_no": "1487996",
+      "app_date": "1999-11-22",
+      "owner": "自然人",
+      "status": "复审时为在先有效注册商标",
+      "goods": [
+        {
+          "name": "住所(旅馆，供膳寄宿处)",
+          "nice_class": 42,
+          "group": "4201"
+        },
+        {
+          "name": "餐厅",
+          "nice_class": 42,
+          "group": "4201"
+        },
+        {
+          "name": "饭店",
+          "nice_class": 42,
+          "group": "4201"
+        },
+        {
+          "name": "快餐馆",
+          "nice_class": 42,
+          "group": "4201"
+        },
+        {
+          "name": "餐馆",
+          "nice_class": 42,
+          "group": "4201"
+        },
+        {
+          "name": "酒吧",
+          "nice_class": 42,
+          "group": "4201"
+        },
+        {
+          "name": "茶馆",
+          "nice_class": 42,
+          "group": "4201"
+        },
+        {
+          "name": "咖啡馆",
+          "nice_class": 42,
+          "group": "4201"
+        },
+        {
+          "name": "自动餐馆",
+          "nice_class": 42,
+          "group": "4201"
+        },
+        {
+          "name": "备办宴席",
+          "nice_class": 42,
+          "group": "4201"
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "申请商标与引证商标一、二在呼叫、文字构成、含义等方面相近",
+      "notes": "服务、申请日期和历史第42类类别见 1487996.pdf 第1页。二审维持该引证的近似和服务类似认定，指出其服务与申请商标第43类服务存在交叉检索。"
+    },
+    {
+      "text": "粤喜悦 YUEXIYUE",
+      "reg_no": "60358413",
+      "app_date": "2021-11-06",
+      "owner": "自然人",
+      "status": "复审时注册申请已被驳回",
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "引证商标三的注册申请已被驳回，该商标已不构成申请商标获准初步审定的在先商标权利障碍",
+      "notes": "第43类和申请日期见 60358413.pdf 第1页。该详情页未列申请服务，复审决定书也未列出，故留空。"
+    }
+  ],
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "notes": "来源为 用户本地存档 喜悦荟 的决定书（第1至2页）及商标档案。申请服务完整清单和4301群组来自（2023）京行终8084号二审判决书公开存档（https://zh.wikisource.org/w/index.php?oldid=7247564）；类别和申请日另见 60421187.pdf 第1页。二审驳回上诉，维持原判。标签以复审决定书为时点，原文以复审服务整体作相同或类似认定，未逐项配对。优先权日期未见。"
+}

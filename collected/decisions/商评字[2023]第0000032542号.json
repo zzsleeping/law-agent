@@ -1,0 +1,196 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2023]第0000032542号",
+  "decision_date": "2023-02-08",
+  "authority": "国家知识产权局",
+  "source_url": "https://pub.sbj.cnipa.gov.cn/toas-pub-prod/portalui-pub-prod/trademarkAssessmentView?id=e48b883586afaf770186c564b1636d32",
+  "retrieved_at": "2026-11-17",
+  "applicant_mark": {
+    "text": "阿嬤手作 Ah Ma Hand Made",
+    "app_no": "63167602",
+    "app_date": "2022-03-10",
+    "priority_date": null,
+    "owner": "广西手作幸村餐饮管理有限公司",
+    "goods": [
+      {
+        "name": "带果肉果汁饮料",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "无酒精果汁",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "果汁",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "水（饮料）",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "茶味非酒精饮料",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "含有水果干的无酒精饮料",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "无酒精饮料",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "果昔",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "植物饮料",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "制饮料用糖浆",
+        "nice_class": 32,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "text": "阿嬷及图",
+      "reg_no": "5847194",
+      "app_date": "2007-01-15",
+      "owner": "自然人",
+      "status": null,
+      "goods": [
+        {
+          "name": "咖啡",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "茶饮料",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "糖",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "软糖（糖果）",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "冰糖燕窝",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "杏仁糊",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "春卷",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "玉米（磨过的）",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "谷制食品糊",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "豆浆",
+          "nice_class": 30,
+          "group": null
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "申请商标与引证商标一、二、三在文字组成、呼叫等方面相近，构成近似标识。",
+      "notes": "图样、类别及申请日见 5847194.pdf 第1页。详情页当前显示无效且商品栏为空，商品取自（2023）京行终8502号二审判决书所载的历史核定范围。二审以汉字“阿嬷”认定近似。"
+    },
+    {
+      "text": "ahma",
+      "reg_no": "56128139",
+      "app_date": "2021-05-17",
+      "owner": "上海百派贸易有限公司",
+      "status": null,
+      "goods": [
+        {
+          "name": "果味啤酒",
+          "nice_class": 32,
+          "group": null
+        },
+        {
+          "name": "啤酒",
+          "nice_class": 32,
+          "group": null
+        },
+        {
+          "name": "啤酒（无酒精）",
+          "nice_class": 32,
+          "group": null
+        },
+        {
+          "name": "蜂蜜啤酒",
+          "nice_class": 32,
+          "group": null
+        },
+        {
+          "name": "制饮料用糖浆",
+          "nice_class": 32,
+          "group": null
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "申请商标与引证商标一、二、三在文字组成、呼叫等方面相近，构成近似标识。",
+      "notes": "商品、图样和申请日见 56128139.pdf 第1页。保留官方认定，纯字母标识不计入中文文字评测。"
+    },
+    {
+      "text": "古城阿嬷",
+      "reg_no": "20858753",
+      "app_date": "2016-08-03",
+      "owner": "泉州市优鱿有诱贸易有限公司",
+      "status": null,
+      "goods": [
+        {
+          "name": "啤酒",
+          "nice_class": 32,
+          "group": null
+        },
+        {
+          "name": "饮料制作配料",
+          "nice_class": 32,
+          "group": null
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "申请商标与引证商标一、二、三在文字组成、呼叫等方面相近，构成近似标识。",
+      "notes": "商品、图样和申请日见 20858753.pdf 第1页。二审以汉字“阿嬷”认定近似。"
+    }
+  ],
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "notes": "决定书及图样来自 用户本地存档 阿嬤手作 的中国商标网页打印件。申请日期和类别见 63167602.pdf 第1页。申请商品和引证一的历史商品以（2023）京行终8502号判决书公开存档所载为准（https://zh.wikisource.org/w/index.php?oldid=7421968）。二审驳回上诉，维持原判。商标文字按复审决定书照录。商品类似为决定书对复审商品和各引证商品的合并认定，未给出每项商品的配对关系。逐商品类似群和优先权日期未核实，留空。"
+}

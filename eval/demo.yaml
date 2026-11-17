@@ -1,0 +1,31 @@
+# 演示集：在正式商标库（国家知识产权局商标开放数据）上演示，不计入指标。
+- id: demo-1
+  query: 茗悦
+  goods: 茶饮料、奶茶
+  meaning: 茗指茶，悦指喜悦；品茶的愉悦
+  shows: 同名多件注册归组；按公告日期推定的各种在先状态（在期、期满、未见公告）；包含与读音近似
+- id: demo-2
+  query: 喜茶
+  goods: 茶饮料
+  shows: 知名商标的大量同名注册；相关案例
+- id: demo-3
+  query: 云雾知春
+  goods: 绿茶
+  shows: 四字仅一字不同
+- id: demo-4
+  query: 海星
+  goods: 果汁
+  shows: 字序颠倒只判中
+- id: demo-5
+  query: 南柠
+  goods: 咖啡馆
+  shows: 餐饮服务类
+- id: demo-6
+  query: 霁川
+  goods: 茶饮料
+  shows: 近似商标很少时的报告
+- id: demo-7
+  query: 茗悦
+  goods: 茶饮料、奶茶
+  eval_date: 2027-03-01
+  shows: 评估日期切到 2027 年，依据自动换成新法条号

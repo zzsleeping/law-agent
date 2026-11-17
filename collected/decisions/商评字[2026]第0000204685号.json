@@ -1,0 +1,500 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2026]第0000204685号",
+  "decision_date": "2026-09-03",
+  "authority": "国家知识产权局",
+  "source_url": "https://pub.sbj.cnipa.gov.cn/toas-pub-prod/portalui-pub-prod/trademarkAssessmentView?id=2096984734152417280",
+  "retrieved_at": "2026-11-17",
+  "applicant_mark": {
+    "text": "蜜雪冰城 带上雪王 共赴春光",
+    "app_no": "84119684",
+    "app_date": "2025-03-18",
+    "priority_date": null,
+    "owner": "蜜雪冰城股份有限公司",
+    "goods": [
+      {
+        "name": "咖啡",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "茶",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "茶饮料",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "糖",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "糖蜜",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "以谷物为主的零食小吃",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "粽子",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "面条",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "冰淇淋",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "调味品",
+        "nice_class": 30,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "text": "春光及图",
+      "reg_no": "1193156",
+      "app_date": "1997-05-14",
+      "owner": "海南春光食品有限公司",
+      "status": null,
+      "goods": [
+        {
+          "name": "奶片（糖果）",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "食品香料（不包括含醚香料精油）",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "食用糖果",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "糖果",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "软糖",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "糖粘",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "酥糖",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "花生糖",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "春卷皮",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "玉米花",
+          "nice_class": 30,
+          "group": null
+        }
+      ],
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "在呼叫、整体外观等方面不同，予以消费者的印象区别较大，未构成使用在同一种或类似商品上的近似商标。",
+      "notes": "编号、标识和结论见决定书第1页。商品、日期及图样见 1193156.pdf 第1页，详情页显示为注册商标。"
+    },
+    {
+      "text": "春光",
+      "reg_no": "1029507",
+      "app_date": "1996-01-15",
+      "owner": "海南春光食品有限公司",
+      "status": null,
+      "goods": [
+        {
+          "name": "饮用冰",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "冰制品",
+          "nice_class": 30,
+          "group": null
+        }
+      ],
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "在呼叫、整体外观等方面不同，予以消费者的印象区别较大，未构成使用在同一种或类似商品上的近似商标。",
+      "notes": "图样、申请日期及商品见 1029507.pdf 第1页。标识结论来自决定书对十一件引证的合并认定。决定书未单独认定商品类似关系。"
+    },
+    {
+      "text": "春光",
+      "reg_no": "5000496",
+      "app_date": "2005-11-14",
+      "owner": "海南春光食品有限公司",
+      "status": null,
+      "goods": [
+        {
+          "name": "啤酒",
+          "nice_class": 32,
+          "group": null
+        },
+        {
+          "name": "奶茶(非奶为主)",
+          "nice_class": 32,
+          "group": null
+        },
+        {
+          "name": "果子粉",
+          "nice_class": 32,
+          "group": null
+        },
+        {
+          "name": "无酒精饮料",
+          "nice_class": 32,
+          "group": null
+        },
+        {
+          "name": "果茶(不含酒精)",
+          "nice_class": 32,
+          "group": null
+        },
+        {
+          "name": "植物饮料",
+          "nice_class": 32,
+          "group": null
+        },
+        {
+          "name": "水(饮料)",
+          "nice_class": 32,
+          "group": null
+        },
+        {
+          "name": "豆类饮料",
+          "nice_class": 32,
+          "group": null
+        },
+        {
+          "name": "果子晶",
+          "nice_class": 32,
+          "group": null
+        },
+        {
+          "name": "饮料制剂",
+          "nice_class": 32,
+          "group": null
+        }
+      ],
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "在呼叫、整体外观等方面不同，予以消费者的印象区别较大，未构成使用在同一种或类似商品上的近似商标。",
+      "notes": "编号、标识和结论见决定书第1页。商品、日期及图样见 5000496.pdf 第1页，详情页显示为注册商标。"
+    },
+    {
+      "text": "春光",
+      "reg_no": "5000497",
+      "app_date": "2005-11-14",
+      "owner": "海南春光食品有限公司",
+      "status": null,
+      "goods": [
+        {
+          "name": "咖啡",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "加奶可可饮料",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "糖果",
+          "nice_class": 30,
+          "group": null
+        }
+      ],
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "在呼叫、整体外观等方面不同，予以消费者的印象区别较大，未构成使用在同一种或类似商品上的近似商标。",
+      "notes": "图样、申请日期及商品见 5000497.pdf 第1页。标识结论来自决定书对十一件引证的合并认定。决定书未单独认定商品类似关系。"
+    },
+    {
+      "text": "春光",
+      "reg_no": "7792077",
+      "app_date": null,
+      "owner": null,
+      "status": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "在呼叫、整体外观等方面不同，予以消费者的印象区别较大，未构成使用在同一种或类似商品上的近似商标。",
+      "notes": "编号、标识和结论见决定书第1页。决定书未列此引证的商品名称，已保存的官方档案中无该号码的详情。"
+    },
+    {
+      "text": "春光",
+      "reg_no": "7792094",
+      "app_date": null,
+      "owner": null,
+      "status": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "在呼叫、整体外观等方面不同，予以消费者的印象区别较大，未构成使用在同一种或类似商品上的近似商标。",
+      "notes": "编号、标识和结论见决定书第1页。决定书未列此引证的商品名称，已保存的官方档案中无该号码的详情。"
+    },
+    {
+      "text": "春光",
+      "reg_no": "7840572",
+      "app_date": null,
+      "owner": null,
+      "status": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "在呼叫、整体外观等方面不同，予以消费者的印象区别较大，未构成使用在同一种或类似商品上的近似商标。",
+      "notes": "编号、标识和结论见决定书第1页。决定书未列此引证的商品名称，已保存的官方档案中无该号码的详情。"
+    },
+    {
+      "text": "春光 CHUN GUANG",
+      "reg_no": "8488522",
+      "app_date": "2010-07-19",
+      "owner": "海南春光食品有限公司",
+      "status": null,
+      "goods": [
+        {
+          "name": "果酒(含酒精)",
+          "nice_class": 33,
+          "group": null
+        },
+        {
+          "name": "含酒精液体",
+          "nice_class": 33,
+          "group": null
+        },
+        {
+          "name": "黄酒",
+          "nice_class": 33,
+          "group": null
+        },
+        {
+          "name": "酒(利口酒)",
+          "nice_class": 33,
+          "group": null
+        },
+        {
+          "name": "酒精饮料(啤酒除外)",
+          "nice_class": 33,
+          "group": null
+        },
+        {
+          "name": "料酒",
+          "nice_class": 33,
+          "group": null
+        },
+        {
+          "name": "米酒",
+          "nice_class": 33,
+          "group": null
+        },
+        {
+          "name": "汽酒",
+          "nice_class": 33,
+          "group": null
+        },
+        {
+          "name": "清酒",
+          "nice_class": 33,
+          "group": null
+        },
+        {
+          "name": "烧酒",
+          "nice_class": 33,
+          "group": null
+        }
+      ],
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "在呼叫、整体外观等方面不同，予以消费者的印象区别较大，未构成使用在同一种或类似商品上的近似商标。",
+      "notes": "编号、标识和结论见决定书第1页。商品、日期及图样见 8488522.pdf 第1页，详情页显示为注册商标。"
+    },
+    {
+      "text": "春光",
+      "reg_no": "50828108",
+      "app_date": null,
+      "owner": null,
+      "status": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "在呼叫、整体外观等方面不同，予以消费者的印象区别较大，未构成使用在同一种或类似商品上的近似商标。",
+      "notes": "编号、标识和结论见决定书第1页。决定书未列此引证的商品名称，已保存的官方档案中无该号码的详情。"
+    },
+    {
+      "text": "春光 CHUN GUANG及图",
+      "reg_no": "22521809",
+      "app_date": "2017-01-05",
+      "owner": "海南春光食品有限公司",
+      "status": null,
+      "goods": [
+        {
+          "name": "咖啡饮料",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "咖啡",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "茶饮料",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "糖",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "糖果",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "蜂蜜",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "以谷物为主的零食小吃",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "月饼",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "果馅饼",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "糕点",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "姜饼",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "饼干",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "年糕",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "粽子",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "方便米饭",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "面条",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "食用淀粉",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "冰淇淋",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "胡椒",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "辣椒（调味品）",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "调味品",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "曲种",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "食品用香料（含醚香料和香精油除外）",
+          "nice_class": 30,
+          "group": null
+        }
+      ],
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "在呼叫、整体外观等方面不同，予以消费者的印象区别较大，未构成使用在同一种或类似商品上的近似商标。",
+      "notes": "编号、标识和结论见决定书第1页。商品、日期及图样见 22521809.pdf 第1页，详情页显示为注册商标。"
+    },
+    {
+      "text": "春光牌",
+      "reg_no": "285793",
+      "app_date": null,
+      "owner": null,
+      "status": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "在呼叫、整体外观等方面不同，予以消费者的印象区别较大，未构成使用在同一种或类似商品上的近似商标。",
+      "notes": "编号、标识和结论见决定书第1页。决定书未列此引证的商品名称，已保存的官方档案中无该号码的详情。"
+    }
+  ],
+  "outcome": "初步审定",
+  "outcome_scope": null,
+  "notes": "原始材料在 用户本地存档 蜜雪冰城，原决定书见商标评审文书.pdf 第1页。申请商品见 84119684.pdf 第1页。原文只说第30类复审商品予以初步审定，未逐项列出复审范围。十一件引证均按原文录入。标识不近似为原文对十一件引证的合并结论，商品类似关系未单独认定。缺少详情的引证未填商品、申请日和权利人。含图形引证保留原文标识和结论，不能据此推断纯文字部分的单独结论。"
+}

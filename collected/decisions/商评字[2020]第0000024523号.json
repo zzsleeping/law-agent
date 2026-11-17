@@ -1,0 +1,260 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2020]第0000024523号",
+  "decision_date": "2020-02-24",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=3c535cbd24c2a11b",
+  "retrieved_at": "2026-11-17",
+  "applicant_mark": {
+    "text": "羊妈妈 东西南北 香yangmama及图",
+    "app_no": "31823700",
+    "app_date": null,
+    "priority_date": null,
+    "owner": "深圳市羊贝香餐饮策划管理有限公司",
+    "goods": [
+      {
+        "name": "加奶咖啡饮料",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "茶饮料",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "糖",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "羊羹",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "奶片（糖果）",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "蜂蜜",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "以谷物为主的零食小吃",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "月饼",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "盒饭",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "包子",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "谷类制品",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "酱油",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "调味品",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "调味酱汁",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "涮羊肉调料",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "冻酸奶（冰冻甜点）",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "除香精油外的食物用调味品",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "以米为主的零食小吃",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "面条",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "方便面",
+        "nice_class": 30,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "text": "香香XIANGXIANG",
+      "reg_no": "1643321",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "区别明显",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "高原老陈香 香及图",
+      "reg_no": "1953776",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "区别明显",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "香香Xiangxiang",
+      "reg_no": "3039465",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "区别明显",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "箅珍香 香及图",
+      "reg_no": "3248164",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "区别明显",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "羊妈妈",
+      "reg_no": "7726655",
+      "app_date": null,
+      "status": "撤销决定生效",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "予以撤销",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "SHEEPMOM",
+      "reg_no": "14666888",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": [
+        {
+          "name": "面条为主的预制食物",
+          "nice_class": 30,
+          "group": null
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在类似商品上的近似商标",
+      "notes": "商品或服务按原文可归属该引证的项目记录。中文文字未核实或原文为非中文标识，留档。"
+    },
+    {
+      "text": "南北东西",
+      "reg_no": "3440469",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "区别明显",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "南北东西",
+      "reg_no": "3440473",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "区别明显",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "南北东西",
+      "reg_no": "16827498",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "区别明显",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "东西南北中 ALL DIRECTIONS及图",
+      "reg_no": "20702988",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "区别明显",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "东西南北中ALL DIRECTIONS及图",
+      "reg_no": "20702990",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "区别明显",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    }
+  ],
+  "outcome": "部分驳回",
+  "outcome_scope": "面条、方便面驳回，其他所列十八项初步审定。",
+  "notes": "来源为标库网公开转载的中国商标网决定书原文，编号、日期、结论按页面记载。申请商品或服务按原文明确记载节选，类别按原文明示或依据列明项目对照官方区分表确定。类似群无逐项证据时留空。合并认定的引证保留合并结论，未逐项推定商品对应。申请日期原文未载时留空。纯英文引证六只留档，但其近似认定及与初步审定组商品不类似的事实保留。"
+}

@@ -1,0 +1,126 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2022]第0000188275号",
+  "decision_date": "2022-06-20",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=fd132250f101792e",
+  "retrieved_at": "2026-11-17",
+  "applicant_mark": {
+    "text": "臻高",
+    "app_no": "58648271",
+    "app_date": null,
+    "priority_date": null,
+    "owner": "内蒙古伊利实业集团股份有限公司",
+    "goods": [
+      {
+        "name": "酸奶",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "奶酪",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "奶昔",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "奶茶（以奶为主）",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "奶片（牛奶制品）",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "奶",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "奶制品",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "奶粉",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "奶饮料（以奶为主）",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "羊奶粉",
+        "nice_class": 29,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "text": "臻高",
+      "reg_no": "1675434",
+      "app_date": null,
+      "status": "期满未续展",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "期满未续展",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "臻高",
+      "reg_no": "20685142",
+      "app_date": null,
+      "status": "撤销复审决定生效",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "在撤销复审中被我局撤销其注册",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": "臻高",
+      "reg_no": "25727312",
+      "app_date": null,
+      "status": "有效在先注册，处于撤三程序中",
+      "owner": null,
+      "goods": [
+        {
+          "name": "婴儿食品",
+          "nice_class": 5,
+          "group": null
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "文字组成相同",
+      "notes": "商品或服务按原文可归属该引证的项目记录。婴儿食品的类别按商品项确认。"
+    },
+    {
+      "text": "臻高高",
+      "reg_no": "50250922",
+      "app_date": null,
+      "status": "驳回复审决定生效",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "驳回复审决定已发生法律效力",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    }
+  ],
+  "outcome": "部分驳回",
+  "outcome_scope": "酸奶、奶酪、奶昔、奶茶（以奶为主）、奶片（牛奶制品）初步审定。奶、奶制品、奶粉、奶饮料（以奶为主）、羊奶粉驳回。",
+  "notes": "来源为标库网公开转载的中国商标网决定书原文，编号、日期、结论按页面记载。申请商品或服务按原文明确记载节选，类别按原文明示或依据列明项目对照官方区分表确定。类似群无逐项证据时留空。合并认定的引证保留合并结论，未逐项推定商品对应。申请日期原文未载时留空。引证三在初步审定所列商品上被认定为不类似。原文同段一处概述称引证一至三，处置结论和权利判断明确引证一、二已失效。"
+}

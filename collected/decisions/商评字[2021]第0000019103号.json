@@ -1,0 +1,135 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2021]第0000019103号",
+  "decision_date": "2021-01-26",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=b647da919c864244",
+  "retrieved_at": "2026-11-17",
+  "applicant_mark": {
+    "text": "阿尔斯里AERSILI及图",
+    "app_no": "42448281",
+    "app_date": null,
+    "priority_date": null,
+    "owner": "自然人",
+    "goods": [
+      {
+        "name": "咖啡",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "茶",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "甜食（糖果）",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "冰淇淋",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "糕点",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "蜂蜜",
+        "nice_class": 30,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "text": "阿尔斯力AERSILI",
+      "reg_no": "11825060",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": [
+        {
+          "name": "糕点",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "蜂蜜",
+          "nice_class": 30,
+          "group": null
+        }
+      ],
+      "mark_similar": "近似",
+      "goods_similar": "类似",
+      "reasoning_excerpt": "已构成使用在同一种或类似商品上的近似商标",
+      "notes": "商品或服务按原文可归属该引证的项目记录。"
+    },
+    {
+      "text": "捞刀源及图",
+      "reg_no": "30460076",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "不构成近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    },
+    {
+      "text": null,
+      "reg_no": "33836369",
+      "app_date": null,
+      "status": "注册申请已被驳回",
+      "owner": null,
+      "goods": null,
+      "mark_similar": "未认定",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "引证商标三的注册申请已被驳回",
+      "notes": "文书未逐件载明具体商品或服务，留空。中文文字未核实或原文为非中文标识，留档。"
+    },
+    {
+      "text": null,
+      "reg_no": "11559679",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "不构成近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。中文文字未核实或原文为非中文标识，留档。"
+    },
+    {
+      "text": "XHLNY",
+      "reg_no": "27539242",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "不构成近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。原文「及图」为描述语，文字部分按原文记录，该引证留档。"
+    },
+    {
+      "text": "弘信绿通网及图",
+      "reg_no": "18612350",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "mark_similar": "不近似",
+      "goods_similar": "未认定",
+      "reasoning_excerpt": "不构成近似商标",
+      "notes": "文书未逐件载明具体商品或服务，留空。"
+    }
+  ],
+  "outcome": "部分驳回",
+  "outcome_scope": "咖啡、茶、甜食（糖果）、冰淇淋初步审定。其余复审商品驳回。",
+  "notes": "来源为标库网公开转载的中国商标网决定书原文，编号、日期、结论按页面记载。申请商品或服务按原文明确记载节选，类别按原文明示或依据列明项目对照官方区分表确定。类似群无逐项证据时留空。合并认定的引证保留合并结论，未逐项推定商品对应。申请日期原文未载时留空。引证一与准予初审组不类似。"
+}
