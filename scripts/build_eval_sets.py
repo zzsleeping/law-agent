@@ -6,7 +6,7 @@
 - frozen_pairs.jsonl  决定书商标对，冻结测试集，只用来报告指标，不看内容、不据此调参
 
 划分规则：按申请商标（一份文书）整体划分，同一份文书的商标对不会同时出现在两边；
-含“不近似”标签的文书和其余文书分别按申请号哈希排序后交替分配，保证两边都有反例。
+第一批文书已按“含不近似 / 其余”分层交替分配；之后新增的文书按申请号哈希固定分配，已划分的不再变动。
 只收“近似 / 不近似”，“未认定”不收。文字清洗：去掉“及图”，只保留汉字。
 
 用法：python scripts/build_eval_sets.py
@@ -97,12 +97,22 @@ def main() -> int:
         dropped_conflict += len(conflict)
         docs[i] = (app, [p for k, p in seen.items() if k not in conflict])
 
-    with_neg = sorted((d for d in docs if any(p["label"] == "不近似" for p in d[1])), key=lambda d: key(d[0]))
-    others = sorted((d for d in docs if d not in with_neg), key=lambda d: key(d[0]))
+    # 已经划分过的文书保持原来的归属（冻结集不能因为新增文书而变动）；新文书按申请号哈希固定分到一边
+    existing: dict[str, str] = {}
+    for name in ("tune", "frozen"):
+        path = OUT / f"{name}_pairs.jsonl"
+        if path.exists():
+            for line in path.read_text(encoding="utf-8").splitlines():
+                if line.strip():
+                    existing.setdefault(json.loads(line)["app_no"], name)
     tune, frozen = [], []
-    for group in (with_neg, others):
-        for j, (app, pairs) in enumerate(group):
-            (tune if j % 2 == 0 else frozen).extend(pairs)
+    new_docs = 0
+    for app, pairs in sorted(docs, key=lambda d: key(d[0])):
+        side = existing.get(app)
+        if side is None:
+            side = "frozen" if int(key(app), 16) % 2 else "tune"
+            new_docs += 1
+        (tune if side == "tune" else frozen).extend(pairs)
     for name, rows in (("tune", tune), ("frozen", frozen)):
         for n, r in enumerate(rows, 1):
             r["id"] = f"{name}-{n:03d}"
@@ -115,7 +125,7 @@ def main() -> int:
     print(f"指南例子：{len(GUIDE)} 对")
     print(f"调参集：{stat(tune)}")
     print(f"冻结测试集：{stat(frozen)}")
-    print(f"同一对标签冲突而丢弃：{dropped_conflict} 对")
+    print(f"同一对标签冲突而丢弃：{dropped_conflict} 对；本次新划分的文书 {new_docs} 份")
     return 0
 
 

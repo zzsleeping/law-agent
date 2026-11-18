@@ -57,7 +57,7 @@ class Settings:
         "exact": 1.0, "contains": 1.0, "glyph": 1.0, "pinyin": 1.0,
         "transpose": 1.0, "redup": 1.0, "pinyin_fuzzy": 0.5, "meaning": 0.5,
     })
-    top_k_per_channel: int = 30
+    top_k_per_channel: int = 1000    # 每路召回在归组前保留的件数；真实库上一个名称常有大量同组注册，太小会提前丢掉
     top_n_assess: int = 15           # 完全同名之外送评的名称组数（每组带出该名称在检索类别内的全部注册）
     max_rewrites: int = 2
 
