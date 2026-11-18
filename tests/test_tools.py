@@ -125,12 +125,3 @@ def test_traditional_normalized():
     assert phonetic.normalize("燕雲樓 及图") == "燕云楼"
     assert "exact" in {h.kind for h in search.compare("聚丰园", "聚豐園")}
     assert "transpose" in {h.kind for h in search.compare("云燕", "燕雲")}
-
-
-
-def test_related_cases():
-    from app.tools import cases
-
-    got = cases.related("喜茶", [])
-    assert all("喜茶" in c["reason"] for c in got)
-    assert cases.related("霁川", []) == []

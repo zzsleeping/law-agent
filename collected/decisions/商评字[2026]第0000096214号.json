@@ -1,0 +1,102 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2026]第0000096214号",
+  "decision_date": "2026-05-20",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=a1cd990572de7b8e",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "周天記武夷工夫",
+    "app_no": "87447671",
+    "app_date": "2025-09-04",
+    "priority_date": null,
+    "owner": "武夷山市冠茗茶业有限公司",
+    "goods": [
+      {
+        "name": "咖啡",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "以谷物为主的零食小吃",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "以谷物为主的零食小吃",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "茶",
+        "nice_class": 30,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "11881271",
+      "text": "武夷",
+      "app_date": "2012-12-12",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "构成近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "1623383",
+      "text": "武夷",
+      "app_date": "2000-06-05",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "构成近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "1947079",
+      "text": "武夷WUYI及图",
+      "app_date": "2000-09-18",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "构成近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "22027212",
+      "text": "武夷及图",
+      "app_date": "2016-11-24",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "构成近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "507057",
+      "text": "武夷WUYI及图",
+      "app_date": "1989-02-10",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "构成近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "notes": "申请类别、申请日及商品登记项节选据国家知识产权局商标开放基本信息按编号核对，评审范围以所引文书为准。"
+}

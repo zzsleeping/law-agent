@@ -40,6 +40,8 @@ def build_report(s: AgentState, flagged: bool) -> dict:
             "goods": "、".join(g.name for g in r.goods),
             "source": r.source, "source_ref": r.source_ref, "snapshot_date": str(r.snapshot_date),
             "is_simulated": r.is_simulated,
+            "decided_by": a.decided_by, "rule_risk_label": RISK_LABEL.get(a.rule_risk, ""), "guardrail": a.guardrail,
+            "disagree": a.disagree,
             "claims": [claim_view(c) for c in claims if c.mark_id == a.mark_id],
         }
 
@@ -56,11 +58,20 @@ def build_report(s: AgentState, flagged: bool) -> dict:
             "mark_sim": LEVEL_LABEL[rep.mark_sim], "channels": rep.channels,
             "explanation": rep.explanation, "explanation_source": rep.explanation_source,
             "flag_review": rep.flag_review, "hints": rep.hints, "is_simulated": r.is_simulated,
+            "decided_by": rep.decided_by, "rule_risk_label": RISK_LABEL.get(rep.rule_risk, ""),
+            "rule_mark_sim": LEVEL_LABEL.get(rep.rule_mark_sim, ""), "disagree": any(a.disagree for a in members),
+            "guardrails": [f"{a.mark_id}：{a.guardrail}" for a in members if a.guardrail],
             "claims": [claim_view(c) for c in claims if c.mark_id in ids],
             "marks": [item_view(a) for a in sorted(members, key=lambda a: grp.RISK_ORDER[a.risk])],
         }
 
     group_views = [group_view(ms) for ms in grp.by_group(selected).values()]
+    # 同类情形的参考判例：高 / 中风险组（驳回复审时全部引证），最多 llm_max_groups 组
+    review = s.get("scenario") == "rejection_review"
+    want = {g["group"] for g in group_views if review or g["risk"] in ("high", "medium")}
+    want = set(list(dict.fromkeys(g["group"] for g in group_views if g["group"] in want))[: settings.llm_max_groups])
+    for g in group_views:
+        g["pattern_cases"] = case_lib.for_pair(s["query_mark"], g["text"]) if g["group"] in want else None
     used = list(dict.fromkeys(b for c in claims for b in c.basis_ids))
     appendix = []
     for bid in used:
@@ -69,7 +80,8 @@ def build_report(s: AgentState, flagged: bool) -> dict:
             appendix.append({"id": bid, "citation": basis.citation(bid), "text": b["text"], "source": b["source"],
                              "effective_from": str(b["effective_from"]),
                              "effective_to": str(b["effective_to"] or "现行有效"),
-                             "version_note": basis.version_note(bid)})
+                             "version_note": basis.version_note(bid),
+                             "from_rag": s.get("basis_sources", {}).get(bid) == "rag"})
     overall = next((claim_view(c) for c in claims if c.claim_type == "overall"), None)
     return {
         "title": (f"驳回复审逐项比对报告：{s['query_mark']}" if s.get("scenario") == "rejection_review"
@@ -97,8 +109,9 @@ def build_report(s: AgentState, flagged: bool) -> dict:
         "exclusions": [{"mark_id": e.mark_id, "text": e.text, "risk_label": RISK_LABEL.get(e.risk, e.risk),
                         "at": e.at.strftime("%Y-%m-%d %H:%M:%S"), "note": e.note} for e in s.get("exclusions", [])],
         "basis_appendix": appendix,
-        "cases": case_lib.related(s["query_mark"], [g["text"] for g in group_views]),
         "timings": s.get("timings", {}),
+        "search_variants": s.get("search_variants", []),
+        "agent_steps": [t for t in s.get("trace", []) if t.get("node") in ("plan_search", "judge")],
         "disclaimer": DISCLAIMER,
     }
 
@@ -149,6 +162,10 @@ def export_docx(report: dict, path) -> None:
         if c["basis"]:
             doc.add_paragraph("依据：" + "；".join(b["citation"] for b in c["basis"]))
 
+    if report.get("search_variants"):
+        doc.add_paragraph("检索规划（大模型）：除原文外还检索了 " + "；".join(
+            f"“{q['text']}”（{q['why']}，命中 {q.get('hits', 0)} 件）" for q in report["search_variants"]))
+
     doc.add_heading("二、总结论", level=1)
     if report["overall"]:
         add_claim(report["overall"])
@@ -164,6 +181,18 @@ def export_docx(report: dict, path) -> None:
                                      m["source_ref"] or "—"]):
                 cell.text = str(v)
 
+    def add_cases(pc: dict | None) -> None:
+        """同类情形的参考判例（仅供参考，不作为依据）。"""
+        if not pc or not (pc["similar"] or pc["dissimilar"] or pc["note"]):
+            return
+        doc.add_paragraph().add_run(f"同类情形参考判例（{pc['pattern']}，仅供参考，不作为依据）").bold = True
+        for c in pc["similar"] + pc["dissimilar"]:
+            doc.add_paragraph(f"· 官方认定{c['label']}：“{c['applicant']}”与“{c['cited']}”"
+                              + (f"——{c['excerpt']}" if c["excerpt"] else "")
+                              + f"（{c['case_id']}，{c['decision_date']}，{c['source_url']}）")
+        if pc["note"]:
+            doc.add_paragraph(pc["note"] + "。")
+
     def add_items(title: str, items: list[dict], with_claims: bool = True) -> None:
         doc.add_heading(title, level=1)
         if not items:
@@ -173,7 +202,11 @@ def export_docx(report: dict, path) -> None:
             tag = "【示例数据】" if it["is_simulated"] else ""
             count = f"，同名注册 {it['count']} 件" if it["count"] > 1 else f"（{it['mark_id']}）"
             doc.add_heading(f"{tag}{it['text']}{count} — {it['risk_label']}", level=2)
-            doc.add_paragraph(f"标识相似程度：{it['mark_sim']}。")
+            who = "大模型判定" if it["decided_by"] == "llm" else "规则引擎（未经大模型判定）"
+            doc.add_paragraph(f"标识相似程度：{it['mark_sim']}（{who}；规则参考：{it['rule_mark_sim']}）。"
+                              + ("模型判断与规则不一致，建议人工复核。" if it["disagree"] else ""))
+            for gnote in it["guardrails"]:
+                doc.add_paragraph(gnote)
             if with_claims:
                 for c in it["claims"]:
                     add_claim(c)
@@ -182,6 +215,7 @@ def export_docx(report: dict, path) -> None:
             if it["flag_review"]:
                 red("大模型建议人工复核该等级。")
             marks_table(it["marks"])
+            add_cases(it.get("pattern_cases"))
             for h in it["hints"]:
                 doc.add_paragraph(f"提示（历史交叉检索，不参与定级）：{h}")
 
@@ -215,20 +249,9 @@ def export_docx(report: dict, path) -> None:
     else:
         doc.add_paragraph("无。")
 
-    doc.add_heading("附录二、相关典型案例（仅供参考，不作为依据）", level=1)
-    if report.get("cases"):
-        for c in report["cases"]:
-            doc.add_heading(f"{c['case_id']}（{c['decision_date']}）", level=2)
-            doc.add_paragraph(f"申请商标：{c['applicant_mark']}；结果：{c['outcome']}；相关原因：{c['reason']}。")
-            for f in c["findings"]:
-                doc.add_paragraph(f"· {f}")
-            doc.add_paragraph(f"来源：{c['source_url']}")
-    else:
-        doc.add_paragraph("案例库中没有文字相近的案例。")
-
-    doc.add_heading("附录三、依据原文与来源", level=1)
+    doc.add_heading("附录二、依据原文与来源", level=1)
     for b in report["basis_appendix"]:
-        doc.add_heading(b["citation"], level=2)
+        doc.add_heading(b["citation"] + ("（RAG 检索补充）" if b.get("from_rag") else ""), level=2)
         doc.add_paragraph(b["text"])
         doc.add_paragraph(f"依据 ID：{b['id']}；施行：{b['effective_from']} 至 {b['effective_to']}；来源：{b['source']}")
         if b["version_note"]:

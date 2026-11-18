@@ -1,0 +1,63 @@
+{
+  "doc_type": "无效宣告请求裁定书",
+  "doc_no": "商评字[2022]第0000256653号",
+  "decision_date": "2022-08-09",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=fbc511a139fa697e",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "曹东米记",
+    "app_no": "40882952",
+    "app_date": "2019-09-06",
+    "priority_date": null,
+    "owner": "自然人",
+    "goods": [
+      {
+        "name": "肉",
+        "nice_class": 29,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "1734632",
+      "text": "米家MIJIA",
+      "app_date": "2001-03-02",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "使用在同一种或类似商品上的近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "10551737",
+      "text": "米家",
+      "app_date": "2012-02-29",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "8460528",
+      "text": "米家",
+      "app_date": "2010-07-07",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "部分宣告无效",
+  "outcome_scope": "争议商标在“加工过的坚果；豆腐；食用油脂”商品上予以维持，在其余商品上予以无效宣告。",
+  "notes": "申请类别及申请日据国家知识产权局商标开放基本信息按编号核对，商品照录文书所列范围。 未认定的项目保留引证编号，依据各引证在文书中的认定范围。"
+}

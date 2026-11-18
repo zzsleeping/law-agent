@@ -1,0 +1,150 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2020]第0000267403号",
+  "decision_date": "2020-10-26",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=92ab643f5e150a4f",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "ING幸福里",
+    "app_no": "40245216",
+    "app_date": "2019-08-09",
+    "priority_date": null,
+    "owner": "华夏幸福基业控股股份公司",
+    "goods": [
+      {
+        "name": "饭店",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "养老院",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "日间托儿所（看孩子）",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "动物寄养",
+        "nice_class": 43,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "4254758",
+      "text": "幸福里",
+      "app_date": "2004-09-06",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫上相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "12456294",
+      "text": "幸福里 WELL-BEING",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫上相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "14618921",
+      "text": "幸福里",
+      "app_date": "2014-06-20",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫上相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "20823597",
+      "text": "幸福里",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫上相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "20873446",
+      "text": "幸福里",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫上相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "13897937",
+      "text": "幸福礼",
+      "app_date": "2014-01-13",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫上相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "15489432",
+      "text": "幸福礼",
+      "app_date": "2014-10-11",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫上相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "7248052",
+      "text": "现在进行食 ING",
+      "app_date": "2009-03-12",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "整体九、十、十一尚可区分",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "37806950",
+      "text": "盛世川王幸福里",
+      "app_date": "2019-04-26",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "notes": "申请类别、申请日及商品登记项节选据国家知识产权局商标开放基本信息按编号核对，评审范围以所引文书为准。 引证已节选。 未认定的项目保留引证编号，依据各引证在文书中的认定范围。"
+}

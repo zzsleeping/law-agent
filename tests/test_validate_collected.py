@@ -48,7 +48,7 @@ def test_good_decisions_pass(tmp_path):
     write(tmp_path, [good_doc("A-1"), good_doc("A-2", "星海", "不近似")])
     r = run(tmp_path)
     assert r.errors == []
-    assert any("目标 30–50 份" in w for w in r.warnings)
+    assert any("样本偏少" in w for w in r.warnings)
 
 
 def test_common_mistakes_are_caught(tmp_path):
@@ -114,3 +114,20 @@ def test_references_without_verified_chinese_text_are_kept_as_context(tmp_path, 
     doc["cited_marks"] = [numeric, unknown]
     write(tmp_path, [doc])
     assert any("没有可核实的中文文字引证商标" in err for err in run(tmp_path).errors)
+
+
+
+def test_outcomes_by_doc_type(tmp_path):
+    """无效宣告、不予注册复审有各自的结果取值；跨类型的取值报错。"""
+    inv = good_doc("F-1")
+    inv.update(doc_type="无效宣告请求裁定书", outcome="宣告无效")
+    keep = good_doc("F-2", "星海", "不近似")
+    keep.update(doc_type="无效宣告请求裁定书", outcome="维持注册")
+    opp = good_doc("F-3")
+    opp.update(doc_type="不予注册复审决定书", outcome="部分不予注册", outcome_scope="茶饮料不予注册")
+    write(tmp_path, [inv, keep, opp])
+    assert run(tmp_path).errors == []
+    bad = good_doc("F-4")
+    bad.update(doc_type="无效宣告请求裁定书", outcome="驳回")
+    write(tmp_path, [bad])
+    assert any("无效宣告请求裁定书 的 outcome 只能是" in e for e in run(tmp_path).errors)

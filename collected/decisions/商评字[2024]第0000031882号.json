@@ -1,0 +1,60 @@
+{
+  "doc_type": "不予注册复审决定书",
+  "doc_no": "商评字[2024]第0000031882号",
+  "decision_date": "2024-01-30",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=5cfe762672ee52b1",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "肥肥海中鲜",
+    "app_no": "57910337",
+    "app_date": "2021-07-22",
+    "priority_date": null,
+    "owner": "安徽省趣撸虾餐饮管理有限公司",
+    "goods": [
+      {
+        "name": "住所代理（旅馆、供膳寄宿处）",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "茶馆",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "备办宴席",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "饭店",
+        "nice_class": 43,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "47267976",
+      "text": "江湖肥肥",
+      "app_date": "2020-06-15",
+      "status": null,
+      "owner": null,
+      "goods": [
+        {
+          "name": "餐厅",
+          "nice_class": 43,
+          "group": null
+        }
+      ],
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫上相近",
+      "notes": null
+    }
+  ],
+  "outcome": "不予注册",
+  "outcome_scope": null,
+  "notes": "申请类别、申请日及商品登记项节选据国家知识产权局商标开放基本信息按编号核对，评审范围以所引文书为准。"
+}

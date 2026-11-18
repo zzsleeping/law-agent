@@ -1,0 +1,117 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2026]第0000092212号",
+  "decision_date": "2026-05-12",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=73e208afa9d3cc8f",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "皖鹰及图",
+    "app_no": "87285339",
+    "app_date": "2025-08-27",
+    "priority_date": null,
+    "owner": "宿州市星辉面粉有限公司",
+    "goods": null
+  },
+  "cited_marks": [
+    {
+      "reg_no": "86604614",
+      "text": null,
+      "app_date": "2025-07-20",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "文字构成及整体视觉效果等方面尚可区分",
+      "notes": "未取得可逐项对应的引证商品明细。未取得可用于中文文字比较的标识。"
+    },
+    {
+      "reg_no": "6299377",
+      "text": null,
+      "app_date": "2007-09-27",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "文字构成及整体视觉效果等方面尚可区分",
+      "notes": "未取得可逐项对应的引证商品明细。未取得可用于中文文字比较的标识。"
+    },
+    {
+      "reg_no": "9550206",
+      "text": "MAXX LIFE",
+      "app_date": "2011-06-02",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "文字构成及整体视觉效果等方面尚可区分",
+      "notes": "未取得可逐项对应的引证商品明细。商标文字据商标开放基本信息按引证编号核对。未取得可用于中文文字比较的标识。"
+    },
+    {
+      "reg_no": "3999639",
+      "text": "SHALILAI",
+      "app_date": "2004-04-06",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "文字构成及整体视觉效果等方面尚可区分",
+      "notes": "未取得可逐项对应的引证商品明细。商标文字据商标开放基本信息按引证编号核对。未取得可用于中文文字比较的标识。"
+    },
+    {
+      "reg_no": "17054468",
+      "text": null,
+      "app_date": "2015-05-27",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "文字构成及整体视觉效果等方面尚可区分",
+      "notes": "未取得可逐项对应的引证商品明细。未取得可用于中文文字比较的标识。"
+    },
+    {
+      "reg_no": "18253263",
+      "text": "红隼洋 RED SUN&Y",
+      "app_date": "2015-11-05",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "文字构成及整体视觉效果等方面尚可区分",
+      "notes": "未取得可逐项对应的引证商品明细。商标文字据商标开放基本信息按引证编号核对。"
+    },
+    {
+      "reg_no": "12372400",
+      "text": null,
+      "app_date": "2013-04-03",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "文字构成及整体视觉效果等方面尚可区分",
+      "notes": "未取得可逐项对应的引证商品明细。未取得可用于中文文字比较的标识。"
+    },
+    {
+      "reg_no": "13207647",
+      "text": "弘英",
+      "app_date": "2013-09-09",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。商标文字据商标开放基本信息按引证编号核对。"
+    }
+  ],
+  "outcome": "初步审定",
+  "outcome_scope": null,
+  "notes": "申请类别、申请日及商品登记项节选据国家知识产权局商标开放基本信息按编号核对，评审范围以所引文书为准。 未查到可逐项对应的申请商品名称。 部分引证无法核实标识或类别，编号为51534848、6299496。 未认定的项目保留引证编号，依据各引证在文书中的认定范围。"
+}

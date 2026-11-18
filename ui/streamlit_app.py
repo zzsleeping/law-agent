@@ -29,9 +29,10 @@ CHANNEL_LABEL = {"exact": "完全相同", "contains": "包含", "glyph": "字形
                  "pinyin_fuzzy": "模糊音", "meaning": "含义", "transpose": "字序颠倒", "redup": "叠字"}
 RECALL_LABEL = {"recall_exact": "精确文字", "recall_glyph": "字形", "recall_pinyin": "读音",
                 "recall_variant": "字序与叠字", "recall_meaning": "含义"}
-NODE_LABEL = {"parse": "要素解析", "confirm_goods": "确认商品项", **RECALL_LABEL, "merge": "排名融合",
-              "assess": "规则定级", "explain": "模型解释", "confirm_candidates": "确认候选",
-              "compose": "生成结论", "verify": "引用校验", "render": "渲染报告", "flag_output": "标红输出"}
+NODE_LABEL = {"parse": "要素解析", "confirm_goods": "确认商品项", "plan_search": "检索规划（大模型）",
+              **RECALL_LABEL, "merge": "按名称归组排序", "load_citations": "载入引证",
+              "assess": "规则引擎（事实与参考等级）", "judge": "大模型判定（规则护栏）", "explain": "模型解释", "confirm_candidates": "确认候选",
+              "compose": "生成结论（RAG 检索法条）", "verify": "引用校验", "render": "渲染报告", "flag_output": "标红输出"}
 RISK_ORDER = ["high", "medium", "needs_check", "low"]
 EXAMPLES = [("茗悦", "茶饮料、奶茶"), ("沐茶", "茶饮料、奶茶"), ("云雾知春", "绿茶"),
             ("海星", "果汁"), ("南柠", "咖啡馆"), ("霁川", "茶饮料")]
@@ -52,12 +53,22 @@ def trace_text(t: dict) -> str:
         c = t.get("counts", {})
         return (f"高 {c.get('high', 0)} · 中 {c.get('medium', 0)} · 待核实 {c.get('needs_check', 0)} · 低 {c.get('low', 0)}"
                 f" · {t.get('rule_stage_seconds', '—')} 秒")
+    if n == "plan_search":
+        if not t.get("queries"):
+            return "未使用大模型，只检索原文"
+        return f"第 {t.get('round')} 轮：" + "；".join(t["queries"])
+    if n == "judge":
+        return (f"判定 {t.get('judged', 0)} 组（上限外 {t.get('capped', 0)} 组沿用规则）；"
+                f"护栏修正 {t.get('guardrail_fixed', 0)} 件；与规则不一致 {t.get('disagree', 0)} 件 · {t.get('seconds', 0)} 秒")
+    if n == "load_citations":
+        return f"找到 {t.get('found', 0)} 个引证，缺失 {t.get('missing', 0)} 个"
     if n == "explain":
         return f"模型解释 {t.get('llm_ok', 0)} 条，降级 {t.get('fallback', 0)} 条 · {t.get('seconds', 0)} 秒"
     if n == "confirm_candidates":
         return f"保留 {t.get('kept', 0)} 个，剔除 {t.get('excluded', 0)} 个"
     if n == "compose":
-        return f"{t.get('claims', 0)} 条结论 · {t.get('seconds', 0)} 秒" + ("" if t.get("llm") else " · 模板生成")
+        return (f"{t.get('claims', 0)} 条结论；RAG 检索补充依据 {t.get('rag_basis', 0)} 条 · {t.get('seconds', 0)} 秒"
+                + ("" if t.get("llm") else " · 模板生成"))
     if n == "verify":
         return "通过" if not t.get("errors") else f"{t['errors']} 个错误：" + "；".join(t.get("detail", [])[:2])
     if n == "render":
@@ -235,6 +246,9 @@ elif ss.stage == "candidates":
     assessments = {a.mark_id: a for a in v.get("assessments", [])}
     order = v.get("display_order", [])
     tm = v.get("timings", {})
+    if v.get("search_variants"):
+        html(style.note("<b>检索规划（大模型）</b>　除原文外还检索了：" + "；".join(
+            f"“{esc(q['text'])}”（{esc(q['why'])}，命中 {q.get('hits', 0)} 件）" for q in v["search_variants"]), "info"))
     if v.get("scenario") == "rejection_review":
         html(style.section("引证商标", f"录入 {len(v.get('user_citations', []))} 个编号，库内找到 "
                                      f"{len(v.get('display_groups', []))} 个，共 {len(order)} 件档案"))
@@ -279,13 +293,19 @@ elif ss.stage == "candidates":
                 f'{style.badge(rep_a.risk, RISK_LABEL[rep_a.risk])}'
                 + (f'<span class="tag">同名 {len(members)} 件</span>' if len(members) > 1 else f'<span class="id">{esc(rep_a.mark_id)}</span>')
                 + ('<span class="tag">示例数据</span>' if r.is_simulated else "")
-                + ('<span class="tag warn">模型建议复核</span>' if rep_a.flag_review else "") + "</div>"
+                + ('<span class="tag">大模型判定</span>' if rep_a.decided_by == "llm" else '<span class="tag">规则判定</span>')
+                + (f'<span class="tag warn">与规则不一致（规则：{RISK_LABEL.get(rep_a.rule_risk, "")}）</span>'
+                   if any(a.disagree for a in members) else "")
+                + ('<span class="tag warn">护栏修正</span>' if any(a.guardrail for a in members) else "") + "</div>"
                 f'<div>{chips}</div><div class="cand-ev">{esc(evidence)}</div>'
                 f'<div class="cand-meta">{esc(mix)}</div>', unsafe_allow_html=True)
             c2.toggle("保留", value=True, key=f"keep_g_{g}")
-            with c1.expander("解释与各件注册"):
-                st.markdown(("**大模型解释**　" if rep_a.explanation_source == "llm" else "**规则生成的理由**　")
+            with c1.expander("判定理由、参考依据与各件注册"):
+                st.markdown(("**大模型判定理由**　" if rep_a.explanation_source == "llm" else "**规则生成的理由**　")
                             + rep_a.explanation)
+                for a in members:
+                    if a.guardrail:
+                        st.caption(f"{a.mark_id}　{a.guardrail}")
                 for a in sorted(members, key=lambda x: grp.RISK_ORDER[x.risk]):
                     ra = v["records"][a.mark_id]
                     html(f'<div class="cand-meta" style="margin-top:.5rem">{style.badge(a.risk, RISK_LABEL[a.risk])}　'
@@ -324,6 +344,27 @@ elif ss.stage == "report":
     html(style.kpis([(len(rep[k]), RISK_LABEL[k], "名称组", style.RISK_CLASS[k]) for k in RISK_ORDER]
                     + [(len(rep["exclusions"]), "用户剔除", "件", "")]))
 
+    def pattern_cases(pc: dict | None) -> None:
+        """同类情形的参考判例：官方在同一种比对情形下判近似和判不近似的例子。"""
+        if not pc or not (pc["similar"] or pc["dissimilar"] or pc["note"]):
+            return
+        n = len(pc["similar"]) + len(pc["dissimilar"])
+        if not n:                                 # 没有可列的判例时只给一行说明，不放空的折叠框
+            st.caption(f"同类情形参考判例：{pc['note']}。")
+            return
+        with st.expander(f"同类情形参考判例：{pc['pattern']}（{n} 件，仅供参考）"):
+            for title, items in (("官方认定近似", pc["similar"]), ("官方认定不近似", pc["dissimilar"])):
+                if not items:
+                    continue
+                st.markdown(f"**{title}**")
+                for c in items:
+                    st.markdown(f"“{esc(c['applicant'])}” 与 “{esc(c['cited'])}”"
+                                + (f"　—　{esc(c['excerpt'])}" if c["excerpt"] else ""))
+                    st.caption(f"[{c['case_id']}]({c['source_url']}) · {c['doc_type']} · {c['decision_date']}")
+            if pc["note"]:
+                st.caption(pc["note"] + "。")
+            st.caption("判例只用来看官方在同类情形下如何区分，不作为依据，也不影响本报告的风险等级。")
+
     def claim_block(c: dict, cls: str) -> None:
         html(style.claim(c["conclusion"], c["facts"], [b["citation"] for b in c["basis"]], cls,
                          template=c["source"] == "code" and c["type"] != "data_gap"))
@@ -345,7 +386,11 @@ elif ss.stage == "report":
                      + (f'<span class="tag">同名 {it["count"]} 件</span>' if it["count"] > 1
                         else f'<span class="id">{esc(it["mark_id"])}</span>')
                      + ('<span class="tag">示例数据</span>' if it["is_simulated"] else "")
-                     + ('<span class="tag warn">模型建议复核</span>' if it["flag_review"] else "") + "</div>")
+                     + ('<span class="tag">大模型判定</span>' if it["decided_by"] == "llm" else '<span class="tag">规则判定</span>')
+                     + (f'<span class="tag warn">与规则不一致（规则：{esc(it["rule_risk_label"])}）</span>' if it["disagree"] else "")
+                     + "</div>")
+                for gnote in it["guardrails"]:
+                    st.caption(gnote)
                 for c in it["claims"]:
                     claim_block(c, "check" if c["type"] == "data_gap" else style.RISK_CLASS[key])
                 if it["explanation"]:
@@ -355,6 +400,7 @@ elif ss.stage == "report":
                                                 "商品关系": m["goods_rel"], "申请日": m["app_date"],
                                                 "原始记录": m["source_ref"]} for m in it["marks"]]),
                                  hide_index=True, use_container_width=True)
+                pattern_cases(it.get("pattern_cases"))
 
     if rep["low"]:
         html(style.section("低风险候选", f"{len(rep['low'])} 个"))
@@ -362,6 +408,43 @@ elif ss.stage == "report":
                                     "编号": "、".join(m["mark_id"] for m in i["marks"][:6]) + ("等" if i["count"] > 6 else ""),
                                     "说明": i["explanation"]} for i in rep["low"]]),
                      hide_index=True, use_container_width=True)
+    # ---- 法律问答（RAG）：只提供信息，不改变上面的风险结论 ----
+    html(style.section("法律问答", "检索法条与审查指南回答追问，每个法律判断附出处；不改变风险结论"))
+    with st.container(border=True):
+        ss.setdefault("qa", [])
+        first = next((it["text"] for k in ("high", "medium") for it in rep[k]), None)
+        samples = ([f"为什么“{first}”会有风险？"] if first else []) + \
+                  ["如果申请被驳回，可以怎么办？期限是多久？", "在先商标已经注销，多久以后我才能注册？"]
+        def _pick() -> None:                      # 点选示例问题后清空选择，便于再次点选
+            ss.qa_pending, ss.qa_pill = ss.qa_pill, None
+        st.pills("示例问题", samples, key="qa_pill", on_change=_pick, label_visibility="collapsed")
+        picked = ss.pop("qa_pending", None)
+        with st.form("qa_form", clear_on_submit=True, border=False):
+            fc = st.columns([5, 1.2])
+            typed = fc[0].text_input("问题", placeholder="例如：同一天申请的近似商标怎么处理？", label_visibility="collapsed")
+            sent = fc[1].form_submit_button("提问", type="primary", use_container_width=True)
+        question = picked or (typed if sent and typed.strip() else None)
+        if question:
+            from app import qa
+            with st.spinner("检索条文并生成回答…"):
+                ss.qa.append({"question": question, **qa.answer(question, rep, ss.qa)})
+        for item in reversed(ss.qa):
+            st.markdown(f"**问：{item['question']}**")
+            if item.get("resolved") and item["resolved"] != item["question"]:
+                st.caption(f"理解为：{item['resolved']}")
+            st.markdown(item["answer"])
+            for w in item["warnings"]:
+                st.caption(f"⚠ {w}")
+            st.caption("　→　".join(f"{x['step']}：{x['detail']}" for x in item.get("steps", [])))
+            if item["sources"]:
+                with st.expander(f"引用的条文（{len(item['sources'])}）"):
+                    for src in item["sources"]:
+                        st.markdown(f"**{src['citation']}**")
+                        st.caption(src["text"])
+            st.divider()
+        if ss.qa:
+            st.caption("回答由大模型根据检索到的条文生成，仅供参考，不构成法律意见。")
+
     html(style.section("附录", "用户剔除的候选、依据原文、执行过程"))
     with st.expander(f"用户剔除的候选（{len(rep['exclusions'])}）", expanded=bool(rep["exclusions"])):
         if rep["exclusions"]:
@@ -370,19 +453,9 @@ elif ss.stage == "report":
                          hide_index=True, use_container_width=True)
         else:
             st.caption("没有剔除任何候选。")
-    with st.expander(f"相关典型案例（{len(rep.get('cases', []))}，仅供参考，不作为依据）"):
-        if not rep.get("cases"):
-            st.caption("案例库中没有文字相近的案例。")
-        for c in rep.get("cases", []):
-            st.markdown(f"**{c['case_id']}**（{c['decision_date']}）　申请商标“{c['applicant_mark']}”，结果：{c['outcome']}")
-            st.caption(c["reason"])
-            for f in c["findings"]:
-                st.write("· " + f)
-            st.caption(f"来源：{c['source_url']}")
-            st.divider()
     with st.expander(f"依据原文与来源（{len(rep['basis_appendix'])}）"):
         for b in rep["basis_appendix"]:
-            st.markdown(f"**{b['citation']}**")
+            st.markdown(f"**{b['citation']}**" + ("　`RAG 检索补充`" if b.get("from_rag") else ""))
             st.write(b["text"])
             st.caption(f"依据 ID {b['id']} · 施行 {b['effective_from']} 至 {b['effective_to']} · 来源：{b['source']}"
                        + (f"\n\n版本对应：{b['version_note']}" if b["version_note"] else ""))

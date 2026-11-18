@@ -1,0 +1,54 @@
+{
+  "doc_type": "无效宣告请求裁定书",
+  "doc_no": "商评字[2022]第0000305037号",
+  "decision_date": "2022-09-21",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=39888d2b87524f3e",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "丸美之恋 丸美恋及图",
+    "app_no": "40182678",
+    "app_date": "2019-08-07",
+    "priority_date": null,
+    "owner": "自然人",
+    "goods": [
+      {
+        "name": "方便面",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "八宝饭",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "茶",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "甜食",
+        "nice_class": 30,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "1564318",
+      "text": "丸美MARUBI",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫及整体含义上相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "宣告无效",
+  "outcome_scope": null,
+  "notes": "申请类别、申请日及商品登记项节选据国家知识产权局商标开放基本信息按编号核对，评审范围以所引文书为准。"
+}

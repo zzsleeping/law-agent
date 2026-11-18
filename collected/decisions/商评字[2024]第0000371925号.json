@@ -1,0 +1,126 @@
+{
+  "doc_type": "不予注册复审决定书",
+  "doc_no": "商评字[2024]第0000371925号",
+  "decision_date": "2024-12-21",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=97381ee6085a2ef8",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "三苏东坡",
+    "app_no": "66610644",
+    "app_date": "2022-08-15",
+    "priority_date": null,
+    "owner": "四川九升食品有限公司",
+    "goods": [
+      {
+        "name": "肉",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "豆腐制品",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "香肠",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "腊肉",
+        "nice_class": 29,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "10823929",
+      "text": "东坡DONG PO",
+      "app_date": "2012-04-25",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "构成近似标识",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "14195967",
+      "text": "东坡味道DONGPO TASTES",
+      "app_date": "2014-03-18",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "构成近似标识",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "15659046",
+      "text": "东坡扣肉",
+      "app_date": "2014-11-06",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "构成近似标识",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "4152806",
+      "text": "东坡眉州",
+      "app_date": "2004-07-05",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "构成近似标识",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "14195961",
+      "text": "眉州东坡味道MEIZHOU DONGPO TASTES",
+      "app_date": "2014-03-18",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "构成近似标识",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "48098020",
+      "text": "眉州东坡",
+      "app_date": "2020-07-15",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "构成近似标识",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "1671730",
+      "text": "眉州东坡酒楼",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "不类似",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": "不属于相同或类似商品",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "不予注册",
+  "outcome_scope": null,
+  "notes": "申请类别、申请日及商品登记项节选据国家知识产权局商标开放基本信息按编号核对，评审范围以所引文书为准。"
+}

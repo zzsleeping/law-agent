@@ -1,0 +1,114 @@
+{
+  "doc_type": "无效宣告请求裁定书",
+  "doc_no": "商评字[2025]第0000150359号",
+  "decision_date": "2025-05-23",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=19e34971f9400762",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "沂蒙同福",
+    "app_no": "48289062",
+    "app_date": "2020-07-22",
+    "priority_date": null,
+    "owner": "自然人",
+    "goods": [
+      {
+        "name": "大豆为主的饮料（非奶替代品）",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "苏打水",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "果汁",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "植物饮料",
+        "nice_class": 32,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "826907",
+      "text": "同福TONGFU及图",
+      "app_date": "1994-07-28",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "不类似",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": "不属于相同或类似商品",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "4883866",
+      "text": "同福",
+      "app_date": "2005-09-08",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "在文字构成、呼叫上相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "8830262",
+      "text": "同福食品及图",
+      "app_date": "2010-11-10",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "在文字构成、呼叫上相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "8830295",
+      "text": "同福金核",
+      "app_date": "2010-11-10",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "在文字构成、呼叫上相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "30208617",
+      "text": "同福集团TONGFU GROUP及图",
+      "app_date": "2018-04-12",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "在文字构成、呼叫上相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "41552361",
+      "text": "同福 同福饮品",
+      "app_date": "2019-10-11",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "在文字构成、呼叫上相近",
+      "notes": "未取得可逐项对应的引证商品明细。商标文字据商标开放基本信息按引证编号核对。"
+    }
+  ],
+  "outcome": "宣告无效",
+  "outcome_scope": null,
+  "notes": "申请类别、申请日及商品登记项节选据国家知识产权局商标开放基本信息按编号核对，评审范围以所引文书为准。 逐项核对文书中引证编号与审理机关的认定段落。"
+}

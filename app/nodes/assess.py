@@ -62,6 +62,7 @@ def assess(s: AgentState) -> dict:
             facts[fid] = facts[fid].model_copy(update={"group": group})
         out.append(Assessment(
             mark_id=mark_id, text=rec.text, group=group, mark_sim=mark_sim, goods_rel=goods_rel, prior=prior, risk=risk,
+            rule_risk=risk, rule_mark_sim=mark_sim,
             channels=list(dict.fromkeys(h.channel for h in hits)), fact_ids=fact_ids, basis_ids=basis_ids,
             hints=hints_goods, explanation=explanation))
 

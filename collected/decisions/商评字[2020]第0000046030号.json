@@ -1,0 +1,138 @@
+{
+  "doc_type": "不予注册复审决定书",
+  "doc_no": "商评字[2020]第0000046030号",
+  "decision_date": "2020-03-18",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=363372e6eebf6643",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "澳利澳",
+    "app_no": "22218103",
+    "app_date": "2016-12-12",
+    "priority_date": null,
+    "owner": "自然人",
+    "goods": [
+      {
+        "name": "啤酒",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "蔬菜汁（饮料）",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "水（饮料）",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "苏打水",
+        "nice_class": 32,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "10392019",
+      "text": "奥利奥",
+      "app_date": "2012-01-05",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "使用在同一种或类似商品上的近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "14408798A",
+      "text": "奥利奥",
+      "app_date": "2014-04-18",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "使用在同一种或类似商品上的近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "971457",
+      "text": "奥利奥",
+      "app_date": "1995-08-07",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "17504526",
+      "text": "奥利奥",
+      "app_date": "2015-07-24",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "17504527",
+      "text": "奥利奥",
+      "app_date": "2015-07-24",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "19279161",
+      "text": "奥利奥",
+      "app_date": "2016-03-11",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "19279159",
+      "text": "奥利奥",
+      "app_date": "2016-03-11",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "7469270",
+      "text": "澳利澳",
+      "app_date": "2009-06-15",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "不予注册",
+  "outcome_scope": null,
+  "notes": "申请类别、申请日及商品登记项节选据国家知识产权局商标开放基本信息按编号核对，评审范围以所引文书为准。 引证已节选。 未认定的项目保留引证编号，依据各引证在文书中的认定范围。"
+}

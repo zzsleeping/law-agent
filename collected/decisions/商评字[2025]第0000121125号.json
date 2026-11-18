@@ -1,0 +1,180 @@
+{
+  "doc_type": "无效宣告请求裁定书",
+  "doc_no": "商评字[2025]第0000121125号",
+  "decision_date": "2025-04-28",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=e0dfc5f6d19bf6b2",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "圆绿",
+    "app_no": "56657956",
+    "app_date": "2021-06-04",
+    "priority_date": null,
+    "owner": "江苏圆绿食品有限公司",
+    "goods": [
+      {
+        "name": "糕点",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "以谷物为主的零食小吃",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "包子",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "饺子",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "谷类制品",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "面粉",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "米",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "面条",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "粉丝（条）",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "调味品",
+        "nice_class": 30,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "9587586",
+      "text": "圆绿",
+      "app_date": "2011-06-13",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫及整体认读等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。商标文字据商标开放基本信息按引证编号核对。"
+    },
+    {
+      "reg_no": "12631656",
+      "text": "圆绿",
+      "app_date": "2013-05-22",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。商标文字据商标开放基本信息按引证编号核对。"
+    },
+    {
+      "reg_no": "5215662",
+      "text": "圆绿",
+      "app_date": "2006-03-16",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。商标文字据商标开放基本信息按引证编号核对。"
+    },
+    {
+      "reg_no": "12631537",
+      "text": "圆绿",
+      "app_date": "2013-05-22",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。商标文字据商标开放基本信息按引证编号核对。"
+    },
+    {
+      "reg_no": "9547009",
+      "text": "圆绿",
+      "app_date": "2011-06-01",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。商标文字据商标开放基本信息按引证编号核对。"
+    },
+    {
+      "reg_no": "3393692",
+      "text": "圆绿",
+      "app_date": "2002-12-05",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "17398065",
+      "text": "圆绿每食",
+      "app_date": "2015-07-09",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。商标文字据商标开放基本信息按引证编号核对。"
+    },
+    {
+      "reg_no": "17398397",
+      "text": "圆绿每食",
+      "app_date": "2015-07-09",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫及整体认读等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。商标文字据商标开放基本信息按引证编号核对。"
+    },
+    {
+      "reg_no": "17398489",
+      "text": "圆绿每食",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "宣告无效",
+  "outcome_scope": null,
+  "notes": "申请类别及申请日据国家知识产权局商标开放基本信息按编号核对，商品照录文书所列范围。 部分引证无法核实标识或类别，编号为9587613。 未认定的项目保留引证编号，依据各引证在文书中的认定范围。"
+}

@@ -1,0 +1,90 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2021]第0000101642号",
+  "decision_date": "2021-04-16",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=c00598634fbfe17a",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "烂牌子及图",
+    "app_no": "44933400",
+    "app_date": "2020-03-26",
+    "priority_date": null,
+    "owner": "自然人",
+    "goods": [
+      {
+        "name": "预包装午餐食品（以米为主，也包括肉、鱼或蔬菜）",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "面条为主的预制食物",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "馒头",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "包子",
+        "nice_class": 30,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "35827552",
+      "text": "烂及图",
+      "app_date": "2019-01-09",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "在文字构成、呼叫等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "40922185",
+      "text": "朝瑞达及图",
+      "app_date": "2019-09-09",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "整体视觉尚可区分",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "25280008",
+      "text": "洋睿及图",
+      "app_date": "2017-07-12",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "整体视觉尚可区分",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "14061113",
+      "text": "如诺 NUO及图",
+      "app_date": "2014-02-24",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "整体视觉尚可区分",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "notes": "申请类别、申请日及商品登记项节选据国家知识产权局商标开放基本信息按编号核对，评审范围以所引文书为准。 逐项核对文书中引证编号与审理机关的认定段落。"
+}

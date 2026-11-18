@@ -1,0 +1,180 @@
+{
+  "doc_type": "无效宣告请求裁定书",
+  "doc_no": "商评字[2020]第0000097279号",
+  "decision_date": "2020-04-24",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=fe539bdd8f2298ad",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "凹凸洲际",
+    "app_no": "17250670",
+    "app_date": "2015-06-19",
+    "priority_date": null,
+    "owner": "宁夏月上贺兰文化传媒有限公司",
+    "goods": [
+      {
+        "name": "住所代理（旅馆、供膳寄宿处）",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "咖啡馆",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "饭店",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "酒吧服务",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "假日野营住宿服务",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "汽车旅馆",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "提供野营场地设施",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "旅游房屋出租",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "养老院",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "日间托儿所（看孩子）",
+        "nice_class": 43,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "1971258",
+      "text": "洲际",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "在文字构成、呼叫、含义等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "10928260",
+      "text": "洲际",
+      "app_date": "2012-05-17",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "在文字构成、呼叫、含义等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "3582360",
+      "text": "洲际酒店集团",
+      "app_date": "2003-06-05",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "在文字构成、呼叫、含义等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "989819",
+      "text": "洲际酒店及度假村集团",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "在文字构成、呼叫、含义等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "5886166",
+      "text": "洲际酒店和度假酒店",
+      "app_date": "2007-02-02",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "在文字构成、呼叫、含义等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "989822",
+      "text": "洲际酒店及度假村集团INTER•CONTINENTAL HOTELS AND RESORTS及图",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "在文字构成、呼叫、含义等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "776873",
+      "text": "INTER CONTINENTAL",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "文字构成、呼叫等方面有所差异",
+      "notes": "未取得可逐项对应的引证商品明细。未取得可用于中文文字比较的标识。"
+    },
+    {
+      "reg_no": "10928269",
+      "text": "INTERCONTINENTAL",
+      "app_date": "2012-05-17",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "文字构成、呼叫等方面有所差异",
+      "notes": "未取得可逐项对应的引证商品明细。未取得可用于中文文字比较的标识。"
+    },
+    {
+      "reg_no": "6769963",
+      "text": "INTERCONTINENTAL",
+      "app_date": "2008-06-06",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "文字构成、呼叫等方面有所差异",
+      "notes": "未取得可逐项对应的引证商品明细。未取得可用于中文文字比较的标识。"
+    }
+  ],
+  "outcome": "宣告无效",
+  "outcome_scope": null,
+  "notes": "申请类别及申请日据国家知识产权局商标开放基本信息按编号核对，商品照录文书所列范围。 逐项核对文书中引证编号与审理机关的认定段落。"
+}

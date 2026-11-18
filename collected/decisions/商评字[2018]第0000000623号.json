@@ -1,0 +1,114 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2018]第0000000623号",
+  "decision_date": "2018-01-02",
+  "authority": "原国家工商行政管理总局商标评审委员会",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=46bda0ad6da04223",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "让舌尖带你去旅行",
+    "app_no": "20289475",
+    "app_date": "2016-06-14",
+    "priority_date": null,
+    "owner": "统一企业（中国）投资有限公司",
+    "goods": [
+      {
+        "name": "咖啡饮料",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "方便粉丝",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "日式拉面",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "以谷物为主的零食小吃",
+        "nice_class": 30,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "19348569",
+      "text": "舌尖　56",
+      "app_date": "2016-03-18",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "呼叫、含义及整体视觉效果等方面存在差异",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "11004695",
+      "text": "舌尖",
+      "app_date": "2012-05-31",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "呼叫、含义及整体视觉效果等方面存在差异",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "10974905",
+      "text": "舌尖",
+      "app_date": "2012-05-25",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "呼叫、含义及整体视觉效果等方面存在差异",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "11010727",
+      "text": "舌尖美食",
+      "app_date": "2012-06-01",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "呼叫、含义及整体视觉效果等方面存在差异",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "11087137",
+      "text": "舌尖",
+      "app_date": "2012-06-18",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "呼叫、含义及整体视觉效果等方面存在差异",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "11261836",
+      "text": "舌尖",
+      "app_date": "2012-07-26",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "呼叫、含义及整体视觉效果等方面存在差异",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "notes": "申请类别、申请日及商品登记项节选据国家知识产权局商标开放基本信息按编号核对，评审范围以所引文书为准。"
+}

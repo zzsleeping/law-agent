@@ -1,4 +1,6 @@
-"""LangGraph 状态图：16 个节点，2 个人工挂起点，2 个条件路由。
+"""LangGraph 状态图：17 个节点，2 个人工挂起点，2 个条件路由。
+
+大模型是判定者（judge 节点，结合 RAG 检索的指南与判例），规则引擎（assess）提供事实、参考等级和护栏。
 
 申请前筛查（pre_filing）走五路并行召回；驳回复审（rejection_review）跳过召回，
 用户录入的引证直接进入评级，不受截断，逐件给出比对结论（不做复审论证提纲）。
@@ -9,11 +11,13 @@ from langgraph.checkpoint.memory import MemorySaver
 from langgraph.graph import END, START, StateGraph
 
 from app.config import settings
-from app.nodes.assess import assess, explain
+from app.nodes.assess import assess
+from app.nodes.judge import judge
 from app.nodes.compose import compose
 from app.nodes.confirm import confirm_candidates, confirm_goods
 from app.nodes.merge import merge
 from app.nodes.parse import parse
+from app.nodes.plan import plan_search
 from app.nodes.recall import (load_citations, recall_exact, recall_glyph, recall_meaning, recall_pinyin,
                               recall_variant)
 from app.nodes.render import flag_output, render
@@ -34,12 +38,13 @@ def build_graph(checkpointer=None):
     for name, fn in {
         "parse": parse,                              # 要素解析 + 商品项映射（P1）
         "confirm_goods": confirm_goods,              # interrupt ① 用户确认商品项
+        "plan_search": plan_search,                  # 检索规划 Agent（P0）：模型决定额外检索哪些写法
         "recall_exact": recall_exact, "recall_glyph": recall_glyph, "recall_pinyin": recall_pinyin,
         "recall_variant": recall_variant, "recall_meaning": recall_meaning,
         "merge": merge,                              # 排名融合
         "load_citations": load_citations,            # 驳回复审：载入用户录入的引证
-        "assess": assess,                            # 规则表定级（不调用模型）
-        "explain": explain,                          # 大模型解释（P2）
+        "assess": assess,                            # 规则引擎：事实与参考等级（不调用模型）
+        "judge": judge,                              # 大模型判定（P2）：结合 RAG 指南与判例定近似和风险，规则护栏
         "confirm_candidates": confirm_candidates,    # interrupt ② 用户确认候选
         "compose": compose,                          # 结构化结论（P3）
         "verify": verify,
@@ -50,15 +55,17 @@ def build_graph(checkpointer=None):
 
     g.add_edge(START, "parse")
     g.add_edge("parse", "confirm_goods")
-    g.add_conditional_edges(                         # 按场景分叉：返回列表即并行扇出
+    g.add_conditional_edges(                         # 按场景分叉
         "confirm_goods",
-        lambda s: ["load_citations"] if s.get("scenario") == "rejection_review" else RECALL,
-        RECALL + ["load_citations"])
+        lambda s: "load_citations" if s.get("scenario") == "rejection_review" else "plan_search",
+        ["load_citations", "plan_search"])
+    for r in RECALL:                                 # 检索规划之后五路并行召回
+        g.add_edge("plan_search", r)
     g.add_edge(RECALL, "merge")                      # 列表形式：等五路全部结束
     g.add_edge("merge", "assess")
     g.add_edge("load_citations", "assess")
-    g.add_edge("assess", "explain")
-    g.add_edge("explain", "confirm_candidates")
+    g.add_edge("assess", "judge")
+    g.add_edge("judge", "confirm_candidates")
     g.add_edge("confirm_candidates", "compose")
     g.add_edge("compose", "verify")
     g.add_conditional_edges("verify", route_after_verify, ["render", "compose", "flag_output"])

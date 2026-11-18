@@ -1,0 +1,90 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2026]第0000078702号",
+  "decision_date": "2026-04-27",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=6c7f7f6c1aef9786",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "迈牛大亨及图",
+    "app_no": "86335756",
+    "app_date": "2025-07-06",
+    "priority_date": null,
+    "owner": "郑州迈牛大亨国际贸易有限公司",
+    "goods": [
+      {
+        "name": "明胶",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "奶粉",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "制香肠用的肠衣",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "炸薯条",
+        "nice_class": 29,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "21413213",
+      "text": "牛来西 NIULAIXI及图",
+      "app_date": "2016-09-26",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "整体尚可区分",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "6612323",
+      "text": "ZHIMEIZHAI及图",
+      "app_date": "2008-03-24",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "整体尚可区分",
+      "notes": "未取得可逐项对应的引证商品明细。未取得可用于中文文字比较的标识。"
+    },
+    {
+      "reg_no": "21272654",
+      "text": "ZHIMEIZHAI及图",
+      "app_date": "2016-09-12",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "整体尚可区分",
+      "notes": "未取得可逐项对应的引证商品明细。未取得可用于中文文字比较的标识。"
+    },
+    {
+      "reg_no": "66993213",
+      "text": "ZHIMEIZHAI及图",
+      "app_date": "2022-09-02",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "整体尚可区分",
+      "notes": "未取得可逐项对应的引证商品明细。未取得可用于中文文字比较的标识。"
+    }
+  ],
+  "outcome": "初步审定",
+  "outcome_scope": null,
+  "notes": "申请类别、申请日及商品登记项节选据国家知识产权局商标开放基本信息按编号核对，评审范围以所引文书为准。"
+}

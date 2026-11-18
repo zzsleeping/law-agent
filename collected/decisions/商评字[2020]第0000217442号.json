@@ -1,0 +1,132 @@
+{
+  "doc_type": "无效宣告请求裁定书",
+  "doc_no": "商评字[2020]第0000217442号",
+  "decision_date": "2020-07-27",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=16dbcbe0c50e1ebf",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "三六香天下",
+    "app_no": "23289091",
+    "app_date": "2017-03-24",
+    "priority_date": null,
+    "owner": "自然人",
+    "goods": [
+      {
+        "name": "备办宴席服务",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "养老院",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "提供野营场地设施",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "家庭旅馆服务",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "咖啡馆",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "住所代理（旅馆、供膳寄宿处）",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "假日野营住宿服务",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "茶馆",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "快餐馆",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "饭店",
+        "nice_class": 43,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "20774393",
+      "text": "香天下及图",
+      "app_date": "2016-07-26",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫上相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "3933156",
+      "text": "香天下火鍋",
+      "app_date": "2004-03-01",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫上相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "7307312",
+      "text": "香天下欢乐及图",
+      "app_date": "2009-04-07",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫上相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "10468576",
+      "text": "香天下•传承",
+      "app_date": "2012-02-08",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫上相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "23027795",
+      "text": "香天下懒虫",
+      "app_date": "2017-03-06",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫上相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "宣告无效",
+  "outcome_scope": null,
+  "notes": "申请类别及申请日据国家知识产权局商标开放基本信息按编号核对，商品照录文书所列范围。"
+}

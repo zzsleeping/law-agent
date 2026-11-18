@@ -177,8 +177,95 @@ def test_llm_call_cap():
         v = run_pre_filing("茗悦", goods=items_by_code(TEA), eval_date=EV)
     finally:
         settings.llm_max_groups = old
-    assert calls.count("p2_explain") == 2                       # 解释只调 2 次
+    assert calls.count("p2_judge") == 2                         # 判定只调 2 次
     assert calls.count("p3_compose") == 3                       # 2 组风险结论 + 1 次总结论
     assert v["citation_errors"] == []
     assert any("只为前 2 个名称组" in n for n in v["degraded_notes"])
     assert sum(1 for c in v["claims"] if c.claim_type == "risk" and c.source == "code") >= 1
+
+
+
+def test_llm_decides_with_guardrails():
+    """大模型定风险：可以推翻规则的参考判断（并被标出），但不能违反护栏。"""
+    from app.config import settings
+
+    def contrarian(name, variables):
+        if name != "p2_judge":
+            return good_llm(name, variables)
+        # 对每组都唱反调：规则判高的说低，其余都说高
+        flip = {"high": "low", "medium": "high", "low": "high", "needs_check": "high"}
+        return {"mark_sim": "high" if variables["rule_mark_sim_code"] != "high" else "low",
+                "reason": "（假模型）与规则相反。", "disagree": True,
+                "marks": [{"mark_id": m["mark_id"], "risk": flip[m["rule_risk"]]} for m in variables["marks_json"]]}
+
+    llm.set_backend(contrarian)
+    old = settings.llm_max_groups
+    settings.llm_max_groups = 50
+    try:
+        v = run_pre_filing("茗悦", goods=items_by_code(TEA), eval_date=EV)
+    finally:
+        settings.llm_max_groups = old
+    by = {a.mark_id: a for a in v["assessments"]}
+    exact_same = next(a for a in v["assessments"] if a.text == "茗悦" and a.rule_risk == "high")
+    assert exact_same.risk == "high" and "护栏修正" in exact_same.guardrail        # 同名同商品在先：不能判低
+    lapsed = next(a for a in v["assessments"] if a.text == "茗悦" and a.prior == "invalid")
+    assert lapsed.risk == "low"                                                     # 不构成在先：不能判高
+    check = next(a for a in v["assessments"] if a.text == "茗悦轩")
+    assert check.risk == "needs_check"                                              # 状态待核实：不能判高
+    mingyue = next(a for a in v["assessments"] if a.text == "明月")
+    assert mingyue.decided_by == "llm" and mingyue.rule_risk == "medium" and mingyue.risk == "high"
+    assert mingyue.disagree and mingyue.flag_review                                 # 推翻规则判断时标出
+    assert v["citation_errors"] == []
+    judge_facts = [f for f in v["facts"].values() if f.fact_id.endswith("-judge")]
+    assert judge_facts and all(f.text.startswith("大模型判定") for f in judge_facts)
+
+
+def test_judge_falls_back_to_rules_without_llm():
+    v = run_pre_filing("茗悦", goods=items_by_code(TEA), eval_date=EV)
+    assert all(a.decided_by == "rule" and a.risk == a.rule_risk for a in v["assessments"])
+    assert any("未能由大模型判定" in n for n in v["degraded_notes"])
+
+
+def test_search_planning_agent():
+    """检索规划：模型给出的写法被试查、写进执行记录，检出的商标在义近通道标注来源。"""
+    rounds = []
+
+    def planner(name, variables):
+        if name == "p0_plan":
+            rounds.append(variables["probe"])
+            return {"queries": [{"text": "悦茗", "why": "字序调换"}, {"text": "茗悦", "why": "与原文相同，应被丢弃"},
+                                {"text": "ABC", "why": "非中文，应被丢弃"}], "done": len(rounds) >= 2}
+        return good_llm(name, variables)
+
+    llm.set_backend(planner)
+    v = run_pre_filing("茗悦", goods=items_by_code(TEA), eval_date=EV)
+    assert [x["text"] for x in v["search_variants"]] == ["悦茗"] and v["search_variants"][0]["hits"] >= 1
+    assert len(rounds) == 2 and "命中" in rounds[1]                      # 第二轮看到了试查结果
+    steps = [t for t in v["trace"] if t["node"] == "plan_search"]
+    assert len(steps) == 2 and "悦茗" in steps[0]["queries"][0]
+    yue = next(a for a in v["assessments"] if a.text == "悦茗")
+    assert "meaning" in yue.channels
+    assert any("检索规划" in h.evidence for h in v["hits_by_mark"][yue.mark_id])
+
+
+def test_search_planning_skipped_without_llm():
+    v = run_pre_filing("茗悦", goods=items_by_code(TEA), eval_date=EV)
+    assert v["search_variants"] == [] and any("检索规划未使用大模型" in n for n in v["degraded_notes"])
+
+
+
+def test_rag_basis_retrieval():
+    """写结论时用 RAG 检索补充依据：按评估日期过滤版本，补充的依据进入允许清单并标注来源，校验照常通过。"""
+    from datetime import date as d
+    from app.tools import rag
+
+    old = [r["id"] for r in rag.retrieve_basis("同一种商品上已经注册的商标相同或者近似，驳回申请", d(2026, 11, 18))]
+    new = [r["id"] for r in rag.retrieve_basis("同一种商品上已经注册的商标相同或者近似，驳回申请", d(2027, 3, 1))]
+    assert old and not any(i.startswith("TML2026") for i in old)
+    assert new and not any(i.startswith("TML2019") for i in new)
+    llm.set_backend(good_llm)
+    v = run_pre_filing("茗悦", goods=items_by_code(TEA), eval_date=EV)
+    rag_ids = [b for b, src in v.get("basis_sources", {}).items() if src == "rag"]
+    assert rag_ids and set(rag_ids) <= set(v["allowed_basis"])
+    assert v["citation_errors"] == []
+    assert any(t.get("rag_basis") for t in v["trace"] if t["node"] == "compose")

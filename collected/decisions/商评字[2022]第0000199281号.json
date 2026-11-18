@@ -1,0 +1,76 @@
+{
+  "doc_type": "无效宣告请求裁定书",
+  "doc_no": "商评字[2022]第0000199281号",
+  "decision_date": "2022-06-23",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=c93bae6419398232",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "德用萬字",
+    "app_no": "25928111",
+    "app_date": "2017-08-17",
+    "priority_date": null,
+    "owner": "自然人",
+    "goods": [
+      {
+        "name": "面粉",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "食用豆粉",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "米",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "食用淀粉",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "苏打粉（烹饪用小苏打）",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "家用嫩肉剂",
+        "nice_class": 30,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "791177",
+      "text": "万字",
+      "app_date": "1994-03-07",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、整体认读效果等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "791176",
+      "text": "萬字",
+      "app_date": "1994-03-07",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "部分宣告无效",
+  "outcome_scope": "争议商标在“醋；调味品；酱油”商品上予以无效宣告，在其余商品上予以维持。",
+  "notes": "申请类别及申请日据国家知识产权局商标开放基本信息按编号核对，商品照录文书所列范围。 未认定的项目保留引证编号，依据各引证在文书中的认定范围。"
+}

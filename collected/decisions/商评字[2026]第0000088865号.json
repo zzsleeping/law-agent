@@ -1,0 +1,162 @@
+{
+  "doc_type": "无效宣告请求裁定书",
+  "doc_no": "商评字[2026]第0000088865号",
+  "decision_date": "2026-04-30",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=da0ec53bb47b4a7b",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "燊海徐记",
+    "app_no": "79827522",
+    "app_date": "2024-07-16",
+    "priority_date": null,
+    "owner": "梅溪徐记品牌管理（杭州）有限公司",
+    "goods": [
+      {
+        "name": "备办宴席",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "酒吧服务",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "咖啡馆",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "自助餐厅",
+        "nice_class": 43,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "4364152",
+      "text": "徐记",
+      "app_date": "2004-11-16",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "未构成近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "1675914",
+      "text": "徐记及图",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "未构成近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "6100976",
+      "text": "徐记海鲜酒楼XUJI SEAFOOD RESTAURANT及图",
+      "app_date": "2007-06-11",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "未构成近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "6100977",
+      "text": "徐记海鲜XUJI SEAFOOD及图",
+      "app_date": "2007-06-11",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "未构成近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "7106260",
+      "text": "徐记海鲜XUJI SEAFOOD及图",
+      "app_date": "2008-12-11",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "未构成近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "28934579",
+      "text": "徐记海鲜",
+      "app_date": "2018-01-26",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "未构成近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "28934578",
+      "text": "徐记海鲜 鲜",
+      "app_date": "2018-01-26",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "未构成近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "49067837",
+      "text": "新徐记海鲜",
+      "app_date": "2020-08-19",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "未构成近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "49051703",
+      "text": "老徐记海鲜",
+      "app_date": "2020-08-19",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "未构成近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "73003587",
+      "text": "徐记海鲜思鲜客",
+      "app_date": "2023-07-21",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "未构成近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "维持注册",
+  "outcome_scope": null,
+  "notes": "申请类别、申请日及商品登记项节选据国家知识产权局商标开放基本信息按编号核对，评审范围以所引文书为准。 引证已节选。"
+}

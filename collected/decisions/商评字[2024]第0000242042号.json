@@ -1,0 +1,185 @@
+{
+  "doc_type": "无效宣告请求裁定书",
+  "doc_no": "商评字[2024]第0000242042号",
+  "decision_date": "2024-09-12",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=1cb7cb4b5f854c9e",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "不二宝贝Unique baby及图",
+    "app_no": "59132333",
+    "app_date": "2021-09-09",
+    "priority_date": null,
+    "owner": "自然人",
+    "goods": [
+      {
+        "name": "加奶巧克力饮料",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "茶",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "茶饮料",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "糖",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "甜食",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "蜂蜜",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "以谷物为主的零食小吃",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "方便米饭",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "谷类制品",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "面条",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "谷粉制面条",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "以米为主的零食小吃",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "食用淀粉",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "锅巴",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "冻酸奶（冰冻甜点）",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "食盐",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "酱油",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "调味品",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "食用小苏打",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "除香精油外的食物用调味品",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "食用预制谷蛋白",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "爆米花",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "虾片",
+        "nice_class": 30,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "382653",
+      "text": "不二家",
+      "app_date": "1985-07-09",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。商标文字据商标开放基本信息按引证编号核对。"
+    },
+    {
+      "reg_no": "261198",
+      "text": "不二家",
+      "app_date": "1985-07-09",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "构成近似标识",
+      "notes": "未取得可逐项对应的引证商品明细。商标文字据商标开放基本信息按引证编号核对。"
+    },
+    {
+      "reg_no": "51344255",
+      "text": "不二家",
+      "app_date": "2020-11-17",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "构成近似标识",
+      "notes": "未取得可逐项对应的引证商品明细。商标文字据商标开放基本信息按引证编号核对。"
+    },
+    {
+      "reg_no": "56954870",
+      "text": "不二家",
+      "app_date": "2021-06-16",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "构成近似标识",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "部分宣告无效",
+  "outcome_scope": "争议商标在加奶巧克力饮料、茶、茶饮料、蜂蜜、谷类制品、锅巴、食盐、酱油、调味品、除香精油外的食物用调味品、食用预制谷蛋白、爆米花商品上予以维持，在其余商品上予以无效宣告。",
+  "notes": "申请类别及申请日据国家知识产权局商标开放基本信息按编号核对，商品照录文书所列范围。 未认定的项目保留引证编号，依据各引证在文书中的认定范围。"
+}

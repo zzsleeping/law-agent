@@ -1,0 +1,182 @@
+{
+  "doc_type": "不予注册复审决定书",
+  "doc_no": "商评字[2025]第0000117077号",
+  "decision_date": "2025-04-25",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=f738b01ec57f5a06",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "益禾堂茶里奶屋",
+    "app_no": "55963124",
+    "app_date": "2021-05-11",
+    "priority_date": null,
+    "owner": "广州益禾堂食品有限公司",
+    "goods": [
+      {
+        "name": "无酒精饮料",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "果汁",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "豆类饮料",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "富含蛋白质的运动饮料",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "带果肉果汁饮料",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "软饮料",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "啤酒",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "乳清饮料",
+        "nice_class": 32,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "39993957",
+      "text": "益禾堂",
+      "app_date": "2019-07-29",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "已构成近似标识",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "51629110",
+      "text": "益禾堂",
+      "app_date": "2020-11-26",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "已构成近似标识",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "48474782",
+      "text": "益和堂",
+      "app_date": "2020-07-28",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "55099157",
+      "text": "益禾堂益杯FUN享时刻",
+      "app_date": "2021-04-10",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "51614684",
+      "text": "益禾堂",
+      "app_date": "2020-11-26",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "已构成近似标识",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "55099649",
+      "text": "益禾堂益杯FUN享时刻",
+      "app_date": "2021-04-10",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "已构成近似标识",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "23148222",
+      "text": "益禾堂",
+      "app_date": "2017-03-14",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "55181521",
+      "text": "益禾堂",
+      "app_date": "2021-04-13",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "11037869",
+      "text": "益禾堂 原沏茗作·鲜饮茶番MILK&TEA及图",
+      "app_date": "2012-06-07",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "4247435",
+      "text": "茶里",
+      "app_date": "2004-08-31",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "不予注册",
+  "outcome_scope": null,
+  "notes": "申请类别及申请日据国家知识产权局商标开放基本信息按编号核对，商品照录文书所列范围。 未认定的项目保留引证编号，依据各引证在文书中的认定范围。"
+}

@@ -1,0 +1,66 @@
+{
+  "doc_type": "不予注册复审决定书",
+  "doc_no": "商评字[2021]第0000286346号",
+  "decision_date": "2021-10-21",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=436607ce88c095c0",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "农夫竹秀",
+    "app_no": "38257726",
+    "app_date": "2019-05-17",
+    "priority_date": null,
+    "owner": "自然人",
+    "goods": [
+      {
+        "name": "啤酒",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "乌梅浓汁（不含酒精）",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "果汁",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "水（饮料）",
+        "nice_class": 32,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "1341839",
+      "text": "农夫",
+      "app_date": "1998-07-30",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "商标整体印象相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "1341841",
+      "text": "农夫山泉",
+      "app_date": "1998-07-30",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "商标整体印象相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "不予注册",
+  "outcome_scope": null,
+  "notes": "申请类别、申请日及商品登记项节选据国家知识产权局商标开放基本信息按编号核对，评审范围以所引文书为准。 逐项核对文书中引证编号与审理机关的认定段落。"
+}

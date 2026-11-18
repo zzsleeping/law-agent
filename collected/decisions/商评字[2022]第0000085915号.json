@@ -1,0 +1,126 @@
+{
+  "doc_type": "无效宣告请求裁定书",
+  "doc_no": "商评字[2022]第0000085915号",
+  "decision_date": "2022-03-15",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=d4e712b4202b2c92",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "百岁一百歲",
+    "app_no": "38150811",
+    "app_date": "2019-05-13",
+    "priority_date": null,
+    "owner": "一百岁集团有限公司",
+    "goods": [
+      {
+        "name": "啤酒",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "乳酸饮料（果制品，非奶）",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "无酒精饮料",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "矿泉水（饮料）",
+        "nice_class": 32,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "3407468",
+      "text": "百岁山",
+      "app_date": "2002-12-17",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "16897419",
+      "text": "百岁山",
+      "app_date": "2015-05-07",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "4338519",
+      "text": "百岁山及图",
+      "app_date": "2004-11-01",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "11562387",
+      "text": "百岁山 Ganten及图",
+      "app_date": "2012-09-28",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "13960168",
+      "text": "景田百岁山",
+      "app_date": "2014-01-22",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "20819995",
+      "text": "百岁山 Ganten及图",
+      "app_date": "2016-07-29",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "17928332",
+      "text": "百岁山",
+      "app_date": "2015-09-18",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "宣告无效",
+  "outcome_scope": null,
+  "notes": "申请类别、申请日及商品登记项节选据国家知识产权局商标开放基本信息按编号核对，评审范围以所引文书为准。"
+}

@@ -1,0 +1,152 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2025]第0000166069号",
+  "decision_date": "2025-06-09",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=925cbe0abdc37df0",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "好东东",
+    "app_no": "79998718",
+    "app_date": "2024-07-25",
+    "priority_date": null,
+    "owner": "湖南可以农业发展有限公司",
+    "goods": [
+      {
+        "name": "肉",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "牛奶",
+        "nice_class": 29,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "32786931",
+      "text": "好东 C",
+      "app_date": "2018-08-09",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "12216127",
+      "text": "好东咚",
+      "app_date": "2013-03-04",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "54109449",
+      "text": "好恰东东",
+      "app_date": "2021-03-08",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。商标文字据商标开放基本信息按引证编号核对。"
+    },
+    {
+      "reg_no": "59397021",
+      "text": "好恰东东",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "67849570",
+      "text": "东东小厨",
+      "app_date": "2022-10-20",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "44862945",
+      "text": "东东农场",
+      "app_date": "2020-03-24",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "29483770A",
+      "text": "东东的早餐",
+      "app_date": "2018-03-07",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "17513648",
+      "text": "东东菜",
+      "app_date": "2015-07-27",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "8132601",
+      "text": "好东 C",
+      "app_date": "2010-03-18",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "22454767",
+      "text": "東東DONN DONN",
+      "app_date": "2016-12-29",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "notes": "申请类别及申请日据国家知识产权局商标开放基本信息按编号核对，商品照录文书所列范围。 引证已节选。"
+}

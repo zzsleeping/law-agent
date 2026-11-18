@@ -1,0 +1,162 @@
+{
+  "doc_type": "无效宣告请求裁定书",
+  "doc_no": "商评字[2025]第0000136748号",
+  "decision_date": "2025-04-30",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=aa672564784e348d",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "稻香国熣",
+    "app_no": "53514364",
+    "app_date": "2021-02-03",
+    "priority_date": null,
+    "owner": "御厨坊（唐山）食品有限公司",
+    "goods": [
+      {
+        "name": "肉",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "豆腐制品",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "鱼（非活）",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "肉罐头",
+        "nice_class": 29,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "5684045",
+      "text": "稻香",
+      "app_date": "2006-10-27",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "整体视觉尚可区分",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "10008728",
+      "text": "稻香 1773",
+      "app_date": "2011-09-27",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "整体视觉尚可区分",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "5651923",
+      "text": "稻香村",
+      "app_date": "2006-10-10",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "整体视觉尚可区分",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "7025793",
+      "text": "稻香私房",
+      "app_date": "2008-10-29",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "整体视觉尚可区分",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "38297809",
+      "text": "稻香私房",
+      "app_date": "2019-05-20",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "整体视觉尚可区分",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "7025794",
+      "text": "稻香金典",
+      "app_date": "2008-10-29",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "整体视觉尚可区分",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "39670755",
+      "text": "稻香金典",
+      "app_date": "2019-07-15",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "整体视觉尚可区分",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "7025795",
+      "text": "稻香贡礼",
+      "app_date": "2008-10-29",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "整体视觉尚可区分",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "7025798",
+      "text": "稻香工坊",
+      "app_date": "2008-10-29",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "整体视觉尚可区分",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "39667294",
+      "text": "稻香工坊",
+      "app_date": "2019-07-15",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "整体视觉尚可区分",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "维持注册",
+  "outcome_scope": null,
+  "notes": "申请类别、申请日及商品登记项节选据国家知识产权局商标开放基本信息按编号核对，评审范围以所引文书为准。 引证已节选。"
+}

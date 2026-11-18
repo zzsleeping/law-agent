@@ -41,6 +41,8 @@ class Settings:
     llm_retries: int = 1
     # 每次评估最多为多少个名称组调用大模型（解释、风险结论各自计数）；其余用代码模板，控制时延和费用
     llm_max_groups: int = field(default_factory=lambda: int(os.getenv("LLM_MAX_GROUPS", "10")))
+    # 报告里的参考判例是否包含冻结测试集一侧的文书。开发和评测期间保持 false（技术侧不看冻结集内容），部署时改为 true
+    cases_include_frozen: bool = field(default_factory=lambda: os.getenv("CASES_INCLUDE_FROZEN", "false").lower() == "true")
 
     # 向量模型：bge（本地 bge-small-zh-v1.5）或 hash（无需下载，仅测试/应急）
     embed_backend: str = field(default_factory=lambda: os.getenv("EMBED_BACKEND", "bge"))

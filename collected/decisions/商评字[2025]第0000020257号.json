@@ -1,0 +1,102 @@
+{
+  "doc_type": "无效宣告请求裁定书",
+  "doc_no": "商评字[2025]第0000020257号",
+  "decision_date": "2025-01-26",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=09e969924ee331cc",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "嘴嘴香",
+    "app_no": "51779415",
+    "app_date": "2020-12-01",
+    "priority_date": null,
+    "owner": "开封劲松食品有限公司",
+    "goods": [
+      {
+        "name": "烹饪用蛋白",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "油炸豆腐块",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "豆腐",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "腐竹",
+        "nice_class": 29,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "1623160",
+      "text": "香香嘴",
+      "app_date": "2000-06-07",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "3767667",
+      "text": "香香嘴",
+      "app_date": "2003-10-24",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "24615723",
+      "text": "香香嘴 joytofu及图",
+      "app_date": "2017-06-09",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "26392038",
+      "text": "香香嘴及图",
+      "app_date": "2017-09-13",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "10117820",
+      "text": "香香嘴及图",
+      "app_date": "2011-10-27",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "宣告无效",
+  "outcome_scope": null,
+  "notes": "申请类别、申请日及商品登记项节选据国家知识产权局商标开放基本信息按编号核对，评审范围以所引文书为准。"
+}

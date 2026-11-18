@@ -90,6 +90,12 @@ class Assessment(BaseModel):
     explanation: str = ""
     explanation_source: Literal["llm", "code"] = "code"
     flag_review: bool = False
+    # 大模型判定（2026-11-18 起由大模型定风险，规则作参考和护栏）
+    rule_risk: str = ""              # 规则引擎的参考等级
+    rule_mark_sim: str = ""
+    decided_by: Literal["llm", "rule"] = "rule"   # rule：未经模型判定（超出调用上限或模型失败）
+    guardrail: str = ""              # 护栏修正说明，空表示模型判断未被修正
+    disagree: bool = False           # 模型与规则判断不一致
 
 
 ClaimType = Literal["risk", "data_gap", "overall"]
@@ -127,6 +133,7 @@ class AgentState(TypedDict, total=False):
     our_priority_date: date | None
     data_scope: Literal["all", "real", "simulated"]
     query_mark: str
+    search_variants: list[dict]      # 检索规划 Agent 决定的额外写法：text、why、hits
     user_citations: list[str]        # 驳回复审：驳回通知中的引证商标编号（申请号 / 注册号）
     missing_citations: list[str]     # 驳回复审：库内找不到的引证编号
     query_meaning: str               # 可由用户填写；否则由 P1 生成
@@ -150,6 +157,7 @@ class AgentState(TypedDict, total=False):
     selected: list[Assessment]
     exclusions: list[Exclusion]
     allowed_basis: list[str]
+    basis_sources: dict[str, str]    # 依据来源：rag 表示由 RAG 检索补充（其余来自映射表）
     claims: list[Claim]
     citation_errors: list[str]
     retry_count: int

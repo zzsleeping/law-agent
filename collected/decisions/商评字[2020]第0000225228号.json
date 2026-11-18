@@ -1,0 +1,75 @@
+{
+  "doc_type": "无效宣告请求裁定书",
+  "doc_no": "商评字[2020]第0000225228号",
+  "decision_date": "2020-08-27",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=158279420e1bbcab",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "极炙英雄及图(指定颜色)",
+    "app_no": "23660599",
+    "app_date": "2017-05-02",
+    "priority_date": null,
+    "owner": "北京顺昌德国际贸易有限公司",
+    "goods": [
+      {
+        "name": "咖啡",
+        "nice_class": 30,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "16504886",
+      "text": "极炙日式炭火烧肉",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "使用在类似商品上的近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "18016111",
+      "text": "七彩极炙燒肉",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "使用在类似商品上的近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "18016163",
+      "text": "七彩极炙燒肉",
+      "app_date": "2015-09-30",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "16505274",
+      "text": "极炙日式炭火烧肉",
+      "app_date": "2015-03-17",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "宣告无效",
+  "outcome_scope": null,
+  "notes": "申请类别及申请日据国家知识产权局商标开放基本信息按编号核对，商品照录文书所列范围。 未认定的项目保留引证编号，依据各引证在文书中的认定范围。"
+}

@@ -1,0 +1,180 @@
+{
+  "doc_type": "无效宣告请求裁定书",
+  "doc_no": "商评字[2022]第0000129230号",
+  "decision_date": "2022-04-20",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=0847d3fb94b8c216",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "蒸好佳",
+    "app_no": "33541869",
+    "app_date": "2018-09-14",
+    "priority_date": null,
+    "owner": "泰丰禾（厦门）食品供应链有限公司",
+    "goods": [
+      {
+        "name": "面包",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "甜食（糖果）",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "茶",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "蛋糕",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "面条",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "方便面",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "包子",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "馒头",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "可可饮料",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "谷类制品",
+        "nice_class": 30,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "1182853",
+      "text": "上好佳",
+      "app_date": "1997-05-08",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "1301366",
+      "text": "上好佳",
+      "app_date": "1998-01-06",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "1301399",
+      "text": "上好佳",
+      "app_date": "1998-01-06",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "1343989",
+      "text": "上好佳",
+      "app_date": "1998-07-23",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "1411660",
+      "text": "上好佳",
+      "app_date": "1999-02-03",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "1586868",
+      "text": "上好佳 OISHI及图",
+      "app_date": "2000-03-20",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "3385643",
+      "text": "上好佳",
+      "app_date": "2002-11-28",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "3833576",
+      "text": "上好佳",
+      "app_date": "2003-12-08",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "9196450",
+      "text": "上好佳",
+      "app_date": "2011-03-10",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "宣告无效",
+  "outcome_scope": null,
+  "notes": "申请类别及申请日据国家知识产权局商标开放基本信息按编号核对，商品照录文书所列范围。"
+}

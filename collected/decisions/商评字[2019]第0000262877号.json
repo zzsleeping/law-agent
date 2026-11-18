@@ -1,0 +1,99 @@
+{
+  "doc_type": "无效宣告请求裁定书",
+  "doc_no": "商评字[2019]第0000262877号",
+  "decision_date": "2019-10-29",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=f10e7fec60774e96",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "开心妹及图",
+    "app_no": "21691002",
+    "app_date": "2016-10-26",
+    "priority_date": null,
+    "owner": "自然人",
+    "goods": [
+      {
+        "name": "调味料",
+        "nice_class": 30,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "1193162",
+      "text": "开心",
+      "app_date": "1997-05-14",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "使用在同一种或类似商品上的近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "10794098",
+      "text": "开心",
+      "app_date": "2012-04-19",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "3244695",
+      "text": "开心相伴",
+      "app_date": "2002-07-16",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "使用在同一种或类似商品上的近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "10854856",
+      "text": "开心包",
+      "app_date": "2012-05-02",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "11160980",
+      "text": "开心",
+      "app_date": "2012-07-04",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "11160979",
+      "text": "开心",
+      "app_date": "2012-07-04",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "宣告无效",
+  "outcome_scope": null,
+  "notes": "申请类别及申请日据国家知识产权局商标开放基本信息按编号核对，商品照录文书所列范围。 未认定的项目保留引证编号，依据各引证在文书中的认定范围。"
+}

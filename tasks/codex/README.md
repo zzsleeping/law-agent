@@ -1,12 +1,14 @@
 # 交给 Codex 的资料收集任务
 
-这里的每个任务书都可以单独交给 Codex 执行。三个任务互不依赖，可以同时进行。
+这里的每个任务书都可以单独交给 Codex 执行。
 
 | 任务书 | 产出 | 用途 |
 | --- | --- | --- |
 | [01-decisions.md](01-decisions.md) | `collected/decisions/*.json` | 真实商标数据、冻结测试集、典型案例库 |
 | [02-goods-classes.md](02-goods-classes.md) | `collected/goods/goods_items_full.xlsx` | 补全第 29、30、32、43 类商品项，减少“商品项未映射 → 待核实” |
 | [03-glyph-data.md](03-glyph-data.md) | `collected/glyph/` | 选定汉字部件拆分数据，用来自动计算形近字，替代人工字表 |
+| [04-more-decisions.md](04-more-decisions.md) | `collected/decisions/*.json`（第二批） | 扩充文书，补难区分的反例（已完成） |
+| [05-pattern-cases.md](05-pattern-cases.md) | `collected/decisions/*.json`（第三批） | 按比对情形补“不近似”判例，供参考判例检索和判定评测 |
 
 ## 通用规则（每个任务都适用，任务书里不再重复）
 

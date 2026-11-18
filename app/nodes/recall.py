@@ -3,7 +3,9 @@ from __future__ import annotations
 
 import time
 
+from app.config import settings
 from app.state import AgentState
+from app.tools import phonetic
 from app.tools import search
 
 
@@ -15,8 +17,12 @@ def _run(name: str, field: str, fn, *args) -> dict:
             "trace": [{"node": name, "hits": len(hits), "seconds": dt}]}
 
 
+def _variants(s: AgentState) -> tuple:
+    return tuple(v["text"] for v in s.get("search_variants", []))
+
+
 def _pool(s: AgentState) -> list[dict]:
-    return search.candidate_pool(s["query_mark"], s["classes"], s.get("data_scope", "all"))
+    return search.candidate_pool(s["query_mark"], s["classes"], s.get("data_scope", "all"), _variants(s))
 
 
 def _text_channel(name: str, field: str, fn, s: AgentState) -> dict:
@@ -45,16 +51,38 @@ def recall_variant(s: AgentState) -> dict:
 
 
 def recall_meaning(s: AgentState) -> dict:
-    """义近只在本地库上做（开放数据有上千万个名称，本机无法逐一编码）。开放数据可用时只查本地仿真记录。"""
-    from app.library import get_library
+    """义近通道。
 
-    scope = s.get("data_scope", "all")
-    if get_library().available():
-        if scope == "real":
-            return _run("recall_meaning", "hits_meaning", lambda: [])
-        scope = "simulated"
-    return _run("recall_meaning", "hits_meaning", search.recall_meaning,
-                s.get("query_meaning", ""), s["classes"], scope, None, s["query_mark"])
+    1. 检索规划 Agent 给出的写法：与写法完全相同或包含它的商标，标注“由哪个写法、因什么理由”检出；
+    2. 本地小库上的释义向量检索（开放数据有上千万个名称，本机无法逐一编码，只在本地记录上做）。
+    """
+    from app.library import get_library
+    from app.state import Hit
+
+    def go():
+        hits: list[Hit] = []
+        variants = s.get("search_variants", [])
+        if variants:
+            pool = _pool(s)
+            group = {c["mark_id"]: c.get("group") or c["norm_text"] for c in pool}
+            q = phonetic.normalize(s["query_mark"])
+            for rank_base, v in enumerate(variants):
+                for c in pool:
+                    t = c["norm_text"]
+                    if t == q:
+                        continue
+                    if t == v["text"] or (len(v["text"]) >= 2 and v["text"] in t):
+                        hits.append(Hit(mark_id=c["mark_id"], channel="meaning", kind="meaning",
+                                        score=(2.0 if t == v["text"] else 1.0) - rank_base * 0.01,
+                                        evidence=f"检索规划：与写法“{v['text']}”{'相同' if t == v['text'] else '包含该写法'}（{v['why']}）",
+                                        group=group.get(c["mark_id"], "")))
+        scope = s.get("data_scope", "all")
+        if get_library().available():
+            scope = "simulated" if scope in ("all", "simulated") else None
+        if scope:
+            hits += search.recall_meaning(s.get("query_meaning", ""), s["classes"], scope, None, s["query_mark"])
+        return search._ranked(hits, settings.top_k_per_channel)
+    return _run("recall_meaning", "hits_meaning", go)
 
 
 def load_citations(s: AgentState) -> dict:

@@ -171,9 +171,10 @@ def build(embed_backend: str | None = None, verbose: bool = True) -> dict:
             embeddings=emb.embed([m["meaning"] for m in with_meaning]),
             documents=[m["meaning"] for m in with_meaning],
             metadatas=[{"is_simulated": m["is_simulated"]} for m in with_meaning])
-    db.collection("cases")   # 案例库先留空集合
+    from app.tools import rag
+    kb = rag.build_kb(emb)                   # RAG 知识库：指南、判例、法条
 
-    stats = {"basis": n_basis, "goods_items": len(items), "marks": len(marks),
+    stats = {"basis": n_basis, "goods_items": len(items), "marks": len(marks), **kb,
              "marks_real": sum(1 for m in marks if not m["is_simulated"]),
              "marks_simulated": sum(1 for m in marks if m["is_simulated"]), "embed_backend": backend}
     if verbose:

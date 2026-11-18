@@ -1,0 +1,126 @@
+{
+  "doc_type": "无效宣告请求裁定书",
+  "doc_no": "商评字[2024]第0000198228号",
+  "decision_date": "2024-07-30",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=abce4a71d73976e6",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "海心益和堂",
+    "app_no": "53688325",
+    "app_date": "2021-02-09",
+    "priority_date": null,
+    "owner": "中山市海心食品有限公司",
+    "goods": [
+      {
+        "name": "乳酸饮料",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "蛋白质牛奶",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "牛奶制品",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "豆奶",
+        "nice_class": 29,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "48474782",
+      "text": "益和堂",
+      "app_date": "2020-07-28",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "不类似",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": "不属于同一种或类似商品",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "51629110",
+      "text": "益禾堂",
+      "app_date": "2020-11-26",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "39993957",
+      "text": "益禾堂",
+      "app_date": "2019-07-29",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "39969825",
+      "text": "益禾堂及图",
+      "app_date": "2019-07-29",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "39714940",
+      "text": "都市 益禾堂",
+      "app_date": "2019-07-17",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "在文字构成、呼叫等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "44708562",
+      "text": "益禾记",
+      "app_date": "2020-03-18",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "在文字构成、呼叫等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "23148222",
+      "text": "益禾堂",
+      "app_date": "2017-03-14",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "宣告无效",
+  "outcome_scope": null,
+  "notes": "申请类别、申请日及商品登记项节选据国家知识产权局商标开放基本信息按编号核对，评审范围以所引文书为准。 未认定的项目保留引证编号，依据各引证在文书中的认定范围。 逐项核对文书中引证编号与审理机关的认定段落。"
+}

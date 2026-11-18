@@ -1,0 +1,150 @@
+{
+  "doc_type": "无效宣告请求裁定书",
+  "doc_no": "商评字[2020]第0000211236号",
+  "decision_date": "2020-08-09",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=919e90314c893506",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "半岛喜月及图",
+    "app_no": "24726783",
+    "app_date": "2017-06-13",
+    "priority_date": null,
+    "owner": "广州恒利文化传播有限责任公司",
+    "goods": [
+      {
+        "name": "月饼",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "调味品",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "茶饮料",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "以谷物为主的零食小吃",
+        "nice_class": 30,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "4339089",
+      "text": "半岛",
+      "app_date": "2004-11-01",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "13224161",
+      "text": "半岛及图",
+      "app_date": "2013-09-11",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "4334972",
+      "text": "THE PENINSULA",
+      "app_date": "2004-10-29",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。未取得可用于中文文字比较的标识。"
+    },
+    {
+      "reg_no": "13224158",
+      "text": "THE PENINSULA及图",
+      "app_date": "2013-09-11",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。未取得可用于中文文字比较的标识。"
+    },
+    {
+      "reg_no": "5017933",
+      "text": "半岛",
+      "app_date": "2005-11-22",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "使用在同一种或类似商品上的近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "6313223",
+      "text": "半岛",
+      "app_date": "2007-10-09",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "776898",
+      "text": "半岛",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "4334977",
+      "text": "THE PENINSULA",
+      "app_date": "2004-10-29",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。未取得可用于中文文字比较的标识。"
+    },
+    {
+      "reg_no": "776897",
+      "text": "The Peninsula",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。未取得可用于中文文字比较的标识。"
+    }
+  ],
+  "outcome": "宣告无效",
+  "outcome_scope": null,
+  "notes": "申请类别、申请日及商品登记项节选据国家知识产权局商标开放基本信息按编号核对，评审范围以所引文书为准。 未认定的项目保留引证编号，依据各引证在文书中的认定范围。"
+}

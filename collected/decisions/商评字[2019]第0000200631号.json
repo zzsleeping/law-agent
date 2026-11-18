@@ -1,0 +1,90 @@
+{
+  "doc_type": "无效宣告请求裁定书",
+  "doc_no": "商评字[2019]第0000200631号",
+  "decision_date": "2019-08-23",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=291e60996e7b0e82",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "米奇鼠 MIQISHU及图",
+    "app_no": "26309588",
+    "app_date": "2017-09-08",
+    "priority_date": null,
+    "owner": "重庆市涪陵区国色食品有限公司",
+    "goods": [
+      {
+        "name": "腌制蔬菜",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "笋干",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "泡菜",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "酸姜",
+        "nice_class": 29,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "287694",
+      "text": "米老鼠",
+      "app_date": "1986-09-12",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "5931699",
+      "text": "米奇",
+      "app_date": "2007-03-06",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "已构成近似标识",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "5518088",
+      "text": "MICKEY MOUSE",
+      "app_date": "2006-08-02",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。未取得可用于中文文字比较的标识。"
+    },
+    {
+      "reg_no": "15626465",
+      "text": "MICKEY MOUSE",
+      "app_date": "2014-11-02",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "已构成近似标识",
+      "notes": "未取得可逐项对应的引证商品明细。未取得可用于中文文字比较的标识。"
+    }
+  ],
+  "outcome": "宣告无效",
+  "outcome_scope": null,
+  "notes": "申请类别、申请日及商品登记项节选据国家知识产权局商标开放基本信息按编号核对，评审范围以所引文书为准。 未认定的项目保留引证编号，依据各引证在文书中的认定范围。"
+}

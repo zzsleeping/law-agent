@@ -1,0 +1,182 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2024]第0000269117号",
+  "decision_date": "2024-10-11",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=fdd3a59286b8b9cb",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "壹芯及图",
+    "app_no": "74477448",
+    "app_date": "2023-10-10",
+    "priority_date": null,
+    "owner": "自然人",
+    "goods": [
+      {
+        "name": "肉，鱼，家禽和野味；肉汁；腌渍、冷冻、干制及煮熟的水果和蔬菜；果冻，果酱，蜜饯；蛋；奶，奶酪，黄油，酸奶和其他奶制品；食用油和油脂",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "干枣",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "食用干黑木耳",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "虾干",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "薄荷叶茶",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "碧螺春茶",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "柳叶茶",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "茶（大红袍）",
+        "nice_class": 30,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "22798148",
+      "text": "壹芯瑞品 YI XIN RUI PIN",
+      "app_date": "2017-02-10",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、外观等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "20134148",
+      "text": "壹心草本",
+      "app_date": "2016-05-30",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、外观等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "61779638",
+      "text": "一芯天下",
+      "app_date": "2021-12-29",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、外观等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "9752478",
+      "text": "一芯红",
+      "app_date": "2011-07-22",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、外观等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "668193",
+      "text": "一心及图",
+      "app_date": "1992-10-08",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、外观等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "540358",
+      "text": "一心及图",
+      "app_date": "1990-02-13",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、外观等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "7697818",
+      "text": "一心",
+      "app_date": "2009-09-15",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、外观等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "48123266",
+      "text": "一心牌",
+      "app_date": "2020-07-15",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、外观等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "52422585",
+      "text": "一心食品 I HSIN及图",
+      "app_date": "2020-12-23",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、外观等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "7697817",
+      "text": "一心及图",
+      "app_date": "2009-09-15",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、外观等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "notes": "申请类别、申请日及商品登记项节选据国家知识产权局商标开放基本信息按编号核对，评审范围以所引文书为准。 引证已节选。"
+}

@@ -1,0 +1,176 @@
+{
+  "doc_type": "无效宣告请求裁定书",
+  "doc_no": "商评字[2024]第0000338839号",
+  "decision_date": "2024-12-03",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=e54f074f065bd967",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "麻六记 MALUJI",
+    "app_no": "65047045",
+    "app_date": "2022-06-02",
+    "priority_date": null,
+    "owner": "北京菲特兰装饰设计有限公司",
+    "goods": [
+      {
+        "name": "啤酒",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "啤酒（无酒精）",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "以麦芽为主要原料酿制而成的啤酒",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "无酒精果汁",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "果汁",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "水（饮料）",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "蔬菜汁（饮料）",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "无酒精饮料",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "无酒精的开胃酒",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "无酒精鸡尾酒",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "带果肉果汁饮料",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "果昔",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "大豆为主的饮料（非奶替代品）",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "米制饮料（非奶替代品）",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "软饮料",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "能量饮料",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "酸梅汤",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "绿豆饮料",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "植物饮料",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "豆类饮料",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "乌梅浓汁（不含酒精）",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "水果制茶味软饮料",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "果汁饮料",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "茶味汽水",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "汽水饮料（含有果汁）",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "制作加气水用配料",
+        "nice_class": 32,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "60911015",
+      "text": "六麻",
+      "app_date": "2021-11-26",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "整体与引证商标一、二整体尚可区分",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "60917195",
+      "text": "陆麻",
+      "app_date": "2021-11-26",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "维持注册",
+  "outcome_scope": null,
+  "notes": "申请类别及申请日据国家知识产权局商标开放基本信息按编号核对，商品照录文书所列范围。 未认定的项目保留引证编号，依据各引证在文书中的认定范围。"
+}

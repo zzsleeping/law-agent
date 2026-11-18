@@ -27,7 +27,7 @@ def pool(classes: set[int] | list[int], data_scope: str | None = "all") -> list[
         return [dict(r) for r in c.execute(sql, classes)]
 
 
-def candidate_pool(query: str, classes, data_scope: str | None = "all") -> list[dict]:
+def candidate_pool(query: str, classes, data_scope: str | None = "all", variants: tuple = ()) -> list[dict]:
     """召回用的候选池。
 
     开放数据可用时，它就是正式的真实商标库：“仅真实”只查开放数据，“仅仿真”只查本地仿真记录，
@@ -43,7 +43,13 @@ def candidate_pool(query: str, classes, data_scope: str | None = "all") -> list[
     if data_scope in ("all", "simulated"):
         out += pool(classes, "simulated")
     if data_scope in ("all", "real"):
-        out += lib.candidates(query, classes)
+        seen: set[tuple] = set()
+        for q in (query, *variants):                     # 原文 + 检索规划 Agent 给出的写法
+            for c in lib.candidates(q, classes):
+                key = (c["mark_id"], c["norm_text"])     # 多段名称的整体和各段要分别保留
+                if key not in seen:
+                    seen.add(key)
+                    out.append(c)
     return out
 
 

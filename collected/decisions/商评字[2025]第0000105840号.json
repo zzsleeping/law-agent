@@ -1,0 +1,114 @@
+{
+  "doc_type": "无效宣告请求裁定书",
+  "doc_no": "商评字[2025]第0000105840号",
+  "decision_date": "2025-04-18",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=54ac9f21056d9fa5",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "同福吉宝",
+    "app_no": "62488903",
+    "app_date": "2022-02-08",
+    "priority_date": null,
+    "owner": "内蒙古圣牧状元乳业有限公司",
+    "goods": [
+      {
+        "name": "粥",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "坚果粉",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "饼干",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "蛋糕",
+        "nice_class": 30,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "826907",
+      "text": "同福TONGFU及图",
+      "app_date": "1994-07-28",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "不类似",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": "未构成类似商品",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "17752785",
+      "text": "同福祥TONGFUXIANG",
+      "app_date": "2015-08-25",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "已构成近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "18551173",
+      "text": "同福七日",
+      "app_date": "2015-12-09",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "已构成近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "19081869",
+      "text": "同福",
+      "app_date": "2016-02-04",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "已构成近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "22312493",
+      "text": "同福",
+      "app_date": "2016-12-19",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "已构成近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "24984767",
+      "text": "同福冲冲冲",
+      "app_date": "2017-06-26",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "已构成近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。商标文字据商标开放基本信息按引证编号核对。"
+    }
+  ],
+  "outcome": "宣告无效",
+  "outcome_scope": null,
+  "notes": "申请类别、申请日及商品登记项节选据国家知识产权局商标开放基本信息按编号核对，评审范围以所引文书为准。 逐项核对文书中引证编号与审理机关的认定段落。"
+}

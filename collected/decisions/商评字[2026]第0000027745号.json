@@ -1,0 +1,218 @@
+{
+  "doc_type": "无效宣告请求裁定书",
+  "doc_no": "商评字[2026]第0000027745号",
+  "decision_date": "2026-02-09",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=eafcb24d18ac6454",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "外星森林",
+    "app_no": "56276642",
+    "app_date": "2021-05-21",
+    "priority_date": null,
+    "owner": "外星森林（上海）健康科技发展有限公司",
+    "goods": [
+      {
+        "name": "咖啡",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "巧克力饮料",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "糖",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "茶",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "糖果",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "蜂蜜",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "以谷物为主的零食小吃",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "预包装午餐食品（以米为主，也包括肉、鱼或蔬菜）",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "面条",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "玉米花",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "谷类制品",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "食用淀粉",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "冰糕",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "食盐",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "醋",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "酱油",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "调味品",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "发酵剂",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "食用芳香剂",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "食用预制谷蛋白",
+        "nice_class": 30,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "16397091",
+      "text": "外星人",
+      "app_date": "2015-02-15",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "呼叫、给相关公众的整体印象等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "35254600",
+      "text": "外星人",
+      "app_date": "2018-12-12",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "呼叫、给相关公众的整体印象等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "35291948",
+      "text": "外星能量",
+      "app_date": "2018-12-13",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "呼叫、给相关公众的整体印象等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "50637239",
+      "text": "外星元气",
+      "app_date": "2020-10-22",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "呼叫、给相关公众的整体印象等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "50633504",
+      "text": "外星满分",
+      "app_date": "2020-10-22",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "呼叫、给相关公众的整体印象等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "19642273",
+      "text": "元气森林",
+      "app_date": "2016-04-15",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "文字构成、含义等方面有所差异",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "50385591",
+      "text": "元气森林",
+      "app_date": "2020-10-13",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "文字构成、含义等方面有所差异",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "50560520A",
+      "text": "元气森林",
+      "app_date": "2020-10-20",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "文字构成、含义等方面有所差异",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "部分宣告无效",
+  "outcome_scope": "争议商标在食品预制谷蛋白、发酵剂商品上的注册予以维持，在其余商品上予以无效宣告。",
+  "notes": "申请类别及申请日据国家知识产权局商标开放基本信息按编号核对，商品照录文书所列范围。"
+}

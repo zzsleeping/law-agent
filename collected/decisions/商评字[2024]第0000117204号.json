@@ -1,0 +1,132 @@
+{
+  "doc_type": "无效宣告请求裁定书",
+  "doc_no": "商评字[2024]第0000117204号",
+  "decision_date": "2024-05-11",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=bf4ed1ad983833b4",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "阿诗姆",
+    "app_no": "61725411",
+    "app_date": "2021-12-27",
+    "priority_date": null,
+    "owner": "广州阿萨姆生物科技有限公司",
+    "goods": [
+      {
+        "name": "啤酒",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "无酒精果汁饮料",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "气泡水",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "蔬菜汁（饮料）",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "无酒精饮料",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "软饮料",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "能量饮料",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "植物饮料",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "豆类饮料",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "制饮料用糖浆",
+        "nice_class": 32,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "3232158",
+      "text": "阿萨姆",
+      "app_date": "2002-07-04",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成及呼叫相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "3232162",
+      "text": "阿萨姆",
+      "app_date": "2002-07-04",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成及呼叫相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "8820632",
+      "text": "阿萨姆",
+      "app_date": "2010-11-08",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成及呼叫相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "35765730",
+      "text": "阿萨姆",
+      "app_date": "2019-01-07",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成及呼叫相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "35765729",
+      "text": "阿萨姆",
+      "app_date": "2019-01-07",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成及呼叫相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "宣告无效",
+  "outcome_scope": null,
+  "notes": "申请类别及申请日据国家知识产权局商标开放基本信息按编号核对，商品照录文书所列范围。"
+}

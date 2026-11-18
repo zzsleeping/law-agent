@@ -16,7 +16,7 @@ from app.nodes.assess import SCOPE_FACT
 from app.rules import groups
 from app.rules.risk_table import RISK_LABEL
 from app.state import AgentState, Assessment, Claim
-from app.tools import basis
+from app.tools import basis, rag
 
 
 def _gap_claims(s: AgentState, selected: list[Assessment]) -> list[Claim]:
@@ -85,18 +85,56 @@ def _template_overall(s: AgentState, selected: list[Assessment], risky: list[Ass
                  fact_ids=[SCOPE_FACT], basis_ids=basis_ids)
 
 
-def _call(s: AgentState, cands: list[Assessment], task: str) -> list[Claim] | None:
-    """调用一次 P3。task 为 "risk"（只写这些候选的风险结论）或 "overall"（只写总结论）。失败返回 None。"""
+# 在先状态 → 检索时带上的情形关键词，让补充依据贴合这一组的具体情况
+PRIOR_SCENE = {
+    "registered": "他人在同一种商品或者类似商品上已经注册的商标",
+    "valid": "他人在同一种商品或者类似商品上已经注册或者初步审定的商标",
+    "prelim": "初步审定公告的商标",
+    "earlier_app": "申请在先的商标，初步审定并公告申请在先的商标",
+    "same_day": "同一天申请，初步审定并公告使用在先的商标",
+    "pending_long": "申请在先的商标，审查结果待核实",
+    "expired": "注册商标有效期满，续展、宽展期",
+    "lapsed_recent": "注册商标被注销、期满不再续展，一年内对相同或者近似的商标注册申请不予核准",
+}
+
+
+def _rag_query(s: AgentState, a: Assessment) -> str:
+    """按这一组的情形写检索语句：场景、在先状态、商品关系、标识比对情况。"""
+    facts = s["facts"]
+    hits = "；".join(dict.fromkeys(facts[f].text for f in a.fact_ids
+                                   if f in facts and facts[f].kind == "hit" and not f.endswith("-judge")))
+    parts = ["对驳回申请不服申请复审，" if _review(s) else "申请注册的商标，",
+             PRIOR_SCENE.get(a.prior, ""),
+             "，同一种商品或者类似商品" if a.goods_rel in ("same", "similar", "linked") else "",
+             "，商标相同或者近似" if a.mark_sim in ("high", "medium") else "",
+             f"。标识比对：{hits[:200]}" if hits else ""]
+    return "".join(parts)
+
+
+def _retrieved_basis(s: AgentState, a: Assessment) -> list[str]:
+    """RAG：按这一组的情形检索相关法条和指南条目，补充映射表给出的依据（只收评估日期适用的）。"""
+    return [r["id"] for r in rag.retrieve_basis(_rag_query(s, a), s["eval_date"]) if r["id"] not in a.basis_ids]
+
+
+def _call(s: AgentState, cands: list[Assessment], task: str, extra: dict | None = None) -> list[Claim] | None:
+    """调用一次 P3。task 为 "risk"（只写这些候选的风险结论）或 "overall"（只写总结论）。失败返回 None。
+    extra：每个候选由 RAG 检索补充的依据编号。"""
+    extra = extra or {}
     lines = []
     for a in cands:
         facts = "\n".join(f"    [{f}] {s['facts'][f].text}" for f in a.fact_ids)
         lines.append(f"- mark_id: {a.mark_id}  文字：{a.text}  风险：{RISK_LABEL[a.risk]}\n"
-                     f"  可引用的事实：\n{facts}\n  建议依据：{', '.join(a.basis_ids)}")
-    wanted = list(dict.fromkeys(b for a in cands for b in a.basis_ids)) if task == "risk" else s.get("allowed_basis", [])
+                     f"  可引用的事实：\n{facts}\n  建议依据：{', '.join(a.basis_ids)}"
+                     + (f"\n  检索到的相关依据：{', '.join(extra.get(a.mark_id, []))}" if extra.get(a.mark_id) else ""))
+    if task == "risk":
+        wanted = list(dict.fromkeys([b for a in cands for b in a.basis_ids] + [b for a in cands for b in extra.get(a.mark_id, [])]))
+    else:
+        wanted = s.get("allowed_basis", [])
     allowed = []
     for i in wanted:
         b = basis.get_basis(i)
-        allowed.append(f"[{i}] {b['title'] + '：' if b['title'] else ''}{b['text'][:600]}")
+        tag = "（检索补充）" if any(i in v for v in extra.values()) else ""
+        allowed.append(f"[{i}]{tag} {b['title'] + '：' if b['title'] else ''}{b['text'][:600]}")
     data = llm.chat_json("p3_compose", {
         "scenario": "驳回复审逐项比对" if _review(s) else "申请前筛查", "eval_date": str(s["eval_date"]),
         "query": f"{s['query_mark']}；" + "、".join(g.name for g in s.get("goods", [])),
@@ -125,13 +163,14 @@ def _call(s: AgentState, cands: list[Assessment], task: str) -> list[Claim] | No
     return out
 
 
-def _llm_claims(s: AgentState, selected: list[Assessment], risky: list[Assessment]) -> tuple[list[Claim], int]:
+def _llm_claims(s: AgentState, selected: list[Assessment], risky: list[Assessment],
+                extra: dict | None = None) -> tuple[list[Claim], int]:
     """每个名称组一次调用并发执行（最多 llm_max_groups 组，其余用模板），外加一次总结论调用。
     失败的部分用模板补上。返回 (结论, 失败次数)。"""
     head, tail = risky[: settings.llm_max_groups], risky[settings.llm_max_groups:]
     with ThreadPoolExecutor(max_workers=min(5, len(head) + 1)) as pool:
-        overall_job = pool.submit(_call, s, head, "overall")
-        per_mark = list(pool.map(lambda a: _call(s, [a], "risk"), head))
+        overall_job = pool.submit(_call, s, head, "overall", extra)
+        per_mark = list(pool.map(lambda a: _call(s, [a], "risk", extra), head))
         overall = overall_job.result()
     claims, failed = [_template_risk(s, a) for a in tail], 0
     for a, got in zip(head, per_mark):
@@ -157,8 +196,14 @@ def compose(s: AgentState) -> dict:
         [a for a in selected if a.risk in wanted]).values()]
     claims = _gap_claims(s, selected)
     notes, degraded, used_llm = [], False, False
+    # RAG：为要写结论的组检索补充依据；补充的依据加入本次允许引用的清单，仍要经过引用校验
+    extra = {a.mark_id: _retrieved_basis(s, a) for a in risky[: settings.llm_max_groups]} if risky else {}
+    allowed = list(s.get("allowed_basis", []))
+    allowed += [b for ids in extra.values() for b in ids if b not in allowed]
+    s = {**s, "allowed_basis": allowed}
+    sources = {**s.get("basis_sources", {}), **{b: "rag" for ids in extra.values() for b in ids}}
     if risky:
-        generated, failed = _llm_claims(s, selected, risky)
+        generated, failed = _llm_claims(s, selected, risky, extra)
         if len(risky) > settings.llm_max_groups:
             notes.append(f"为控制时延和费用，只为前 {settings.llm_max_groups} 个名称组调用大模型写结论，"
                          f"其余 {len(risky) - settings.llm_max_groups} 组使用模板")
@@ -172,5 +217,7 @@ def compose(s: AgentState) -> dict:
         claims.append(_template_overall(s, selected, risky))
     dt = round(time.time() - t0, 3)
     key = "compose" if not s.get("retry_count") else f"compose_retry{s['retry_count']}"
-    return {"claims": claims, "degraded": degraded, "degraded_notes": notes, "timings": {key: dt},
-            "trace": [{"node": "compose", "claims": len(claims), "llm": used_llm, "seconds": dt}]}
+    n_rag = len({b for ids in extra.values() for b in ids})
+    return {"claims": claims, "allowed_basis": allowed, "basis_sources": sources,
+            "degraded": degraded, "degraded_notes": notes, "timings": {key: dt},
+            "trace": [{"node": "compose", "claims": len(claims), "llm": used_llm, "rag_basis": n_rag, "seconds": dt}]}

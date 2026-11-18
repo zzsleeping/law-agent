@@ -1,0 +1,66 @@
+{
+  "doc_type": "无效宣告请求裁定书",
+  "doc_no": "商评字[2021]第0000018475号",
+  "decision_date": "2021-01-18",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=d3027c037a343f9e",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "達利时 TECHTIME及图",
+    "app_no": "29875921",
+    "app_date": "2018-03-28",
+    "priority_date": null,
+    "owner": "深圳市达利时实业有限公司",
+    "goods": [
+      {
+        "name": "肉松",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "加工过的坚果",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "以果蔬为主的零食小吃",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "以果蔬为主的零食小吃",
+        "nice_class": 29,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "10029839",
+      "text": "达利园及图",
+      "app_date": "2011-09-30",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫上相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "5155704",
+      "text": "达利园及图",
+      "app_date": "2006-02-13",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "宣告无效",
+  "outcome_scope": null,
+  "notes": "申请类别、申请日及商品登记项节选据国家知识产权局商标开放基本信息按编号核对，评审范围以所引文书为准。 未认定的项目保留引证编号，依据各引证在文书中的认定范围。"
+}

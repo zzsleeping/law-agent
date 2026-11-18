@@ -79,22 +79,24 @@ def main() -> int:
         for c in d["cited_marks"]:
             add(c.get("reg_no"), c.get("text"), c.get("owner"), c.get("app_date"), None, c.get("status"), c.get("goods"))
 
-        if am.get("app_no") in tune:
-            cases.append({
-                "case_id": d["doc_no"], "doc_type": d["doc_type"], "decision_date": d["decision_date"],
-                "source_url": d["source_url"], "applicant_mark": am["text"], "outcome": d["outcome"],
-                "outcome_scope": d.get("outcome_scope"),
-                "cited": [{"text": c.get("text"), "reg_no": c.get("reg_no"), "mark_similar": c.get("mark_similar"),
-                           "goods_similar": c.get("goods_similar"), "excerpt": c.get("reasoning_excerpt")}
-                          for c in d["cited_marks"] if c.get("mark_similar") in ("近似", "不近似")],
-            })
+        # 全部文书进案例库，用 split 区分调参集 / 冻结测试集；评测和 RAG 判例库只用调参集一侧
+        cases.append({
+            "case_id": d["doc_no"], "split": "tune" if am.get("app_no") in tune else "frozen",
+            "doc_type": d["doc_type"], "decision_date": d["decision_date"],
+            "source_url": d["source_url"], "applicant_mark": am["text"], "outcome": d["outcome"],
+            "outcome_scope": d.get("outcome_scope"),
+            "cited": [{"text": c.get("text"), "reg_no": c.get("reg_no"), "mark_similar": c.get("mark_similar"),
+                       "goods_similar": c.get("goods_similar"), "excerpt": c.get("reasoning_excerpt")}
+                      for c in d["cited_marks"] if c.get("mark_similar") in ("近似", "不近似")],
+        })
     out = ROOT / "data" / "raw" / "real" / "decision_marks.json"
     out.write_text(json.dumps(list(marks.values()), ensure_ascii=False, indent=1), encoding="utf-8")
     (ROOT / "data" / "cases.json").write_text(json.dumps(cases, ensure_ascii=False, indent=1), encoding="utf-8")
     n_goods = sum(len(m["goods"]) for m in marks.values())
     n_code = sum(1 for m in marks.values() for g in m["goods"] if g["code"])
     print(f"真实商标记录 {len(marks)} 条（核定或指定商品 {n_goods} 项，其中 {n_code} 项对应到区分表编号）→ {out}")
-    print(f"典型案例 {len(cases)} 份（仅调参集文书）→ data/cases.json")
+    n_tune = sum(1 for c in cases if c["split"] == "tune")
+    print(f"典型案例 {len(cases)} 份（调参集 {n_tune}、冻结测试集 {len(cases) - n_tune}）→ data/cases.json")
     return 0
 
 

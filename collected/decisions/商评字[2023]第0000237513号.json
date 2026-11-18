@@ -1,0 +1,120 @@
+{
+  "doc_type": "无效宣告请求裁定书",
+  "doc_no": "商评字[2023]第0000237513号",
+  "decision_date": "2023-08-23",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=d9c1ddb8e080d9a2",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "顺心嗨吃家",
+    "app_no": "38701122",
+    "app_date": "2019-06-05",
+    "priority_date": null,
+    "owner": "自然人",
+    "goods": [
+      {
+        "name": "烹饪用蛋白",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "豆腐",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "豆腐制品",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "加工过的坚果",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "以果蔬为主的零食小吃",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "食用干花",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "食用面筋",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "果冻",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "油炸土豆片",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "以水果为主的零食小吃",
+        "nice_class": 29,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "31459105",
+      "text": "嗨吃家",
+      "app_date": "2018-06-07",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "32496588",
+      "text": "嗨吃家",
+      "app_date": "2018-07-26",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "32494764",
+      "text": "LPP嗨吃家",
+      "app_date": "2018-07-26",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "19985362",
+      "text": "嗨吃客",
+      "app_date": "2016-05-17",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "文字构成、呼叫等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "宣告无效",
+  "outcome_scope": null,
+  "notes": "申请类别及申请日据国家知识产权局商标开放基本信息按编号核对，商品照录文书所列范围。 未认定的项目保留引证编号，依据各引证在文书中的认定范围。"
+}

@@ -1,0 +1,87 @@
+{
+  "doc_type": "无效宣告请求裁定书",
+  "doc_no": "商评字[2026]第0000091100号",
+  "decision_date": "2026-05-09",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=985e5b6859f75e81",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "康是福",
+    "app_no": "76465403",
+    "app_date": "2024-01-18",
+    "priority_date": null,
+    "owner": "自然人",
+    "goods": [
+      {
+        "name": "餐馆",
+        "nice_class": 43,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "20922895",
+      "text": "康師傅",
+      "app_date": "2016-08-09",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "未构成近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "24765980",
+      "text": "康師傅KANG SHI FU",
+      "app_date": "2017-06-14",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "未构成近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "3334460",
+      "text": "康師傅及图",
+      "app_date": "2002-10-14",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "未构成近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "14241143",
+      "text": "康師傅MASTER KONG CHEF'S TABLE及图",
+      "app_date": "2014-03-25",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "未构成近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "66666874",
+      "text": "康師傅及图",
+      "app_date": "2022-08-17",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "未构成近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "维持注册",
+  "outcome_scope": null,
+  "notes": "申请类别及申请日据国家知识产权局商标开放基本信息按编号核对，商品照录文书所列范围。"
+}

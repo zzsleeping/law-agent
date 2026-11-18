@@ -19,6 +19,23 @@ ROOT = Path(__file__).resolve().parent.parent
 COLLECTED = Path(os.getenv("TM_COLLECTED_DIR", ROOT / "collected"))
 CHINESE = re.compile(r"[一-鿿]")
 CODE = re.compile(r"^C?\d{6}$")
+# 各类文书允许的结果取值：(全部不利于申请 / 争议商标, 部分, 有利于申请 / 争议商标)
+OUTCOMES = {
+    "驳回复审": ("驳回", "部分驳回", "初步审定"),
+    "无效宣告": ("宣告无效", "部分宣告无效", "维持注册"),
+    "不予注册复审": ("不予注册", "部分不予注册", "准予注册"),
+}
+ADVERSE = {v[0] for v in OUTCOMES.values()}
+PARTIAL = {v[1] for v in OUTCOMES.values()}
+FAVORABLE = {v[2] for v in OUTCOMES.values()}
+
+
+def allowed_outcomes(doc_type: str) -> tuple[str, ...]:
+    """按文书类型给出结果取值；行政诉讼判决按其审查的原程序判断，无法判断时允许全部取值。"""
+    for key, vals in OUTCOMES.items():
+        if key in (doc_type or ""):
+            return vals
+    return tuple(v for vals in OUTCOMES.values() for v in vals) + ("驳回（二审维持）",)
 GROUP = re.compile(r"^\d{4}$")
 
 
@@ -107,10 +124,11 @@ def check_decisions(r: Report) -> None:
             r.err(where, "source_url 不是网址")
         dec = _date(r, where, doc.get("decision_date"), "decision_date", True)
         _date(r, where, doc.get("retrieved_at"), "retrieved_at", True)
-        if doc.get("outcome") not in ("驳回", "部分驳回", "初步审定"):
-            r.err(where, f"outcome 只能是 驳回 / 部分驳回 / 初步审定：{doc.get('outcome')!r}")
-        if doc.get("outcome") == "部分驳回" and not doc.get("outcome_scope"):
-            r.err(where, "部分驳回时 outcome_scope 不能为空")
+        allowed = allowed_outcomes(doc.get("doc_type"))
+        if doc.get("outcome") not in allowed:
+            r.err(where, f"{doc.get('doc_type')} 的 outcome 只能是 {' / '.join(allowed)}：{doc.get('outcome')!r}")
+        if doc.get("outcome") in PARTIAL and not doc.get("outcome_scope"):
+            r.err(where, f"{doc.get('outcome')}时 outcome_scope 不能为空")
 
         am = doc.get("applicant_mark") or {}
         w = f"{where}.applicant_mark"
@@ -169,10 +187,11 @@ def check_decisions(r: Report) -> None:
             if c.get("text") and c.get("text") == am.get("text") and ms == "不近似":
                 r.warn(w, "两商标文字相同却记为不近似，请核对原文")
             any_similar = any_similar or (ms == "近似" and gs in ("相同", "类似"))
-        if doc.get("outcome") == "驳回" and not any_similar:
-            r.warn(where, "结果为驳回，但没有任何引证商标同时被认定标识近似且商品相同或类似，请核对")
-        if doc.get("outcome") == "初步审定" and any_similar:
-            r.warn(where, "结果为初步审定，但有引证商标被认定近似且商品类似（可能已失效，请在 notes 说明）")
+        if doc.get("outcome") in ADVERSE and not any_similar:
+            r.warn(where, f"结果为{doc.get('outcome')}，但没有任何引证商标同时被认定标识近似且商品相同或类似，请核对"
+                          "（也可能基于其他条款）")
+        if doc.get("outcome") in FAVORABLE and any_similar:
+            r.warn(where, f"结果为{doc.get('outcome')}，但有引证商标被认定近似且商品类似（可能已失效，请在 notes 说明）")
 
     total = sum(outcomes.values()) + references_without_chinese_text
     print(f"决定书 {len(files)} 份，引证商标 {total} 个：近似 {outcomes['近似']}、不近似 {outcomes['不近似']}、"
@@ -180,7 +199,7 @@ def check_decisions(r: Report) -> None:
     if references_without_chinese_text:
         print(f"{references_without_chinese_text} 件引证无已核实的中文文字，仅留档，不计入标识标签统计。")
     if len(files) < 30:
-        r.warn("decisions", f"只有 {len(files)} 份，目标 30–50 份")
+        r.warn("decisions", f"只有 {len(files)} 份，样本偏少")
     judged = outcomes["近似"] + outcomes["不近似"]
     if judged and not 0.3 <= outcomes["近似"] / judged <= 0.7:
         r.warn("decisions", f"近似占比 {outcomes['近似'] / judged:.0%}，目标大致各占一半")

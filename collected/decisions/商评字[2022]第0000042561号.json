@@ -1,0 +1,178 @@
+{
+  "doc_type": "无效宣告请求裁定书",
+  "doc_no": "商评字[2022]第0000042561号",
+  "decision_date": "2022-02-11",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=b64b6290e697784f",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "麦麦匠",
+    "app_no": "37883473",
+    "app_date": "2019-04-29",
+    "priority_date": null,
+    "owner": "上海拓城食品有限公司",
+    "goods": [
+      {
+        "name": "包子",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "以谷物为主的零食小吃",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "以谷物为主的零食小吃",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "八宝饭",
+        "nice_class": 30,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "15486028",
+      "text": "麦麦开饭",
+      "app_date": "2014-10-11",
+      "status": null,
+      "owner": null,
+      "goods": [
+        {
+          "name": "粥",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "饼干",
+          "nice_class": 30,
+          "group": null
+        },
+        {
+          "name": "以谷物为主的零食小吃",
+          "nice_class": 30,
+          "group": null
+        }
+      ],
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "使用在同一种或类似商品上的近似商标",
+      "notes": null
+    },
+    {
+      "reg_no": "37802514",
+      "text": "麦麦农场",
+      "app_date": "2019-04-26",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "30744872",
+      "text": "麦麦全席",
+      "app_date": "2018-05-08",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "534258",
+      "text": "麦",
+      "app_date": "1989-11-14",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "533087",
+      "text": "麦",
+      "app_date": "1989-11-14",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "12075146",
+      "text": "麦当劳",
+      "app_date": "2013-01-21",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "630280",
+      "text": "麦当劳",
+      "app_date": "1992-03-04",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "32402127",
+      "text": "麦当劳",
+      "app_date": "2018-07-23",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "6608168",
+      "text": "麦乐鸡",
+      "app_date": "2008-03-20",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "636097",
+      "text": "麦当劳",
+      "app_date": "1992-04-27",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "未认定",
+      "reasoning_excerpt": null,
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "宣告无效",
+  "outcome_scope": null,
+  "notes": "申请类别、申请日及商品登记项节选据国家知识产权局商标开放基本信息按编号核对，评审范围以所引文书为准。 引证已节选。 未认定的项目保留引证编号，依据各引证在文书中的认定范围。"
+}

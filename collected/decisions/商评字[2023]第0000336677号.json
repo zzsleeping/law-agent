@@ -1,0 +1,108 @@
+{
+  "doc_type": "无效宣告请求裁定书",
+  "doc_no": "商评字[2023]第0000336677号",
+  "decision_date": "2023-11-27",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=5d89976b93654e29",
+  "retrieved_at": "2026-11-18",
+  "applicant_mark": {
+    "text": "祥运澳迪利",
+    "app_no": "53611764",
+    "app_date": "2021-02-05",
+    "priority_date": null,
+    "owner": "河南新雨瑞饮品有限公司",
+    "goods": [
+      {
+        "name": "无酒精碳酸饮料",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "矿泉水（饮料）",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "格瓦斯（无酒精饮料）",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "可乐",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "啤酒",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "麦芽汁（发酵后成啤酒）",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "水果味的碳酸饮料",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "果汁冰水（饮料）",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "无酒精果汁饮料",
+        "nice_class": 32,
+        "group": null
+      },
+      {
+        "name": "制啤酒用麦芽汁",
+        "nice_class": 32,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "1336799",
+      "text": "澳的利AO DE LI",
+      "app_date": "1997-06-11",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "已构成近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "9804104",
+      "text": "澳的利",
+      "app_date": "2011-08-03",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "已构成近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "12422776",
+      "text": "澳的利",
+      "app_date": "2013-04-15",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "已构成近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "部分宣告无效",
+  "outcome_scope": "争议商标在“啤酒；麦芽汁（发酵后成啤酒）；制啤酒用麦芽汁”商品上予以维持，在其余商品予以无效宣告。",
+  "notes": "申请类别及申请日据国家知识产权局商标开放基本信息按编号核对，商品照录文书所列范围。"
+}
