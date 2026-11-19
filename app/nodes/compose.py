@@ -210,7 +210,7 @@ def compose(s: AgentState) -> dict:
         used_llm = failed < len(risky) + 1
         if failed:
             degraded = True
-            why = llm.last_error if llm.available() else "未配置 LLM_API_KEY 或 LLM_MODEL"
+            why = llm.describe_error()
             notes.append(f"{failed} 条结论未使用大模型（{why}），由模板生成")
         claims += generated
     else:

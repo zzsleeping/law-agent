@@ -136,7 +136,7 @@ def explain(s: AgentState) -> dict:
     if skipped:
         notes.append(f"为控制时延和费用，只为前 {len(todo)} 个名称组调用大模型解释，其余 {len(skipped)} 组显示规则生成的理由")
     if failed:
-        why = llm.last_error if llm.available() else "未配置 LLM_API_KEY 或 LLM_MODEL"
+        why = llm.describe_error()
         notes.append(f"{len(failed)} 个名称组的解释未使用大模型（{why}），显示的是代码生成的理由")
     dt = round(time.time() - t0, 3)
     return {"assessments": updated, "degraded": bool(failed), "degraded_notes": notes,

@@ -60,7 +60,7 @@ def plan_search(s: AgentState) -> dict:
         out = llm.chat_json("p0_plan", {**base, "probe": probe_text}, refresh=bool(s.get("fresh")))
         if out is None:
             if rnd == 1:
-                why = llm.last_error if llm.available() else "未配置 LLM_API_KEY 或 LLM_MODEL"
+                why = llm.describe_error()
                 notes.append(f"检索规划未使用大模型（{why}），只检索原文")
             break
         plan = _probe(_clean(out.get("queries"), s["query_mark"]), s.get("classes", []), s.get("data_scope", "all"))

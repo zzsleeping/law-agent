@@ -151,3 +151,56 @@ def test_basis_version():
     assert "TML2026".replace("TML", "") in basis.law_version_label(new)
     assert "第三十条" in basis.version_note("TML2026-20")      # 新旧对应一对多：30 → 20、34
     assert "第三十条" in basis.version_note("TML2026-34")
+
+
+def test_describe_error_is_plain_language(monkeypatch):
+    from app import llm
+    from app.config import settings
+
+    monkeypatch.setattr(settings, "llm_api_key", "k")
+    monkeypatch.setattr(settings, "llm_model", "m")
+    assert "余额不足" in llm.describe_error("APIStatusError: Error code: 402 - Insufficient Balance (request_id: x)")
+    assert "密钥无效" in llm.describe_error("AuthenticationError: Error code: 401")
+    assert "限流" in llm.describe_error("RateLimitError: Error code: 429")
+    assert "超时" in llm.describe_error("APITimeoutError: Request timed out.")
+    assert "网络" in llm.describe_error("APIConnectionError: Connection error.")
+    assert llm.unavailable_reason(["3 个名称组未能由大模型判定（大模型账户余额不足，请充值后重新评估）"])
+    assert not llm.unavailable_reason(["为控制时延和费用，只为前 10 个名称组调用大模型判定"])
+    monkeypatch.setattr(settings, "llm_api_key", "")
+    assert "未配置" in llm.describe_error("whatever")
+
+
+def test_uncovered_classes():
+    from app import db
+
+    cov = {"real": {"source": "open", "classes": "29,30,32,43", "count": 1, "date": "2026-11-13"}}
+    assert db.uncovered_classes([29, 30, 32], cov) == []
+    assert db.uncovered_classes([30, 35, 5], cov) == [5, 35]
+    assert "第 5、35 类不在正式商标库范围内" in db.uncovered_note([30, 35, 5], cov)
+    assert db.uncovered_note([30], cov) == ""
+    assert db.uncovered_classes([35], {"real": {"classes": "", "count": 0}}) == []   # 未接入开放数据时不提示
+
+
+def test_uncovered_note_mentions_unmapped_goods():
+    from app import db
+
+    cov = {"real": {"source": "open", "classes": "29,30,32,43", "count": 1, "date": "2026-11-13"}}
+    note = db.uncovered_note([29, 30, 32], cov, ["服装"])
+    assert "“服装”没有对应到区分表选录" in note and "第 29、30、32、43 类" in note
+
+
+def test_parse_keeps_goods_the_model_skipped():
+    """模型只挑了能对应选录的商品时，用户写的其余商品（如其他类别的“服装”）仍保留为待核实，不会悄悄丢掉。"""
+    from app import llm
+    from app.nodes.parse import parse
+    from app.tools import goods as goods_tool
+
+    _, cands = goods_tool.map_goods("奶茶、服装")
+    code = cands["奶茶"][0]["code"]
+    llm.set_backend(lambda name, v: {"distinctive": "云山", "meaning": "", "goods": [{"part": "奶茶", "code": code}]})
+    try:
+        out = parse({"query_mark": "云山茶语", "goods_desc": "奶茶、服装"})
+    finally:
+        llm.set_backend(None)
+    names = {(g.name, g.mapping) for g in out["goods"]}
+    assert ("服装", "pending") in names and any(g.code == code for g in out["goods"])

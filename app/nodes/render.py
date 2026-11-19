@@ -16,7 +16,8 @@ from app.state import AgentState
 from app.tools import basis
 from app.tools import cases as case_lib
 
-DISCLAIMER = ("本报告由程序按规则表和结构化校验生成，仅供申请前筛查参考，不构成法律意见。"
+DISCLAIMER = ("本报告由商标近似评估智能体生成：大模型结合文字比对证据逐组判定近似与注册风险，规则护栏校正越界结论，"
+              "每条结论经引用校验。仅供申请前筛查参考，不构成法律意见。"
               "未考虑驰名商标跨类保护、图形要素和实际使用情况。在先状态由公告日期推定，法律状态须另行核实。")
 
 
@@ -238,6 +239,9 @@ def export_docx(report: dict, path) -> None:
             red(f"· {e}")
     if report["degraded"]:
         red("【降级输出】部分内容未使用大模型：" + "；".join(report["degraded_notes"]))
+    if miss := db.uncovered_note(report["classes"], report.get("coverage"),
+                                 [g["name"] for g in report["goods"] if not g.get("code")]):
+        red(f"【检索范围】{miss}")
 
     doc.add_heading("一、基本信息", level=1)
     goods = "、".join(f"{g['name']}（{g['code'] or '未对应区分表，待核实'}）" for g in report["goods"])

@@ -130,7 +130,7 @@ def judge(s: AgentState) -> dict:
     if capped:
         notes.append(f"为控制时延和费用，只为前 {len(todo)} 个名称组调用大模型判定，其余 {len(capped)} 组沿用规则引擎的结果")
     if failed or (todo and not llm.available()):
-        why = llm.last_error if llm.available() else "未配置 LLM_API_KEY 或 LLM_MODEL"
+        why = llm.describe_error()
         notes.append(f"{failed or len(todo)} 个名称组未能由大模型判定（{why}），沿用规则引擎的结果")
     dt = round(time.time() - t0, 3)
     return {"assessments": out_list, "facts": facts, "allowed_basis": allowed,

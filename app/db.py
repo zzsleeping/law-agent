@@ -146,6 +146,31 @@ def coverage() -> dict:
     return out
 
 
+def uncovered_classes(classes, cov: dict | None = None) -> list[int]:
+    """检索类别中不在正式商标库（开放数据）覆盖范围内的类别；未接入开放数据时返回空（另有提示）。"""
+    cov = cov or coverage()
+    real = cov.get("real", {})
+    if real.get("source") != "open" or not real.get("classes"):
+        return []
+    have = {int(x) for x in str(real["classes"]).replace("，", ",").split(",") if x.strip().isdigit()}
+    return sorted({int(c) for c in classes} - have)
+
+
+def uncovered_note(classes, cov: dict | None = None, pending: list[str] | tuple = ()) -> str:
+    """检索范围提示：检索类别超出正式商标库，或有商品没对应到区分表选录（多半属于其他类别）。都没有时返回空串。"""
+    cov = cov or coverage()
+    real = cov.get("real", {})
+    if real.get("source") != "open":
+        return ""
+    have = "、".join(x.strip() for x in str(real.get("classes", "")).split(",") if x.strip())
+    parts = []
+    if miss := uncovered_classes(classes, cov):
+        parts.append(f"第 {'、'.join(map(str, miss))} 类不在正式商标库范围内（开放数据只覆盖第 {have} 类），这些类别检索不到在先商标")
+    if pending := [p for p in pending if p]:
+        parts.append(f"“{'、'.join(pending)}”没有对应到区分表选录（第 {have} 类），如属于其他类别，正式商标库检索不到相关在先商标")
+    return ("；".join(parts) + "。结果不代表没有冲突，请另行检索。") if parts else ""
+
+
 def _coverage_local() -> dict:
     with connect() as c:
         rows = c.execute(

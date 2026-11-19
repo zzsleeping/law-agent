@@ -113,6 +113,10 @@ def stream(payload) -> None:
 
 
 def notices(v: dict) -> None:
+    if llm.unavailable_reason(v.get("degraded_notes", [])):         # 大模型整体不可用：醒目说明，由规则兜底
+        html(style.empty("degraded", "大模型暂时不可用，本次结论由规则引擎给出；原因见下方提示。"))
+    if v.get("classes") and (miss := db.uncovered_note(v["classes"], pending=[g.name for g in v.get("goods", []) if not g.code])):
+        html(style.note(f"<b>检索范围</b>　{esc(miss)}", "warn"))
     for n in v.get("degraded_notes", []):
         if n.startswith("为控制时延"):
             html(style.note(esc(n), "info"))
@@ -324,6 +328,8 @@ elif ss.stage == "goods":
                               placeholder="逗号分隔",
                               help="会标为“待核实”。与它相关的候选不会被判为低风险。")
         html('<div class="side-cap">检索类别由这里选中的商品项决定：它们所在的类别，加上区分表注释关联到的类别。</div>')
+        if miss := db.uncovered_note({options[c]["nice_class"] for c in chosen}, pending=goods_tool.split_desc(extra)):
+            html(style.note(f"<b>检索范围</b>　{esc(miss)}", "warn"))
     if st.button("确认商品项，开始检索", type="primary"):
         goods = [goods_tool.to_item({**options[c]}, "confirmed").model_dump() for c in chosen]
         goods += [{"name": n, "mapping": "pending"} for n in goods_tool.split_desc(extra)]
@@ -354,8 +360,8 @@ elif ss.stage == "candidates":
     if v.get("scenario") != "rejection_review":
         html(style.kpis([(recall_trace.get(n, {}).get("hits", 0), name, f"{recall_trace.get(n, {}).get('seconds', 0)} 秒", "accent")
                      for n, name in RECALL_LABEL.items()]))
-    html(f'<div class="lead">规则阶段（确认商品项 → 风险列表，不调用模型）耗时 <b>{tm.get("rule_stage", "—")} 秒</b>；'
-         f'模型解释耗时 {tm.get("explain", "—")} 秒。</div>')
+    html(f'<div class="lead">检索与规则初评耗时 <b>{tm.get("rule_stage", "—")} 秒</b>；'
+         f'大模型逐组判定耗时 <b>{tm.get("judge", "—")} 秒</b>。</div>')
 
     from app.rules import groups as grp
 
@@ -444,7 +450,11 @@ elif ss.stage == "report":
             html(style.note("<b>引用校验未通过</b>（已重写 2 次）。以下结论需人工处理，不得直接使用：<br>"
                             + "<br>".join(f"· {esc(e)}" for e in rep["errors"]), "err"))
         if rep["degraded"]:
+            if llm.unavailable_reason(rep["degraded_notes"]):
+                html(style.empty("degraded", "大模型暂时不可用，本报告的结论由规则引擎给出。"))
             html(style.note("<b>降级输出</b>　" + esc("；".join(rep["degraded_notes"])), "warn"))
+        if miss := db.uncovered_note(rep["classes"], rep.get("coverage"), [g["name"] for g in rep["goods"] if not g.get("code")]):
+            html(style.note(f"<b>检索范围</b>　{esc(miss)}", "warn"))
         html(style.kv([("评估日期", rep["eval_date"]), ("申请日", rep["our_app_date"]), ("适用法律", rep["law_version"]),
                        ("检索类别", "第 " + "、".join(map(str, rep["classes"])) + " 类"),
                        ("商品项", "、".join(g["name"] for g in rep["goods"]))]))
@@ -564,7 +574,7 @@ elif ss.stage == "report":
             st.divider()
     with st.expander("执行过程与耗时"):
         t = v.get("timings", {})
-        html(style.kv([("规则阶段", f"{t.get('rule_stage', '—')} 秒"), ("模型解释", f"{t.get('explain', '—')} 秒"),
+        html(style.kv([("检索与规则初评", f"{t.get('rule_stage', '—')} 秒"), ("大模型判定", f"{t.get('judge', '—')} 秒"),
                        ("生成结论", f"{t.get('compose', '—')} 秒"), ("重写次数", v.get("retry_count", 0))]))
         st.dataframe(pd.DataFrame([{"节点": NODE_LABEL.get(x["node"], x["node"]),
                                     "结果": trace_text(x)}

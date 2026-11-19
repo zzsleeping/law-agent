@@ -30,6 +30,33 @@ def available() -> bool:
     return _backend is not None or bool(settings.llm_api_key and settings.llm_model)
 
 
+def describe_error(err: str | None = None) -> str:
+    """把接口报错翻译成用户看得懂的原因（显示在降级提示里）。"""
+    if not available():
+        return "未配置大模型（.env 中的 LLM_API_KEY / LLM_MODEL）"
+    e = err if err is not None else last_error
+    low = (e or "").lower()
+    if "insufficient balance" in low or "error code: 402" in low:
+        return "大模型账户余额不足，请充值后重新评估"
+    if "error code: 401" in low or "authentication" in low or "api key" in low:
+        return "大模型接口密钥无效，请检查 LLM_API_KEY"
+    if "error code: 429" in low or "ratelimit" in low or "rate limit" in low:
+        return "大模型调用过于频繁，被服务方限流，请稍后重试"
+    if "timeout" in low:
+        return "大模型响应超时"
+    if "apiconnectionerror" in low or "connection" in low:
+        return "无法连接大模型服务，请检查网络"
+    if "json" in low:
+        return "大模型输出格式不正确"
+    return f"大模型调用失败（{e[:60]}）" if e else "大模型调用失败"
+
+
+def unavailable_reason(notes: list[str]) -> bool:
+    """降级提示里是否说明大模型整体不可用（余额、密钥、网络、未配置），而不是个别调用失败。"""
+    keys = ("余额不足", "密钥无效", "无法连接", "未配置大模型")
+    return any(k in n for n in notes for k in keys)
+
+
 @lru_cache(maxsize=8)
 def load_prompt(name: str) -> dict:
     with open(settings.prompts_dir / f"{name}.yaml", encoding="utf-8") as f:

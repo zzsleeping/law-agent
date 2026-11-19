@@ -19,7 +19,7 @@ def parse(s: AgentState) -> dict:
     }, refresh=bool(s.get("fresh")))
     notes = []
     if data is None:
-        notes.append(f"要素解析未使用大模型（{llm.last_error}）：商品项仅为向量检索建议，请人工确认"
+        notes.append(f"要素解析未使用大模型（{llm.describe_error()}）：商品项仅为向量检索建议，请人工确认"
                      + ("；未生成商标释义，义近召回将跳过" if not out["query_meaning"] else ""))
     else:
         out["distinctive"] = str(data.get("distinctive") or "")
@@ -32,6 +32,10 @@ def parse(s: AgentState) -> dict:
             if match:
                 picked.append(goods_tool.to_item(match, "confirmed"))
             elif part:
+                picked.append(goods_tool.GoodsItem(name=part, mapping="pending"))
+        covered = {g.get("part") for g in data.get("goods") or []}
+        for part in candidates:                       # 用户写了、模型没选的商品（多为选录类别之外的）也要保留，标待核实
+            if part not in covered:
                 picked.append(goods_tool.GoodsItem(name=part, mapping="pending"))
         if picked:
             seen: set = set()

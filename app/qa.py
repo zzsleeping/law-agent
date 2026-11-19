@@ -208,7 +208,7 @@ def answer(question: str, rep: dict, history: list[dict] | None = None) -> dict:
         ids += added
 
     if not data or not str(data.get("answer", "")).strip():
-        why = llm.last_error if llm.available() else "未配置 LLM_API_KEY 或 LLM_MODEL"
+        why = llm.describe_error()
         return {"answer": "大模型暂时无法回答（" + why + "）。下面是按问题检索到的相关条文，供自行查阅。",
                 "sources": [source(i) for i in ids[:5]], "warnings": [], "insufficient": True, "llm": False,
                 "steps": steps, "resolved": resolved}
