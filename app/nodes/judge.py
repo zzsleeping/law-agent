@@ -22,6 +22,7 @@ from app.rules import prior_status as ps
 from app.rules.risk_table import LEVEL_LABEL, RISK_LABEL, risk_level
 from app.state import AgentState, Assessment, Fact
 from app.tools import basis
+from app.tools import cases as case_lib
 
 LEVELS = ("high", "medium", "low")
 RISKS = ("high", "medium", "low", "needs_check")
@@ -45,6 +46,8 @@ def _context(s: AgentState, members: list[Assessment]) -> dict:
             "goods": "、".join(g.name for g in s.get("goods", [])),
             "mark_text": rep.text, "evidence": evidence,
             "rule_mark_sim": LEVEL_LABEL[rep.rule_mark_sim or rep.mark_sim],
+            "cases": (case_lib.prompt_text(case_lib.for_pair(s["query_mark"], rep.text))
+                      if settings.judge_with_cases else "（无）"),
             "marks": marks,
             "marks_json": [{"mark_id": a.mark_id, "rule_risk": a.rule_risk or a.risk} for a in members],
             "rule_mark_sim_code": rep.rule_mark_sim or rep.mark_sim,

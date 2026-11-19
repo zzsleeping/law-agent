@@ -111,6 +111,16 @@ def for_pair(query: str, cited: str, k: int = 2, exclude_docs: set | None = None
     return out
 
 
+def prompt_text(pc: dict | None) -> str:
+    """把 for_pair 的结果写成判定提示词里的一段文字。"""
+    if not pc or not (pc.get("similar") or pc.get("dissimilar")):
+        return "（无）"
+    lines = [f"比对情形：{pc['pattern']}"]
+    for c in pc.get("similar", []) + pc.get("dissimilar", []):
+        lines.append(f"- 官方认定{c['label']}：“{c['applicant']}” / “{c['cited']}”——{c['excerpt'] or '原文未述理由'}")
+    return "\n".join(lines)
+
+
 def coverage() -> dict:
     """各情形的判例数，供页面和统计使用：{情形: {"近似": n, "不近似": n}}。"""
     res: dict = {}

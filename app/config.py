@@ -64,6 +64,7 @@ class Settings:
     # 共有文字占我方的比例、占对方的比例、该名称在检索类别内的注册件数（品牌规模，对数，50 件封顶）。
     # 2026-11-19 调参集：不加形状分 Recall@10 29.2%；只用件数 42.3%；三项合用 43.8%，权重在较大范围内结果不变
     rank_weights: dict = field(default_factory=lambda: {"cover_q": 1.0, "cover_t": 0.5, "size": 2.0})
+    judge_with_cases: bool = False   # 判定提示词是否附同一比对情形的官方判例（以 eval/run_judge_eval.py 对照结果决定）
     top_n_assess: int = 15           # 完全同名之外送评的名称组数（每组带出该名称在检索类别内的全部注册）
     max_rewrites: int = 2
 
