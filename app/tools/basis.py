@@ -12,9 +12,9 @@ from app.config import settings
 # 命中类型 -> 依据映射表中的维度
 KIND_DIM = {
     "exact": "exact", "contains_weak": "contains", "contains_major": "contains", "contains": "contains",
-    "shared_part": "shared", "glyph_single": "shape", "edit_one": "shape", "glyph_edit": "shape",
+    "shared_head": "shared", "shared_part": "shared", "glyph_single": "shape", "edit_one": "shape", "glyph_edit": "shape",
     "pinyin_tone": "sound", "pinyin_plain": "sound", "pinyin_edit": "sound", "pinyin_fuzzy": "sound",
-    "meaning": "meaning", "transpose": "transpose", "redup": "redup",
+    "meaning": "meaning", "transpose": "transpose", "transpose_extra": "transpose", "redup": "redup",
 }
 
 

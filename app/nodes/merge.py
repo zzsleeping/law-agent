@@ -3,7 +3,10 @@
 真实商标库里同一名称常有多件注册（不同类别、不同申请），逐件排序会让少数名称占满名额，
 所以排序以“名称组”为单位：组 = 商标的整体规范化名称。
 组的排序依据（2026-11-18 与用户确认）：
-1. 标识相似程度（高 > 中 > 低）——只看两个标识像不像，不混入在先状态和商品关系；
+1. 标识相似程度（高 > 中 > 低）——只看两个标识像不像，不混入在先状态和商品关系。
+   例外：只因“字头相同”（shared_head）而判高的组，排序时与其他“共用部分”的组同档比较（显示仍为高）。
+   否则大家族里字头相同的组会整体排到前面，把共尾、居中的官方引证挤出前 10（2026-11-19 与用户确认；
+   调参集 Recall@10：严格按等级 40.2%，同档比较 46.6%）；
 2. 同等级内按“形状分”：共有文字占我方、占对方的比例，该名称的注册件数（品牌规模）
    （真实库里大家族常有几百个同等级的组，只按通道数和 RRF 排时顺序近乎随意，官方引证常被埋掉；
    权重见 settings.rank_weights，用 eval/rank_bench.py 在调参集上调）；
@@ -17,7 +20,7 @@ from collections import defaultdict
 
 from app import db
 from app.config import settings
-from app.rules.risk_table import mark_similarity
+from app.rules.risk_table import GLYPH_KINDS, KIND_LEVEL, mark_similarity
 from app.state import AgentState, Hit
 from app.tools import phonetic
 from app.tools.search import longest_common
@@ -56,13 +59,22 @@ def shape_score(g: str, q: str, n_marks: int) -> float:
             + w.get("size", 0) * min(1.0, math.log1p(n_marks) / math.log1p(50)))
 
 
+def ordering_level(hs: list[Hit]) -> str:
+    """排序用的等级：只因字头相同而判高的组按中档排序，其余与标识相似程度相同。"""
+    lv = mark_similarity(hs)
+    if lv == "high" and not any(KIND_LEVEL.get(h.kind) == "high" and h.kind != "shared_head" for h in hs) \
+            and not ({h.kind for h in hs} & {"pinyin_tone"} and {h.kind for h in hs} & GLYPH_KINDS):
+        return "medium"
+    return lv
+
+
 def group_order(hits: list[Hit], query: str = "") -> tuple[list[str], dict[str, list[Hit]]]:
     hits = _dedupe(hits)
     groups: dict[str, list[Hit]] = defaultdict(list)
     for h in hits:
         groups[h.group or h.mark_id].append(h)
     rrf = rrf_scores(hits)
-    level = {g: mark_similarity(hs) for g, hs in groups.items()}
+    level = {g: ordering_level(hs) for g, hs in groups.items()}
     nchan = {g: len({h.channel for h in hs}) for g, hs in groups.items()}
     exact = {g for g, hs in groups.items() if any(h.kind == "exact" for h in hs)}
     whole = phonetic.normalize(query)

@@ -13,6 +13,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+import threading
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
@@ -29,9 +30,12 @@ from app.tools.search import compare  # noqa: E402
 
 
 ERRORS: Counter = Counter()
+STOP = threading.Event()
 
 
 def ask(r: dict, use_cases: bool) -> str | None:
+    if STOP.is_set():
+        return None
     hits = compare(r["query"], r["cited"])
     rule = mark_similarity(hits) if hits else "low"
     evidence = "\n".join(f"- {h.evidence}" for h in hits) or "- 文字类通道没有命中"
@@ -45,7 +49,10 @@ def ask(r: dict, use_cases: bool) -> str | None:
         "cases": case_lib.prompt_text(pc) if use_cases else "（无）",
     })
     if not out:
-        ERRORS[(llm.last_error or "未知")[:80]] += 1
+        err = (llm.last_error or "未知").split("(request_id")[0].strip()[:80]   # 按错误类型归并，不按请求编号
+        ERRORS[err] += 1
+        if "Insufficient Balance" in err or "402" in err:
+            STOP.set()                                       # 余额不足：后面的调用都会失败，直接停
     return out.get("mark_sim") if out and out.get("mark_sim") in ("high", "medium", "low") else None
 
 
@@ -64,13 +71,13 @@ def score(rows: list[dict], key: str) -> dict:
     return out
 
 
-def run(name: str, rows: list[dict], details: bool) -> dict:
+def run(name: str, rows: list[dict], details: bool, cases_arm: bool = True) -> dict:
     for r in rows:
         hits = compare(r["query"], r["cited"])
         r["rule"] = mark_similarity(hits) if hits else "low"
     with ThreadPoolExecutor(max_workers=5) as pool:
         no_cases = list(pool.map(lambda r: ask(r, False), rows))
-        with_cases = list(pool.map(lambda r: ask(r, True), rows))
+        with_cases = list(pool.map(lambda r: ask(r, True), rows)) if cases_arm else [None] * len(rows)
     for r, a, b in zip(rows, no_cases, with_cases):
         r["llm"], r["llm_cases"] = a, b
     res = {k: score(rows, k) for k in ("rule", "llm", "llm_cases")}
@@ -91,6 +98,9 @@ def run(name: str, rows: list[dict], details: bool) -> dict:
                 fixed = (b in ("high", "medium")) == (r["label"] == "近似")
                 print(f"   {'改对' if fixed else '改错'}：{r['query']} / {r['cited']}  官方 {r['label']}  情形 {r['pattern']}"
                       f"  规则 {r['rule']}  无判例 {a}  有判例 {b}")
+    if details:                                        # 调参集与指南例子保存逐对结果，便于看大模型改了哪些（冻结集不存）
+        res["pairs"] = [{k: r.get(k) for k in ("query", "cited", "label", "pattern", "rule", "llm", "llm_cases")}
+                        for r in rows]
     return res
 
 
@@ -98,6 +108,7 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--frozen", action="store_true")
     ap.add_argument("--json")
+    ap.add_argument("--no-cases", action="store_true", help="只跑产品配置（大模型无判例），省一半调用")
     args = ap.parse_args()
     if not llm.available():
         print("需要配置真实大模型（.env 的 LLM_API_KEY、LLM_MODEL）")
@@ -107,12 +118,15 @@ def main() -> int:
     settings.cache_enabled = False                         # 测模型本身，不复用缓存里的判定
     out = {}
     if args.frozen:
-        out["frozen"] = run("冻结测试集", run_eval.load("frozen"), details=False)
+        out["frozen"] = run("冻结测试集", run_eval.load("frozen"), details=False, cases_arm=not args.no_cases)
     else:
-        out["guide"] = run("指南官方例子", run_eval.load("guide"), details=True)
-        out["tune"] = run("调参集", run_eval.load("tune"), details=True)
+        out["guide"] = run("指南官方例子", run_eval.load("guide"), details=True, cases_arm=not args.no_cases)
+        out["tune"] = run("调参集", run_eval.load("tune"), details=True, cases_arm=not args.no_cases)
     if ERRORS:
         print("调用失败：", dict(ERRORS))
+    if STOP.is_set():
+        print("大模型账户余额不足，评测中途停止，以上数字无效。充值后重跑。")
+        return 2
     if args.json:
         Path(args.json).write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
     return 0

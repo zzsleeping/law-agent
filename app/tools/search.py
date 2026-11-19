@@ -153,9 +153,11 @@ def recall_exact(text: str, classes, data_scope: str | None = "all", top_k: int 
         common = longest_common(q, t)
         if (len(common) >= 2 and len(common) >= settings.shared_part_ratio * min(len(q), len(t))
                 and not is_weak(common)):
-            hits.append(Hit(mark_id=m["mark_id"], channel="contains", kind="shared_part",
-                            score=len(common) / max(len(q), len(t)),
-                            evidence=f"两商标共有“{common}”，其余部分不同"))
+            head = q.startswith(common) and t.startswith(common)     # 共有部分是两商标的开头（字头相同）
+            hits.append(Hit(mark_id=m["mark_id"], channel="contains", kind="shared_head" if head else "shared_part",
+                            score=len(common) / max(len(q), len(t)) + (0.5 if head else 0.0),
+                            evidence=(f"两商标开头的“{common}”相同，其余部分不同" if head
+                                      else f"两商标共有“{common}”，其余部分不同")))
     return _ranked(hits, top_k or settings.top_k_per_channel)
 
 
@@ -246,7 +248,7 @@ def recall_variant(text: str, classes, data_scope: str | None = "all", top_k: in
         elif len(q) != len(t):
             part = glyph.swapped_part(q, t)
             if part:
-                hits.append(Hit(mark_id=m["mark_id"], channel="transpose", kind="transpose", score=0.8,
+                hits.append(Hit(mark_id=m["mark_id"], channel="transpose", kind="transpose_extra", score=0.8,
                                 evidence=f"“{part[0]}”与“{part[1]}”汉字相同、顺序互换，另有附加文字"))
         unit = glyph.reduplication(q, t)
         if unit:

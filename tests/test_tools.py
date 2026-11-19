@@ -99,10 +99,12 @@ def test_new_match_kinds():
     def kinds_of(q, t):
         return {h.kind for h in search.compare(q, t)}
     assert search.longest_common("青藏冰泉", "青藏老酸奶") == "青藏"
-    assert "shared_part" in kinds_of("温氏冰行", "温氏集团")        # 共有“温氏”，各自另有文字
+    assert "shared_head" in kinds_of("温氏冰行", "温氏集团")        # 开头的“温氏”相同，各自另有文字
+    assert "shared_part" in kinds_of("外星森林", "元气森林")        # 共有“森林”但在结尾，不算字头相同
+    assert "shared_part" in kinds_of("燊海徐记", "徐记海鲜")        # 只在一方开头
     assert "shared_part" not in kinds_of("茗悦茶饮", "蜜雪茶饮")    # 共有部分是弱显著文字，不算
-    assert "transpose" in kinds_of("坤星文具", "星坤")               # 字序颠倒 + 附加文字
-    assert "transpose" in kinds_of("云燕", "燕云轩")
+    assert "transpose_extra" in kinds_of("坤星文具", "星坤")         # 字序颠倒 + 附加文字
+    assert "transpose_extra" in kinds_of("云燕", "燕云轩")
     assert "edit_one" in kinds_of("心之必达", "心至必达")
     assert "edit_one" in kinds_of("云燕", "云之燕")                  # 仅多一字、首字相同
     assert "edit_one" not in kinds_of("茗悦", "茗约")                # 两字商标换一字不算
@@ -153,3 +155,22 @@ def test_same_level_prefers_larger_family_and_more_overlap():
         settings.top_n_assess = old
     assert order[0] == "青藏牧场"                      # 注册件数多的品牌排前
     assert order.index("青藏冰") < order.index("青藏小店")  # 件数相同时共有文字多的排前
+
+
+def test_shared_head_groups_sort_with_shared_tier():
+    """只因字头相同判高的组，排序时与其他共用部分同档（按品牌规模等比较），显示等级仍为高。"""
+    from app.nodes.merge import group_order, ordering_level
+    from app.rules.risk_table import mark_similarity
+
+    head = [Hit(mark_id="A1/30", channel="contains", kind="shared_head", rank=1, group="百岁优选")]
+    tail = [Hit(mark_id=f"B{i}/30", channel="contains", kind="shared_part", rank=2, group="景田百岁山") for i in range(30)]
+    exact_high = [Hit(mark_id="C1/30", channel="glyph", kind="edit_one", rank=1, group="百岁椰子")]
+    assert mark_similarity(head) == "high" and ordering_level(head) == "medium"
+    assert ordering_level(exact_high) == "high"
+    old = settings.top_n_assess
+    settings.top_n_assess = 100
+    try:
+        order, _ = group_order(head + tail + exact_high, "百岁椰")
+    finally:
+        settings.top_n_assess = old
+    assert order[0] == "百岁椰子" and order.index("景田百岁山") < order.index("百岁优选")   # 注册多的品牌排前

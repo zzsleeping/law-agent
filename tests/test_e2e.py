@@ -35,7 +35,7 @@ def test_full_flow_with_llm():
     assert risks(v, "名悦") == ["medium"]              # 申请在先，仅读音相同
     assert risks(v, "茗约") == ["medium"]
     assert risks(v, "茗悦轩") == ["needs_check"]       # 状态未知
-    assert risks(v, "悦茗") == ["medium"]              # 字序颠倒
+    assert risks(v, "悦茗") == ["high"]                # 整个商标仅相邻两字互换（指南 5.5.1.2；调参集此类全部认定近似）
     assert risks(v, "民悦") == ["low"]                 # 仅模糊音
     assert "餐厅" not in "".join(g.name for m in v["display_order"] for g in v["records"][m].goods)
     # 每个候选都能回溯到原始记录
@@ -115,10 +115,11 @@ def test_exclude_everything():
 
 
 def test_transposition_counterexample():
-    """字序改变后含义明显不同的反例：能被召回，但不会仅凭这一项判成高风险。"""
+    """字序改变后含义不同的商标：能被召回，规则参考为高（官方实践中整体互换多认定近似，如“蜜蜂 / 蜂蜜”）；
+    含义区别明显的但书情形交给大模型结合含义判断（测试里的假模型照抄规则）。"""
     v = run_pre_filing("海星", goods=items_by_code(["320010"]), eval_date=EV)
     a = next(a for a in v["assessments"] if a.text == "星海")
-    assert "transpose" in a.channels and a.mark_sim == "medium" and a.risk == "medium"
+    assert "transpose" in a.channels and a.rule_mark_sim == "high"
 
 
 def test_app_date_changes_prior():

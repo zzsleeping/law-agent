@@ -38,12 +38,14 @@ def test_risk_table_rows(prior, goods, sim, expected, row):
 def test_mark_similarity():
     h = lambda kind: Hit(mark_id="x", channel="pinyin", kind=kind)  # noqa: E731
     assert mark_similarity([h("pinyin_fuzzy")]) == "low"                    # 仅模糊音
-    assert mark_similarity([h("transpose")]) == "medium"                    # 字序颠倒单独最多到中
+    assert mark_similarity([h("transpose")]) == "high"                      # 整个商标仅相邻两字互换
+    assert mark_similarity([h("transpose_extra")]) == "medium"              # 互换之外另有附加文字，最多到中
     assert mark_similarity([h("redup")]) == "high"                         # 叠字（指南 5.5.1.3）
     assert mark_similarity([h("pinyin_tone")]) == "medium"                 # 仅读音相同（反例“好歌 / 好哥”）
     assert mark_similarity([h("pinyin_tone"), h("edit_one")]) == "high"    # 读音相同且字形近似
-    assert mark_similarity([h("transpose"), h("pinyin_tone")]) == "medium"
+    assert mark_similarity([h("transpose_extra"), h("pinyin_tone")]) == "medium"
     assert mark_similarity([h("shared_part")]) == "medium" and mark_similarity([h("contains_major")]) == "high"
+    assert mark_similarity([h("shared_head")]) == "high"                    # 共有显著部分且是两商标的开头
     assert mark_similarity([h("exact")]) == "high" and mark_similarity([]) == "low"
 
 

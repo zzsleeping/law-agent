@@ -15,12 +15,17 @@ KIND_LEVEL: dict[str, Level] = {
     "redup": "high",            # 叠字 / 叠词（5.5.1.3）
     "pinyin_tone": "medium",    # 带声调拼音相同：读音相同还需字形近似才判高（5.5.1.4，反例“好歌 / 好哥”）
     "contains": "medium",       # 包含，但被包含部分占比小
-    "shared_part": "medium",    # 共有显著部分、各自另有文字（5.5.1.15）
+    "shared_head": "high",      # 共有显著部分且是两商标的开头（字头相同），各自另有文字（5.5.1.15）。
+                                # 2026-11-19 调参集：此类 31 对官方全部认定近似、0 对不近似；字头是呼叫和认读的主要部分
+    "shared_part": "medium",    # 共有显著部分但不在两商标开头（共尾、居中），各自另有文字（5.5.1.15）；
+                                # 调参集 34 对中 8 对官方认定不近似（如“外星森林 / 元气森林”“燊海徐记 / 徐记海鲜”）
     "pinyin_plain": "medium",   # 无声调拼音相同
     "pinyin_edit": "medium",    # 音节编辑距离小
     "glyph_edit": "medium",     # 仅个别字不同但首字不同（5.5.1.7 但书）
     "meaning": "medium",        # 义近（5.5.1.6）
-    "transpose": "medium",      # 字序颠倒：单凭这一项最多到中（5.5.1.2 但书：含义区别明显的不判近似）
+    "transpose": "high",        # 整个商标仅相邻两字顺序互换（5.5.1.2，如“坤星 / 星坤”）；调参集 9 对全部认定近似。
+                                # 但书（含义区别明显的不判近似）由大模型结合含义判断
+    "transpose_extra": "medium",  # 互换的两字之外另有附加文字（5.5.1.2 但书例“亚美航空 / 美亚医疗”），最多到中
     "pinyin_fuzzy": "low",      # 仅模糊音
 }
 GLYPH_KINDS = {"glyph_single", "edit_one", "glyph_edit"}

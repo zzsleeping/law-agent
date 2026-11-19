@@ -1,0 +1,2192 @@
+{
+ "guide": {
+  "rule": {
+   "n": 17,
+   "未返回": 0,
+   "召回率": 1.0,
+   "近似判高": 0.917,
+   "反例判对": 0.4,
+   "反例判高": 0.4,
+   "一致率": 0.824
+  },
+  "llm": {
+   "n": 17,
+   "未返回": 0,
+   "召回率": 1.0,
+   "近似判高": 1.0,
+   "反例判对": 0.2,
+   "反例判高": 0.2,
+   "一致率": 0.765
+  },
+  "llm_cases": {
+   "n": 0,
+   "未返回": 17,
+   "召回率": null,
+   "近似判高": null,
+   "反例判对": null,
+   "反例判高": null,
+   "一致率": null
+  },
+  "有判例的子集": {
+   "llm": {
+    "n": 13,
+    "未返回": 0,
+    "召回率": 1.0,
+    "近似判高": 1.0,
+    "反例判对": 0.0,
+    "反例判高": 0.333,
+    "一致率": 0.769
+   },
+   "llm_cases": {
+    "n": 0,
+    "未返回": 13,
+    "召回率": null,
+    "近似判高": null,
+    "反例判对": null,
+    "反例判高": null,
+    "一致率": null
+   }
+  },
+  "pairs": [
+   {
+    "query": "坤星文具",
+    "cited": "星坤",
+    "label": "近似",
+    "pattern": "字序颠倒",
+    "rule": "medium",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "亚美航空",
+    "cited": "美亚医疗",
+    "label": "不近似",
+    "pattern": "共用字但未命中",
+    "rule": "low",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "星星",
+    "cited": "星",
+    "label": "近似",
+    "pattern": "叠字",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "哈罗哈罗",
+    "cited": "哈罗",
+    "label": "近似",
+    "pattern": "叠字",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "蕙特曼",
+    "cited": "惠特曼",
+    "label": "近似",
+    "pattern": "仅一字不同",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "好歌",
+    "cited": "好哥",
+    "label": "不近似",
+    "pattern": "读音相同/相近",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "玫瑰花",
+    "cited": "玫瑰",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "心之必达",
+    "cited": "心至必达",
+    "label": "近似",
+    "pattern": "仅一字不同",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "北欧风情",
+    "cited": "北美风情",
+    "label": "不近似",
+    "pattern": "仅一字不同",
+    "rule": "high",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "乐曼啤酒",
+    "cited": "乐曼",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "老龙潭山泉",
+    "cited": "老龙潭",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "汇源一桶",
+    "cited": "汇源",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "云趣店",
+    "cited": "云趣",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "大洋房",
+    "cited": "大洋",
+    "label": "不近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "新吉澳",
+    "cited": "吉澳",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "球王",
+    "cited": "球",
+    "label": "不近似",
+    "pattern": "共用字但未命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "华为海思",
+    "cited": "华为",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   }
+  ]
+ },
+ "tune": {
+  "rule": {
+   "n": 215,
+   "未返回": 0,
+   "召回率": 0.883,
+   "近似判高": 0.55,
+   "反例判对": 0.614,
+   "反例判高": 0.136,
+   "一致率": 0.828
+  },
+  "llm": {
+   "n": 215,
+   "未返回": 0,
+   "召回率": 0.906,
+   "近似判高": 0.515,
+   "反例判对": 0.636,
+   "反例判高": 0.114,
+   "一致率": 0.851
+  },
+  "llm_cases": {
+   "n": 0,
+   "未返回": 215,
+   "召回率": null,
+   "近似判高": null,
+   "反例判对": null,
+   "反例判高": null,
+   "一致率": null
+  },
+  "有判例的子集": {
+   "llm": {
+    "n": 163,
+    "未返回": 0,
+    "召回率": 0.952,
+    "近似判高": 0.527,
+    "反例判对": 0.118,
+    "反例判高": 0.294,
+    "一致率": 0.865
+   },
+   "llm_cases": {
+    "n": 0,
+    "未返回": 163,
+    "召回率": null,
+    "近似判高": null,
+    "反例判对": null,
+    "反例判高": null,
+    "一致率": null
+   }
+  },
+  "pairs": [
+   {
+    "query": "百岁一百歲",
+    "cited": "百岁山",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "high",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "百岁一百歲",
+    "cited": "景田百岁山",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "乡吧妹",
+    "cited": "乡巴佬",
+    "label": "近似",
+    "pattern": "读音相同/相近",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "乡吧妹",
+    "cited": "乡吧佬",
+    "label": "近似",
+    "pattern": "仅一字不同",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "王老吉",
+    "cited": "中坝",
+    "label": "不近似",
+    "pattern": "无文字命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "天文",
+    "cited": "文天",
+    "label": "近似",
+    "pattern": "字序颠倒",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "三苏东坡",
+    "cited": "东坡",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "三苏东坡",
+    "cited": "东坡味道",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "三苏东坡",
+    "cited": "东坡扣肉",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "三苏东坡",
+    "cited": "东坡眉州",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "三苏东坡",
+    "cited": "眉州东坡味道",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "三苏东坡",
+    "cited": "眉州东坡",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "可口纯",
+    "cited": "可口可乐",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "古茗",
+    "cited": "古名",
+    "label": "近似",
+    "pattern": "读音相同/相近",
+    "rule": "medium",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "龙吟水语茶",
+    "cited": "龙常",
+    "label": "不近似",
+    "pattern": "共用字但未命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "龙吟水语茶",
+    "cited": "东澳矿泉",
+    "label": "不近似",
+    "pattern": "无文字命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "龙吟水语茶",
+    "cited": "龙凤隆堂",
+    "label": "不近似",
+    "pattern": "共用字但未命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "龙吟水语茶",
+    "cited": "龙眠河韵",
+    "label": "不近似",
+    "pattern": "共用字但未命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "龙吟水语茶",
+    "cited": "辰骏",
+    "label": "不近似",
+    "pattern": "无文字命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "龙吟水语茶",
+    "cited": "龙健玉龙",
+    "label": "不近似",
+    "pattern": "共用字但未命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "龙吟水语茶",
+    "cited": "东湖三凤",
+    "label": "不近似",
+    "pattern": "无文字命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "龙吟水语茶",
+    "cited": "龙场春",
+    "label": "不近似",
+    "pattern": "共用字但未命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "龙吟水语茶",
+    "cited": "星龙食汇",
+    "label": "不近似",
+    "pattern": "共用字但未命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "帝怡",
+    "cited": "蒂怡",
+    "label": "近似",
+    "pattern": "读音相同/相近",
+    "rule": "medium",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "鲜双侨纯",
+    "cited": "双桥",
+    "label": "近似",
+    "pattern": "共用字但未命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "你好沃顿",
+    "cited": "你好",
+    "label": "不近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "鲜喔喔",
+    "cited": "鲜喔",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "鲜喔喔",
+    "cited": "喔喔",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "盼盼仙贝",
+    "cited": "仙贝",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "盼盼仙贝",
+    "cited": "旺旺仙贝",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "开心妹",
+    "cited": "开心",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "开心妹",
+    "cited": "开心相伴",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "high",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "半岛喜月",
+    "cited": "半岛",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "摩登东方茶",
+    "cited": "摩登融合菜",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "high",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "摩登东方茶",
+    "cited": "摩登工坊",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "high",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "摩登东方茶",
+    "cited": "摩登艺术",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "high",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "摩登东方茶",
+    "cited": "摩登咖喱",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "high",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "壹芯",
+    "cited": "壹芯瑞品",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "壹芯",
+    "cited": "壹心草本",
+    "label": "近似",
+    "pattern": "共用字但未命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "壹芯",
+    "cited": "一芯天下",
+    "label": "近似",
+    "pattern": "共用字但未命中",
+    "rule": "low",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "壹芯",
+    "cited": "一芯红",
+    "label": "近似",
+    "pattern": "读音相同/相近",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "壹芯",
+    "cited": "一心",
+    "label": "近似",
+    "pattern": "读音相同/相近",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "壹芯",
+    "cited": "一心牌",
+    "label": "近似",
+    "pattern": "读音相同/相近",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "壹芯",
+    "cited": "一心食品",
+    "label": "近似",
+    "pattern": "无文字命中",
+    "rule": "low",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "农夫竹秀",
+    "cited": "农夫",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "农夫竹秀",
+    "cited": "农夫山泉",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "high",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "柏佳悦",
+    "cited": "柏悦",
+    "label": "不近似",
+    "pattern": "仅一字不同",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "混果汁",
+    "cited": "混果汁",
+    "label": "近似",
+    "pattern": "完全相同",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "混果汁",
+    "cited": "混",
+    "label": "不近似",
+    "pattern": "共用字但未命中",
+    "rule": "low",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "混果汁",
+    "cited": "混喝果汁",
+    "label": "近似",
+    "pattern": "仅一字不同",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "沂蒙同福",
+    "cited": "同福",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "沂蒙同福",
+    "cited": "同福食品",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "沂蒙同福",
+    "cited": "同福金核",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "沂蒙同福",
+    "cited": "同福集团",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "沂蒙同福",
+    "cited": "同福同福饮品",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "哈皮熊精酿",
+    "cited": "哈啤",
+    "label": "近似",
+    "pattern": "共用字但未命中",
+    "rule": "low",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "哈皮熊精酿",
+    "cited": "哈啤哈尔滨啤酒有限公司",
+    "label": "近似",
+    "pattern": "共用字但未命中",
+    "rule": "low",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "哈皮熊精酿",
+    "cited": "哈",
+    "label": "近似",
+    "pattern": "共用字但未命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "哈皮熊精酿",
+    "cited": "哈尔滨",
+    "label": "近似",
+    "pattern": "共用字但未命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "搽小小",
+    "cited": "小小",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "搽小小",
+    "cited": "小小头",
+    "label": "近似",
+    "pattern": "共用字但未命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "米禾堂",
+    "cited": "米禾家园",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "米禾堂",
+    "cited": "米皿禾堂",
+    "label": "近似",
+    "pattern": "仅一字不同",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "米禾堂",
+    "cited": "米禾粥",
+    "label": "近似",
+    "pattern": "仅一字不同",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "米禾堂",
+    "cited": "米禾鸭",
+    "label": "近似",
+    "pattern": "仅一字不同",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "米禾堂",
+    "cited": "米禾面",
+    "label": "近似",
+    "pattern": "仅一字不同",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "康是福",
+    "cited": "康師傅",
+    "label": "不近似",
+    "pattern": "读音相同/相近",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "茉莉冰泉",
+    "cited": "康师傅茉莉清茶",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "德高化工",
+    "cited": "高德",
+    "label": "近似",
+    "pattern": "字序颠倒",
+    "rule": "medium",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "外星森林",
+    "cited": "外星人",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "high",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "外星森林",
+    "cited": "外星能量",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "high",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "外星森林",
+    "cited": "外星元气",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "high",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "外星森林",
+    "cited": "外星满分",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "high",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "外星森林",
+    "cited": "元气森林",
+    "label": "不近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "臻高",
+    "cited": "臻高",
+    "label": "近似",
+    "pattern": "完全相同",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "青藏冰泉",
+    "cited": "青藏",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "青藏冰泉",
+    "cited": "青藏老酸奶",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "high",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "青藏冰泉",
+    "cited": "青藏好牧场",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "high",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "青藏冰泉",
+    "cited": "青藏山庄",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "high",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "青藏冰泉",
+    "cited": "青藏果园",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "high",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "青藏冰泉",
+    "cited": "青藏牧场",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "high",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "星",
+    "cited": "旺旺",
+    "label": "不近似",
+    "pattern": "无文字命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "甘泉能量",
+    "cited": "甘之泉",
+    "label": "近似",
+    "pattern": "共用字但未命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "农耕聚落",
+    "cited": "农耕记",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "high",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "农耕聚落",
+    "cited": "农耕记懒人菜",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "high",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "农耕聚落",
+    "cited": "农耕记华师傅",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "high",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "崇壹",
+    "cited": "崇一医药",
+    "label": "近似",
+    "pattern": "共用字但未命中",
+    "rule": "low",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "崇壹",
+    "cited": "崇一",
+    "label": "近似",
+    "pattern": "读音相同/相近",
+    "rule": "medium",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "崇壹",
+    "cited": "润之源冰泉",
+    "label": "不近似",
+    "pattern": "无文字命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "崇壹",
+    "cited": "挚意",
+    "label": "不近似",
+    "pattern": "无文字命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "崇壹",
+    "cited": "欧岚桔诺",
+    "label": "不近似",
+    "pattern": "无文字命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "崇壹",
+    "cited": "如高原茶",
+    "label": "不近似",
+    "pattern": "无文字命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "崇壹",
+    "cited": "原本",
+    "label": "不近似",
+    "pattern": "无文字命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "崇壹",
+    "cited": "远方造物",
+    "label": "不近似",
+    "pattern": "无文字命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "小小芭茜",
+    "cited": "小小",
+    "label": "不近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "小小芭茜",
+    "cited": "益纤小小",
+    "label": "不近似",
+    "pattern": "共用字但未命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "小小芭茜",
+    "cited": "小小头",
+    "label": "不近似",
+    "pattern": "共用字但未命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "铭创精品",
+    "cited": "名创优品",
+    "label": "近似",
+    "pattern": "读音相同/相近",
+    "rule": "medium",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "镇店肥肥虾庄",
+    "cited": "江湖肥肥虾庄",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "凹凸洲际",
+    "cited": "洲际",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "凹凸洲际",
+    "cited": "洲际酒店集团",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "凹凸洲际",
+    "cited": "洲际酒店及度假村集团",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "凹凸洲际",
+    "cited": "洲际酒店和度假酒店",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "喜茶",
+    "cited": "喜茶",
+    "label": "近似",
+    "pattern": "完全相同",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "浪",
+    "cited": "浪",
+    "label": "近似",
+    "pattern": "完全相同",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "曹州",
+    "cited": "曹州地方",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "茶多",
+    "cited": "多茶",
+    "label": "近似",
+    "pattern": "字序颠倒",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "好太太好生活",
+    "cited": "好太太",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "阿诗姆",
+    "cited": "阿萨姆",
+    "label": "近似",
+    "pattern": "仅一字不同",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "燊海徐记",
+    "cited": "徐记",
+    "label": "不近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "燊海徐记",
+    "cited": "徐记海鲜酒楼",
+    "label": "不近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "燊海徐记",
+    "cited": "徐记海鲜",
+    "label": "不近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "燊海徐记",
+    "cited": "徐记海鲜鲜",
+    "label": "不近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "燊海徐记",
+    "cited": "新徐记海鲜",
+    "label": "不近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "燊海徐记",
+    "cited": "老徐记海鲜",
+    "label": "不近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "燊海徐记",
+    "cited": "徐记海鲜思鲜客",
+    "label": "不近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "百岁椰",
+    "cited": "百岁山",
+    "label": "近似",
+    "pattern": "仅一字不同",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "百岁椰",
+    "cited": "景田百岁山",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "百岁椰",
+    "cited": "百岁山本来旺",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "馫吧客",
+    "cited": "星巴克",
+    "label": "近似",
+    "pattern": "读音相同/相近",
+    "rule": "low",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "馫吧客",
+    "cited": "星巴客",
+    "label": "近似",
+    "pattern": "读音相同/相近",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "馫吧客",
+    "cited": "吧客",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "肥肥海中鲜",
+    "cited": "江湖肥肥",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "今日头牛",
+    "cited": "头条",
+    "label": "不近似",
+    "pattern": "共用字但未命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "壹号花猪",
+    "cited": "一号花",
+    "label": "近似",
+    "pattern": "读音相同/相近",
+    "rule": "medium",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "曦瓜八三茶人",
+    "cited": "武夷星大红袍八三茶人陈椽题",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "曦瓜八三茶人",
+    "cited": "八三茶人陈椽题",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "鼠小小",
+    "cited": "小小",
+    "label": "不近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "维多粒",
+    "cited": "维多力",
+    "label": "近似",
+    "pattern": "仅一字不同",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "维多粒",
+    "cited": "维多利",
+    "label": "近似",
+    "pattern": "仅一字不同",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "蜜雪冰城带上雪王共赴春光",
+    "cited": "春光",
+    "label": "不近似",
+    "pattern": "完整包含",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "蜜雪冰城带上雪王共赴春光",
+    "cited": "春光牌",
+    "label": "不近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "好东东",
+    "cited": "好东",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "好东东",
+    "cited": "好东咚",
+    "label": "近似",
+    "pattern": "仅一字不同",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "好东东",
+    "cited": "好恰东东",
+    "label": "近似",
+    "pattern": "仅一字不同",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "好东东",
+    "cited": "东东小厨",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "好东东",
+    "cited": "东东农场",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "好东东",
+    "cited": "东东的早餐",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "好东东",
+    "cited": "东东菜",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "好东东",
+    "cited": "東東",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "一浪",
+    "cited": "浪",
+    "label": "近似",
+    "pattern": "共用字但未命中",
+    "rule": "low",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "一浪",
+    "cited": "浪款",
+    "label": "近似",
+    "pattern": "共用字但未命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "沭之蓝",
+    "cited": "梦之蓝",
+    "label": "近似",
+    "pattern": "仅一字不同",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "沭之蓝",
+    "cited": "天之蓝",
+    "label": "近似",
+    "pattern": "仅一字不同",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "沭之蓝",
+    "cited": "海之蓝",
+    "label": "近似",
+    "pattern": "仅一字不同",
+    "rule": "medium",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "蜜蜂",
+    "cited": "蜂蜜",
+    "label": "近似",
+    "pattern": "字序颠倒",
+    "rule": "high",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "信陵百岁泉",
+    "cited": "百岁山",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "信陵百岁泉",
+    "cited": "景田百岁山",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "信陵百岁泉",
+    "cited": "百行泉",
+    "label": "近似",
+    "pattern": "共用字但未命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "鲲灵",
+    "cited": "灵鲲",
+    "label": "近似",
+    "pattern": "字序颠倒",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "金果",
+    "cited": "金果",
+    "label": "近似",
+    "pattern": "完全相同",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "金果",
+    "cited": "金果源",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "金果",
+    "cited": "小金果",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "金果",
+    "cited": "果金",
+    "label": "近似",
+    "pattern": "字序颠倒",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "金果",
+    "cited": "金果号",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "金果",
+    "cited": "金果传奇",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "金果",
+    "cited": "金果王",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "百力士",
+    "cited": "大力士",
+    "label": "不近似",
+    "pattern": "仅一字不同",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "薪农夫",
+    "cited": "农夫",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "薪农夫",
+    "cited": "农夫山泉",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "盛世教育",
+    "cited": "世盛",
+    "label": "近似",
+    "pattern": "字序颠倒",
+    "rule": "medium",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "蓝每",
+    "cited": "蓝妹",
+    "label": "近似",
+    "pattern": "读音相同/相近",
+    "rule": "medium",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "小小的我",
+    "cited": "小小",
+    "label": "不近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "德用萬字",
+    "cited": "万字",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "派派熊",
+    "cited": "派派福",
+    "label": "近似",
+    "pattern": "仅一字不同",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "派派熊",
+    "cited": "熊猫派派",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "小爱同学",
+    "cited": "小爱同学",
+    "label": "近似",
+    "pattern": "完全相同",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "小爱同学",
+    "cited": "小米小爱",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "洞石百岁泉",
+    "cited": "百岁山",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "洞石百岁泉",
+    "cited": "景田百岁山",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "洞石百岁泉",
+    "cited": "百行泉",
+    "label": "不近似",
+    "pattern": "共用字但未命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "海沁蓝",
+    "cited": "海之蓝",
+    "label": "近似",
+    "pattern": "仅一字不同",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "六只松鼠",
+    "cited": "三只松鼠",
+    "label": "近似",
+    "pattern": "仅一字不同",
+    "rule": "medium",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "铭上茗",
+    "cited": "秦楚漫川",
+    "label": "不近似",
+    "pattern": "无文字命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "铭上茗",
+    "cited": "茶棉居",
+    "label": "不近似",
+    "pattern": "无文字命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "乐得多",
+    "cited": "得乐多",
+    "label": "近似",
+    "pattern": "字序颠倒",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "温氏冰行",
+    "cited": "温氏",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "温氏冰行",
+    "cited": "温氏集团",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "温氏冰行",
+    "cited": "温氏生鲜",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "温氏冰行",
+    "cited": "温氏天露",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "温氏冰行",
+    "cited": "温氏阿妈靓汤",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "high",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "温氏冰行",
+    "cited": "温氏食品",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "温氏冰行",
+    "cited": "温氏鲜品",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "温氏冰行",
+    "cited": "温氏蛋业",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "福悦堂福",
+    "cited": "悦福堂",
+    "label": "近似",
+    "pattern": "字序颠倒",
+    "rule": "medium",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "羸养博士",
+    "cited": "盈养博士",
+    "label": "近似",
+    "pattern": "仅一字不同",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "月上茶颜",
+    "cited": "茶颜悦色",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "云燕",
+    "cited": "燕云",
+    "label": "近似",
+    "pattern": "字序颠倒",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "云燕",
+    "cited": "燕雲",
+    "label": "近似",
+    "pattern": "字序颠倒",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "云燕",
+    "cited": "燕云轩",
+    "label": "近似",
+    "pattern": "字序颠倒",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "云燕",
+    "cited": "燕雲樓创始于",
+    "label": "近似",
+    "pattern": "字序颠倒",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "云燕",
+    "cited": "云之燕",
+    "label": "近似",
+    "pattern": "仅一字不同",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "云燕",
+    "cited": "云燕本草",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "云燕",
+    "cited": "云燕尔",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "啉茶",
+    "cited": "琳茶",
+    "label": "近似",
+    "pattern": "读音相同/相近",
+    "rule": "medium",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "祥运澳迪利",
+    "cited": "澳的利",
+    "label": "近似",
+    "pattern": "共用字但未命中",
+    "rule": "low",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "麦麦匠",
+    "cited": "麦麦开饭",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "high",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "安能",
+    "cited": "能安",
+    "label": "近似",
+    "pattern": "字序颠倒",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "伊颗莓",
+    "cited": "怡颗莓",
+    "label": "近似",
+    "pattern": "仅一字不同",
+    "rule": "medium",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "浪",
+    "cited": "浪",
+    "label": "近似",
+    "pattern": "完全相同",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "福忆坊",
+    "cited": "福艺堂",
+    "label": "近似",
+    "pattern": "读音相同/相近",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "阿尔斯里",
+    "cited": "阿尔斯力",
+    "label": "近似",
+    "pattern": "仅一字不同",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "阿尔斯里",
+    "cited": "捞刀源",
+    "label": "不近似",
+    "pattern": "无文字命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "阿尔斯里",
+    "cited": "弘信绿通网",
+    "label": "不近似",
+    "pattern": "无文字命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "素问仁和",
+    "cited": "仁和",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "素问仁和",
+    "cited": "人仁和",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "极炙英雄指定颜色",
+    "cited": "极炙日式炭火烧肉",
+    "label": "近似",
+    "pattern": "共用字但未命中",
+    "rule": "low",
+    "llm": "medium",
+    "llm_cases": null
+   },
+   {
+    "query": "极炙英雄指定颜色",
+    "cited": "七彩极炙燒肉",
+    "label": "近似",
+    "pattern": "共用字但未命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "广野集团",
+    "cited": "广野",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "广野集团",
+    "cited": "广嘢",
+    "label": "近似",
+    "pattern": "共用字但未命中",
+    "rule": "low",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "广野集团",
+    "cited": "广野会社",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "一葉了然梅",
+    "cited": "一目了然",
+    "label": "近似",
+    "pattern": "共用部分",
+    "rule": "medium",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "一葉了然梅",
+    "cited": "梅",
+    "label": "不近似",
+    "pattern": "共用字但未命中",
+    "rule": "low",
+    "llm": "low",
+    "llm_cases": null
+   },
+   {
+    "query": "喜悦荟",
+    "cited": "喜悦会",
+    "label": "近似",
+    "pattern": "仅一字不同",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   },
+   {
+    "query": "喜悦荟",
+    "cited": "喜悦",
+    "label": "近似",
+    "pattern": "完整包含",
+    "rule": "high",
+    "llm": "high",
+    "llm_cases": null
+   }
+  ]
+ }
+}

@@ -14,9 +14,9 @@ Channel = Literal[
 ]
 # 每条命中的细分类型，决定它对“标识相似程度”的贡献（app/rules/risk_table.py）
 HitKind = Literal[
-    "exact", "contains_weak", "contains_major", "contains", "shared_part", "glyph_single", "edit_one", "glyph_edit",
+    "exact", "contains_weak", "contains_major", "contains", "shared_head", "shared_part", "glyph_single", "edit_one", "glyph_edit",
     "pinyin_tone", "pinyin_plain", "pinyin_edit", "pinyin_fuzzy",
-    "meaning", "transpose", "redup",
+    "meaning", "transpose", "transpose_extra", "redup",
 ]
 Level = Literal["high", "medium", "low"]
 GoodsRel = Literal["same", "similar", "linked", "pending", "dissimilar"]
