@@ -44,11 +44,10 @@ def test_full_flow_with_llm():
     assert v["citation_errors"] == [] and v.get("retry_count", 0) == 0
     rep = v["report"]
     assert not rep["flagged"] and Path(v["report_path"]).exists()
-    import zipfile                                     # Word 报告每页有系统水印：页眉系统名 + 衬于文字下方的水印图
-    with zipfile.ZipFile(v["report_path"]) as z:
-        header = "".join(z.read(n).decode("utf-8") for n in z.namelist() if n.startswith("word/header"))
-        assert "商标近似评估智能体" in header and 'behindDoc="1"' in header and "SystemWatermark" in header
-        assert any(n.startswith("word/media/") for n in z.namelist())
+    for p in (v["report_path"], v["report_path_concise"]):    # 标准版、简洁版 PDF，都带系统水印图
+        data = Path(p).read_bytes()
+        assert p.endswith(".pdf") and data.startswith(b"%PDF") and b"/Subtype /Image" in data
+    assert Path(v["report_path_concise"]).stat().st_size < Path(v["report_path"]).stat().st_size
     assert rep["law_version"] == "《中华人民共和国商标法》（2019年修正）"
     high = {i["text"]: i for i in rep["high"]}
     medium = {i["text"]: i for i in rep["medium"]}

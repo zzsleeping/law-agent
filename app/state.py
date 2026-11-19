@@ -163,7 +163,8 @@ class AgentState(TypedDict, total=False):
     citation_errors: list[str]
     retry_count: int
     report: dict
-    report_path: str
+    report_path: str                 # 标准版 PDF
+    report_path_concise: str         # 简洁版 PDF
     degraded: Annotated[bool, either]
     degraded_notes: Annotated[list[str], operator.add]
     timings: Annotated[dict[str, float], merge_dict]

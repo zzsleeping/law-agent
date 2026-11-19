@@ -147,20 +147,22 @@ def open_cached(k: str) -> None:
     Word 文件按缓存的报告内容重新导出，这样水印、版式等导出格式的改进对历史报告同样生效；
     重新导出失败时才用当时存下的文件。
     """
-    from app.nodes.render import export_docx
+    from app.nodes.render import write_pdfs
 
     r = cache.report_get(k)
     if r is None:
         st.error("这份报告已无法读取（系统升级后旧缓存失效），请重新评估。")
         return
     p = r["payload"]
-    path = Path(__file__).resolve().parent.parent / "outputs" / f"cached_{k[:12]}.docx"
-    path.parent.mkdir(exist_ok=True)
+    stem = Path(__file__).resolve().parent.parent / "outputs" / f"cached_{k[:12]}"
+    stem.parent.mkdir(exist_ok=True)
     try:
-        export_docx(p["report"], path)
-    except Exception:
+        path, concise = write_pdfs(p["report"], stem)
+    except Exception:                            # 重新导出失败时用当时存下的标准版文件
+        path, concise = stem.with_name(stem.name + ".pdf"), None
         path.write_bytes(r["docx"])
-    ss.cached = {**p, "report_path": str(path), "cached_at": r["created"]}
+    ss.cached = {**p, "report_path": str(path), "report_path_concise": str(concise) if concise else "",
+                 "cached_at": r["created"]}
     ss.payload = p.get("payload") or ss.get("payload")
     ss.stage = "report"
     st.rerun()
@@ -442,10 +444,13 @@ elif ss.stage == "report":
     with st.container(border=True, key="doc"):
         top = st.columns([3, 1.3])
         top[0].markdown(style.doc_head(rep["title"], f"生成于 {rep['generated_at']}"), unsafe_allow_html=True)
-        with open(v["report_path"], "rb") as f:
-            top[1].download_button("下载 Word 报告", f.read(), file_name=f"商标筛查报告_{rep['query_mark']}.docx",
-                                   mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-                                   type="primary", use_container_width=True)
+        if v.get("report_path_concise") and Path(v["report_path_concise"]).exists():
+            top[1].download_button("下载简洁版 PDF", Path(v["report_path_concise"]).read_bytes(),
+                                   file_name=f"商标筛查报告_{rep['query_mark']}_简洁版.pdf", mime="application/pdf",
+                                   type="primary", use_container_width=True, help="1–2 页：结论、需要关注的在先商标及主要理由")
+        top[1].download_button("下载标准版 PDF", Path(v["report_path"]).read_bytes(),
+                               file_name=f"商标筛查报告_{rep['query_mark']}_标准版.pdf", mime="application/pdf",
+                               use_container_width=True, help="完整报告：事实、各件注册、参考判例、依据原文")
         if rep["flagged"]:
             html(style.note("<b>引用校验未通过</b>（已重写 2 次）。以下结论需人工处理，不得直接使用：<br>"
                             + "<br>".join(f"· {esc(e)}" for e in rep["errors"]), "err"))

@@ -384,10 +384,22 @@ def _finish(s: AgentState, config: RunnableConfig, flagged: bool, node: str) -> 
     report = build_report(s, flagged)
     tid = (config or {}).get("configurable", {}).get("thread_id", "report")
     settings.output_dir.mkdir(parents=True, exist_ok=True)
-    path = settings.output_dir / f"{tid}.docx"
-    export_docx(report, path)
-    return {"report": report, "report_path": str(path),
+    path, concise = write_pdfs(report, settings.output_dir / tid)
+    return {"report": report, "report_path": str(path), "report_path_concise": str(concise),
             "trace": [{"node": node, "flagged": flagged, "path": str(path)}]}
+
+
+def write_pdfs(report: dict, stem) -> tuple:
+    """导出标准版和简洁版 PDF（app/report_pdf.py），返回两个路径。Word 导出（export_docx）保留，页面上不再提供。"""
+    from pathlib import Path
+
+    from app.report_pdf import export_pdf
+
+    stem = Path(stem)
+    path, concise = stem.with_name(stem.name + ".pdf"), stem.with_name(stem.name + "_简洁版.pdf")
+    export_pdf(report, path, "standard")
+    export_pdf(report, concise, "concise")
+    return path, concise
 
 
 def render(s: AgentState, config: RunnableConfig) -> dict:

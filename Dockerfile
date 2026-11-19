@@ -8,6 +8,9 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 
 WORKDIR /app
 
+# PDF 报告需要中文字体（app/report_pdf.py 按 Noto CJK 的路径查找）
+RUN apt-get update && apt-get install -y --no-install-recommends fonts-noto-cjk && rm -rf /var/lib/apt/lists/*
+
 # 国内服务器可在构建时指定镜像：docker build --build-arg PIP_INDEX_URL=https://mirrors.aliyun.com/pypi/simple .
 ARG PIP_INDEX_URL=https://pypi.org/simple
 COPY requirements.txt .
