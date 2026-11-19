@@ -57,7 +57,7 @@ def plan_search(s: AgentState) -> dict:
             "goods": "、".join(g.name for g in s.get("goods", []))}
     notes = []
     for rnd in range(1, PLAN_ROUNDS + 1):
-        out = llm.chat_json("p0_plan", {**base, "probe": probe_text})
+        out = llm.chat_json("p0_plan", {**base, "probe": probe_text}, refresh=bool(s.get("fresh")))
         if out is None:
             if rnd == 1:
                 why = llm.last_error if llm.available() else "未配置 LLM_API_KEY 或 LLM_MODEL"

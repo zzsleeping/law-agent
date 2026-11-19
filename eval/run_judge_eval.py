@@ -104,6 +104,7 @@ def main() -> int:
         return 1
     from app.config import settings
     settings.llm_timeout, settings.llm_retries = 60.0, 2   # 评测不赶时间；API 慢时 20 秒会成批超时
+    settings.cache_enabled = False                         # 测模型本身，不复用缓存里的判定
     out = {}
     if args.frozen:
         out["frozen"] = run("冻结测试集", run_eval.load("frozen"), details=False)

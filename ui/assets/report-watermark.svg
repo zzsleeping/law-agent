@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" fill="none" stroke="#0f1c2e" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round">
+<g opacity=".05">
+  <circle cx="180" cy="180" r="165" stroke-width="1.8"/>
+  <circle cx="180" cy="180" r="157"/>
+  <circle cx="180" cy="180" r="132"/>
+  <circle cx="180" cy="180" r="124" stroke-width="1.6"/>
+  <circle cx="180" cy="180" r="115" stroke-dasharray="1 5"/>
+  <path d="M-16-151H14v14H-5v-7H7" transform="translate(180 180) rotate(0)"/>
+  <path d="M-16-151H14v14H-5v-7H7" transform="translate(180 180) rotate(15)"/>
+  <path d="M-16-151H14v14H-5v-7H7" transform="translate(180 180) rotate(30)"/>
+  <path d="M-16-151H14v14H-5v-7H7" transform="translate(180 180) rotate(45)"/>
+  <path d="M-16-151H14v14H-5v-7H7" transform="translate(180 180) rotate(60)"/>
+  <path d="M-16-151H14v14H-5v-7H7" transform="translate(180 180) rotate(75)"/>
+  <path d="M-16-151H14v14H-5v-7H7" transform="translate(180 180) rotate(90)"/>
+  <path d="M-16-151H14v14H-5v-7H7" transform="translate(180 180) rotate(105)"/>
+  <path d="M-16-151H14v14H-5v-7H7" transform="translate(180 180) rotate(120)"/>
+  <path d="M-16-151H14v14H-5v-7H7" transform="translate(180 180) rotate(135)"/>
+  <path d="M-16-151H14v14H-5v-7H7" transform="translate(180 180) rotate(150)"/>
+  <path d="M-16-151H14v14H-5v-7H7" transform="translate(180 180) rotate(165)"/>
+  <path d="M-16-151H14v14H-5v-7H7" transform="translate(180 180) rotate(180)"/>
+  <path d="M-16-151H14v14H-5v-7H7" transform="translate(180 180) rotate(195)"/>
+  <path d="M-16-151H14v14H-5v-7H7" transform="translate(180 180) rotate(210)"/>
+  <path d="M-16-151H14v14H-5v-7H7" transform="translate(180 180) rotate(225)"/>
+  <path d="M-16-151H14v14H-5v-7H7" transform="translate(180 180) rotate(240)"/>
+  <path d="M-16-151H14v14H-5v-7H7" transform="translate(180 180) rotate(255)"/>
+  <path d="M-16-151H14v14H-5v-7H7" transform="translate(180 180) rotate(270)"/>
+  <path d="M-16-151H14v14H-5v-7H7" transform="translate(180 180) rotate(285)"/>
+  <path d="M-16-151H14v14H-5v-7H7" transform="translate(180 180) rotate(300)"/>
+  <path d="M-16-151H14v14H-5v-7H7" transform="translate(180 180) rotate(315)"/>
+  <path d="M-16-151H14v14H-5v-7H7" transform="translate(180 180) rotate(330)"/>
+  <path d="M-16-151H14v14H-5v-7H7" transform="translate(180 180) rotate(345)"/>
+  <rect x="108" y="108" width="144" height="144" rx="18" stroke-width="1.6" transform="rotate(45 180 180)"/>
+  <rect x="121" y="121" width="118" height="118" rx="13" stroke-width="1.2" transform="rotate(45 180 180)"/>
+  <rect x="135" y="136" width="66" height="66" rx="5" stroke-width="1.7"/>
+  <rect x="159" y="158" width="66" height="66" rx="5" stroke-width="1.7"/>
+  <path d="M180 87v12m0 162v12M87 180h12m162 0h12"/>
+</g>
+</svg>

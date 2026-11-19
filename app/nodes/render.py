@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 from datetime import datetime
+from pathlib import Path
 
 from langchain_core.runnables import RunnableConfig
 
@@ -116,12 +117,114 @@ def build_report(s: AgentState, flagged: bool) -> dict:
     }
 
 
+WATERMARK = "商标近似评估智能体"
+WATERMARK_IMG = Path(__file__).resolve().parent.parent / "assets" / "report-watermark.png"   # scripts/make_watermark.py 生成
+
+
+def _watermark(doc, text: str) -> None:
+    """每页加系统水印：页眉右侧一行系统名；页面正中一张半透明的斜向水印图（印章标识 + 系统名），衬于文字下方。
+
+    python-docx 没有水印接口：先把图片插进页眉，再把内嵌图（wp:inline）改成浮动图（wp:anchor，behindDoc），
+    按页面尺寸算出偏移量放在正中（有的阅读器不认 align=center）。用图片而不用 Word 的 VML 文字水印，是因为 VML 在 WPS 以外的不少阅读器（预览、Pages、LibreOffice）里不显示。
+    """
+    from docx.enum.text import WD_ALIGN_PARAGRAPH
+    from docx.oxml import parse_xml
+    from docx.oxml.ns import nsdecls, qn
+    from docx.shared import Cm, Pt, RGBColor
+
+    for section in doc.sections:
+        header = section.header
+        p = header.paragraphs[0] if header.paragraphs else header.add_paragraph()
+        p.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+        run = p.add_run(f"{text} · 商标近似风险筛查报告")
+        run.font.size = Pt(8)
+        run.font.color.rgb = RGBColor(0xB0, 0x8D, 0x57)
+        if not WATERMARK_IMG.exists():
+            continue
+        pic = p.add_run()
+        pic.add_picture(str(WATERMARK_IMG), width=Cm(16))
+        inline = pic._r.find(".//" + qn("wp:inline"))
+        ext = inline.find(qn("wp:extent"))
+        anchor = parse_xml(
+            f'<wp:anchor {nsdecls("wp")} distT="0" distB="0" distL="0" distR="0" simplePos="0" relativeHeight="0" '
+            'behindDoc="1" locked="1" layoutInCell="1" allowOverlap="1">'
+            '<wp:simplePos x="0" y="0"/>'
+            f'<wp:positionH relativeFrom="page"><wp:posOffset>{(section.page_width - int(ext.get("cx"))) // 2}</wp:posOffset></wp:positionH>'
+            f'<wp:positionV relativeFrom="page"><wp:posOffset>{(section.page_height - int(ext.get("cy"))) // 2}</wp:posOffset></wp:positionV>'
+            f'<wp:extent cx="{ext.get("cx")}" cy="{ext.get("cy")}"/>'
+            '<wp:effectExtent l="0" t="0" r="0" b="0"/><wp:wrapNone/>'
+            '<wp:docPr id="9001" name="SystemWatermark"/><wp:cNvGraphicFramePr/></wp:anchor>')
+        anchor.append(inline.find(qn("a:graphic")))
+        inline.getparent().replace(inline, anchor)
+
+
+# 字体规范：正文宋体（西文、数字 Times New Roman），标题黑体（西文 Arial），标题一律黑色、不加粗（黑体本身够粗）
+BODY_FONT, BODY_LATIN = "宋体", "Times New Roman"
+HEAD_FONT, HEAD_LATIN = "黑体", "Arial"
+HEAD_SIZES = {"Title": 18, "Heading 1": 14, "Heading 2": 12, "Heading 3": 10.5}   # 小二、四号、小四、五号
+
+
+# 风险等级的颜色：高红、中蓝、低绿；待核实用紫色（与网页一致）
+RISK_RGB = {"高风险": (0xC0, 0x1F, 0x1F), "中风险": (0x1F, 0x4E, 0x9A), "低风险": (0x2F, 0x7A, 0x52),
+            "待核实": (0x5B, 0x4F, 0xC4)}
+
+
+def _risk_run(paragraph, label: str, bold: bool = True):
+    """在段落末尾加一段按风险等级着色的文字。"""
+    from docx.shared import RGBColor
+
+    run = paragraph.add_run(label)
+    rgb = next((v for k, v in RISK_RGB.items() if label.startswith(k)), None)
+    if rgb:
+        run.font.color.rgb = RGBColor(*rgb)
+        run.bold = bold
+    return run
+
+
+def _set_fonts(style, east: str, latin: str) -> None:
+    """明确指定中西文字体。默认模板用的是主题字体（asciiTheme 等），各阅读器自行替换，同一段里会出现几种字形，所以去掉。"""
+    from docx.oxml.ns import qn
+
+    style.font.name = latin
+    rpr = style.element.get_or_add_rPr()
+    fonts = rpr.find(qn("w:rFonts"))
+    if fonts is None:
+        fonts = rpr.makeelement(qn("w:rFonts"), {})
+        rpr.insert(0, fonts)
+    for attr in ("w:asciiTheme", "w:hAnsiTheme", "w:eastAsiaTheme", "w:cstheme"):
+        fonts.attrib.pop(qn(attr), None)
+    for attr, val in (("w:ascii", latin), ("w:hAnsi", latin), ("w:cs", latin), ("w:eastAsia", east)):
+        fonts.set(qn(attr), val)
+
+
+def _setup_styles(doc) -> None:
+    from docx.oxml.ns import qn
+    from docx.shared import Pt, RGBColor
+
+    normal = doc.styles["Normal"]
+    _set_fonts(normal, BODY_FONT, BODY_LATIN)
+    normal.font.size = Pt(10.5)
+    normal.paragraph_format.line_spacing = 1.35
+    normal.paragraph_format.space_after = Pt(4)
+    for name, size in HEAD_SIZES.items():
+        st = doc.styles[name]
+        _set_fonts(st, HEAD_FONT, HEAD_LATIN)
+        st.font.size, st.font.bold, st.font.italic = Pt(size), False, False
+        st.font.color.rgb = RGBColor(0, 0, 0)
+        st.paragraph_format.space_before = Pt(14 if name != "Title" else 0)
+        st.paragraph_format.space_after = Pt(6)
+        ppr = st.element.find(qn("w:pPr"))
+        if ppr is not None and ppr.find(qn("w:pBdr")) is not None:     # 标题样式自带的蓝色下边线
+            ppr.remove(ppr.find(qn("w:pBdr")))
+
+
 def export_docx(report: dict, path) -> None:
     from docx import Document
     from docx.shared import Pt, RGBColor
 
     doc = Document()
-    doc.styles["Normal"].font.size = Pt(10.5)
+    _setup_styles(doc)
+    _watermark(doc, WATERMARK)
     doc.add_heading(report["title"], level=0)
 
     def red(text: str) -> None:
@@ -167,6 +270,11 @@ def export_docx(report: dict, path) -> None:
             f"“{q['text']}”（{q['why']}，命中 {q.get('hits', 0)} 件）" for q in report["search_variants"]))
 
     doc.add_heading("二、总结论", level=1)
+    dist = doc.add_paragraph()
+    dist.add_run("风险分布：").bold = True
+    for i, (key, label) in enumerate((("high", "高风险"), ("medium", "中风险"), ("needs_check", "待核实"), ("low", "低风险"))):
+        dist.add_run("　" if i else "")
+        _risk_run(dist, f"{label} {len(report[key])} 组")
     if report["overall"]:
         add_claim(report["overall"])
 
@@ -180,6 +288,8 @@ def export_docx(report: dict, path) -> None:
             for cell, v in zip(row, [m["mark_id"], m["risk_label"], m["prior"], m["goods_rel"], m["app_date"],
                                      m["source_ref"] or "—"]):
                 cell.text = str(v)
+            row[1].text = ""
+            _risk_run(row[1].paragraphs[0], m["risk_label"])
 
     def add_cases(pc: dict | None) -> None:
         """同类情形的参考判例（仅供参考，不作为依据）。"""
@@ -201,7 +311,8 @@ def export_docx(report: dict, path) -> None:
         for it in items:
             tag = "【示例数据】" if it["is_simulated"] else ""
             count = f"，同名注册 {it['count']} 件" if it["count"] > 1 else f"（{it['mark_id']}）"
-            doc.add_heading(f"{tag}{it['text']}{count} — {it['risk_label']}", level=2)
+            h = doc.add_heading(f"{tag}{it['text']}{count} — ", level=2)
+            _risk_run(h, it["risk_label"], bold=False)
             who = "大模型判定" if it["decided_by"] == "llm" else "规则引擎（未经大模型判定）"
             doc.add_paragraph(f"标识相似程度：{it['mark_sim']}（{who}；规则参考：{it['rule_mark_sim']}）。"
                               + ("模型判断与规则不一致，建议人工复核。" if it["disagree"] else ""))
@@ -244,8 +355,9 @@ def export_docx(report: dict, path) -> None:
     doc.add_heading("附录一、用户剔除的候选", level=1)
     if report["exclusions"]:
         for e in report["exclusions"]:
-            doc.add_paragraph(f"{e['text']}（{e['mark_id']}），原风险等级：{e['risk_label']}，剔除时间：{e['at']}"
-                              + (f"，说明：{e['note']}" if e["note"] else ""))
+            p = doc.add_paragraph(f"{e['text']}（{e['mark_id']}），原风险等级：")
+            _risk_run(p, e["risk_label"])
+            p.add_run(f"，剔除时间：{e['at']}" + (f"，说明：{e['note']}" if e["note"] else ""))
     else:
         doc.add_paragraph("无。")
 

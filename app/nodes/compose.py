@@ -145,7 +145,7 @@ def _call(s: AgentState, cands: list[Assessment], task: str, extra: dict | None 
         "scope_fact": f"[{SCOPE_FACT}] {s['facts'][SCOPE_FACT].text}",
         "allowed_basis": "\n".join(allowed),
         "errors": "\n".join(s.get("citation_errors") or []) or "无",
-    })
+    }, refresh=bool(s.get("fresh")))
     if data is None:
         return None
     ids = {a.mark_id for a in cands}

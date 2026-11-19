@@ -118,7 +118,7 @@ def explain(s: AgentState) -> dict:
             "mark_sim": rt.LEVEL_LABEL[a.mark_sim], "risk": rt.RISK_LABEL[a.risk],
             "query_meaning": s.get("query_meaning") or "未提供",
             "mark_meaning": s["records"][a.mark_id].meaning or "未提供",
-        })
+        }, refresh=bool(s.get("fresh")))
 
     results = {}
     if todo and llm.available():

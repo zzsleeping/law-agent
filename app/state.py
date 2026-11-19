@@ -132,6 +132,7 @@ class AgentState(TypedDict, total=False):
     our_app_date: date               # 我方（模拟）申请日：决定在先关系
     our_priority_date: date | None
     data_scope: Literal["all", "real", "simulated"]
+    fresh: bool                      # 用户点了“重新评估”：大模型调用不读缓存（app/cache.py）
     query_mark: str
     search_variants: list[dict]      # 检索规划 Agent 决定的额外写法：text、why、hits
     user_citations: list[str]        # 驳回复审：驳回通知中的引证商标编号（申请号 / 注册号）

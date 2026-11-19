@@ -9,6 +9,7 @@
 | [03-glyph-data.md](03-glyph-data.md) | `collected/glyph/` | 选定汉字部件拆分数据，用来自动计算形近字，替代人工字表 |
 | [04-more-decisions.md](04-more-decisions.md) | `collected/decisions/*.json`（第二批） | 扩充文书，补难区分的反例（已完成） |
 | [05-pattern-cases.md](05-pattern-cases.md) | `collected/decisions/*.json`（第三批） | 按比对情形补“不近似”判例，供参考判例检索和判定评测 |
+| [06-ui-assets.md](06-ui-assets.md) | `collected/ui_assets/` | 页面改版用的图标、插画、背景纹样（手写 SVG） |
 
 ## 通用规则（每个任务都适用，任务书里不再重复）
 

@@ -59,8 +59,13 @@ def _client(base_url: str, api_key: str, timeout: float):
     return OpenAI(base_url=base_url, api_key=api_key, timeout=timeout, max_retries=0)
 
 
-def chat_json(prompt_name: str, variables: dict) -> dict | None:
-    """调用一次 Prompt，返回解析后的 JSON 对象；超时、报错或解析失败（重试后仍失败）返回 None。"""
+def chat_json(prompt_name: str, variables: dict, refresh: bool = False,
+              cache_ignore: tuple[str, ...] = ()) -> dict | None:
+    """调用一次 Prompt，返回解析后的 JSON 对象；超时、报错或解析失败（重试后仍失败）返回 None。
+
+    同样的提示词和变量直接复用上次成功的结果（app/cache.py 第二层）。refresh=True 时不读缓存、用新结果覆盖；
+    cache_ignore 列出与结论无关、不参与缓存键的变量（如判定时的评估日期：在先状态已作为事实给出）。
+    """
     global last_error
     if _backend is not None:
         try:
@@ -74,6 +79,13 @@ def chat_json(prompt_name: str, variables: dict) -> dict | None:
     prompt = load_prompt(prompt_name)
     str_vars = {k: v if isinstance(v, str) else json.dumps(v, ensure_ascii=False, default=str)
                 for k, v in variables.items()}
+    from app import cache
+    ck = cache.key(settings.llm_model, prompt_name, prompt["system"], prompt["user"],
+                   {k: v for k, v in str_vars.items() if k not in cache_ignore})
+    if not refresh:
+        hit = cache.llm_get(ck)
+        if hit is not None:
+            return hit
     messages = [{"role": "system", "content": prompt["system"]},
                 {"role": "user", "content": Template(prompt["user"]).safe_substitute(str_vars)}]
     client = _client(settings.llm_base_url, settings.llm_api_key, settings.llm_timeout)
@@ -86,6 +98,7 @@ def chat_json(prompt_name: str, variables: dict) -> dict | None:
                 response_format={"type": "json_object"})
             data = _parse_json(resp.choices[0].message.content)
             if data is not None:
+                cache.llm_put(ck, prompt_name, data)
                 return data
             last_error = "模型输出不是合法 JSON"
         except Exception as e:

@@ -97,7 +97,8 @@ def judge(s: AgentState) -> dict:
     results: dict[str, dict | None] = {}
     if todo and llm.available():
         with ThreadPoolExecutor(max_workers=min(5, len(todo))) as pool:
-            results = dict(zip(todo, pool.map(lambda g: llm.chat_json("p2_judge", contexts[g]["vars"]), todo)))
+            results = dict(zip(todo, pool.map(lambda g: llm.chat_json("p2_judge", contexts[g]["vars"], refresh=bool(s.get("fresh")),
+                                                                              cache_ignore=("eval_date",)), todo)))
     facts = dict(s.get("facts", {}))
     new: dict[str, Assessment] = {}
     fixed = disagree = failed = 0

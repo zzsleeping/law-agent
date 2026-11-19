@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>页面视觉素材预览</title>
+  <style>
+    :root {
+      --ink: #0f1c2e;
+      --blue: #1d3352;
+      --paper: #f7f5f0;
+      --white: #ffffff;
+      --line: #e6e1d6;
+      --brass: #b08d57;
+      --seal: #b23a2e;
+      font: 16px/1.5 system-ui, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    main { width: min(1060px, calc(100% - 2 * clamp(1rem, 5vw, 4rem))); margin: 0 auto; padding: 3.5rem 0; }
+    header { border-bottom: 1px solid var(--brass); padding: 0 0 1.1rem; margin-bottom: 2rem; }
+    h1, h2 { font-family: "Songti SC", "STSong", "SimSun", serif; font-weight: 700; margin: 0; }
+    h1 { font-size: clamp(2rem, 4vw, 3.25rem); line-height: 1.25; letter-spacing: .06em; }
+    h2 { font-size: 1.4rem; margin-bottom: .8rem; }
+    p { margin: .6rem 0 0; font-size: .9rem; color: var(--blue); }
+    code { font: .75rem ui-monospace, SFMono-Regular, Menlo, monospace; overflow-wrap: anywhere; }
+    .columns, .asset, .icons { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: .65rem; }
+    .columns { margin: 0 0 .55rem; }
+    .columns span { padding: .52rem .8rem; border: 1px solid var(--line); border-radius: 5px; font-size: .79rem; }
+    .columns span:nth-child(2) { border-color: var(--ink); }
+    .paper { background: var(--paper); color: var(--ink); }
+    .ink { background: var(--ink); color: var(--white); }
+    .asset { margin: 0 0 1.05rem; }
+    .art { display: grid; place-items: center; overflow: hidden; min-height: 6rem; border-radius: 6px; }
+    .art.paper { border: 1px solid var(--line); }
+    .art img { display: block; object-fit: contain; max-width: 100%; height: auto; }
+    .art .mark { margin-block: .9rem; }
+    .art .hero { width: 100%; }
+    .art .compare { width: min(100%, 380px); }
+    .art .empty { width: min(100%, 204px); }
+    .art .watermark { width: min(75%, 200px); margin: .7rem 0; }
+    .art .divider { width: min(80%, 240px); }
+    figcaption { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: .25rem .85rem; align-items: baseline; padding: .1rem .1rem .2rem; font-size: .83rem; }
+    figcaption code { color: var(--blue); }
+    .asset:last-child { margin-bottom: 2rem; }
+    .icon-grid { margin: 0; padding: .5rem; list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .45rem; border-radius: 6px; }
+    .icon-grid.paper { border: 1px solid var(--line); }
+    .icon-grid li { min-height: 5.5rem; padding: .38rem .1rem; display: grid; grid-template-rows: 30px auto auto; justify-items: center; align-content: start; gap: .2rem; text-align: center; border: 1px solid var(--line); border-radius: 4px; }
+    .icon-grid.ink li { border-color: var(--blue); }
+    .icon-grid span { font-size: .72rem; }
+    .icon-grid code { font-size: .62rem; }
+    .icon-grid img { display: block; }
+    .icon-grid.ink img { filter: brightness(0) invert(1); }
+    @media (max-width: 720px) {
+      main { padding-block: 2rem; }
+      .icon-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 450px) {
+      .icon-grid { grid-template-columns: minmax(0, 1fr); }
+      .art { min-height: 5rem; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>页面视觉素材</h1>
+    <p>白色印章和网纹用于墨蓝底。墨蓝水印按 5% 透明度展示，适用于纸色底。</p>
+  </header>
+  <section aria-labelledby="assets">
+    <h2 id="assets">标识、插画与纹样</h2>
+    <div class="columns"><span class="paper">纸色底</span><span class="ink">墨蓝底</span></div>
+    <figure class="asset">
+      <div class="art paper"><img class="mark" src="logo-mark.svg" width="64" height="64" alt="印章标识"></div>
+      <div class="art ink"><img class="mark" src="logo-mark.svg" width="64" height="64" alt="印章标识"></div>
+      <figcaption>印章标识 <code>logo-mark.svg</code></figcaption>
+    </figure>
+    <figure class="asset">
+      <div class="art paper"><img class="mark" src="logo-mark-light.svg" width="64" height="64" alt="印章标识 · 白色"></div>
+      <div class="art ink"><img class="mark" src="logo-mark-light.svg" width="64" height="64" alt="印章标识 · 白色"></div>
+      <figcaption>印章标识 · 白色 <code>logo-mark-light.svg</code></figcaption>
+    </figure>
+    <figure class="asset">
+      <div class="art paper"><img class="hero" src="hero-pattern.svg" width="1600" height="420" alt="横幅网纹"></div>
+      <div class="art ink"><img class="hero" src="hero-pattern.svg" width="1600" height="420" alt="横幅网纹"></div>
+      <figcaption>横幅网纹 <code>hero-pattern.svg</code></figcaption>
+    </figure>
+    <figure class="asset">
+      <div class="art paper"><img class="compare" src="illus-compare.svg" width="560" height="420" alt="商标比对"></div>
+      <div class="art ink"><img class="compare" src="illus-compare.svg" width="560" height="420" alt="商标比对"></div>
+      <figcaption>商标比对 <code>illus-compare.svg</code></figcaption>
+    </figure>
+    <figure class="asset">
+      <div class="art paper"><img class="empty" src="empty-none.svg" width="280" height="200" alt="没有候选"></div>
+      <div class="art ink"><img class="empty" src="empty-none.svg" width="280" height="200" alt="没有候选"></div>
+      <figcaption>没有候选 <code>empty-none.svg</code></figcaption>
+    </figure>
+    <figure class="asset">
+      <div class="art paper"><img class="empty" src="empty-degraded.svg" width="280" height="200" alt="规则给出结果"></div>
+      <div class="art ink"><img class="empty" src="empty-degraded.svg" width="280" height="200" alt="规则给出结果"></div>
+      <figcaption>规则给出结果 <code>empty-degraded.svg</code></figcaption>
+    </figure>
+    <figure class="asset">
+      <div class="art paper"><img class="watermark" src="report-watermark.svg" width="360" height="360" alt="报告水印"></div>
+      <div class="art ink"><img class="watermark" src="report-watermark.svg" width="360" height="360" alt="报告水印"></div>
+      <figcaption>报告水印 <code>report-watermark.svg</code></figcaption>
+    </figure>
+    <figure class="asset">
+      <div class="art paper"><img class="divider" src="divider.svg" width="240" height="12" alt="黄铜分隔线"></div>
+      <div class="art ink"><img class="divider" src="divider.svg" width="240" height="12" alt="黄铜分隔线"></div>
+      <figcaption>黄铜分隔线 <code>divider.svg</code></figcaption>
+    </figure>
+  </section>
+  <section aria-labelledby="icons">
+    <h2 id="icons">线性图标</h2>
+    <div class="columns"><span class="paper">纸色底</span><span class="ink">墨蓝底</span></div>
+    <div class="icons">
+      <ul class="paper icon-grid">
+        <li><img class="icon" src="icons/step-input.svg" width="24" height="24" alt="填写"><span>填写</span><code>step-input</code></li>
+        <li><img class="icon" src="icons/step-goods.svg" width="24" height="24" alt="确认商品项"><span>确认商品项</span><code>step-goods</code></li>
+        <li><img class="icon" src="icons/step-candidates.svg" width="24" height="24" alt="确认候选"><span>确认候选</span><code>step-candidates</code></li>
+        <li><img class="icon" src="icons/step-report.svg" width="24" height="24" alt="报告"><span>报告</span><code>step-report</code></li>
+        <li><img class="icon" src="icons/ic-download.svg" width="24" height="24" alt="下载"><span>下载</span><code>ic-download</code></li>
+        <li><img class="icon" src="icons/ic-refresh.svg" width="24" height="24" alt="重新评估"><span>重新评估</span><code>ic-refresh</code></li>
+        <li><img class="icon" src="icons/ic-history.svg" width="24" height="24" alt="最近的报告"><span>最近的报告</span><code>ic-history</code></li>
+        <li><img class="icon" src="icons/ic-database.svg" width="24" height="24" alt="商标库"><span>商标库</span><code>ic-database</code></li>
+        <li><img class="icon" src="icons/ic-model.svg" width="24" height="24" alt="大模型"><span>大模型</span><code>ic-model</code></li>
+        <li><img class="icon" src="icons/ic-chat.svg" width="24" height="24" alt="法律问答"><span>法律问答</span><code>ic-chat</code></li>
+        <li><img class="icon" src="icons/ic-info.svg" width="24" height="24" alt="提示"><span>提示</span><code>ic-info</code></li>
+        <li><img class="icon" src="icons/ch-exact.svg" width="24" height="24" alt="文字完全相同"><span>文字完全相同</span><code>ch-exact</code></li>
+        <li><img class="icon" src="icons/ch-contains.svg" width="24" height="24" alt="包含"><span>包含</span><code>ch-contains</code></li>
+        <li><img class="icon" src="icons/ch-glyph.svg" width="24" height="24" alt="字形相近"><span>字形相近</span><code>ch-glyph</code></li>
+        <li><img class="icon" src="icons/ch-pinyin.svg" width="24" height="24" alt="读音"><span>读音</span><code>ch-pinyin</code></li>
+        <li><img class="icon" src="icons/ch-transpose.svg" width="24" height="24" alt="字序颠倒"><span>字序颠倒</span><code>ch-transpose</code></li>
+        <li><img class="icon" src="icons/ch-redup.svg" width="24" height="24" alt="叠字"><span>叠字</span><code>ch-redup</code></li>
+        <li><img class="icon" src="icons/ch-meaning.svg" width="24" height="24" alt="含义"><span>含义</span><code>ch-meaning</code></li>
+        <li><img class="icon" src="icons/ic-shield.svg" width="24" height="24" alt="规则护栏"><span>规则护栏</span><code>ic-shield</code></li>
+        <li><img class="icon" src="icons/ic-scale.svg" width="24" height="24" alt="法律依据"><span>法律依据</span><code>ic-scale</code></li>
+        <li><img class="icon" src="icons/ic-alert.svg" width="24" height="24" alt="警示"><span>警示</span><code>ic-alert</code></li>
+        <li><img class="icon" src="icons/ic-check.svg" width="24" height="24" alt="通过"><span>通过</span><code>ic-check</code></li>
+      </ul>
+      <ul class="ink icon-grid">
+        <li><img class="icon" src="icons/step-input.svg" width="24" height="24" alt="填写"><span>填写</span><code>step-input</code></li>
+        <li><img class="icon" src="icons/step-goods.svg" width="24" height="24" alt="确认商品项"><span>确认商品项</span><code>step-goods</code></li>
+        <li><img class="icon" src="icons/step-candidates.svg" width="24" height="24" alt="确认候选"><span>确认候选</span><code>step-candidates</code></li>
+        <li><img class="icon" src="icons/step-report.svg" width="24" height="24" alt="报告"><span>报告</span><code>step-report</code></li>
+        <li><img class="icon" src="icons/ic-download.svg" width="24" height="24" alt="下载"><span>下载</span><code>ic-download</code></li>
+        <li><img class="icon" src="icons/ic-refresh.svg" width="24" height="24" alt="重新评估"><span>重新评估</span><code>ic-refresh</code></li>
+        <li><img class="icon" src="icons/ic-history.svg" width="24" height="24" alt="最近的报告"><span>最近的报告</span><code>ic-history</code></li>
+        <li><img class="icon" src="icons/ic-database.svg" width="24" height="24" alt="商标库"><span>商标库</span><code>ic-database</code></li>
+        <li><img class="icon" src="icons/ic-model.svg" width="24" height="24" alt="大模型"><span>大模型</span><code>ic-model</code></li>
+        <li><img class="icon" src="icons/ic-chat.svg" width="24" height="24" alt="法律问答"><span>法律问答</span><code>ic-chat</code></li>
+        <li><img class="icon" src="icons/ic-info.svg" width="24" height="24" alt="提示"><span>提示</span><code>ic-info</code></li>
+        <li><img class="icon" src="icons/ch-exact.svg" width="24" height="24" alt="文字完全相同"><span>文字完全相同</span><code>ch-exact</code></li>
+        <li><img class="icon" src="icons/ch-contains.svg" width="24" height="24" alt="包含"><span>包含</span><code>ch-contains</code></li>
+        <li><img class="icon" src="icons/ch-glyph.svg" width="24" height="24" alt="字形相近"><span>字形相近</span><code>ch-glyph</code></li>
+        <li><img class="icon" src="icons/ch-pinyin.svg" width="24" height="24" alt="读音"><span>读音</span><code>ch-pinyin</code></li>
+        <li><img class="icon" src="icons/ch-transpose.svg" width="24" height="24" alt="字序颠倒"><span>字序颠倒</span><code>ch-transpose</code></li>
+        <li><img class="icon" src="icons/ch-redup.svg" width="24" height="24" alt="叠字"><span>叠字</span><code>ch-redup</code></li>
+        <li><img class="icon" src="icons/ch-meaning.svg" width="24" height="24" alt="含义"><span>含义</span><code>ch-meaning</code></li>
+        <li><img class="icon" src="icons/ic-shield.svg" width="24" height="24" alt="规则护栏"><span>规则护栏</span><code>ic-shield</code></li>
+        <li><img class="icon" src="icons/ic-scale.svg" width="24" height="24" alt="法律依据"><span>法律依据</span><code>ic-scale</code></li>
+        <li><img class="icon" src="icons/ic-alert.svg" width="24" height="24" alt="警示"><span>警示</span><code>ic-alert</code></li>
+        <li><img class="icon" src="icons/ic-check.svg" width="24" height="24" alt="通过"><span>通过</span><code>ic-check</code></li>
+      </ul>
+    </div>
+  </section>
+</main>
+</body>
+</html>

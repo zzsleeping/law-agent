@@ -16,7 +16,7 @@ def parse(s: AgentState) -> dict:
         "query_mark": s["query_mark"], "goods_desc": s.get("goods_desc", ""),
         "candidates": {part: [{"code": c["code"], "name": c["name"], "class": c["nice_class"]} for c in cs]
                        for part, cs in candidates.items()},
-    })
+    }, refresh=bool(s.get("fresh")))
     notes = []
     if data is None:
         notes.append(f"要素解析未使用大模型（{llm.last_error}）：商品项仅为向量检索建议，请人工确认"
