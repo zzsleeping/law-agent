@@ -1,0 +1,54 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2021]第0000202666号",
+  "decision_date": "2021-07-27",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=d03f7e5c991ee270",
+  "retrieved_at": "2026-11-19",
+  "applicant_mark": {
+    "text": "福悦堂 福 WELFARE",
+    "app_no": "49994424",
+    "app_date": "2020-09-23",
+    "priority_date": null,
+    "owner": "自然人",
+    "goods": [
+      {
+        "name": "食用燕窝",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "食用果冻",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "海参（非活）",
+        "nice_class": 29,
+        "group": null
+      },
+      {
+        "name": "鱼罐头",
+        "nice_class": 29,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "39409613",
+      "text": "悦福堂",
+      "app_date": "2019-07-03",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "与引证商标五“悦福堂”仅字序不同",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "notes": "申请商品登记项节选据国家知识产权局商标开放基本信息按编号核对，评审范围见文书。 申请类别据国家知识产权局商标开放基本信息按编号核对。 申请日期与国家知识产权局商标开放基本信息一致。 引证已节选，保留符合本批比对情形且能核实编号和认定理由的记录。 同名引证已节选。"
+}

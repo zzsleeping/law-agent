@@ -1,0 +1,33 @@
+{
+  "doc_type": "无效宣告请求裁定书",
+  "doc_no": "商评字[2020]第0000033040号",
+  "decision_date": "2020-03-02",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=4175d457b70800ed",
+  "retrieved_at": "2026-11-19",
+  "applicant_mark": {
+    "text": "百力士",
+    "app_no": "27109314",
+    "app_date": "2017-10-26",
+    "priority_date": null,
+    "owner": "东莞市清爽节能材料有限公司",
+    "goods": null
+  },
+  "cited_marks": [
+    {
+      "reg_no": "11117741",
+      "text": "大力士",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "但首字不同，争议商标由汉字“百力士”构成，其汉字部分“百力士”为臆造词",
+      "notes": "未取得可逐项对应的引证商品明细。非目标类别。"
+    }
+  ],
+  "outcome": "维持注册",
+  "outcome_scope": null,
+  "notes": "申请类别据文书记载。 未查到可逐项对应的申请商品名称。 引证已节选，保留符合本批比对情形且能核实编号和认定理由的记录。 同名引证已节选。"
+}

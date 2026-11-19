@@ -1,0 +1,54 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2022]第0000367032号",
+  "decision_date": "2022-12-06",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=28b2e34ed7405ecb",
+  "retrieved_at": "2026-11-19",
+  "applicant_mark": {
+    "text": "茶多FUN",
+    "app_no": "39859585",
+    "app_date": "2019-07-23",
+    "priority_date": null,
+    "owner": "自然人",
+    "goods": [
+      {
+        "name": "咖啡馆",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "餐馆",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "自助餐馆",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "酒吧服务",
+        "nice_class": 43,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "25626416",
+      "text": "N 多茶",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "申请商标与引证商标二、三、七至十二在文字构成、呼叫等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。非目标类别。"
+    }
+  ],
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "notes": "申请商品登记项节选据国家知识产权局商标开放基本信息按编号核对，评审范围见文书。 申请类别据文书记载。 申请日期与国家知识产权局商标开放基本信息一致。 引证已节选，保留符合本批比对情形且能核实编号和认定理由的记录。 同名引证已节选。"
+}

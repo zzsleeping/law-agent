@@ -18,7 +18,8 @@ def _run(name: str, field: str, fn, *args) -> dict:
 
 
 def _variants(s: AgentState) -> tuple:
-    return tuple(v["text"] for v in s.get("search_variants", []))
+    """候选生成用的附加检索词：待查商标的各段 + 检索规划 Agent 给出的写法。"""
+    return tuple(search.query_segments(s["query_mark"])) + tuple(v["text"] for v in s.get("search_variants", []))
 
 
 def _pool(s: AgentState) -> list[dict]:
@@ -29,7 +30,7 @@ def _text_channel(name: str, field: str, fn, s: AgentState) -> dict:
     def go():
         pool = _pool(s)
         group = {c["mark_id"]: c.get("group") or c["norm_text"] for c in pool}
-        hits = fn(s["query_mark"], s["classes"], s.get("data_scope", "all"), candidates=pool)
+        hits = search.recall_with_segments(fn, s["query_mark"], s["classes"], s.get("data_scope", "all"), pool)
         return [h.model_copy(update={"group": group.get(h.mark_id, "")}) for h in hits]
     return _run(name, field, go)
 

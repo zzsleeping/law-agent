@@ -1,0 +1,39 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2020]第0000253449号",
+  "decision_date": "2020-09-28",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=4709ecb426b8ce27",
+  "retrieved_at": "2026-11-19",
+  "applicant_mark": {
+    "text": "乐得多LEDEDUO及图",
+    "app_no": "42966666",
+    "app_date": null,
+    "priority_date": null,
+    "owner": "广州乐得多贸易有限公司",
+    "goods": [
+      {
+        "name": "广告、为零售目的在通信媒体上展示商品、广告宣传、商业企业迁移",
+        "nice_class": 35,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "4761785",
+      "text": "得乐多DEROD及图",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "申请商标中文部分与引证商标中文部分文字构成相同，仅字序不同",
+      "notes": "未取得可逐项对应的引证商品明细。非目标类别。"
+    }
+  ],
+  "outcome": "部分驳回",
+  "outcome_scope": "申请商标指定使用在“广告、为零售目的在通信媒体上展示商品、广告宣传、商业企业迁移”服务上的注册申请予以驳回，申请商标指定使用在其余服务上的注册申请予以初步审定。",
+  "notes": "从该申请号的商标详情核对申请类别。https://www.tmkoo.com/detail/cffa40ac4fcf65ab967541ee3bb13223 未核实申请日期。"
+}

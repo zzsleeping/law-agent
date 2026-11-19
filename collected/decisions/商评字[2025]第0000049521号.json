@@ -1,0 +1,84 @@
+{
+  "doc_type": "无效宣告请求裁定书",
+  "doc_no": "商评字[2025]第0000049521号",
+  "decision_date": "2025-02-12",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=a89ec7c1b37a0368",
+  "retrieved_at": "2026-11-19",
+  "applicant_mark": {
+    "text": "俏蒂诗 QIAODISHI",
+    "app_no": "67405449",
+    "app_date": "2022-09-24",
+    "priority_date": null,
+    "owner": "义乌市界傲之心服饰有限公司",
+    "goods": [
+      {
+        "name": "广告",
+        "nice_class": 35,
+        "group": null
+      },
+      {
+        "name": "计算机网络上的在线广告",
+        "nice_class": 35,
+        "group": null
+      },
+      {
+        "name": "特许经营的商业管理",
+        "nice_class": 35,
+        "group": null
+      },
+      {
+        "name": "商业管理辅助",
+        "nice_class": 35,
+        "group": null
+      },
+      {
+        "name": "市场营销",
+        "nice_class": 35,
+        "group": null
+      },
+      {
+        "name": "为商品和服务的买卖双方提供在线市场",
+        "nice_class": 35,
+        "group": null
+      },
+      {
+        "name": "为他人推销",
+        "nice_class": 35,
+        "group": null
+      },
+      {
+        "name": "人事管理咨询",
+        "nice_class": 35,
+        "group": null
+      },
+      {
+        "name": "文秘",
+        "nice_class": 35,
+        "group": null
+      },
+      {
+        "name": "药用、兽医用、卫生用制剂和医疗用品的批发服务",
+        "nice_class": 35,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "1309467",
+      "text": "海蒂诗",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "在文字构成、呼叫上存在差异，整体尚可区分",
+      "notes": "未取得可逐项对应的引证商品明细。非目标类别。"
+    }
+  ],
+  "outcome": "维持注册",
+  "outcome_scope": null,
+  "notes": "申请类别据文书记载。 引证已节选，保留符合本批比对情形且能核实编号和认定理由的记录。 同名引证已节选。"
+}

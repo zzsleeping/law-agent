@@ -1,0 +1,51 @@
+{
+  "doc_type": "无效宣告请求裁定书",
+  "doc_no": "商评字[2021]第0000240199号",
+  "decision_date": "2021-08-31",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=19b6de6ac17ca4e2",
+  "retrieved_at": "2026-11-19",
+  "applicant_mark": {
+    "text": "九街淑芬",
+    "app_no": "35831983",
+    "app_date": "2019-01-09",
+    "priority_date": null,
+    "owner": "自然人",
+    "goods": [
+      {
+        "name": "餐馆",
+        "nice_class": 43,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "35068689",
+      "text": "王淑芬串串",
+      "app_date": "2018-12-03",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "与申请人引证商标一、二在呼叫、文字构成、含义等方面存在一定区别，未构成近似标识",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    },
+    {
+      "reg_no": "30769268",
+      "text": "淑芬",
+      "app_date": "2018-05-08",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "与申请人引证商标一、二在呼叫、文字构成、含义等方面存在一定区别，未构成近似标识",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "维持注册",
+  "outcome_scope": null,
+  "notes": "申请类别据文书记载。 申请日期与国家知识产权局商标开放基本信息一致。"
+}

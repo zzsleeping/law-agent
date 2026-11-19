@@ -5,6 +5,7 @@
 """
 from __future__ import annotations
 
+import re
 from functools import lru_cache
 
 from app import db
@@ -51,6 +52,33 @@ def candidate_pool(query: str, classes, data_scope: str | None = "all", variants
                     seen.add(key)
                     out.append(c)
     return out
+
+
+SEG_SPLIT = re.compile(r"[\s;；/／、|｜]+")
+
+
+def query_segments(text: str) -> list[str]:
+    """待查商标由空格等分隔的多段中文时，各段单独作为检索词（整体之外）。
+
+    例如“一葉了然 梅及图”整体规范化为“一叶了然梅”，与“一目了然”只能算共用部分；
+    拆出“一叶了然”后才能识别为仅一字不同。在先商标一侧建索引时已按段拆分。
+    """
+    whole = phonetic.normalize(text)
+    out = []
+    for part in SEG_SPLIT.split((text or "").replace("及图", "")):
+        seg = phonetic.normalize(part)
+        if len(seg) >= 2 and seg != whole and phonetic.HAN.search(seg) and seg not in out:
+            out.append(seg)
+    return out
+
+
+def recall_with_segments(fn, text: str, classes, data_scope: str | None, candidates: list[dict]) -> list[Hit]:
+    """对整体和各段分别召回；分段命中的依据前面注明是我方哪一段。"""
+    hits = fn(text, classes, data_scope, candidates=candidates)
+    for seg in query_segments(text):
+        hits += [h.model_copy(update={"evidence": f"我方商标中的“{seg}”：{h.evidence}"})
+                 for h in fn(seg, classes, data_scope, candidates=candidates)]
+    return hits
 
 
 def _ranked(hits: list[Hit], top_k: int) -> list[Hit]:

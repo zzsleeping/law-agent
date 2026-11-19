@@ -1,0 +1,33 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2023]第0000296733号",
+  "decision_date": "2023-10-23",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=5980f0ea8db47e08",
+  "retrieved_at": "2026-11-19",
+  "applicant_mark": {
+    "text": "博远健康",
+    "app_no": "67523805",
+    "app_date": "2022-09-29",
+    "priority_date": null,
+    "owner": "博远医生集团（海南）有限公司",
+    "goods": null
+  },
+  "cited_marks": [
+    {
+      "reg_no": "39340897",
+      "text": "远博",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "“远博”的文字构成相同，仅文字排列顺序不同",
+      "notes": "未取得可逐项对应的引证商品明细。非目标类别。"
+    }
+  ],
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "notes": "从该申请号的商标详情核对申请类别。https://www.tmkoo.com/detail/92185a1a252c3095967541ee3bb13223 申请日期据同一商标详情核对。 未查到可逐项对应的申请商品名称。 引证已节选，保留符合本批比对情形且能核实编号和认定理由的记录。"
+}

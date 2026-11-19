@@ -73,6 +73,25 @@
   ]
  },
  {
+  "case_id": "商评字[2018]第0000026890号",
+  "split": "tune",
+  "doc_type": "无效宣告请求裁定书",
+  "decision_date": "2018-02-12",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=73d982c7b94f5636",
+  "applicant_mark": "小小的我Little me",
+  "outcome": "维持注册",
+  "outcome_scope": null,
+  "cited": [
+   {
+    "text": "小小",
+    "reg_no": "1607001",
+    "mark_similar": "不近似",
+    "goods_similar": "未认定",
+    "excerpt": "与引证商标一、二、四在文字构成、呼叫、含义等方面均存在一定的区别，未构成近似商标"
+   }
+  ]
+ },
+ {
   "case_id": "商评字[2018]第0000090605号",
   "split": "frozen",
   "doc_type": "不予注册复审决定书",
@@ -120,6 +139,25 @@
   ]
  },
  {
+  "case_id": "商评字[2018]第0000116054号",
+  "split": "frozen",
+  "doc_type": "驳回复审决定书",
+  "decision_date": "2018-06-29",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=e760daf8e6752ac0",
+  "applicant_mark": "正证网",
+  "outcome": "部分驳回",
+  "outcome_scope": "申请商标指定使用在寻找赞助服务上的注册申请予以初步审定，在其余服务上的注册申请予以驳回。",
+  "cited": [
+   {
+    "text": "正正及图",
+    "reg_no": "3727687",
+    "mark_similar": "近似",
+    "goods_similar": "类似",
+    "excerpt": "申请商标显著部分“正证”与引证商标文字“正正”文字构成相近、读音相同"
+   }
+  ]
+ },
+ {
   "case_id": "商评字[2018]第0000136104号",
   "split": "frozen",
   "doc_type": "无效宣告请求裁定书",
@@ -142,6 +180,44 @@
     "mark_similar": "近似",
     "goods_similar": "未认定",
     "excerpt": "文字构成、呼叫等方面相近"
+   }
+  ]
+ },
+ {
+  "case_id": "商评字[2018]第0000196027号",
+  "split": "frozen",
+  "doc_type": "驳回复审决定书",
+  "decision_date": "2018-10-23",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=1d054049a33416be",
+  "applicant_mark": "玖食坊 玖及图",
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "cited": [
+   {
+    "text": "玖时坊",
+    "reg_no": "19443824",
+    "mark_similar": "近似",
+    "goods_similar": "类似",
+    "excerpt": "申请商标显著识别文字“玖食坊”与引证商标四“玖时坊”文字构成相近、呼叫相同"
+   }
+  ]
+ },
+ {
+  "case_id": "商评字[2018]第0000256572号",
+  "split": "frozen",
+  "doc_type": "无效宣告请求裁定书",
+  "decision_date": "2018-12-25",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=b83d80eed17c0fc3",
+  "applicant_mark": "晋山河",
+  "outcome": "宣告无效",
+  "outcome_scope": null,
+  "cited": [
+   {
+    "text": "锦绣山河",
+    "reg_no": "18086831",
+    "mark_similar": "不近似",
+    "goods_similar": "未认定",
+    "excerpt": "由于争议商标与引证商标六在文字构成、呼叫等方面有所差异，未构成近似商标"
    }
   ]
  },
@@ -297,6 +373,25 @@
   ]
  },
  {
+  "case_id": "商评字[2019]第0000287542号",
+  "split": "tune",
+  "doc_type": "无效宣告请求裁定书",
+  "decision_date": "2019-11-27",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=cae6402e2bddd3b8",
+  "applicant_mark": "蓝每",
+  "outcome": "宣告无效",
+  "outcome_scope": null,
+  "cited": [
+   {
+    "text": "蓝妹1895",
+    "reg_no": "12124984",
+    "mark_similar": "近似",
+    "goods_similar": "类似",
+    "excerpt": "争议商标“蓝每”与引证商标一、引证商标二、三的显著识别部分文字“蓝妹”在文字构成、呼叫上相近"
+   }
+  ]
+ },
+ {
   "case_id": "商评字[2019]第0000290267号",
   "split": "frozen",
   "doc_type": "驳回复审决定书",
@@ -339,6 +434,25 @@
   "outcome": "初步审定",
   "outcome_scope": null,
   "cited": []
+ },
+ {
+  "case_id": "商评字[2019]第0000297769号",
+  "split": "tune",
+  "doc_type": "驳回复审决定书",
+  "decision_date": "2019-12-09",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=58553bbbf9823528",
+  "applicant_mark": "鲲灵Qunling",
+  "outcome": "部分驳回",
+  "outcome_scope": "申请商标指定使用在智能眼镜（数据处理）、扫描仪（数据处理设备）商品上的注册申请予以驳回，申请商标指定使用在其余复审商品上的注册申请予以初步审定。",
+  "cited": [
+   {
+    "text": "灵鲲",
+    "reg_no": "26807449",
+    "mark_similar": "近似",
+    "goods_similar": "类似",
+    "excerpt": "文字构成相同，仅排列顺序不同，两者存在呼叫相同的可能性"
+   }
+  ]
  },
  {
   "case_id": "商评字[2019]第0000311066号",
@@ -504,6 +618,25 @@
     "mark_similar": "不近似",
     "goods_similar": "未认定",
     "excerpt": "区别明显"
+   }
+  ]
+ },
+ {
+  "case_id": "商评字[2020]第0000033040号",
+  "split": "tune",
+  "doc_type": "无效宣告请求裁定书",
+  "decision_date": "2020-03-02",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=4175d457b70800ed",
+  "applicant_mark": "百力士",
+  "outcome": "维持注册",
+  "outcome_scope": null,
+  "cited": [
+   {
+    "text": "大力士",
+    "reg_no": "11117741",
+    "mark_similar": "不近似",
+    "goods_similar": "未认定",
+    "excerpt": "但首字不同，争议商标由汉字“百力士”构成，其汉字部分“百力士”为臆造词"
    }
   ]
  },
@@ -1333,6 +1466,44 @@
   ]
  },
  {
+  "case_id": "商评字[2020]第0000250673号",
+  "split": "tune",
+  "doc_type": "无效宣告请求裁定书",
+  "decision_date": "2020-09-28",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=8a98ccaafdb571fc",
+  "applicant_mark": "好太太 好生活",
+  "outcome": "部分宣告无效",
+  "outcome_scope": "争议商标在“电炊具、电热水器、燃气炉、电热壶、电压力锅(高压锅)、微波炉(厨房用具)、冷冻设备和装置、空气调节设备、厨房用抽油烟机、浴室装置、消毒碗柜、电暖器、灯、太阳能热水器、饮水机”商品上予以无效宣告，在“油灯、打火机”商品上予以维持。",
+  "cited": [
+   {
+    "text": "好太太Goodwife",
+    "reg_no": "11445373",
+    "mark_similar": "近似",
+    "goods_similar": "类似",
+    "excerpt": "争议商标与引证商标一至四在文字构成、呼叫、含义等方面相近"
+   }
+  ]
+ },
+ {
+  "case_id": "商评字[2020]第0000253449号",
+  "split": "tune",
+  "doc_type": "驳回复审决定书",
+  "decision_date": "2020-09-28",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=4709ecb426b8ce27",
+  "applicant_mark": "乐得多LEDEDUO及图",
+  "outcome": "部分驳回",
+  "outcome_scope": "申请商标指定使用在“广告、为零售目的在通信媒体上展示商品、广告宣传、商业企业迁移”服务上的注册申请予以驳回，申请商标指定使用在其余服务上的注册申请予以初步审定。",
+  "cited": [
+   {
+    "text": "得乐多DEROD及图",
+    "reg_no": "4761785",
+    "mark_similar": "近似",
+    "goods_similar": "类似",
+    "excerpt": "申请商标中文部分与引证商标中文部分文字构成相同，仅字序不同"
+   }
+  ]
+ },
+ {
   "case_id": "商评字[2020]第0000253587号",
   "split": "frozen",
   "doc_type": "无效宣告请求裁定书",
@@ -1613,6 +1784,44 @@
   ]
  },
  {
+  "case_id": "商评字[2021]第0000057341号",
+  "split": "tune",
+  "doc_type": "驳回复审决定书",
+  "decision_date": "2021-03-03",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=43513f3cf6e9f958",
+  "applicant_mark": "帝怡",
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "cited": [
+   {
+    "text": "蒂怡 DIYI及图",
+    "reg_no": "30604663",
+    "mark_similar": "近似",
+    "goods_similar": "类似",
+    "excerpt": "首字“帝”与“蒂”字形相近，尾字相同，在文字构成及整体呼叫上亦无明显区别"
+   }
+  ]
+ },
+ {
+  "case_id": "商评字[2021]第0000090452号",
+  "split": "tune",
+  "doc_type": "驳回复审决定书",
+  "decision_date": "2021-04-06",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=e9a33e314eed601a",
+  "applicant_mark": "安能",
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "cited": [
+   {
+    "text": "能安",
+    "reg_no": "11328294",
+    "mark_similar": "近似",
+    "goods_similar": "类似",
+    "excerpt": "显著标识性文字“能安”在文字构成上仅汉字字序不同"
+   }
+  ]
+ },
+ {
   "case_id": "商评字[2021]第0000093187号",
   "split": "frozen",
   "doc_type": "驳回复审决定书",
@@ -1686,6 +1895,25 @@
   ]
  },
  {
+  "case_id": "商评字[2021]第0000148578号",
+  "split": "tune",
+  "doc_type": "驳回复审决定书",
+  "decision_date": "2021-05-31",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=a0e80132f204d7a9",
+  "applicant_mark": "盛世教育 www.Test5184.com及图",
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "cited": [
+   {
+    "text": "世盛SHISHENG及图",
+    "reg_no": "3547129",
+    "mark_similar": "近似",
+    "goods_similar": "类似",
+    "excerpt": "该文字与引证商标六显著识别文字“世盛”文字构成相同、仅字序不同"
+   }
+  ]
+ },
+ {
   "case_id": "商评字[2021]第0000172388号",
   "split": "frozen",
   "doc_type": "无效宣告请求裁定书",
@@ -1741,6 +1969,25 @@
     "mark_similar": "近似",
     "goods_similar": "未认定",
     "excerpt": "文字构成、呼叫相近"
+   }
+  ]
+ },
+ {
+  "case_id": "商评字[2021]第0000181653号",
+  "split": "tune",
+  "doc_type": "无效宣告请求裁定书",
+  "decision_date": "2021-06-25",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=8179862558cab69c",
+  "applicant_mark": "鼠小小",
+  "outcome": "维持注册",
+  "outcome_scope": null,
+  "cited": [
+   {
+    "text": "小小",
+    "reg_no": "13186242",
+    "mark_similar": "不近似",
+    "goods_similar": "未认定",
+    "excerpt": "其与引证商标一至五在文字构成、呼叫、含义、整体视觉效果等方面存在一定区别"
    }
   ]
  },
@@ -1811,6 +2058,25 @@
   ]
  },
  {
+  "case_id": "商评字[2021]第0000202666号",
+  "split": "tune",
+  "doc_type": "驳回复审决定书",
+  "decision_date": "2021-07-27",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=d03f7e5c991ee270",
+  "applicant_mark": "福悦堂 福 WELFARE",
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "cited": [
+   {
+    "text": "悦福堂",
+    "reg_no": "39409613",
+    "mark_similar": "近似",
+    "goods_similar": "类似",
+    "excerpt": "与引证商标五“悦福堂”仅字序不同"
+   }
+  ]
+ },
+ {
   "case_id": "商评字[2021]第0000215943号",
   "split": "frozen",
   "doc_type": "不予注册复审决定书",
@@ -1875,6 +2141,32 @@
     "mark_similar": "近似",
     "goods_similar": "类似",
     "excerpt": "使用在同一种或类似服务上的近似商标"
+   }
+  ]
+ },
+ {
+  "case_id": "商评字[2021]第0000240199号",
+  "split": "frozen",
+  "doc_type": "无效宣告请求裁定书",
+  "decision_date": "2021-08-31",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=19b6de6ac17ca4e2",
+  "applicant_mark": "九街淑芬",
+  "outcome": "维持注册",
+  "outcome_scope": null,
+  "cited": [
+   {
+    "text": "王淑芬串串",
+    "reg_no": "35068689",
+    "mark_similar": "不近似",
+    "goods_similar": "未认定",
+    "excerpt": "与申请人引证商标一、二在呼叫、文字构成、含义等方面存在一定区别，未构成近似标识"
+   },
+   {
+    "text": "淑芬",
+    "reg_no": "30769268",
+    "mark_similar": "不近似",
+    "goods_similar": "未认定",
+    "excerpt": "与申请人引证商标一、二在呼叫、文字构成、含义等方面存在一定区别，未构成近似标识"
    }
   ]
  },
@@ -1969,6 +2261,25 @@
     "mark_similar": "近似",
     "goods_similar": "类似",
     "excerpt": "已构成使用在同一种或类似商品上的近似商标"
+   }
+  ]
+ },
+ {
+  "case_id": "商评字[2022]第0000002832号",
+  "split": "frozen",
+  "doc_type": "驳回复审决定书",
+  "decision_date": "2022-01-08",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=21ffefb65dfd1f62",
+  "applicant_mark": "野峰及图",
+  "outcome": "部分驳回",
+  "outcome_scope": "申请商标指定使用在游乐园服务、娱乐服务、提供娱乐设施、俱乐部服务（娱乐或教育）、提供娱乐信息、假日野营娱乐服务、筹划聚会（娱乐）复审服务上的注册申请予以初步审定，申请商标指定使用在导游服务上的注册申请予以驳回。",
+  "cited": [
+   {
+    "text": "野烽",
+    "reg_no": "43624137",
+    "mark_similar": "近似",
+    "goods_similar": "类似",
+    "excerpt": "申请商标文字“野峰”与引证商标一文字“野烽”呼叫相同，在文字构成、外观等方面相近"
    }
   ]
  },
@@ -2068,6 +2379,25 @@
     "mark_similar": "近似",
     "goods_similar": "类似",
     "excerpt": "使用在同一种或类似商品上的近似商标"
+   }
+  ]
+ },
+ {
+  "case_id": "商评字[2022]第0000079983号",
+  "split": "tune",
+  "doc_type": "无效宣告请求裁定书",
+  "decision_date": "2022-03-11",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=7ec4a2f645245664",
+  "applicant_mark": "福忆坊",
+  "outcome": "宣告无效",
+  "outcome_scope": null,
+  "cited": [
+   {
+    "text": "福艺堂",
+    "reg_no": "11107917",
+    "mark_similar": "近似",
+    "goods_similar": "类似",
+    "excerpt": "争议商标显著识别文字“福忆”与引证商标一显著识别文字“福艺”文字构成及字形相近，呼叫相同"
    }
   ]
  },
@@ -2241,6 +2571,25 @@
   ]
  },
  {
+  "case_id": "商评字[2022]第0000129296号",
+  "split": "frozen",
+  "doc_type": "驳回复审决定书",
+  "decision_date": "2022-04-22",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=7403cf6b0fec8d47",
+  "applicant_mark": "吉详",
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "cited": [
+   {
+    "text": "吉祥",
+    "reg_no": "173939",
+    "mark_similar": "近似",
+    "goods_similar": "类似",
+    "excerpt": "申请商标与引证商标一、二的主要识别部分“吉祥”文字字形相近、呼叫相同"
+   }
+  ]
+ },
+ {
   "case_id": "商评字[2022]第0000146618号",
   "split": "frozen",
   "doc_type": "驳回复审决定书",
@@ -2324,6 +2673,25 @@
     "mark_similar": "近似",
     "goods_similar": "类似",
     "excerpt": "文字构成、呼叫、含义等方面相近"
+   }
+  ]
+ },
+ {
+  "case_id": "商评字[2022]第0000183537号",
+  "split": "frozen",
+  "doc_type": "驳回复审决定书",
+  "decision_date": "2022-06-22",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=14c8e4afc07aadb3",
+  "applicant_mark": "时尚之夜 搜亚 NIGHT FASHION",
+  "outcome": "部分驳回",
+  "outcome_scope": "申请商标指定使用在“人力资源管理；计算机数据库信息系统化；寻找赞助”服务上的注册申请予以初步审定，申请商标指定使用在其余复审服务上的注册申请予以驳回。",
+  "cited": [
+   {
+    "text": "亚搜YASO",
+    "reg_no": "18479374",
+    "mark_similar": "近似",
+    "goods_similar": "不类似",
+    "excerpt": "申请商标与引证商标四、七在文字构成、呼叫等方面相近，消费者施以一般注意力不易区分"
    }
   ]
  },
@@ -2704,6 +3072,25 @@
   "cited": []
  },
  {
+  "case_id": "商评字[2022]第0000299978号",
+  "split": "tune",
+  "doc_type": "驳回复审决定书",
+  "decision_date": "2022-09-13",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=6c3d4c87eb1c36bc",
+  "applicant_mark": "德高化工DEGAO及图",
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "cited": [
+   {
+    "text": "高德BG",
+    "reg_no": "7515682",
+    "mark_similar": "近似",
+    "goods_similar": "类似",
+    "excerpt": "与引证商标八中汉字“高德”仅字序不同"
+   }
+  ]
+ },
+ {
   "case_id": "商评字[2022]第0000305037号",
   "split": "frozen",
   "doc_type": "无效宣告请求裁定书",
@@ -2861,6 +3248,44 @@
   ]
  },
  {
+  "case_id": "商评字[2022]第0000347395号",
+  "split": "tune",
+  "doc_type": "驳回复审决定书",
+  "decision_date": "2022-11-08",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=c77741014c0486b4",
+  "applicant_mark": "啉の茶 LINのTEA",
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "cited": [
+   {
+    "text": "琳茶 lincha",
+    "reg_no": "25456327",
+    "mark_similar": "近似",
+    "goods_similar": "类似",
+    "excerpt": "申请商标“啉の茶 LINのTEA”与引证商标一“琳茶 lincha”在整体构成、呼叫等方面相近"
+   }
+  ]
+ },
+ {
+  "case_id": "商评字[2022]第0000367032号",
+  "split": "tune",
+  "doc_type": "驳回复审决定书",
+  "decision_date": "2022-12-06",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=28b2e34ed7405ecb",
+  "applicant_mark": "茶多FUN",
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "cited": [
+   {
+    "text": "N 多茶",
+    "reg_no": "25626416",
+    "mark_similar": "近似",
+    "goods_similar": "类似",
+    "excerpt": "申请商标与引证商标二、三、七至十二在文字构成、呼叫等方面相近"
+   }
+  ]
+ },
+ {
   "case_id": "商评字[2023]第0000032542号",
   "split": "frozen",
   "doc_type": "驳回复审决定书",
@@ -2970,6 +3395,25 @@
     "mark_similar": "近似",
     "goods_similar": "类似",
     "excerpt": "已构成近似标识"
+   }
+  ]
+ },
+ {
+  "case_id": "商评字[2023]第0000059168号",
+  "split": "tune",
+  "doc_type": "驳回复审决定书",
+  "decision_date": "2023-02-28",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=2f778cb069c58aeb",
+  "applicant_mark": "tenwin天文",
+  "outcome": "部分驳回",
+  "outcome_scope": "申请商标指定使用在计时器（时间记录装置）、尺（量器）商品上的注册申请予以初步审定，申请商标指定使用在自动计量器等其余复审商品上的注册申请予以驳回。",
+  "cited": [
+   {
+    "text": "文天",
+    "reg_no": "1787755",
+    "mark_similar": "近似",
+    "goods_similar": "未认定",
+    "excerpt": "在文字构成、外观等方面相近"
    }
   ]
  },
@@ -3619,6 +4063,44 @@
   ]
  },
  {
+  "case_id": "商评字[2023]第0000249164号",
+  "split": "tune",
+  "doc_type": "驳回复审决定书",
+  "decision_date": "2023-08-31",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=6e29cd3baea6a16c",
+  "applicant_mark": "蜜蜂OA",
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "cited": [
+   {
+    "text": "蜂蜜",
+    "reg_no": "16709938",
+    "mark_similar": "近似",
+    "goods_similar": "类似",
+    "excerpt": "申请商标的中文“蜜蜂”与引证商标一、二、十、十一、十六、十八、二十四相比较，其在文字构成等方面相近"
+   }
+  ]
+ },
+ {
+  "case_id": "商评字[2023]第0000296733号",
+  "split": "frozen",
+  "doc_type": "驳回复审决定书",
+  "decision_date": "2023-10-23",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=5980f0ea8db47e08",
+  "applicant_mark": "博远健康",
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "cited": [
+   {
+    "text": "远博",
+    "reg_no": "39340897",
+    "mark_similar": "近似",
+    "goods_similar": "类似",
+    "excerpt": "“远博”的文字构成相同，仅文字排列顺序不同"
+   }
+  ]
+ },
+ {
   "case_id": "商评字[2023]第0000326281号",
   "split": "tune",
   "doc_type": "不予注册复审决定书",
@@ -3787,6 +4269,25 @@
     "mark_similar": "不近似",
     "goods_similar": "未认定",
     "excerpt": "在文字构成、呼叫等方面有所区别"
+   }
+  ]
+ },
+ {
+  "case_id": "商评字[2023]第0000375516号",
+  "split": "tune",
+  "doc_type": "无效宣告请求裁定书",
+  "decision_date": "2023-12-20",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=0bac10fa102f8c1f",
+  "applicant_mark": "柏佳悦",
+  "outcome": "维持注册",
+  "outcome_scope": null,
+  "cited": [
+   {
+    "text": "柏悦",
+    "reg_no": "1141776",
+    "mark_similar": "不近似",
+    "goods_similar": "类似",
+    "excerpt": "争议商标与引证商标一至六在文字构成、呼叫等方面尚可区分"
    }
   ]
  },
@@ -4171,6 +4672,25 @@
   ]
  },
  {
+  "case_id": "商评字[2024]第0000098631号",
+  "split": "frozen",
+  "doc_type": "无效宣告请求裁定书",
+  "decision_date": "2024-04-18",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=4b9ee1608790eee4",
+  "applicant_mark": "伊丽",
+  "outcome": "宣告无效",
+  "outcome_scope": null,
+  "cited": [
+   {
+    "text": "伊利及图",
+    "reg_no": "28079060",
+    "mark_similar": "近似",
+    "goods_similar": "类似",
+    "excerpt": "一、争议商标与引证商标一、二、三在文字构成、呼叫等方面相近，构成近似商标"
+   }
+  ]
+ },
+ {
   "case_id": "商评字[2024]第0000103934号",
   "split": "frozen",
   "doc_type": "不予注册复审决定书",
@@ -4536,6 +5056,44 @@
     "mark_similar": "近似",
     "goods_similar": "类似",
     "excerpt": "构成近似标识"
+   }
+  ]
+ },
+ {
+  "case_id": "商评字[2024]第0000258172号",
+  "split": "frozen",
+  "doc_type": "无效宣告请求裁定书",
+  "decision_date": "2024-09-26",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=5c83a1df3a4b7d7b",
+  "applicant_mark": "沃顿你好",
+  "outcome": "维持注册",
+  "outcome_scope": null,
+  "cited": [
+   {
+    "text": "你好",
+    "reg_no": "12741494",
+    "mark_similar": "不近似",
+    "goods_similar": "未认定",
+    "excerpt": "争议商标“沃顿你好”与引证商标“你好”文字构成存在一定差异，整体含义上形成较大区别"
+   }
+  ]
+ },
+ {
+  "case_id": "商评字[2024]第0000258177号",
+  "split": "tune",
+  "doc_type": "无效宣告请求裁定书",
+  "decision_date": "2024-09-26",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=9488faef7a2b7585",
+  "applicant_mark": "你好沃顿",
+  "outcome": "维持注册",
+  "outcome_scope": null,
+  "cited": [
+   {
+    "text": "你好",
+    "reg_no": "12741494",
+    "mark_similar": "不近似",
+    "goods_similar": "未认定",
+    "excerpt": "争议商标“你好沃顿”与引证商标“你好”文字构成存在一定差异，整体含义上形成较大区别"
    }
   ]
  },
@@ -4960,6 +5518,25 @@
   ]
  },
  {
+  "case_id": "商评字[2024]第0000333666号",
+  "split": "frozen",
+  "doc_type": "不予注册复审决定书",
+  "decision_date": "2024-11-26",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=c1273ed0abfa054c",
+  "applicant_mark": "吉拉多 Grandeur及图",
+  "outcome": "不予注册",
+  "outcome_scope": null,
+  "cited": [
+   {
+    "text": "吉娜朵",
+    "reg_no": "1083158",
+    "mark_similar": "不近似",
+    "goods_similar": "类似",
+    "excerpt": "被异议商标与引证商标二、三在整体构成等方面尚可区分"
+   }
+  ]
+ },
+ {
   "case_id": "商评字[2024]第0000338839号",
   "split": "frozen",
   "doc_type": "无效宣告请求裁定书",
@@ -5146,6 +5723,25 @@
   ]
  },
  {
+  "case_id": "商评字[2024]第0000361772号",
+  "split": "tune",
+  "doc_type": "无效宣告请求裁定书",
+  "decision_date": "2024-12-18",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=002f651a252d8456",
+  "applicant_mark": "可口纯 KECOLCUM及图",
+  "outcome": "宣告无效",
+  "outcome_scope": null,
+  "cited": [
+   {
+    "text": "可口可乐及图",
+    "reg_no": "9006618",
+    "mark_similar": "近似",
+    "goods_similar": "类似",
+    "excerpt": "争议商标显著识别汉字“可口纯”与引证商标一在文字构成、呼叫及整体视觉效果等方面相近"
+   }
+  ]
+ },
+ {
   "case_id": "商评字[2024]第0000371925号",
   "split": "tune",
   "doc_type": "不予注册复审决定书",
@@ -5196,6 +5792,25 @@
     "mark_similar": "近似",
     "goods_similar": "未认定",
     "excerpt": "构成近似标识"
+   }
+  ]
+ },
+ {
+  "case_id": "商评字[2024]第0000372785号",
+  "split": "frozen",
+  "doc_type": "驳回复审决定书",
+  "decision_date": "2024-12-16",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=c4f7e93211385121",
+  "applicant_mark": "爬爬 papa",
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "cited": [
+   {
+    "text": "爬",
+    "reg_no": "25411573",
+    "mark_similar": "近似",
+    "goods_similar": "类似",
+    "excerpt": "申请商标与引证商标一至五、八、九、十三文字构成、呼叫等方面相近，构成近似商标"
    }
   ]
  },
@@ -5358,6 +5973,25 @@
   ]
  },
  {
+  "case_id": "商评字[2025]第0000034712号",
+  "split": "tune",
+  "doc_type": "驳回复审决定书",
+  "decision_date": "2025-02-20",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=b88af72fe9e198b8",
+  "applicant_mark": "壹号花猪",
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "cited": [
+   {
+    "text": "一号花",
+    "reg_no": "48797879",
+    "mark_similar": "近似",
+    "goods_similar": "类似",
+    "excerpt": "文字在呼叫、文字构成、含义等方面相近，已构成近似商标"
+   }
+  ]
+ },
+ {
   "case_id": "商评字[2025]第0000043088号",
   "split": "frozen",
   "doc_type": "无效宣告请求裁定书",
@@ -5373,6 +6007,25 @@
     "mark_similar": "近似",
     "goods_similar": "类似",
     "excerpt": "文字构成、呼叫等方面相近"
+   }
+  ]
+ },
+ {
+  "case_id": "商评字[2025]第0000049521号",
+  "split": "frozen",
+  "doc_type": "无效宣告请求裁定书",
+  "decision_date": "2025-02-12",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=a89ec7c1b37a0368",
+  "applicant_mark": "俏蒂诗 QIAODISHI",
+  "outcome": "维持注册",
+  "outcome_scope": null,
+  "cited": [
+   {
+    "text": "海蒂诗",
+    "reg_no": "1309467",
+    "mark_similar": "不近似",
+    "goods_similar": "未认定",
+    "excerpt": "在文字构成、呼叫上存在差异，整体尚可区分"
    }
   ]
  },

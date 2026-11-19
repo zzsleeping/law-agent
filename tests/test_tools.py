@@ -125,3 +125,31 @@ def test_traditional_normalized():
     assert phonetic.normalize("燕雲樓 及图") == "燕云楼"
     assert "exact" in {h.kind for h in search.compare("聚丰园", "聚豐園")}
     assert "transpose" in {h.kind for h in search.compare("云燕", "燕雲")}
+
+
+def test_query_segments():
+    assert search.query_segments("一葉了然 梅及图") == ["一叶了然"]
+    assert search.query_segments("康师傅 茉莉清茶及图") == ["康师傅", "茉莉清茶"]
+    assert search.query_segments("茗悦") == []
+    assert search.query_segments("薪农夫SALARY FARMER") == []        # 外文段不单独检索
+
+
+def test_recall_with_segments_finds_one_char_difference():
+    rec = {"mark_id": "X/30", "text": "一目了然", "norm_text": "一目了然", "meaning": "", **phonetic.keys("一目了然")}
+    hits = search.recall_with_segments(search.recall_glyph, "一葉了然 梅及图", set(), "all", [rec])
+    assert any(h.kind == "edit_one" and h.evidence.startswith("我方商标中的“一叶了然”") for h in hits)
+
+
+def test_same_level_prefers_larger_family_and_more_overlap():
+    from app.nodes.merge import group_order
+
+    def hits(group, n, kind="shared_part"):
+        return [Hit(mark_id=f"{group}{i}/30", channel="contains", kind=kind, rank=i + 1, group=group) for i in range(n)]
+    old = settings.top_n_assess
+    settings.top_n_assess = 100
+    try:
+        order, _ = group_order(hits("青藏小店", 1) + hits("青藏牧场", 30) + hits("青藏冰", 1), "青藏冰泉")
+    finally:
+        settings.top_n_assess = old
+    assert order[0] == "青藏牧场"                      # 注册件数多的品牌排前
+    assert order.index("青藏冰") < order.index("青藏小店")  # 件数相同时共有文字多的排前

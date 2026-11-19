@@ -1,0 +1,39 @@
+{
+  "doc_type": "无效宣告请求裁定书",
+  "doc_no": "商评字[2020]第0000250673号",
+  "decision_date": "2020-09-28",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=8a98ccaafdb571fc",
+  "retrieved_at": "2026-11-19",
+  "applicant_mark": {
+    "text": "好太太 好生活",
+    "app_no": "12103273",
+    "app_date": null,
+    "priority_date": null,
+    "owner": "佛山市凯达能企业管理咨询有限公司",
+    "goods": [
+      {
+        "name": "电炊具",
+        "nice_class": 11,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "11445373",
+      "text": "好太太Goodwife",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "争议商标与引证商标一至四在文字构成、呼叫、含义等方面相近",
+      "notes": "未取得可逐项对应的引证商品明细。非目标类别。"
+    }
+  ],
+  "outcome": "部分宣告无效",
+  "outcome_scope": "争议商标在“电炊具、电热水器、燃气炉、电热壶、电压力锅(高压锅)、微波炉(厨房用具)、冷冻设备和装置、空气调节设备、厨房用抽油烟机、浴室装置、消毒碗柜、电暖器、灯、太阳能热水器、饮水机”商品上予以无效宣告，在“油灯、打火机”商品上予以维持。",
+  "notes": "申请类别据文书记载。 未核实申请日期。 引证已节选，保留符合本批比对情形且能核实编号和认定理由的记录。 同名引证已节选。"
+}

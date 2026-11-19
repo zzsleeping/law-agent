@@ -82,6 +82,47 @@
   ]
  },
  {
+  "mark_id": "12975274",
+  "text": "小小的我Little me",
+  "meaning": null,
+  "owner": "普洛欣健康国际贸易有限公司",
+  "app_date": "2013-07-25",
+  "priority_date": null,
+  "reg_date": null,
+  "status": null,
+  "invalid_date": null,
+  "invalid_reason": null,
+  "snapshot_date": "2018-02-12",
+  "source": "商标驳回复审文书（公开全文）",
+  "source_ref": "商评字[2018]第0000026890号（https://www.tmkoo.com/spw-ws!info.php?idEn=73d982c7b94f5636）",
+  "goods": [
+   {
+    "name": "蜂蜜",
+    "code": "300098",
+    "nice_class": 30,
+    "grp": null
+   },
+   {
+    "name": "发酵剂",
+    "code": "300086",
+    "nice_class": 30,
+    "grp": null
+   },
+   {
+    "name": "茶",
+    "code": "300037",
+    "nice_class": 30,
+    "grp": null
+   },
+   {
+    "name": "巧克力饮料",
+    "code": "300151",
+    "nice_class": 30,
+    "grp": null
+   }
+  ]
+ },
+ {
   "mark_id": "15191647",
   "text": "哈冰纯",
   "meaning": null,
@@ -159,6 +200,124 @@
     "name": "麦芽啤酒",
     "code": "320004",
     "nice_class": 32,
+    "grp": null
+   }
+  ]
+ },
+ {
+  "mark_id": "24829082",
+  "text": "玖食坊 玖及图",
+  "meaning": null,
+  "owner": "自然人",
+  "app_date": "2017-06-16",
+  "priority_date": null,
+  "reg_date": null,
+  "status": null,
+  "invalid_date": null,
+  "invalid_reason": null,
+  "snapshot_date": "2018-10-23",
+  "source": "商标驳回复审文书（公开全文）",
+  "source_ref": "商评字[2018]第0000196027号（https://www.tmkoo.com/spw-ws!info.php?idEn=1d054049a33416be）",
+  "goods": [
+   {
+    "name": "餐厅",
+    "code": "430027",
+    "nice_class": 43,
+    "grp": null
+   },
+   {
+    "name": "咖啡馆",
+    "code": "430024",
+    "nice_class": 43,
+    "grp": null
+   },
+   {
+    "name": "快餐馆",
+    "code": "430108",
+    "nice_class": 43,
+    "grp": null
+   },
+   {
+    "name": "旅游房屋出租",
+    "code": null,
+    "nice_class": 43,
+    "grp": null
+   }
+  ]
+ },
+ {
+  "mark_id": "16568191",
+  "text": "晋山河",
+  "meaning": null,
+  "owner": "山西晋德一品商贸有限公司",
+  "app_date": null,
+  "priority_date": null,
+  "reg_date": null,
+  "status": null,
+  "invalid_date": null,
+  "invalid_reason": null,
+  "snapshot_date": "2018-12-25",
+  "source": "商标驳回复审文书（公开全文）",
+  "source_ref": "商评字[2018]第0000256572号（https://www.tmkoo.com/spw-ws!info.php?idEn=b83d80eed17c0fc3）",
+  "goods": [
+   {
+    "name": "食用酒精",
+    "code": null,
+    "nice_class": 33,
+    "grp": null
+   },
+   {
+    "name": "白酒",
+    "code": null,
+    "nice_class": 33,
+    "grp": null
+   },
+   {
+    "name": "伏特加酒",
+    "code": null,
+    "nice_class": 33,
+    "grp": null
+   },
+   {
+    "name": "烧酒",
+    "code": null,
+    "nice_class": 33,
+    "grp": null
+   },
+   {
+    "name": "酒精饮料（啤酒除外）",
+    "code": null,
+    "nice_class": 33,
+    "grp": null
+   },
+   {
+    "name": "葡萄酒",
+    "code": null,
+    "nice_class": 33,
+    "grp": null
+   },
+   {
+    "name": "利口酒",
+    "code": null,
+    "nice_class": 33,
+    "grp": null
+   },
+   {
+    "name": "果酒（含酒精）",
+    "code": null,
+    "nice_class": 33,
+    "grp": null
+   },
+   {
+    "name": "米酒",
+    "code": null,
+    "nice_class": 33,
+    "grp": null
+   },
+   {
+    "name": "烈酒（饮料）",
+    "code": null,
+    "nice_class": 33,
     "grp": null
    }
   ]
@@ -368,6 +527,83 @@
     "name": "调味料",
     "code": "300012",
     "nice_class": 30,
+    "grp": null
+   }
+  ]
+ },
+ {
+  "mark_id": "21267164",
+  "text": "蓝每",
+  "meaning": null,
+  "owner": "上海亮镜实业有限公司",
+  "app_date": "2016-09-09",
+  "priority_date": null,
+  "reg_date": null,
+  "status": null,
+  "invalid_date": null,
+  "invalid_reason": null,
+  "snapshot_date": "2019-11-27",
+  "source": "商标驳回复审文书（公开全文）",
+  "source_ref": "商评字[2019]第0000287542号（https://www.tmkoo.com/spw-ws!info.php?idEn=cae6402e2bddd3b8）",
+  "goods": [
+   {
+    "name": "啤酒",
+    "code": "320002",
+    "nice_class": 32,
+    "grp": null
+   },
+   {
+    "name": "无酒精果汁饮料",
+    "code": "320006",
+    "nice_class": 32,
+    "grp": null
+   },
+   {
+    "name": "水（饮料）",
+    "code": "320012",
+    "nice_class": 32,
+    "grp": null
+   },
+   {
+    "name": "乳酸饮料（果制品,非奶）",
+    "code": null,
+    "nice_class": 32,
+    "grp": null
+   },
+   {
+    "name": "奶茶（非奶为主）",
+    "code": null,
+    "nice_class": 32,
+    "grp": null
+   },
+   {
+    "name": "植物饮料",
+    "code": "C320015",
+    "nice_class": 32,
+    "grp": null
+   },
+   {
+    "name": "豆类饮料",
+    "code": "C320016",
+    "nice_class": 32,
+    "grp": null
+   },
+   {
+    "name": "乳清饮料",
+    "code": "320007",
+    "nice_class": 32,
+    "grp": null
+   },
+   {
+    "name": "无酒精饮料",
+    "code": "320031",
+    "nice_class": 32,
+    "grp": null
+   },
+   {
+    "name": "饮料制作配料",
+    "code": null,
+    "nice_class": 32,
     "grp": null
    }
   ]
@@ -1990,6 +2226,52 @@
   ]
  },
  {
+  "mark_id": "12103273",
+  "text": "好太太 好生活",
+  "meaning": null,
+  "owner": "佛山市凯达能企业管理咨询有限公司",
+  "app_date": null,
+  "priority_date": null,
+  "reg_date": null,
+  "status": null,
+  "invalid_date": null,
+  "invalid_reason": null,
+  "snapshot_date": "2020-09-28",
+  "source": "商标驳回复审文书（公开全文）",
+  "source_ref": "商评字[2020]第0000250673号（https://www.tmkoo.com/spw-ws!info.php?idEn=8a98ccaafdb571fc）",
+  "goods": [
+   {
+    "name": "电炊具",
+    "code": null,
+    "nice_class": 11,
+    "grp": null
+   }
+  ]
+ },
+ {
+  "mark_id": "42966666",
+  "text": "乐得多LEDEDUO及图",
+  "meaning": null,
+  "owner": "广州乐得多贸易有限公司",
+  "app_date": null,
+  "priority_date": null,
+  "reg_date": null,
+  "status": null,
+  "invalid_date": null,
+  "invalid_reason": null,
+  "snapshot_date": "2020-09-28",
+  "source": "商标驳回复审文书（公开全文）",
+  "source_ref": "商评字[2020]第0000253449号（https://www.tmkoo.com/spw-ws!info.php?idEn=4709ecb426b8ce27）",
+  "goods": [
+   {
+    "name": "广告、为零售目的在通信媒体上展示商品、广告宣传、商业企业迁移",
+    "code": null,
+    "nice_class": 35,
+    "grp": null
+   }
+  ]
+ },
+ {
   "mark_id": "24606547",
   "text": "贺百岁 HerBest",
   "meaning": null,
@@ -2324,6 +2606,47 @@
   ]
  },
  {
+  "mark_id": "46424964",
+  "text": "帝怡",
+  "meaning": null,
+  "owner": "皇家杜威埃格博茨有限公司",
+  "app_date": "2020-05-19",
+  "priority_date": null,
+  "reg_date": null,
+  "status": null,
+  "invalid_date": null,
+  "invalid_reason": null,
+  "snapshot_date": "2021-03-03",
+  "source": "商标驳回复审文书（公开全文）",
+  "source_ref": "商评字[2021]第0000057341号（https://www.tmkoo.com/spw-ws!info.php?idEn=43513f3cf6e9f958）",
+  "goods": [
+   {
+    "name": "咖啡",
+    "code": "300026",
+    "nice_class": 30,
+    "grp": null
+   },
+   {
+    "name": "咖啡用调味品",
+    "code": "300010",
+    "nice_class": 30,
+    "grp": null
+   },
+   {
+    "name": "茶",
+    "code": "300037",
+    "nice_class": 30,
+    "grp": null
+   },
+   {
+    "name": "速溶红茶",
+    "code": null,
+    "nice_class": 30,
+    "grp": null
+   }
+  ]
+ },
+ {
   "mark_id": "43944650",
   "text": "栖号",
   "meaning": null,
@@ -2565,6 +2888,83 @@
   ]
  },
  {
+  "mark_id": "31850897",
+  "text": "鼠小小",
+  "meaning": null,
+  "owner": "自然人",
+  "app_date": "2018-06-26",
+  "priority_date": null,
+  "reg_date": null,
+  "status": null,
+  "invalid_date": null,
+  "invalid_reason": null,
+  "snapshot_date": "2021-06-25",
+  "source": "商标驳回复审文书（公开全文）",
+  "source_ref": "商评字[2021]第0000181653号（https://www.tmkoo.com/spw-ws!info.php?idEn=8179862558cab69c）",
+  "goods": [
+   {
+    "name": "肉",
+    "code": "290046",
+    "nice_class": 29,
+    "grp": null
+   },
+   {
+    "name": "小龙虾（非活）",
+    "code": "290040",
+    "nice_class": 29,
+    "grp": null
+   },
+   {
+    "name": "鱼罐头",
+    "code": "290144",
+    "nice_class": 29,
+    "grp": null
+   },
+   {
+    "name": "蔬菜汤料",
+    "code": "290066",
+    "nice_class": 29,
+    "grp": null
+   },
+   {
+    "name": "葡萄干",
+    "code": "290027",
+    "nice_class": 29,
+    "grp": null
+   },
+   {
+    "name": "蛋",
+    "code": "290086",
+    "nice_class": 29,
+    "grp": null
+   },
+   {
+    "name": "牛奶制品",
+    "code": null,
+    "nice_class": 29,
+    "grp": null
+   },
+   {
+    "name": "食用油",
+    "code": "290032",
+    "nice_class": 29,
+    "grp": null
+   },
+   {
+    "name": "加工过的坚果",
+    "code": "290085",
+    "nice_class": 29,
+    "grp": null
+   },
+   {
+    "name": "木耳",
+    "code": "C290087",
+    "nice_class": 29,
+    "grp": null
+   }
+  ]
+ },
+ {
   "mark_id": "42183679",
   "text": "馫吧客",
   "meaning": null,
@@ -2623,6 +3023,47 @@
   ]
  },
  {
+  "mark_id": "49994424",
+  "text": "福悦堂 福 WELFARE",
+  "meaning": null,
+  "owner": "自然人",
+  "app_date": "2020-09-23",
+  "priority_date": null,
+  "reg_date": null,
+  "status": null,
+  "invalid_date": null,
+  "invalid_reason": null,
+  "snapshot_date": "2021-07-27",
+  "source": "商标驳回复审文书（公开全文）",
+  "source_ref": "商评字[2021]第0000202666号（https://www.tmkoo.com/spw-ws!info.php?idEn=d03f7e5c991ee270）",
+  "goods": [
+   {
+    "name": "食用燕窝",
+    "code": "290143",
+    "nice_class": 29,
+    "grp": null
+   },
+   {
+    "name": "食用果冻",
+    "code": null,
+    "nice_class": 29,
+    "grp": null
+   },
+   {
+    "name": "海参（非活）",
+    "code": "290150",
+    "nice_class": 29,
+    "grp": null
+   },
+   {
+    "name": "鱼罐头",
+    "code": "290144",
+    "nice_class": 29,
+    "grp": null
+   }
+  ]
+ },
+ {
   "mark_id": "23614163",
   "text": "鑫港万豪酒店 XINGANG WANHAO HOTELS W",
   "meaning": null,
@@ -2640,6 +3081,29 @@
    {
     "name": "住所代理（旅馆、供膳寄宿处）",
     "code": "430004",
+    "nice_class": 43,
+    "grp": null
+   }
+  ]
+ },
+ {
+  "mark_id": "35831983",
+  "text": "九街淑芬",
+  "meaning": null,
+  "owner": "自然人",
+  "app_date": "2019-01-09",
+  "priority_date": null,
+  "reg_date": null,
+  "status": null,
+  "invalid_date": null,
+  "invalid_reason": null,
+  "snapshot_date": "2021-08-31",
+  "source": "商标驳回复审文书（公开全文）",
+  "source_ref": "商评字[2021]第0000240199号（https://www.tmkoo.com/spw-ws!info.php?idEn=19b6de6ac17ca4e2）",
+  "goods": [
+   {
+    "name": "餐馆",
+    "code": "430102",
     "nice_class": 43,
     "grp": null
    }
@@ -3037,6 +3501,47 @@
    {
     "name": "醋",
     "code": "300081",
+    "nice_class": 30,
+    "grp": null
+   }
+  ]
+ },
+ {
+  "mark_id": "41296307",
+  "text": "福忆坊",
+  "meaning": null,
+  "owner": "北京祥泰恒业经贸有限公司",
+  "app_date": "2019-09-25",
+  "priority_date": null,
+  "reg_date": null,
+  "status": null,
+  "invalid_date": null,
+  "invalid_reason": null,
+  "snapshot_date": "2022-03-11",
+  "source": "商标驳回复审文书（公开全文）",
+  "source_ref": "商评字[2022]第0000079983号（https://www.tmkoo.com/spw-ws!info.php?idEn=7ec4a2f645245664）",
+  "goods": [
+   {
+    "name": "谷类制品",
+    "code": "300034",
+    "nice_class": 30,
+    "grp": null
+   },
+   {
+    "name": "以谷物为主的零食小吃",
+    "code": "300195",
+    "nice_class": 30,
+    "grp": null
+   },
+   {
+    "name": "以谷物为主的零食小吃",
+    "code": "300195",
+    "nice_class": 30,
+    "grp": null
+   },
+   {
+    "name": "茶",
+    "code": "300037",
     "nice_class": 30,
     "grp": null
    }
@@ -4031,6 +4536,41 @@
   ]
  },
  {
+  "mark_id": "56865687",
+  "text": "时尚之夜 搜亚 NIGHT FASHION",
+  "meaning": null,
+  "owner": "搜亚（北京）时尚文化有限公司",
+  "app_date": "2021-06-11",
+  "priority_date": null,
+  "reg_date": null,
+  "status": null,
+  "invalid_date": null,
+  "invalid_reason": null,
+  "snapshot_date": "2022-06-22",
+  "source": "商标驳回复审文书（公开全文）",
+  "source_ref": "商评字[2022]第0000183537号（https://www.tmkoo.com/spw-ws!info.php?idEn=14c8e4afc07aadb3）",
+  "goods": [
+   {
+    "name": "人力资源管理",
+    "code": null,
+    "nice_class": 35,
+    "grp": null
+   },
+   {
+    "name": "计算机数据库信息系统化",
+    "code": null,
+    "nice_class": 35,
+    "grp": null
+   },
+   {
+    "name": "寻找赞助",
+    "code": null,
+    "nice_class": 35,
+    "grp": null
+   }
+  ]
+ },
+ {
   "mark_id": "43679950",
   "text": "曦瓜八三茶人及图",
   "meaning": null,
@@ -4927,6 +5467,105 @@
     "name": "糕点",
     "code": "300108",
     "nice_class": 30,
+    "grp": null
+   }
+  ]
+ },
+ {
+  "mark_id": "61235216",
+  "text": "啉の茶 LINのTEA",
+  "meaning": null,
+  "owner": "",
+  "app_date": "2021-12-08",
+  "priority_date": null,
+  "reg_date": null,
+  "status": null,
+  "invalid_date": null,
+  "invalid_reason": null,
+  "snapshot_date": "2022-11-08",
+  "source": "商标驳回复审文书（公开全文）",
+  "source_ref": "商评字[2022]第0000347395号（https://www.tmkoo.com/spw-ws!info.php?idEn=c77741014c0486b4）",
+  "goods": [
+   {
+    "name": "活动房屋出租",
+    "code": "430160",
+    "nice_class": 43,
+    "grp": null
+   },
+   {
+    "name": "咖啡馆",
+    "code": "430024",
+    "nice_class": 43,
+    "grp": null
+   }
+  ]
+ },
+ {
+  "mark_id": "25456327",
+  "text": "琳茶 lincha",
+  "meaning": null,
+  "owner": "",
+  "app_date": "2017-07-21",
+  "priority_date": null,
+  "reg_date": null,
+  "status": null,
+  "invalid_date": null,
+  "invalid_reason": null,
+  "snapshot_date": "2022-11-08",
+  "source": "商标驳回复审文书（公开全文）",
+  "source_ref": "商评字[2022]第0000347395号（https://www.tmkoo.com/spw-ws!info.php?idEn=c77741014c0486b4）",
+  "goods": [
+   {
+    "name": "活动房屋出租",
+    "code": "430160",
+    "nice_class": 43,
+    "grp": null
+   },
+   {
+    "name": "咖啡馆",
+    "code": "430024",
+    "nice_class": 43,
+    "grp": null
+   }
+  ]
+ },
+ {
+  "mark_id": "39859585",
+  "text": "茶多FUN",
+  "meaning": null,
+  "owner": "自然人",
+  "app_date": "2019-07-23",
+  "priority_date": null,
+  "reg_date": null,
+  "status": null,
+  "invalid_date": null,
+  "invalid_reason": null,
+  "snapshot_date": "2022-12-06",
+  "source": "商标驳回复审文书（公开全文）",
+  "source_ref": "商评字[2022]第0000367032号（https://www.tmkoo.com/spw-ws!info.php?idEn=28b2e34ed7405ecb）",
+  "goods": [
+   {
+    "name": "咖啡馆",
+    "code": "430024",
+    "nice_class": 43,
+    "grp": null
+   },
+   {
+    "name": "餐馆",
+    "code": "430102",
+    "nice_class": 43,
+    "grp": null
+   },
+   {
+    "name": "自助餐馆",
+    "code": "430107",
+    "nice_class": 43,
+    "grp": null
+   },
+   {
+    "name": "酒吧服务",
+    "code": "430138",
+    "nice_class": 43,
     "grp": null
    }
   ]
@@ -5877,6 +6516,47 @@
   ]
  },
  {
+  "mark_id": "52718605",
+  "text": "柏佳悦",
+  "meaning": null,
+  "owner": "东莞市柏悦装饰建材有限公司",
+  "app_date": "2021-01-04",
+  "priority_date": null,
+  "reg_date": null,
+  "status": null,
+  "invalid_date": null,
+  "invalid_reason": null,
+  "snapshot_date": "2023-12-20",
+  "source": "商标驳回复审文书（公开全文）",
+  "source_ref": "商评字[2023]第0000375516号（https://www.tmkoo.com/spw-ws!info.php?idEn=0bac10fa102f8c1f）",
+  "goods": [
+   {
+    "name": "住所代理（旅馆、供膳寄宿处）",
+    "code": "430004",
+    "nice_class": 43,
+    "grp": null
+   },
+   {
+    "name": "咖啡馆",
+    "code": "430024",
+    "nice_class": 43,
+    "grp": null
+   },
+   {
+    "name": "饭店",
+    "code": null,
+    "nice_class": 43,
+    "grp": null
+   },
+   {
+    "name": "作为临时住宿处的房间出租",
+    "code": null,
+    "nice_class": 43,
+    "grp": null
+   }
+  ]
+ },
+ {
   "mark_id": "53128056",
   "text": "固小堂",
   "meaning": null,
@@ -6153,6 +6833,83 @@
     "name": "咖啡",
     "code": "300026",
     "nice_class": 30,
+    "grp": null
+   }
+  ]
+ },
+ {
+  "mark_id": "50615969",
+  "text": "伊丽",
+  "meaning": null,
+  "owner": "杭州天元宠物用品股份有限公司",
+  "app_date": "2020-10-21",
+  "priority_date": null,
+  "reg_date": null,
+  "status": null,
+  "invalid_date": null,
+  "invalid_reason": null,
+  "snapshot_date": "2024-04-18",
+  "source": "商标驳回复审文书（公开全文）",
+  "source_ref": "商评字[2024]第0000098631号（https://www.tmkoo.com/spw-ws!info.php?idEn=4b9ee1608790eee4）",
+  "goods": [
+   {
+    "name": "动物用梳",
+    "code": null,
+    "nice_class": 21,
+    "grp": null
+   },
+   {
+    "name": "宠物用喂食器皿",
+    "code": null,
+    "nice_class": 21,
+    "grp": null
+   },
+   {
+    "name": "刷子",
+    "code": null,
+    "nice_class": 21,
+    "grp": null
+   },
+   {
+    "name": "自启动式动物喂食器",
+    "code": null,
+    "nice_class": 21,
+    "grp": null
+   },
+   {
+    "name": "家禽环",
+    "code": null,
+    "nice_class": 21,
+    "grp": null
+   },
+   {
+    "name": "家养宠物用笼子",
+    "code": null,
+    "nice_class": 21,
+    "grp": null
+   },
+   {
+    "name": "宠物自动喂食器",
+    "code": null,
+    "nice_class": 21,
+    "grp": null
+   },
+   {
+    "name": "宠物排泄用盒",
+    "code": null,
+    "nice_class": 21,
+    "grp": null
+   },
+   {
+    "name": "饮水槽",
+    "code": null,
+    "nice_class": 21,
+    "grp": null
+   },
+   {
+    "name": "喂料槽",
+    "code": null,
+    "nice_class": 21,
     "grp": null
    }
   ]
@@ -6695,6 +7452,52 @@
   ]
  },
  {
+  "mark_id": "55092761",
+  "text": "沃顿你好",
+  "meaning": null,
+  "owner": "贵州跃顿连锁酒店有限公司",
+  "app_date": "2021-04-09",
+  "priority_date": null,
+  "reg_date": null,
+  "status": null,
+  "invalid_date": null,
+  "invalid_reason": null,
+  "snapshot_date": "2024-09-26",
+  "source": "商标驳回复审文书（公开全文）",
+  "source_ref": "商评字[2024]第0000258172号（https://www.tmkoo.com/spw-ws!info.php?idEn=5c83a1df3a4b7d7b）",
+  "goods": [
+   {
+    "name": "餐厅",
+    "code": "430027",
+    "nice_class": 43,
+    "grp": null
+   }
+  ]
+ },
+ {
+  "mark_id": "55077419",
+  "text": "你好沃顿",
+  "meaning": null,
+  "owner": "贵州跃顿连锁酒店有限公司",
+  "app_date": "2021-04-09",
+  "priority_date": null,
+  "reg_date": null,
+  "status": null,
+  "invalid_date": null,
+  "invalid_reason": null,
+  "snapshot_date": "2024-09-26",
+  "source": "商标驳回复审文书（公开全文）",
+  "source_ref": "商评字[2024]第0000258177号（https://www.tmkoo.com/spw-ws!info.php?idEn=9488faef7a2b7585）",
+  "goods": [
+   {
+    "name": "餐厅",
+    "code": "430027",
+    "nice_class": 43,
+    "grp": null
+   }
+  ]
+ },
+ {
   "mark_id": "55665722",
   "text": "憨豆妮",
   "meaning": null,
@@ -6941,6 +7744,83 @@
     "name": "旅馆预订",
     "code": "430105",
     "nice_class": 43,
+    "grp": null
+   }
+  ]
+ },
+ {
+  "mark_id": "58550749",
+  "text": "吉拉多 Grandeur及图",
+  "meaning": null,
+  "owner": "",
+  "app_date": null,
+  "priority_date": null,
+  "reg_date": null,
+  "status": null,
+  "invalid_date": null,
+  "invalid_reason": null,
+  "snapshot_date": "2024-11-26",
+  "source": "商标驳回复审文书（公开全文）",
+  "source_ref": "商评字[2024]第0000333666号（https://www.tmkoo.com/spw-ws!info.php?idEn=c1273ed0abfa054c）",
+  "goods": [
+   {
+    "name": "贝壳类动物（活的）",
+    "code": null,
+    "nice_class": 31,
+    "grp": null
+   },
+   {
+    "name": "甲壳动物（活的）",
+    "code": null,
+    "nice_class": 31,
+    "grp": null
+   },
+   {
+    "name": "牡蛎（活的）",
+    "code": null,
+    "nice_class": 31,
+    "grp": null
+   },
+   {
+    "name": "海参（活的）",
+    "code": null,
+    "nice_class": 31,
+    "grp": null
+   },
+   {
+    "name": "虾（活的）",
+    "code": null,
+    "nice_class": 31,
+    "grp": null
+   },
+   {
+    "name": "新鲜蔬菜",
+    "code": null,
+    "nice_class": 31,
+    "grp": null
+   },
+   {
+    "name": "活动物",
+    "code": null,
+    "nice_class": 31,
+    "grp": null
+   },
+   {
+    "name": "活鱼",
+    "code": null,
+    "nice_class": 31,
+    "grp": null
+   },
+   {
+    "name": "贻贝（活的）",
+    "code": null,
+    "nice_class": 31,
+    "grp": null
+   },
+   {
+    "name": "新鲜水果",
+    "code": null,
+    "nice_class": 31,
     "grp": null
    }
   ]
@@ -7527,6 +8407,47 @@
   ]
  },
  {
+  "mark_id": "64656241",
+  "text": "可口纯 KECOLCUM及图",
+  "meaning": null,
+  "owner": "河北爱尚贸易有限公司",
+  "app_date": "2022-05-16",
+  "priority_date": null,
+  "reg_date": null,
+  "status": null,
+  "invalid_date": null,
+  "invalid_reason": null,
+  "snapshot_date": "2024-12-18",
+  "source": "商标驳回复审文书（公开全文）",
+  "source_ref": "商评字[2024]第0000361772号（https://www.tmkoo.com/spw-ws!info.php?idEn=002f651a252d8456）",
+  "goods": [
+   {
+    "name": "食用燕窝",
+    "code": "290143",
+    "nice_class": 29,
+    "grp": null
+   },
+   {
+    "name": "豆腐制品",
+    "code": "C290090",
+    "nice_class": 29,
+    "grp": null
+   },
+   {
+    "name": "鱼制食品",
+    "code": "290125",
+    "nice_class": 29,
+    "grp": null
+   },
+   {
+    "name": "水果罐头",
+    "code": "290146",
+    "nice_class": 29,
+    "grp": null
+   }
+  ]
+ },
+ {
   "mark_id": "66610644",
   "text": "三苏东坡",
   "meaning": null,
@@ -7785,6 +8706,41 @@
   ]
  },
  {
+  "mark_id": "76828278",
+  "text": "壹号花猪",
+  "meaning": null,
+  "owner": "广西公馆壹号食品有限公司",
+  "app_date": "2024-02-09",
+  "priority_date": null,
+  "reg_date": null,
+  "status": null,
+  "invalid_date": null,
+  "invalid_reason": null,
+  "snapshot_date": "2025-02-20",
+  "source": "商标驳回复审文书（公开全文）",
+  "source_ref": "商评字[2025]第0000034712号（https://www.tmkoo.com/spw-ws!info.php?idEn=b88af72fe9e198b8）",
+  "goods": [
+   {
+    "name": "肉",
+    "code": "290046",
+    "nice_class": 29,
+    "grp": null
+   },
+   {
+    "name": "腌制肉",
+    "code": "290137",
+    "nice_class": 29,
+    "grp": null
+   },
+   {
+    "name": "食用海藻提取物",
+    "code": "290002",
+    "nice_class": 29,
+    "grp": null
+   }
+  ]
+ },
+ {
   "mark_id": "59663207",
   "text": "原叶益禾堂",
   "meaning": null,
@@ -7821,6 +8777,83 @@
     "name": "乳酸饮料",
     "code": "290254",
     "nice_class": 29,
+    "grp": null
+   }
+  ]
+ },
+ {
+  "mark_id": "67405449",
+  "text": "俏蒂诗 QIAODISHI",
+  "meaning": null,
+  "owner": "义乌市界傲之心服饰有限公司",
+  "app_date": "2022-09-24",
+  "priority_date": null,
+  "reg_date": null,
+  "status": null,
+  "invalid_date": null,
+  "invalid_reason": null,
+  "snapshot_date": "2025-02-12",
+  "source": "商标驳回复审文书（公开全文）",
+  "source_ref": "商评字[2025]第0000049521号（https://www.tmkoo.com/spw-ws!info.php?idEn=a89ec7c1b37a0368）",
+  "goods": [
+   {
+    "name": "广告",
+    "code": null,
+    "nice_class": 35,
+    "grp": null
+   },
+   {
+    "name": "计算机网络上的在线广告",
+    "code": null,
+    "nice_class": 35,
+    "grp": null
+   },
+   {
+    "name": "特许经营的商业管理",
+    "code": null,
+    "nice_class": 35,
+    "grp": null
+   },
+   {
+    "name": "商业管理辅助",
+    "code": null,
+    "nice_class": 35,
+    "grp": null
+   },
+   {
+    "name": "市场营销",
+    "code": null,
+    "nice_class": 35,
+    "grp": null
+   },
+   {
+    "name": "为商品和服务的买卖双方提供在线市场",
+    "code": null,
+    "nice_class": 35,
+    "grp": null
+   },
+   {
+    "name": "为他人推销",
+    "code": null,
+    "nice_class": 35,
+    "grp": null
+   },
+   {
+    "name": "人事管理咨询",
+    "code": null,
+    "nice_class": 35,
+    "grp": null
+   },
+   {
+    "name": "文秘",
+    "code": null,
+    "nice_class": 35,
+    "grp": null
+   },
+   {
+    "name": "药用、兽医用、卫生用制剂和医疗用品的批发服务",
+    "code": null,
+    "nice_class": 35,
     "grp": null
    }
   ]

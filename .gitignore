@@ -13,3 +13,4 @@ deploy/
 tests/fixtures/simulated_marks.json
 .claude/
 *.building
+eval/.rank_cache.pkl

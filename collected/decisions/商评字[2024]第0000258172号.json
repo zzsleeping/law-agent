@@ -1,0 +1,39 @@
+{
+  "doc_type": "无效宣告请求裁定书",
+  "doc_no": "商评字[2024]第0000258172号",
+  "decision_date": "2024-09-26",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=5c83a1df3a4b7d7b",
+  "retrieved_at": "2026-11-19",
+  "applicant_mark": {
+    "text": "沃顿你好",
+    "app_no": "55092761",
+    "app_date": "2021-04-09",
+    "priority_date": null,
+    "owner": "贵州跃顿连锁酒店有限公司",
+    "goods": [
+      {
+        "name": "餐厅",
+        "nice_class": 43,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "12741494",
+      "text": "你好",
+      "app_date": "2013-06-13",
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "争议商标“沃顿你好”与引证商标“你好”文字构成存在一定差异，整体含义上形成较大区别",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "维持注册",
+  "outcome_scope": null,
+  "notes": "申请类别据文书记载。 申请日期与国家知识产权局商标开放基本信息一致。"
+}

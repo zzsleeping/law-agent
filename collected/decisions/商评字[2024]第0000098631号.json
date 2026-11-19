@@ -1,0 +1,84 @@
+{
+  "doc_type": "无效宣告请求裁定书",
+  "doc_no": "商评字[2024]第0000098631号",
+  "decision_date": "2024-04-18",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=4b9ee1608790eee4",
+  "retrieved_at": "2026-11-19",
+  "applicant_mark": {
+    "text": "伊丽",
+    "app_no": "50615969",
+    "app_date": "2020-10-21",
+    "priority_date": null,
+    "owner": "杭州天元宠物用品股份有限公司",
+    "goods": [
+      {
+        "name": "动物用梳",
+        "nice_class": 21,
+        "group": null
+      },
+      {
+        "name": "宠物用喂食器皿",
+        "nice_class": 21,
+        "group": null
+      },
+      {
+        "name": "刷子",
+        "nice_class": 21,
+        "group": null
+      },
+      {
+        "name": "自启动式动物喂食器",
+        "nice_class": 21,
+        "group": null
+      },
+      {
+        "name": "家禽环",
+        "nice_class": 21,
+        "group": null
+      },
+      {
+        "name": "家养宠物用笼子",
+        "nice_class": 21,
+        "group": null
+      },
+      {
+        "name": "宠物自动喂食器",
+        "nice_class": 21,
+        "group": null
+      },
+      {
+        "name": "宠物排泄用盒",
+        "nice_class": 21,
+        "group": null
+      },
+      {
+        "name": "饮水槽",
+        "nice_class": 21,
+        "group": null
+      },
+      {
+        "name": "喂料槽",
+        "nice_class": 21,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "28079060",
+      "text": "伊利及图",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "一、争议商标与引证商标一、二、三在文字构成、呼叫等方面相近，构成近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。非目标类别。"
+    }
+  ],
+  "outcome": "宣告无效",
+  "outcome_scope": null,
+  "notes": "申请类别据文书记载。 引证已节选，保留符合本批比对情形且能核实编号和认定理由的记录。 同名引证已节选。"
+}

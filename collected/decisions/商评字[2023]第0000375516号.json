@@ -1,0 +1,54 @@
+{
+  "doc_type": "无效宣告请求裁定书",
+  "doc_no": "商评字[2023]第0000375516号",
+  "decision_date": "2023-12-20",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=0bac10fa102f8c1f",
+  "retrieved_at": "2026-11-19",
+  "applicant_mark": {
+    "text": "柏佳悦",
+    "app_no": "52718605",
+    "app_date": "2021-01-04",
+    "priority_date": null,
+    "owner": "东莞市柏悦装饰建材有限公司",
+    "goods": [
+      {
+        "name": "住所代理（旅馆、供膳寄宿处）",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "咖啡馆",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "饭店",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "作为临时住宿处的房间出租",
+        "nice_class": 43,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "1141776",
+      "text": "柏悦",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "争议商标与引证商标一至六在文字构成、呼叫等方面尚可区分",
+      "notes": "未取得可逐项对应的引证商品明细。非目标类别。"
+    }
+  ],
+  "outcome": "维持注册",
+  "outcome_scope": null,
+  "notes": "申请商品登记项节选据国家知识产权局商标开放基本信息按编号核对，评审范围见文书。 申请类别据文书记载。 申请日期与国家知识产权局商标开放基本信息一致。 引证已节选，保留符合本批比对情形且能核实编号和认定理由的记录。"
+}

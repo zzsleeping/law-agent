@@ -17,6 +17,15 @@ def test_classify_patterns():
     assert patterns.classify("花言花语", "花言巧语") == "仅一字不同"
     assert patterns.classify("古茗", "古名") == "读音相同/相近"
     assert patterns.classify("喜茶", "嘉茶") == "字形相近"       # 差异只是形近字替换
+    assert patterns.classify("可口纯", "可口可乐") == "共用部分"   # “口可”不算字序颠倒
+    assert patterns.classify("好太太好生活", "好太太") == "完整包含"
+    assert patterns.classify("时尚之夜搜亚", "亚搜") == "字序颠倒"   # 只有局部互换这一种关系
+
+
+def test_reason_level():
+    assert cases.reason_level("“百力士”为臆造词，而“大力士”为固有词汇") == 2
+    assert cases.reason_level("在文字构成、呼叫、含义等方面相近") == 1
+    assert cases.reason_level("整体尚可区分") == 0
 
 
 def _case(cid, split, applicant, cited, label, excerpt=""):

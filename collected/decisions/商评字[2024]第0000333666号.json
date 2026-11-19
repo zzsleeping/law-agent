@@ -1,0 +1,84 @@
+{
+  "doc_type": "不予注册复审决定书",
+  "doc_no": "商评字[2024]第0000333666号",
+  "decision_date": "2024-11-26",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=c1273ed0abfa054c",
+  "retrieved_at": "2026-11-19",
+  "applicant_mark": {
+    "text": "吉拉多 Grandeur及图",
+    "app_no": "58550749",
+    "app_date": null,
+    "priority_date": null,
+    "owner": null,
+    "goods": [
+      {
+        "name": "贝壳类动物（活的）",
+        "nice_class": 31,
+        "group": null
+      },
+      {
+        "name": "甲壳动物（活的）",
+        "nice_class": 31,
+        "group": null
+      },
+      {
+        "name": "牡蛎（活的）",
+        "nice_class": 31,
+        "group": null
+      },
+      {
+        "name": "海参（活的）",
+        "nice_class": 31,
+        "group": null
+      },
+      {
+        "name": "虾（活的）",
+        "nice_class": 31,
+        "group": null
+      },
+      {
+        "name": "新鲜蔬菜",
+        "nice_class": 31,
+        "group": null
+      },
+      {
+        "name": "活动物",
+        "nice_class": 31,
+        "group": null
+      },
+      {
+        "name": "活鱼",
+        "nice_class": 31,
+        "group": null
+      },
+      {
+        "name": "贻贝（活的）",
+        "nice_class": 31,
+        "group": null
+      },
+      {
+        "name": "新鲜水果",
+        "nice_class": 31,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "1083158",
+      "text": "吉娜朵",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "被异议商标与引证商标二、三在整体构成等方面尚可区分",
+      "notes": "未取得可逐项对应的引证商品明细。非目标类别。"
+    }
+  ],
+  "outcome": "不予注册",
+  "outcome_scope": null,
+  "notes": "申请类别据文书记载。 未核实申请日期。 引证已节选，保留符合本批比对情形且能核实编号和认定理由的记录。"
+}

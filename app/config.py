@@ -59,7 +59,11 @@ class Settings:
         "exact": 1.0, "contains": 1.0, "glyph": 1.0, "pinyin": 1.0,
         "transpose": 1.0, "redup": 1.0, "pinyin_fuzzy": 0.5, "meaning": 0.5,
     })
-    top_k_per_channel: int = 1000    # 每路召回在归组前保留的件数；真实库上一个名称常有大量同组注册，太小会提前丢掉
+    top_k_per_channel: int = 5000    # 每路召回在归组前保留的件数；1000 时大家族的“共用部分”命中被提前截掉（调参集 24 件官方引证因此丢失），排序交给 merge
+    # 同一标识相似等级内的名称组排序打分（eval/rank_bench.py 在调参集上调）：
+    # 共有文字占我方的比例、占对方的比例、该名称在检索类别内的注册件数（品牌规模，对数，50 件封顶）。
+    # 2026-11-19 调参集：不加形状分 Recall@10 29.2%；只用件数 42.3%；三项合用 43.8%，权重在较大范围内结果不变
+    rank_weights: dict = field(default_factory=lambda: {"cover_q": 1.0, "cover_t": 0.5, "size": 2.0})
     top_n_assess: int = 15           # 完全同名之外送评的名称组数（每组带出该名称在检索类别内的全部注册）
     max_rewrites: int = 2
 

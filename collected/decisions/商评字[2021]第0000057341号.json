@@ -1,0 +1,54 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2021]第0000057341号",
+  "decision_date": "2021-03-03",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=43513f3cf6e9f958",
+  "retrieved_at": "2026-11-19",
+  "applicant_mark": {
+    "text": "帝怡",
+    "app_no": "46424964",
+    "app_date": "2020-05-19",
+    "priority_date": null,
+    "owner": "皇家杜威埃格博茨有限公司",
+    "goods": [
+      {
+        "name": "咖啡",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "咖啡用调味品",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "茶",
+        "nice_class": 30,
+        "group": null
+      },
+      {
+        "name": "速溶红茶",
+        "nice_class": 30,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "30604663",
+      "text": "蒂怡 DIYI及图",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "首字“帝”与“蒂”字形相近，尾字相同，在文字构成及整体呼叫上亦无明显区别",
+      "notes": "未取得可逐项对应的引证商品明细。"
+    }
+  ],
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "notes": "申请商品登记项节选据国家知识产权局商标开放基本信息按编号核对，评审范围见文书。 申请类别据国家知识产权局商标开放基本信息按编号核对。 申请日期与国家知识产权局商标开放基本信息一致。 引证已节选，保留符合本批比对情形且能核实编号和认定理由的记录。 同名引证已节选。"
+}

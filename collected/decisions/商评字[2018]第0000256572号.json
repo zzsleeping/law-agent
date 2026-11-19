@@ -1,0 +1,84 @@
+{
+  "doc_type": "无效宣告请求裁定书",
+  "doc_no": "商评字[2018]第0000256572号",
+  "decision_date": "2018-12-25",
+  "authority": "原国家工商行政管理总局商标评审委员会",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=b83d80eed17c0fc3",
+  "retrieved_at": "2026-11-19",
+  "applicant_mark": {
+    "text": "晋山河",
+    "app_no": "16568191",
+    "app_date": null,
+    "priority_date": null,
+    "owner": "山西晋德一品商贸有限公司",
+    "goods": [
+      {
+        "name": "食用酒精",
+        "nice_class": 33,
+        "group": null
+      },
+      {
+        "name": "白酒",
+        "nice_class": 33,
+        "group": null
+      },
+      {
+        "name": "伏特加酒",
+        "nice_class": 33,
+        "group": null
+      },
+      {
+        "name": "烧酒",
+        "nice_class": 33,
+        "group": null
+      },
+      {
+        "name": "酒精饮料（啤酒除外）",
+        "nice_class": 33,
+        "group": null
+      },
+      {
+        "name": "葡萄酒",
+        "nice_class": 33,
+        "group": null
+      },
+      {
+        "name": "利口酒",
+        "nice_class": 33,
+        "group": null
+      },
+      {
+        "name": "果酒（含酒精）",
+        "nice_class": 33,
+        "group": null
+      },
+      {
+        "name": "米酒",
+        "nice_class": 33,
+        "group": null
+      },
+      {
+        "name": "烈酒（饮料）",
+        "nice_class": 33,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "18086831",
+      "text": "锦绣山河",
+      "app_date": null,
+      "status": null,
+      "owner": null,
+      "goods": null,
+      "goods_similar": "未认定",
+      "mark_similar": "不近似",
+      "reasoning_excerpt": "由于争议商标与引证商标六在文字构成、呼叫等方面有所差异，未构成近似商标",
+      "notes": "未取得可逐项对应的引证商品明细。非目标类别。"
+    }
+  ],
+  "outcome": "宣告无效",
+  "outcome_scope": null,
+  "notes": "申请类别据文书记载。 未核实申请日期。 引证已节选，保留符合本批比对情形且能核实编号和认定理由的记录。 同名引证已节选。"
+}

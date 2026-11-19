@@ -1,0 +1,55 @@
+{
+  "doc_type": "驳回复审决定书",
+  "doc_no": "商评字[2022]第0000347395号",
+  "decision_date": "2022-11-08",
+  "authority": "国家知识产权局",
+  "source_url": "https://www.tmkoo.com/spw-ws!info.php?idEn=c77741014c0486b4",
+  "retrieved_at": "2026-11-19",
+  "applicant_mark": {
+    "text": "啉の茶 LINのTEA",
+    "app_no": "61235216",
+    "app_date": "2021-12-08",
+    "priority_date": null,
+    "owner": null,
+    "goods": [
+      {
+        "name": "活动房屋出租",
+        "nice_class": 43,
+        "group": null
+      },
+      {
+        "name": "咖啡馆",
+        "nice_class": 43,
+        "group": null
+      }
+    ]
+  },
+  "cited_marks": [
+    {
+      "reg_no": "25456327",
+      "text": "琳茶 lincha",
+      "app_date": "2017-07-21",
+      "status": null,
+      "owner": null,
+      "goods": [
+        {
+          "name": "活动房屋出租",
+          "nice_class": 43,
+          "group": null
+        },
+        {
+          "name": "咖啡馆",
+          "nice_class": 43,
+          "group": null
+        }
+      ],
+      "goods_similar": "类似",
+      "mark_similar": "近似",
+      "reasoning_excerpt": "申请商标“啉の茶 LINのTEA”与引证商标一“琳茶 lincha”在整体构成、呼叫等方面相近",
+      "notes": null
+    }
+  ],
+  "outcome": "驳回",
+  "outcome_scope": null,
+  "notes": "申请类别据国家知识产权局商标开放基本信息按编号核对。 申请日期与国家知识产权局商标开放基本信息一致。 引证已节选，保留符合本批比对情形且能核实编号和认定理由的记录。"
+}

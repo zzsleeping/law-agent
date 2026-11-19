@@ -46,7 +46,8 @@ def applicant_codes(am: dict) -> list[str]:
     t = tables()
     codes: set[str] = set()
     rows = open_source._conn("source").execute(
-        "SELECT nice_class, similar_group, item_name FROM goods WHERE mark_id=?", (str(am.get("app_no")),)).fetchall()
+        "SELECT nice_class, similar_group, item_name FROM goods WHERE nice_class IN (29, 30, 32, 43) AND mark_id=?",
+        (str(am.get("app_no")),)).fetchall()       # 带上类别才能走主键（类别, 编号, …），否则整表扫描，每份文书要几分钟
     for r in rows:
         c = map_goods_name(r["nice_class"], r["item_name"])
         codes |= {c} if c else set(t["group_codes"].get(r["similar_group"], set()))

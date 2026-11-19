@@ -36,12 +36,17 @@ def classify(query: str, cited: str) -> str:
     kinds = {h.kind for h in hits}
     glyph_ev = " ".join(h.evidence for h in hits if h.kind == "glyph_edit")
     # 按命中类型归类（类型见 app/tools/search.py），优先级从上到下
-    if "transpose" in kinds:
+    # 字序颠倒分两种：整体互换；局部互换且另有附加文字。后者在任意位置找互换的两个字，
+    # 容易误报（如“可口纯 / 可口可乐”里的“口可”），只在两商标之间没有别的关系时才采用
+    swaps = [h for h in hits if h.kind == "transpose"]
+    if any("另有附加文字" not in h.evidence for h in swaps):
         return "字序颠倒"
     if "redup" in kinds:
         return "叠字"
     if any(k.startswith("contains") for k in kinds):
         return "完整包含"
+    if swaps and kinds <= {"transpose"}:
+        return "字序颠倒"
     if "glyph_single" in kinds or (glyph_ev and not glyph_ev.startswith("仅个别")):   # 差异全是形近字替换
         return "字形相近"
     if kinds & {"edit_one", "glyph_edit"}:
