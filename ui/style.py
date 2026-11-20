@@ -257,6 +257,59 @@ details.more summary::before{content:"▸ "; color:var(--brass);}
 details.more[open] summary::before{content:"▾ ";}
 .label-h{font-size:.7rem; letter-spacing:.18em; color:var(--brass); font-weight:600; margin:.2rem 0 .3rem 0;}
 
+/* ---------- 输入页右侧：检索范围 ---------- */
+.sc-row{display:flex; gap:.9rem; align-items:flex-start; padding:.75rem 0; border-top:1px solid var(--line-2);}
+.sc-row:first-of-type{border-top:none;}
+.sc-n{flex:none; width:3rem; font-family:var(--serif); font-size:1.6rem; line-height:1; color:var(--brass); text-align:center;}
+.sc-n small{display:block; font-size:.66rem; color:var(--muted); margin-top:.2rem; letter-spacing:.1em;}
+.sc-row b{display:block; color:var(--ink); font-size:.92rem; margin-bottom:.35rem;}
+.sc-ex{display:flex; flex-wrap:wrap; gap:.3rem;}
+.sc-ex span{font-size:.74rem; color:var(--text); background:#f6f3ec; border:1px solid var(--line-2); border-radius:6px; padding:.06rem .45rem;}
+
+.tips{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:1.2rem 1.4rem .6rem;
+  box-shadow:var(--shadow); margin:1rem 0 .4rem 0;}
+.tips ul{list-style:none; padding:0; margin:.4rem 0 0 0; display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:.2rem 1.4rem;}
+.tips li{font-size:.84rem; color:var(--muted); line-height:1.65; padding:.35rem 0 .55rem .9rem; position:relative;}
+.tips li::before{content:""; position:absolute; left:0; top:.75rem; width:.35rem; height:.35rem; background:var(--brass); transform:rotate(45deg);}
+.tips li b{display:block; color:var(--ink); font-size:.86rem; margin-bottom:.1rem;}
+.how h3{margin-top:.1rem;}
+/* 新建评估页两栏：两栏本身等高，每栏最后一张卡片拉伸填满，底边始终对齐（不论模式、有无历史报告） */
+.st-key-input_cols > [data-testid="stLayoutWrapper"] > [data-testid="stHorizontalBlock"] > [data-testid="stColumn"] >
+  [data-testid="stVerticalBlock"] > :last-child{flex:1 1 auto; display:flex; flex-direction:column;}
+.st-key-input_cols > [data-testid="stLayoutWrapper"] > [data-testid="stHorizontalBlock"] > [data-testid="stColumn"] >
+  [data-testid="stVerticalBlock"] > :last-child :is(div:has(.tips, .how, .st-key-recent_box), .tips, .how, .st-key-recent_box){
+  flex:1 1 auto; height:100%; box-sizing:border-box;}
+.st-key-input_cols .tips{margin:0;}
+.st-key-input_cols > [data-testid="stLayoutWrapper"] > [data-testid="stHorizontalBlock"] > [data-testid="stColumn"] >
+  [data-testid="stVerticalBlock"] > :last-child :is([data-testid="stMarkdown"], [data-testid="stMarkdownContainer"]){
+  margin-bottom:0 !important;}   /* 文本块自带的负下边距会让拉伸后的卡片多出一截 */
+/* 场景切换：拉满宽度、加高，两个选项各占一半 */
+.st-key-mode_sel [data-testid="stButtonGroup"], .st-key-mode_sel [data-testid="stButtonGroup"] > div{width:100%;}
+.st-key-mode_sel button{flex:1 1 0; min-height:2.9rem; font-size:1rem;}
+.st-key-mode_sel button p{font-size:.98rem; font-weight:600;}
+.st-key-recent_box{border-radius:16px !important; padding:1.1rem 1.3rem .9rem !important;}
+.st-key-recent_box .stButton button{padding:.28rem .5rem; white-space:nowrap; min-height:0;}
+.st-key-recent_box .hist b{font-size:1rem;}
+
+/* ---------- 积分套餐卡片 ---------- */
+[class*="st-key-prod_"]{padding:1.6rem 1.5rem 1.4rem !important; border-radius:18px !important;}
+[class*="st-key-prod_"] .stButton{margin-top:.4rem;}
+.plan{min-height:15.5rem; display:flex; flex-direction:column;}
+.plan .nm{display:flex; align-items:center; gap:.5rem; font-size:.78rem; letter-spacing:.24em; color:var(--brass); font-weight:600;}
+.plan .tag-vip{letter-spacing:.05em; font-size:.68rem; padding:.08rem .5rem; border-radius:999px; background:var(--brass); color:#0b1626;}
+.plan .pr{font-family:var(--serif); font-size:2.7rem; line-height:1; color:var(--ink); margin:1.1rem 0 .5rem 0; font-weight:700;}
+.plan .pr small{font-size:1.2rem; margin-right:.15rem; vertical-align:.9rem; font-weight:600;}
+.plan .unit{font-size:1rem; color:var(--text); font-weight:600; padding-bottom:1rem; border-bottom:1px solid var(--line);}
+.plan ul{list-style:none; padding:0; margin:1rem 0 0 0;}
+.plan li{position:relative; padding:0 0 .55rem 1.3rem; font-size:.86rem; color:var(--muted); line-height:1.6;}
+.plan li::before{content:""; position:absolute; left:0; top:.45rem; width:.45rem; height:.45rem; border-radius:50%;
+  border:1.5px solid var(--brass);}
+.st-key-prod_vip30{background:radial-gradient(420px 200px at 90% 0%, rgba(176,141,87,.28), transparent 70%), #0f1c2e !important;
+  border-color:var(--brass) !important;}
+.plan.vip .pr, .plan.vip .unit{color:#fff;}
+.plan.vip .unit{border-bottom-color:rgba(255,255,255,.14);}
+.plan.vip li{color:#c3ccd8;}
+
 @media (max-width: 760px){
   .hero{padding:1.3rem 1.2rem;} .hero h1{font-size:1.6rem;}
   .steps{flex-wrap:wrap;} .step{flex:1 1 45%;}
@@ -277,6 +330,81 @@ STEPS = [("填写商标与商品", "INPUT", "step-input"), ("确认商品项", "
 
 def css() -> str:
     return _css()
+
+
+def landing_css() -> str:
+    """首页（未登录）：一屏的主视觉，参照游戏官网的版式——顶栏、大标题、一个主按钮、底部几项小字，不滚动。"""
+    pattern = asset_uri("hero-pattern.svg") or ""
+    seal = asset_uri("report-watermark.svg") or ""
+    return f"""<style>
+html, body, .stApp, [data-testid="stAppViewContainer"], [data-testid="stMain"]{{overflow:hidden !important;}}
+.stApp{{background:#0b1626;}}
+[data-testid="stHeader"], [data-testid="stSidebar"], [data-testid="stSidebarCollapsedControl"]{{display:none !important;}}
+.block-container{{padding:0 !important; max-width:none !important;}}
+.kv{{position:fixed; inset:0; overflow:hidden; color:#fff;
+  background:url("{pattern}") center / cover no-repeat,
+             radial-gradient(900px 520px at 78% 30%, rgba(176,141,87,.30), transparent 62%),
+             radial-gradient(700px 500px at 10% 100%, rgba(29,51,82,.9), transparent 70%),
+             linear-gradient(160deg, #0f1c2e 0%, #0b1626 60%, #08111d 100%);}}
+.kv::after{{content:""; position:absolute; right:-6vw; bottom:-14vh; width:62vh; height:62vh; opacity:.9;
+  background:url("{seal}") center / contain no-repeat; filter:invert(1); mix-blend-mode:screen;}}
+.kv-brand{{position:absolute; top:22px; left:4vw; display:flex; align-items:center; gap:.7rem; z-index:2;}}
+.kv-brand img{{width:2.2rem; height:2.2rem;}}
+.kv-brand b{{font-family:var(--serif); font-size:1.05rem; letter-spacing:.04em;}}
+.kv-brand span{{display:block; font-size:.62rem; letter-spacing:.22em; color:var(--brass); font-weight:600;}}
+.kv-copy{{position:absolute; left:8vw; top:50%; transform:translateY(-62%); max-width:min(46rem, 52vw); z-index:2;}}
+.kv-copy .eb{{display:flex; align-items:center; gap:.8rem; font-size:.78rem; letter-spacing:.32em; color:var(--brass); font-weight:600;}}
+.kv-copy .eb::before{{content:""; width:2.4rem; height:1px; background:var(--brass);}}
+.kv-copy h1{{font-family:var(--serif) !important; font-size:clamp(2.6rem, 5.4vw, 4.6rem); line-height:1.12; margin:1.1rem 0 1rem 0;
+  padding:0; color:#fff !important; letter-spacing:.02em; text-shadow:0 6px 30px rgba(0,0,0,.35);}}
+.kv-copy h1 *{{color:#fff !important;}}   /* Streamlit 在标题里套了一层 span，自带浅灰色 */
+.kv-copy p{{font-size:clamp(1rem, 1.3vw, 1.2rem); color:#c3ccd8; line-height:1.8; margin:0;}}
+.kv-art{{position:absolute; right:5vw; top:50%; transform:translateY(-55%); width:min(42vw, 660px); aspect-ratio:4/3; z-index:1;}}
+.kv-art::before{{content:""; position:absolute; inset:6% 10%; border-radius:50%;
+  background:radial-gradient(circle, rgba(176,141,87,.22) 0%, rgba(176,141,87,.06) 45%, transparent 70%);}}
+/* 插画原为浅底线描：反相后成为深底上的浅色线条，色相转回使黄铜、印章红保持原色 */
+.kv-art img{{position:absolute; inset:0; width:100%; height:100%; object-fit:contain;
+  filter:invert(1) hue-rotate(180deg) brightness(1.15) drop-shadow(0 20px 40px rgba(0,0,0,.35));}}
+.kv-foot{{position:absolute; left:8vw; right:8vw; bottom:4.5vh; display:flex; gap:2.6rem; z-index:2;
+  border-top:1px solid rgba(255,255,255,.12); padding-top:1.1rem; font-size:.8rem; color:#9aa6b6;}}
+.kv-foot b{{display:block; font-family:var(--serif); font-size:1.25rem; color:#fff; font-weight:600; margin-bottom:.15rem;}}
+/* 叠在主视觉上的按钮 */
+.st-key-kv_top{{position:fixed; top:20px; right:4vw; z-index:20; width:auto !important;}}
+.st-key-kv_top [data-testid="stHorizontalBlock"]{{gap:.6rem; flex-wrap:nowrap;}}
+.st-key-kv_top [data-testid="stColumn"]{{width:auto !important; flex:0 0 auto !important; min-width:0 !important;}}
+.st-key-kv_top .stButton button{{background:transparent; color:#e8edf3; border:1px solid rgba(255,255,255,.28);
+  border-radius:999px; padding:.38rem 1.25rem; white-space:nowrap;}}
+.st-key-kv_top .stButton button:hover{{border-color:var(--brass); color:#fff;}}
+.st-key-kv_top .stButton button[kind="primary"]{{background:var(--brass); border-color:var(--brass); color:#0b1626;}}
+.st-key-kv_cta{{position:fixed; left:8vw; top:calc(50% + 7.2rem); z-index:20; width:auto !important;}}
+.st-key-kv_cta .stButton button{{background:linear-gradient(135deg, #c9a46a, #b08d57); color:#0b1626; border:none;
+  border-radius:999px; padding:.95rem 2.6rem; box-shadow:0 10px 30px rgba(176,141,87,.35); white-space:nowrap;}}
+.st-key-kv_cta .stButton button p{{font-size:1.08rem; font-weight:700; letter-spacing:.08em; color:#0b1626 !important;}}
+.st-key-kv_cta .stButton button:hover{{transform:translateY(-1px); box-shadow:0 14px 36px rgba(176,141,87,.45);}}
+.kv-hint{{position:absolute; left:8vw; top:calc(50% + 11.6rem); font-size:.8rem; color:#8d99aa; z-index:2;}}
+@media (max-width: 860px){{
+  .kv-art{{display:none;}}
+  .kv-copy{{left:7vw; right:7vw; max-width:none; transform:translateY(-70%);}}
+  .st-key-kv_cta{{left:7vw; top:calc(50% + 4.5rem);}}
+  .kv-hint{{left:7vw; top:calc(50% + 8.6rem);}}
+  .kv-foot{{left:7vw; right:7vw; gap:1.2rem; font-size:.72rem;}}
+  .kv-foot b{{font-size:1rem;}}
+  .kv-brand b, .kv-brand span{{display:none;}}
+}}
+</style>"""
+
+
+def landing_kv(stats: list[tuple[str, str]]) -> str:
+    logo = asset_uri("logo-mark-light.svg")
+    art = asset_uri("illus-compare.svg")
+    foot = "".join(f"<div><b>{esc(v)}</b>{esc(t)}</div>" for v, t in stats)
+    return (f'<div class="kv"><div class="kv-brand"><img src="{logo}" alt=""><div><b>商标近似评估智能体</b>'
+            '<span>TRADEMARK SIMILARITY</span></div></div>'
+            '<div class="kv-copy"><div class="eb">TRADEMARK SIMILARITY AGENT</div><h1>商标近似评估智能体</h1>'
+            '<p>申请之前，看清每一个在先商标的风险。<br>检索、比对、判定、出报告，一次完成。</p></div>'
+            + (f'<div class="kv-art"><img src="{art}" alt=""></div>' if art else "")
+            + '<div class="kv-hint">新用户注册即可免费评估一次</div>'
+            + f'<div class="kv-foot">{foot}</div></div>')
 
 
 # 网页报告的系统水印：与 Word 报告同一造型（印章标识 + 系统名），斜向、固定在报告页背后
@@ -302,19 +430,6 @@ def brand() -> str:
     uri = asset_uri("logo-mark-light.svg")
     return (f'<div class="brand"><img src="{uri}" alt=""><div><div class="n">商标近似评估智能体</div>'
             '<div class="s">TRADEMARK SIMILARITY</div></div></div>')
-
-
-def hero(compact: bool = False, facts: list[tuple[str, str, str]] | None = None) -> str:
-    """facts: (图标名, 数值, 说明)。"""
-    if compact:
-        return ('<div class="hero compact"><div class="eyebrow">TRADEMARK SIMILARITY</div>'
-                '<h1>商标近似评估智能体</h1></div>')
-    chips = "".join(f'<li class="fact">{icon(i)}<b>{esc(v)}</b>{esc(t)}</li>' for i, v, t in (facts or []))
-    return ('<div class="hero"><div class="eyebrow">TRADEMARK SIMILARITY · 申请前筛查 · 驳回复审比对</div>'
-            '<h1>商标近似评估智能体</h1>'
-            '<div class="sub">面向限定类别的中文文字商标。多路召回在先商标，大模型逐组判定近似与注册风险，规则护栏兜底；'
-            '每条结论都能追溯到事实和带版本的法律依据。</div>'
-            + (f'<ul class="hfacts">{chips}</ul>' if chips else "") + '</div>')
 
 
 def steps(current: int) -> str:
@@ -351,11 +466,29 @@ def kv(pairs: list[tuple[str, str]]) -> str:
     return '<div class="kv">' + "".join(f"<div><span>{esc(k)}</span>{esc(str(v))}</div>" for k, v in pairs) + "</div>"
 
 
-def how_it_works(points: list[tuple[str, str]], foot: str) -> str:
-    illus = asset_uri("illus-compare.svg")
-    img = f'<img class="illus" src="{illus}" alt="">' if illus else ""
-    items = "".join(f"<li><b>{esc(t)}</b>　{esc(d)}</li>" for t, d in points)
-    return f'<div class="how">{img}<h3>系统怎么做</h3><ol>{items}</ol><div class="foot">{esc(foot)}</div></div>'
+# 正式商标库覆盖的类别（《类似商品和服务区分表》类别标题的通俗说法 + 常见商品举例）
+SCOPE_CLASSES = [
+    ("29", "肉蛋奶与加工食品", ["肉制品", "水产品", "蛋类", "牛奶及乳制品", "奶茶（以奶为主）", "食用油", "果冻果酱", "加工过的坚果"]),
+    ("30", "茶、咖啡、粮食与调味品", ["茶叶", "茶饮料", "咖啡", "面包糕点", "糖果", "冰淇淋", "米面制品", "调味品"]),
+    ("32", "啤酒与不含酒精的饮料", ["啤酒", "矿泉水", "果汁", "植物饮料", "汽水", "运动饮料"]),
+    ("43", "餐饮与住宿服务", ["餐厅", "咖啡馆", "茶馆", "快餐", "酒吧", "酒店住宿"]),
+]
+
+
+def tips_card(items: list[tuple[str, str]]) -> str:
+    """输入页表单下方的填写建议。"""
+    rows = "".join(f'<li><b>{esc(t)}</b>{esc(d)}</li>' for t, d in items)
+    return f'<div class="tips"><div class="label-h">填写建议</div><ul>{rows}</ul></div>'
+
+
+def scope_panel(foot: str) -> str:
+    """输入页右侧：检索范围（正式商标库覆盖哪些类别、各类常见商品）。"""
+    img = ""
+    rows = "".join(
+        f'<div class="sc-row"><div class="sc-n">{n}<small>类</small></div><div><b>{esc(t)}</b>'
+        f'<div class="sc-ex">{"".join(f"<span>{esc(x)}</span>" for x in ex)}</div></div></div>'
+        for n, t, ex in SCOPE_CLASSES)
+    return f'<div class="how">{img}<h3>检索范围</h3>{rows}<div class="foot">{esc(foot)}</div></div>'
 
 
 def empty(kind: str, text: str) -> str:

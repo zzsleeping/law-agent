@@ -79,9 +79,22 @@ def test_report_roundtrip_and_find(tmp_path, monkeypatch):
     inputs = {"scenario": "pre_filing", "query_mark": "茗悦", "goods_desc": "茶饮料"}
     payload = {"report": {"title": "报告"}, "prefix_key": cache.key(inputs, cache.versions()), "goods_names": ["茶饮料"]}
     k = cache.report_key({**inputs, "goods": [("300001", "茶饮料")], "keep": ["A/30"]})
-    cache.report_put(k, "pre_filing", "茗悦", "报告", payload, b"docx")
-    got = cache.report_get(k)
+    cache.report_put(k, "pre_filing", "茗悦", "报告", payload, b"docx", user_id=7)
+    got = cache.report_get(k, 7)
     assert got["payload"]["report"]["title"] == "报告" and got["docx"] == b"docx"
-    assert [h["key"] for h in cache.report_find(inputs)] == [k]
-    assert cache.report_find({**inputs, "query_mark": "茗悦泉"}) == []
-    assert cache.report_recent()[0]["query"] == "茗悦"
+    assert [h["key"] for h in cache.report_find(inputs, 7)] == [k]
+    assert cache.report_find({**inputs, "query_mark": "茗悦泉"}, 7) == []
+    assert cache.report_recent(user_id=7)[0]["query"] == "茗悦"
+
+
+def test_reports_are_private_per_user(tmp_path, monkeypatch):
+    monkeypatch.setattr(settings, "cache_path", tmp_path / "cache.sqlite")
+    monkeypatch.setattr(settings, "cache_enabled", True)
+    inputs = {"scenario": "pre_filing", "query_mark": "茗悦", "goods_desc": "茶饮料"}
+    payload = {"report": {"title": "报告"}, "prefix_key": cache.key(inputs, cache.versions())}
+    k1, k2 = cache.report_key(inputs, 1), cache.report_key(inputs, 2)
+    assert k1 != k2                                                     # 同样输入、不同用户各存一份
+    cache.report_put(k1, "pre_filing", "茗悦", "报告", payload, b"x", user_id=1)
+    assert cache.report_get(k1, 1) is not None and cache.report_get(k1, 2) is None
+    assert cache.report_find(inputs, 1) and cache.report_find(inputs, 2) == []
+    assert cache.report_recent(user_id=1) and cache.report_recent(user_id=2) == []

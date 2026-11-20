@@ -35,7 +35,9 @@ def _conn() -> sqlite3.Connection:
     c.execute("PRAGMA journal_mode=WAL")
     c.execute("CREATE TABLE IF NOT EXISTS llm (key TEXT PRIMARY KEY, prompt TEXT, model TEXT, created TEXT, response TEXT)")
     c.execute("CREATE TABLE IF NOT EXISTS reports (key TEXT PRIMARY KEY, created TEXT, scenario TEXT, query TEXT, "
-              "title TEXT, payload BLOB, docx BLOB)")
+              "title TEXT, payload BLOB, docx BLOB, user_id INTEGER)")
+    if "user_id" not in {r[1] for r in c.execute("PRAGMA table_info(reports)")}:    # 旧库升级：报告按用户隔离
+        c.execute("ALTER TABLE reports ADD COLUMN user_id INTEGER")
     return c
 
 
@@ -74,16 +76,16 @@ def versions() -> dict:
             "judge_with_cases": settings.judge_with_cases}
 
 
-def report_key(inputs: dict) -> str:
-    return key(inputs, versions())
+def report_key(inputs: dict, user_id: int | None = None) -> str:
+    return key(inputs, versions(), user_id)          # 不同用户同样的输入各存一份，互不可见
 
 
-def report_get(k: str) -> dict | None:
-    """返回 {"created", "payload", "docx"}；没有或无法读取（代码改动后反序列化失败）时返回 None。"""
+def report_get(k: str, user_id: int | None = None) -> dict | None:
+    """返回 {"created", "payload", "docx"}；没有、不属于该用户或无法读取（代码改动后反序列化失败）时返回 None。"""
     if not enabled():
         return None
     with _conn() as c:
-        row = c.execute("SELECT created, payload, docx FROM reports WHERE key=?", (k,)).fetchone()
+        row = c.execute("SELECT created, payload, docx FROM reports WHERE key=? AND user_id IS ?", (k, user_id)).fetchone()
     if not row:
         return None
     try:
@@ -92,22 +94,24 @@ def report_get(k: str) -> dict | None:
         return None
 
 
-def report_put(k: str, scenario: str, query: str, title: str, payload: dict, docx: bytes) -> None:
+def report_put(k: str, scenario: str, query: str, title: str, payload: dict, docx: bytes,
+               user_id: int | None = None) -> None:
     if not enabled():
         return
     with _conn() as c:
-        c.execute("INSERT OR REPLACE INTO reports VALUES (?,?,?,?,?,?,?)",
-                  (k, datetime.now().isoformat(timespec="seconds"), scenario, query, title,
-                   pickle.dumps(payload), docx))
+        c.execute("INSERT OR REPLACE INTO reports (key, created, scenario, query, title, payload, docx, user_id) "
+                  "VALUES (?,?,?,?,?,?,?,?)", (k, datetime.now().isoformat(timespec="seconds"), scenario, query, title,
+                                               pickle.dumps(payload), docx, user_id))
 
 
-def report_find(prefix_inputs: dict) -> list[dict]:
-    """按输入页的信息（不含之后确认的商品项和候选）找以前的报告，供输入页提示“已评估过”。"""
+def report_find(prefix_inputs: dict, user_id: int | None = None) -> list[dict]:
+    """按输入页的信息（不含之后确认的商品项和候选）找该用户以前的报告，供输入页提示“已评估过”。"""
     if not enabled():
         return []
     k = key(prefix_inputs, versions())
     with _conn() as c:
-        rows = c.execute("SELECT key, created, title, payload FROM reports ORDER BY created DESC LIMIT 200").fetchall()
+        rows = c.execute("SELECT key, created, title, payload FROM reports WHERE user_id IS ? "
+                         "ORDER BY created DESC LIMIT 200", (user_id,)).fetchall()
     out = []
     for rk, created, title, blob in rows:
         try:
@@ -119,10 +123,10 @@ def report_find(prefix_inputs: dict) -> list[dict]:
     return out
 
 
-def report_recent(limit: int = 10) -> list[dict]:
+def report_recent(limit: int = 10, user_id: int | None = None) -> list[dict]:
     if not enabled():
         return []
     with _conn() as c:
-        rows = c.execute("SELECT key, created, scenario, query, title FROM reports ORDER BY created DESC LIMIT ?",
-                         (limit,)).fetchall()
+        rows = c.execute("SELECT key, created, scenario, query, title FROM reports WHERE user_id IS ? "
+                         "ORDER BY created DESC LIMIT ?", (user_id, limit)).fetchall()
     return [{"key": r[0], "created": r[1], "scenario": r[2], "query": r[3], "title": r[4]} for r in rows]

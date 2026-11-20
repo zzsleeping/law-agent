@@ -12,7 +12,8 @@ import pandas as pd  # noqa: E402
 import streamlit as st  # noqa: E402
 from langgraph.types import Command  # noqa: E402
 
-from app import cache, db, llm  # noqa: E402
+from app import accounts, cache, db, llm, pricing  # noqa: E402
+from app.accounts import AccountError  # noqa: E402
 from app.config import settings  # noqa: E402
 from app.graph import build_graph  # noqa: E402
 from app.rules import goods_relation as gr  # noqa: E402
@@ -20,7 +21,7 @@ from app.rules import prior_status as ps  # noqa: E402
 from app.rules.risk_table import LEVEL_LABEL, RISK_LABEL  # noqa: E402
 from app.tools import basis  # noqa: E402
 from app.tools import goods as goods_tool  # noqa: E402
-from ui import style  # noqa: E402
+from ui import account_pages, shell, style  # noqa: E402
 
 st.set_page_config(page_title="商标近似评估智能体", page_icon="§", layout="wide")
 st.markdown(style.css(), unsafe_allow_html=True)
@@ -93,7 +94,7 @@ graph = get_graph()
 ss = st.session_state
 ss.setdefault("stage", "input")
 cfg = {"configurable": {"thread_id": ss.get("tid", "none")}}
-STAGE_INDEX = {"input": 0, "cached": 0, "goods": 1, "candidates": 2, "report": 3}
+STAGE_INDEX = {"input": 0, "cached": 0, "goods": 1, "candidates": 2, "report": 3}   # 历史、积分、管理页不显示步骤条
 
 
 def values() -> dict:
@@ -125,14 +126,22 @@ def notices(v: dict) -> None:
 
 
 def restart() -> None:
+    """回到输入页，保留登录状态。"""
     for k in list(ss.keys()):
-        del ss[k]
+        if k != "user":
+            del ss[k]
     st.rerun()
 
 
 def start(payload: dict, fresh: bool = False) -> None:
-    """开始一次新的评估。fresh=True 为“重新评估”：大模型调用不读缓存。"""
+    """开始一次新的评估（先扣费：VIP 次数或积分）。fresh=True 为“重新评估”：大模型调用不读缓存。"""
     global cfg
+    try:
+        ss.charge = accounts.charge_query(UID, payload["query_mark"])
+    except AccountError as e:
+        ss.flash_err = str(e)
+        ss.stage = "account"
+        st.rerun()
     ss.tid = uuid.uuid4().hex[:12]
     cfg = {"configurable": {"thread_id": ss.tid}}
     ss.pop("cached", None)
@@ -149,7 +158,7 @@ def open_cached(k: str) -> None:
     """
     from app.nodes.render import write_pdfs
 
-    r = cache.report_get(k)
+    r = cache.report_get(k, UID)
     if r is None:
         st.error("这份报告已无法读取（系统升级后旧缓存失效），请重新评估。")
         return
@@ -171,6 +180,9 @@ def open_cached(k: str) -> None:
 def save_report(v: dict, keep: list[str]) -> None:
     """报告生成后存入第一层缓存；降级或引用校验未通过的报告不存，避免把不稳定的结果当成定论复用。"""
     rep = v.get("report") or {}
+    if rep.get("degraded") and llm.unavailable_reason(rep.get("degraded_notes", [])) and ss.get("charge"):
+        accounts.refund(ss.charge["charge_id"], "大模型不可用，本次评估退回")     # 结论由规则兜底，不收费
+        ss.flash = "大模型暂时不可用，本次评估的费用已退回。"
     if not ss.get("payload") or rep.get("flagged") or rep.get("degraded"):
         return
     full = {**ss.payload, "goods": [(g.code, g.name) for g in v.get("goods", [])], "keep": sorted(keep)}
@@ -180,77 +192,89 @@ def save_report(v: dict, keep: list[str]) -> None:
                "goods_names": [g.name for g in v.get("goods", [])]}
     try:
         docx = Path(v["report_path"]).read_bytes()
-        cache.report_put(cache.report_key(full), ss.payload["scenario"], ss.payload["query_mark"],
-                         rep.get("title", ""), payload, docx)
+        cache.report_put(cache.report_key(full, UID), ss.payload["scenario"], ss.payload["query_mark"],
+                         rep.get("title", ""), payload, docx, user_id=UID)
     except Exception as e:                       # 缓存失败不影响本次报告
         st.caption(f"报告未能存入缓存：{e}")
 
 
-# ---------------- 侧边栏 ----------------
-with st.sidebar:
-    html(style.brand())
-    cov = db.coverage()
-    if cov["real"].get("source") == "open":
-        html(f'<div class="side-h">{style.icon("ic-database")}商标库</div>'
-             f'<div class="side-row"><span>开放数据（真实）</span><b>{cov["real"]["count"]:,}</b></div>'
-             f'<div class="side-row"><span>覆盖类别</span><b>{esc(cov["real"]["classes"])}</b></div>'
-             f'<div class="side-row"><span>增量截至</span><b>{cov["real"]["date"]}</b></div>'
-             '<div class="side-cap">数据来自国家知识产权局商标开放数据。在先状态由公告日期推定，'
-             '法律状态须另行核实。</div>')
-    else:
-        html('<div class="side-h">数据覆盖范围</div>'
-             f'<div class="side-row"><span>本地真实记录</span><b>{cov["real"]["count"]}</b></div>'
-             '<div class="side-cap">未接入正式商标库（TM_OPEN_DB 或检索索引缺失），只能检索决定书导入的少量记录。</div>')
-    html(f'<div class="side-h">{style.icon("ic-model")}智能体</div>'
-         + f'<div class="side-row"><span>大模型</span><b>{esc(settings.llm_model) if llm.available() else "未配置"}</b></div>'
-         '<div class="side-row"><span>负责</span><b>判定近似 · 写结论</b></div>'
-         '<div class="side-row"><span>兜底</span><b>规则护栏</b></div>'
-         f'<div class="side-h">{style.icon("ic-scale")}法律依据</div>'
-         '<div class="side-row"><span>商标法</span><b>按评估日期选版本</b></div>'
-         '<div class="side-row"><span>审查审理指南</span><b>2021 年版</b></div>'
-         '<div class="side-row"><span>参考判例</span><b>国知局评审文书</b></div>')
-    if not llm.available():
-        html('<div class="side-cap">未配置 .env 中的 LLM_API_KEY / LLM_MODEL，解释和结论将由代码生成。</div>')
-    recent = cache.report_recent(8)
-    if recent:
-        html(f'<div class="side-h">{style.icon("ic-history")}最近的报告</div>')
-        for r in recent:
-            label = f"{r['query']} · {'复审' if r['scenario'] == 'rejection_review' else '筛查'} · {r['created'][5:16].replace('T', ' ')}"
-            if st.button(label, key=f"recent_{r['key']}", use_container_width=True):
-                open_cached(r["key"])
-    st.write("")
-    if st.button("重新开始", use_container_width=True):
-        restart()
+# ---------------- 登录 ----------------
+if "user" not in ss:                          # 未登录：首页功能介绍，登录 / 注册在小窗口里完成
+    account_pages.landing_page(db.coverage())
+    st.stop()
+UID = ss.user["id"]
+ME = accounts.get_user(UID)
 
-if ss.stage in ("input", "cached"):
-    _real = cov["real"]
-    html(style.hero(facts=[("ic-database", f"{_real['count'] / 10000:,.0f} 万件", "国知局开放数据")
-                           if _real.get("source") == "open" else ("ic-database", str(_real["count"]), "本地记录"),
-                           ("ic-model", "大模型", "逐组判定 · 规则护栏"),
-                           ("ic-scale", "带版本", "商标法与审查指南依据")]))
-else:
-    html(style.hero(compact=True))
-html(style.steps(STAGE_INDEX[ss.stage]))
+# ---------------- 外框：顶栏、页头（与首页同一套视觉） ----------------
+cov = db.coverage()
+html(shell.css())
+target = shell.topnav(ME, ss.stage)
+if target == "logout":
+    ss.clear()
+    st.rerun()
+elif target == "input":
+    restart()
+elif target:
+    ss.stage = target
+    st.rerun()
+html(shell.page_head(ss.stage, STAGE_INDEX.get(ss.stage)))
+if msg := ss.pop("flash", None):
+    st.success(msg)
+if msg := ss.pop("flash_err", None):
+    st.error(msg)
+if not llm.available():
+    html(style.note("未配置 .env 中的 LLM_API_KEY / LLM_MODEL：解释和结论将由代码生成。", "warn"))
+
+# ---------------- 历史报告 ----------------
+if ss.stage == "history":
+    recent = cache.report_recent(50, UID)
+    if not recent:
+        html(style.empty("none", "还没有评估过的报告。"))
+    for r in recent:
+        with st.container(border=True, key=f"hist_{r['key']}"):
+            c1, c2 = st.columns([5, 1.2])
+            c1.markdown(f'<div class="hist"><b>{esc(r["query"])}</b><span>{esc(r["title"])}　·　'
+                        f'{"驳回复审比对" if r["scenario"] == "rejection_review" else "申请前筛查"}　·　'
+                        f'{r["created"].replace("T", " ")}</span></div>', unsafe_allow_html=True)
+            if c2.button("打开", key=f"open_{r['key']}", use_container_width=True):
+                open_cached(r["key"])
+    html(shell.footer(cov, settings.llm_model if llm.available() else ""))
+    st.stop()
+
+# ---------------- 积分与充值、管理后台 ----------------
+if ss.stage in ("account", "admin"):
+    (account_pages.account_page if ss.stage == "account" else account_pages.admin_page)(ME)
+    html(shell.footer(cov, settings.llm_model if llm.available() else ""))
+    st.stop()
 
 # ---------------- ① 输入 ----------------
 if ss.stage == "input":
-    left, right = st.columns([3, 2], gap="large")
+    # 场景切换和说明放在两栏上方、拉满宽度；下面两栏都从卡片开始，顶边对齐
+    mode = st.segmented_control("场景", ["pre_filing", "rejection_review"], default="pre_filing", width="stretch",
+                                format_func={"pre_filing": "申请前筛查", "rejection_review": "驳回复审逐项比对"}.get,
+                                label_visibility="collapsed", key="mode_sel") or "pre_filing"
+    review = mode == "rejection_review"
+    if review:
+        html('<div class="lead">录入驳回通知中的引证商标编号，系统逐件比对标识、商品和在先状态，给出每件的比对结论。'
+             '不做复审理由或论证。</div>')
+    else:
+        html(f'<div class="lead">填写拟申请的商标文字和要用在哪些商品或服务上，系统检索在先商标并评估注册风险。'
+             f'每次评估 {pricing.COST_QUERY} 积分（VIP 用评估次数），大模型不可用时自动退回。</div>')
+    cols_box = st.container(key="input_cols")          # 两栏底边对齐（样式见 ui/style.py 的 st-key-input_cols）
+    left, right = cols_box.columns([3, 2], gap="large")
     with right:
-        html(style.how_it_works([
-            ("多路召回", "精确文字、包含、字形、读音、字序与叠字、含义六路检索在先商标，按名称归组排序。"),
-            ("逐组判定", "大模型结合指南判断标识是否近似、注册风险多大；规则护栏校正越界结论。"),
-            ("可追溯的报告", "每条结论附事实与带施行期间的法条、指南依据，并附同类情形的官方判例。"),
-        ], "检索范围限定在开放数据覆盖的第 29、30、32、43 类；在先状态由公告日期推定，法律状态须另行核实。"))
+        html(style.scope_panel("其他类别暂未接入正式商标库，检索不到在先商标。在先状态由公告日期推定，法律状态须另行核实。"))
+        recent = cache.report_recent(3, UID)
+        if recent:
+            with st.container(border=True, key="recent_box"):
+                html('<div class="label-h">最近的报告</div>')
+                for r in recent:
+                    c1, c2 = st.columns([2, 1], vertical_alignment="center")
+                    c1.markdown(f'<div class="hist"><b>{esc(r["query"])}</b><span>{r["created"][5:16].replace("T", " ")}</span></div>',
+                                unsafe_allow_html=True)
+                    if c2.button("打开", key=f"recent_{r['key']}", use_container_width=True):
+                        open_cached(r["key"])
     with left:
-        mode = st.segmented_control("场景", ["pre_filing", "rejection_review"], default="pre_filing",
-                                    format_func={"pre_filing": "申请前筛查", "rejection_review": "驳回复审逐项比对"}.get,
-                                    label_visibility="collapsed") or "pre_filing"
-        review = mode == "rejection_review"
-        if review:
-            html('<div class="lead">录入驳回通知中的引证商标编号，系统逐件比对标识、商品和在先状态，给出每件的比对结论。'
-                 '不做复审理由或论证。</div>')
-        else:
-            html('<div class="lead">填写拟申请的商标文字和要用在哪些商品或服务上，系统检索在先商标并评估注册风险。</div>')
         with st.form("input", border=False):
             c1, c2 = st.columns(2)
             mark = c1.text_input("商标文字（必填）" if not review else "申请商标文字（必填）", key="in_mark", placeholder="例如：茗悦")
@@ -285,17 +309,24 @@ if ss.stage == "input":
                 else:
                     payload["query_meaning"] = meaning.strip()
                 ss.payload = payload
-                ss.cache_hits = cache.report_find(payload)
+                ss.cache_hits = cache.report_find(payload, UID)
                 if ss.cache_hits:                    # 同样的输入评估过：先让用户选择复用还是重新评估
                     ss.stage = "cached"
                     st.rerun()
                 start(payload)
+        # 表单下方：填写建议；右侧检索范围下面放最近的报告，两栏大致等高
+        html(style.tips_card([
+            ("商标文字", "只填中文部分；图形和外文暂不比对。"),
+            ("商品或服务", "写具体名称，如“茶饮料”而不是“饮品”；多个用顿号分隔。"),
+            ("预计申请日", "决定谁的商标在先；不填按评估日期计算。"),
+            ("驳回复审", "准备好驳回通知里的引证商标编号和实际申请日。"),
+        ]))
 
 # ---------------- ①' 同样的查询评估过 ----------------
 elif ss.stage == "cached":
     p = ss.payload
     html(style.section(f"“{p['query_mark']}”评估过", "输入、商标数据、提示词和模型版本都与上次相同"))
-    html('<div class="lead">可以直接查看上次的报告；也可以重新评估（重新调用大模型，结论可能与上次略有不同）。'
+    html('<div class="lead">查看上次的报告不扣积分；也可以重新评估（重新调用大模型，结论可能与上次略有不同）。'
          '想换商品项时选“按新的商品项评估”，没有变化的在先商标会复用上次的判定。</div>')
     for h in ss.cache_hits:
         with st.container(border=True):
@@ -305,9 +336,9 @@ elif ss.stage == "cached":
             if c2.button("查看报告", key=f"open_{h['key']}", type="primary", use_container_width=True):
                 open_cached(h["key"])
     c1, c2 = st.columns(2)
-    if c1.button("按新的商品项评估", use_container_width=True):
+    if c1.button(f"按新的商品项评估（{pricing.COST_QUERY} 积分）", use_container_width=True):
         start(p)
-    if c2.button("重新评估", use_container_width=True, help="不复用缓存，重新调用大模型"):
+    if c2.button(f"重新评估（{pricing.COST_QUERY} 积分）", use_container_width=True, help="不复用缓存，重新调用大模型"):
         start(p, fresh=True)
 
 # ---------------- ② 确认商品项 ----------------
@@ -435,7 +466,8 @@ elif ss.stage == "report":
         cc = st.columns([3, 1.3])
         cc[0].markdown(style.note(f"<b>复用缓存</b>　这是 {esc(v['cached_at'].replace('T', ' '))} 的评估结果；"
                                   "输入、商标数据、提示词和模型版本都与当时相同。", "info"), unsafe_allow_html=True)
-        if ss.get("payload") and cc[1].button("重新评估", use_container_width=True, help="不复用缓存，重新调用大模型"):
+        if ss.get("payload") and cc[1].button(f"重新评估（{pricing.COST_QUERY} 积分）", use_container_width=True,
+                                              help="不复用缓存，重新调用大模型"):
             start(ss.payload, fresh=True)
     def claim_block(c: dict, cls: str) -> None:
         html(style.claim(c["conclusion"], c["facts"], [b["citation"] for b in c["basis"]], cls,
@@ -526,7 +558,8 @@ elif ss.stage == "report":
                                     "说明": i["explanation"]} for i in rep["low"]]),
                      hide_index=True, use_container_width=True)
     # ---- 法律问答（RAG）：只提供信息，不改变上面的风险结论 ----
-    html(style.section("法律问答", "检索法条与审查指南回答追问，每个法律判断附出处；不改变风险结论"))
+    html(style.section("法律问答", f"检索法条与审查指南回答追问，每个法律判断附出处；不改变风险结论。"
+                                    f"每次提问 {pricing.COST_QA} 积分（VIP 免费），回答失败不扣费"))
     with st.container(border=True):
         ss.setdefault("qa", [])
         first = next((it["text"] for k in ("high", "medium") for it in rep[k]), None)
@@ -541,12 +574,22 @@ elif ss.stage == "report":
             typed = fc[0].text_input("问题", placeholder="例如：同一天申请的近似商标怎么处理？", label_visibility="collapsed")
             sent = fc[1].form_submit_button("提问", type="primary", use_container_width=True)
         question = picked or (typed if sent and typed.strip() else None)
-        if question:
+        if question and not accounts.can_ask(UID):
+            st.error(f"积分不足：一次问答需要 {pricing.COST_QA} 积分，请到“积分与充值”充值。")
+        elif question:
             from app import qa
             with st.spinner("检索条文并生成回答…"):
-                ss.qa.append({"question": question, **qa.answer(question, rep, ss.qa)})
+                item = {"question": question, **qa.answer(question, rep, ss.qa)}
+            if item.get("llm"):                  # 只有大模型真正回答了才扣费；降级回答不收费
+                try:
+                    ch = accounts.charge_qa(UID, question[:20])
+                    item["charge"] = "VIP 免费" if ch["via"] == "vip" else f"扣 {pricing.COST_QA} 积分，余额 {ch['balance']}"
+                except AccountError as e:
+                    item["charge"] = str(e)
+            ss.qa.append(item)
         for item in reversed(ss.qa):
-            st.markdown(f"**问：{item['question']}**")
+            st.markdown(f"**问：{item['question']}**" + (f"　<span class='id'>{esc(item['charge'])}</span>" if item.get("charge") else ""),
+                        unsafe_allow_html=True)
             if item.get("resolved") and item["resolved"] != item["question"]:
                 st.caption(f"理解为：{item['resolved']}")
             st.markdown(item["answer"])
@@ -588,3 +631,5 @@ elif ss.stage == "report":
     st.write("")
     if st.button("评估另一个商标"):
         restart()
+
+html(shell.footer(cov, settings.llm_model if llm.available() else ""))

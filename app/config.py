@@ -35,6 +35,8 @@ class Settings:
     # 两层缓存（app/cache.py）：整份报告 + 每次大模型调用；评测脚本会关闭
     cache_path: Path = field(default_factory=lambda: Path(os.getenv("TM_CACHE_PATH", ROOT / "data" / "cache.sqlite")))
     cache_enabled: bool = field(default_factory=lambda: os.getenv("CACHE_ENABLED", "1") != "0")
+    # 用户账号与积分（app/accounts.py）
+    accounts_path: Path = field(default_factory=lambda: Path(os.getenv("TM_ACCOUNTS_PATH", ROOT / "data" / "accounts.sqlite")))
 
     # 大模型（OpenAI 兼容接口）
     llm_base_url: str = field(default_factory=lambda: os.getenv("LLM_BASE_URL", "https://api.deepseek.com"))
