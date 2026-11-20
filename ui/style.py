@@ -357,7 +357,10 @@ html, body, .stApp, [data-testid="stAppViewContainer"], [data-testid="stMain"]{{
 .kv-copy .eb::before{{content:""; width:2.4rem; height:1px; background:var(--brass);}}
 .kv-copy h1{{font-family:var(--serif) !important; font-size:clamp(2.6rem, 5.4vw, 4.6rem); line-height:1.12; margin:1.1rem 0 1rem 0;
   padding:0; color:#fff !important; letter-spacing:.02em; text-shadow:0 6px 30px rgba(0,0,0,.35);}}
-.kv-copy h1 *{{color:#fff !important;}}   /* Streamlit 在标题里套了一层 span，自带浅灰色 */
+.kv-copy h1 *{{color:#fff !important;}}
+.kv-modes span{{display:flex; align-items:center; gap:.8rem; line-height:2.1;}}
+.kv-modes b{{flex:none; min-width:6.4em; text-align:center; font-size:.82em; font-weight:600; letter-spacing:.06em; color:var(--brass);
+  border:1px solid rgba(176,141,87,.55); border-radius:999px; padding:0 .8em; line-height:1.9;}}   /* Streamlit 在标题里套了一层 span，自带浅灰色 */
 .kv-copy p{{font-size:clamp(1rem, 1.3vw, 1.2rem); color:#c3ccd8; line-height:1.8; margin:0;}}
 .kv-art{{position:absolute; right:5vw; top:50%; transform:translateY(-55%); width:min(42vw, 660px); aspect-ratio:4/3; z-index:1;}}
 .kv-art::before{{content:""; position:absolute; inset:6% 10%; border-radius:50%;
@@ -401,7 +404,8 @@ def landing_kv(stats: list[tuple[str, str]]) -> str:
     return (f'<div class="kv"><div class="kv-brand"><img src="{logo}" alt=""><div><b>商标近似评估智能体</b>'
             '<span>TRADEMARK SIMILARITY</span></div></div>'
             '<div class="kv-copy"><div class="eb">TRADEMARK SIMILARITY AGENT</div><h1>商标近似评估智能体</h1>'
-            '<p>申请之前，看清每一个在先商标的风险。<br>检索、比对、判定、出报告，一次完成。</p></div>'
+            '<p class="kv-modes"><span><b>申请前筛查</b>申请之前，看清每一个在先商标的风险</span>'
+            '<span><b>驳回复审比对</b>收到驳回通知，逐件比对引证商标</span></p></div>'
             + (f'<div class="kv-art"><img src="{art}" alt=""></div>' if art else "")
             + '<div class="kv-hint">新用户注册即可免费评估一次</div>'
             + f'<div class="kv-foot">{foot}</div></div>')

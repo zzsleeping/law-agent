@@ -95,8 +95,13 @@ def css() -> str:
 .hist span{{font-size:.8rem; color:var(--muted);}}
 /* 底部信息条 */
 .appfoot{{width:100vw; margin-left:calc(50% - 50vw); margin-top:3rem; padding:1.1rem max(1.2rem, calc(50vw - 590px));
-  background:#0b1626; color:#8794a6; font-size:.76rem; line-height:1.8;
-  box-shadow:0 60vh 0 60vh #0b1626;}}   /* 深色向下延伸到窗口底部：页面内容少时，页脚下面也不留白 */
+  background:#0b1626; color:#8794a6; font-size:.76rem; line-height:1.8;}}
+/* 页脚高度固定、贴住窗口底部：内容少时中间留浅色，内容多时页脚跟在内容后面 */
+.block-container{{min-height:100vh; box-sizing:border-box; display:flex; flex-direction:column;}}
+.block-container > [data-testid="stVerticalBlock"]{{flex:1 0 auto;}}
+[data-testid="stElementContainer"]:has(> [data-testid="stMarkdown"] .appfoot){{margin-top:auto !important;}}
+[data-testid="stElementContainer"]:has(.appfoot) :is([data-testid="stMarkdown"], [data-testid="stMarkdownContainer"]){{
+  margin-bottom:0 !important;}}   /* 文本块自带的负下边距会让页脚超出页面底边 */
 .appfoot b{{color:#c3ccd8; font-weight:600;}}
 @media (max-width: 1100px){{ .appbar .tn-brand b, .appbar .tn-user .name{{display:none;}} }}
 @media (max-width: 760px){{ .appbar .tn-user, .appbar .tn-brand{{display:none;}} .st-key-topnav{{left:auto; right:calc(4vw + 64px); transform:none;}}

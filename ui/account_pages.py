@@ -15,13 +15,16 @@ KIND_LABEL = {"gift": "赠送", "purchase": "购买", "query": "评估", "qa": "
 
 
 def _captcha(slot: str) -> str:
-    """显示一张图形验证码和输入框，返回用户输入。slot 区分登录 / 注册各自的验证码。"""
+    """显示图形验证码：输入框、图片、“换一张”按钮排在一行。返回用户输入；点了“换一张”就换图重画。
+    （表单里只能用表单按钮，所以“换一张”是一个表单提交按钮，点击时不做任何校验。）"""
     key = f"cap_{slot}"
     if key not in st.session_state:
         st.session_state[key] = captcha.new()
-    c1, c2 = st.columns([1.3, 1])
-    answer = c1.text_input("图形验证码", key=f"cap_in_{slot}", placeholder="输入右侧字符，不分大小写")
+    c1, c2, c3 = st.columns([1.25, 1, 0.75], vertical_alignment="bottom")
+    answer = c1.text_input("图形验证码", key=f"cap_in_{slot}", placeholder="不分大小写")
     c2.image(st.session_state[key]["png"], use_container_width=True)
+    if c3.form_submit_button("换一张", use_container_width=True, help="看不清就换一张"):
+        _retry(slot)
     return answer
 
 
@@ -56,8 +59,6 @@ def _login_form() -> None:
                 _retry("login", str(e))
             st.session_state.user = user
             st.rerun()
-    if st.button("看不清，换一张", key="cap_refresh_login"):
-        _retry("login")
 
 
 def _register_form() -> None:
@@ -93,8 +94,6 @@ def _register_form() -> None:
             st.rerun()
     if note := st.session_state.get("reg_note"):
         st.info(note)
-    if st.button("看不清，换一张", key="cap_refresh_reg"):
-        _retry("reg")
 
 
 @st.dialog("登录 / 注册", width="small")
@@ -110,6 +109,12 @@ def auth_dialog(mode: str = "login") -> None:
         _login_form()
 
 
+def open_auth(mode: str) -> None:
+    """从首页按钮打开登录 / 注册窗口，并切到对应的页签（窗口会记住上次选的页签，所以要先设好）。"""
+    st.session_state.auth_mode = mode
+    auth_dialog(mode)
+
+
 def landing_page(cov: dict) -> None:
     """未登录时的首页：一屏主视觉，顶栏登录 / 注册、中间一个主按钮，不滚动。所有功能都要登录后使用。"""
     real = cov.get("real", {})
@@ -122,12 +127,12 @@ def landing_page(cov: dict) -> None:
     with st.container(key="kv_top"):
         c1, c2 = st.columns(2)
         if c1.button("登录", key="top_login"):
-            auth_dialog("login")
+            open_auth("login")
         if c2.button("注册", type="primary", key="top_reg"):
-            auth_dialog("register")
+            open_auth("register")
     with st.container(key="kv_cta"):
         if st.button("立即评估　→", key="cta_start"):
-            auth_dialog("register")
+            open_auth("register")
 
 
 def account_page(user: dict) -> None:
