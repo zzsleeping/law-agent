@@ -1,0 +1,16 @@
+https://{$TM_PUBLIC_IP} {
+	tls {
+		issuer acme https://acme-v02.api.letsencrypt.org/directory {
+			profile shortlived
+			disable_tlsalpn_challenge
+		}
+	}
+
+	redir /tm-law-agent /tm-law-agent/ 308
+	handle /tm-law-agent/* {
+		reverse_proxy app:8501
+	}
+	handle {
+		respond 404
+	}
+}

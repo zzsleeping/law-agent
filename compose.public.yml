@@ -1,0 +1,32 @@
+# 与服务器的 Compose 文件一起使用，应用端口应只绑定 127.0.0.1。
+services:
+  app:
+    environment:
+      STREAMLIT_SERVER_BASE_URL_PATH: tm-law-agent
+      TM_EMAIL_DEV: "0"
+      TM_REGISTRATION_KEY: "${TM_REGISTRATION_KEY:?Set TM_REGISTRATION_KEY in .env}"
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - import urllib.request; urllib.request.urlopen('http://127.0.0.1:8501/tm-law-agent/_stcore/health', timeout=4)
+  proxy:
+    image: caddy:2.11.9-alpine
+    depends_on:
+      app:
+        condition: service_healthy
+    environment:
+      TM_PUBLIC_IP: "${TM_PUBLIC_IP:?Set TM_PUBLIC_IP in .env}"
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    restart: unless-stopped
+
+volumes:
+  caddy_data:
+  caddy_config:

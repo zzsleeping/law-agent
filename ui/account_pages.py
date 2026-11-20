@@ -65,6 +65,7 @@ def _register_form() -> None:
     with st.form("register", border=False):
         name = st.text_input("用户名", placeholder="3–20 位字母、数字或下划线，不能包含中文")
         email = st.text_input("邮箱", placeholder="用于接收验证码")
+        registration_key = st.text_input("注册密钥", type="password", placeholder="向管理员获取")
         c1, c2 = st.columns([1.3, 1], vertical_alignment="bottom")
         code = c1.text_input("邮箱验证码", placeholder="6 位数字")
         send = c2.form_submit_button("获取验证码", use_container_width=True)
@@ -75,7 +76,7 @@ def _register_form() -> None:
         if send:                                         # 发验证码也要先过图形验证码，防止被拿来批量发信
             _captcha_ok("reg", ans)
             try:
-                dev_code = accounts.send_email_code(email)
+                dev_code = accounts.send_email_code(email, registration_key=registration_key)
             except AccountError as e:
                 _retry("reg", str(e))
             _retry("reg", note=(f"本机调试模式（未配置邮件服务）：验证码是 {dev_code}" if dev_code
@@ -85,7 +86,7 @@ def _register_form() -> None:
             if pw != pw2:
                 _retry("reg", "两次输入的密码不一致")
             try:
-                user = accounts.register_with_email(name, email, code, pw)
+                user = accounts.register_with_email(name, email, code, pw, registration_key=registration_key)
             except AccountError as e:
                 _retry("reg", str(e))
             st.session_state.user = user

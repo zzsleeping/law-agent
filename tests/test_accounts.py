@@ -9,10 +9,14 @@ from app.accounts import AccountError
 from app.config import settings
 
 
+REGISTRATION_KEY = "test-registration-key"
+
+
 @pytest.fixture(autouse=True)
 def tmp_accounts(tmp_path, monkeypatch):
     monkeypatch.setattr(settings, "accounts_path", tmp_path / "accounts.sqlite")
     monkeypatch.setattr(accounts, "ITERATIONS", 1000)
+    monkeypatch.setattr(settings, "registration_key", REGISTRATION_KEY)
 
 
 def test_register_gift_and_password_not_stored_in_plain():
@@ -109,41 +113,67 @@ def test_ledger_history_and_admin_adjust():
         accounts.admin_adjust(uid, -1000, "扣成负数", admin)
 
 
+def test_registration_key_required_for_email_and_account(monkeypatch):
+    monkeypatch.setenv("TM_EMAIL_DEV", "1")
+    monkeypatch.delenv("SMTP_HOST", raising=False)
+    email = "invited@example.com"
+    with pytest.raises(AccountError, match="注册密钥不正确"):
+        accounts.send_email_code(email, registration_key="密钥错误")
+    assert not settings.accounts_path.exists()
+
+    code = accounts.send_email_code(email, registration_key=REGISTRATION_KEY)
+    assert code
+    with pytest.raises(AccountError, match="注册密钥不正确"):
+        accounts.register_with_email("guest", email, code, "secret123", registration_key="")
+
+    monkeypatch.setattr(settings, "registration_key", "")
+    with pytest.raises(AccountError, match="注册暂未开放"):
+        accounts.send_email_code(email, registration_key=REGISTRATION_KEY)
+    with pytest.raises(AccountError, match="注册暂未开放"):
+        accounts.register_with_email("guest", email, code, "secret123", registration_key=REGISTRATION_KEY)
+
+    monkeypatch.setattr(settings, "registration_key", REGISTRATION_KEY)
+    user = accounts.register_with_email("guest", email, code, "secret123", registration_key=REGISTRATION_KEY)
+    assert user["email"] == email
+
+
 def test_email_code_register_flow(monkeypatch):
     monkeypatch.setenv("TM_EMAIL_DEV", "1")
     monkeypatch.delenv("SMTP_HOST", raising=False)
-    code = accounts.send_email_code("a@example.com")
+    code = accounts.send_email_code("a@example.com", registration_key=REGISTRATION_KEY)
     assert code and len(code) == 6
-    with pytest.raises(AccountError, match="太频繁"):
-        accounts.send_email_code("a@example.com")                             # 60 秒内不能重发
+    with pytest.raises(AccountError, match="太频繁"):                        # 60 秒内不能重发
+        accounts.send_email_code("a@example.com", registration_key=REGISTRATION_KEY)
+    wrong = "000000" if code != "000000" else "111111"
     with pytest.raises(AccountError, match="不正确"):
-        accounts.register_with_email("alice", "a@example.com", "000000" if code != "000000" else "111111", "secret123")
-    u = accounts.register_with_email("alice", "a@example.com", code, "secret123")
+        accounts.register_with_email("alice", "a@example.com", wrong, "secret123", registration_key=REGISTRATION_KEY)
+    u = accounts.register_with_email("alice", "a@example.com", code, "secret123", registration_key=REGISTRATION_KEY)
     assert u["email"] == "a@example.com" and u["balance"] == pricing.SIGNUP_GIFT
     with pytest.raises(AccountError, match="请先获取"):                       # 验证码用过即作废
-        accounts.register_with_email("bob", "a@example.com", code, "secret123")
-    with pytest.raises(AccountError, match="已被注册"):
-        accounts.send_email_code("A@example.com")                             # 邮箱不区分大小写
+        accounts.register_with_email("bob", "a@example.com", code, "secret123", registration_key=REGISTRATION_KEY)
+    with pytest.raises(AccountError, match="已被注册"):                       # 邮箱不区分大小写
+        accounts.send_email_code("A@example.com", registration_key=REGISTRATION_KEY)
     with pytest.raises(AccountError, match="格式"):
-        accounts.send_email_code("not-an-email")
+        accounts.send_email_code("not-an-email", registration_key=REGISTRATION_KEY)
 
 
 def test_email_code_wrong_attempts_limited(monkeypatch):
     monkeypatch.setenv("TM_EMAIL_DEV", "1")
-    code = accounts.send_email_code("b@example.com")
+    monkeypatch.delenv("SMTP_HOST", raising=False)
+    code = accounts.send_email_code("b@example.com", registration_key=REGISTRATION_KEY)
     wrong = "000000" if code != "000000" else "111111"
     for _ in range(accounts.CODE_MAX_TRIES):
         with pytest.raises(AccountError, match="不正确"):
-            accounts.register_with_email("bob", "b@example.com", wrong, "secret123")
+            accounts.register_with_email("bob", "b@example.com", wrong, "secret123", registration_key=REGISTRATION_KEY)
     with pytest.raises(AccountError, match="次数过多"):                       # 错误次数用完后正确的也不行
-        accounts.register_with_email("bob", "b@example.com", code, "secret123")
+        accounts.register_with_email("bob", "b@example.com", code, "secret123", registration_key=REGISTRATION_KEY)
 
 
 def test_email_required_service(monkeypatch):
     monkeypatch.delenv("TM_EMAIL_DEV", raising=False)
     monkeypatch.delenv("SMTP_HOST", raising=False)
     with pytest.raises(AccountError, match="尚未配置"):
-        accounts.send_email_code("c@example.com")
+        accounts.send_email_code("c@example.com", registration_key=REGISTRATION_KEY)
 
 
 def test_unlimited_account_never_charged():

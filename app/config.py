@@ -37,6 +37,7 @@ class Settings:
     cache_enabled: bool = field(default_factory=lambda: os.getenv("CACHE_ENABLED", "1") != "0")
     # 用户账号与积分（app/accounts.py）
     accounts_path: Path = field(default_factory=lambda: Path(os.getenv("TM_ACCOUNTS_PATH", ROOT / "data" / "accounts.sqlite")))
+    registration_key: str = field(default_factory=lambda: os.getenv("TM_REGISTRATION_KEY", "").strip(), repr=False)
 
     # 大模型（OpenAI 兼容接口）
     llm_base_url: str = field(default_factory=lambda: os.getenv("LLM_BASE_URL", "https://api.deepseek.com"))

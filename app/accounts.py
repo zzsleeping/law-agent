@@ -134,10 +134,18 @@ def register(username: str, password: str, role: str = "user", email: str | None
     return get_user(uid)
 
 
-def send_email_code(email: str) -> str | None:
+def _check_registration_key(registration_key: str) -> None:
+    if not settings.registration_key:
+        raise AccountError("注册暂未开放，请联系管理员")
+    if not hmac.compare_digest(registration_key.strip().encode(), settings.registration_key.encode()):
+        raise AccountError("注册密钥不正确")
+
+
+def send_email_code(email: str, *, registration_key: str) -> str | None:
     """给注册邮箱发 6 位验证码。返回 None 表示已发送；本机调试模式（TM_EMAIL_DEV=1）返回验证码本身。"""
     from app import mailer
 
+    _check_registration_key(registration_key)
     email = email.strip().lower()                     # 邮箱统一小写保存和比较
     if not EMAIL_RE.match(email):
         raise AccountError("邮箱格式不正确")
@@ -178,8 +186,9 @@ def _consume_code(c, email: str, code: str) -> None:
     c.execute("DELETE FROM email_codes WHERE email=?", (email,))
 
 
-def register_with_email(username: str, email: str, code: str, password: str) -> dict:
-    """页面注册：校验邮箱验证码后建账号。验证码错误次数要记下来，所以先在单独的事务里校验并提交。"""
+def register_with_email(username: str, email: str, code: str, password: str, *, registration_key: str) -> dict:
+    """校验注册密钥和邮箱验证码后建账号。验证码错误次数在单独的事务中提交。"""
+    _check_registration_key(registration_key)
     email = email.strip().lower()                     # 邮箱统一小写保存和比较
     if not EMAIL_RE.match(email):
         raise AccountError("邮箱格式不正确")
