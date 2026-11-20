@@ -19,7 +19,6 @@ services:
     environment:
       TM_PUBLIC_IP: "${TM_PUBLIC_IP:?Set TM_PUBLIC_IP in .env}"
     ports:
-      - "80:80"
       - "443:443"
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile:ro

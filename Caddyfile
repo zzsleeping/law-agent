@@ -1,8 +1,13 @@
+{
+	auto_https disable_redirects
+	default_sni {$TM_PUBLIC_IP}
+}
+
 https://{$TM_PUBLIC_IP} {
 	tls {
 		issuer acme https://acme-v02.api.letsencrypt.org/directory {
 			profile shortlived
-			disable_tlsalpn_challenge
+			disable_http_challenge
 		}
 	}
 
