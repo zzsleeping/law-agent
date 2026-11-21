@@ -1,4 +1,5 @@
 """Streamlit 页面：申请前筛查。启动：streamlit run ui/streamlit_app.py"""
+import logging
 import re
 import sys
 import uuid
@@ -151,20 +152,16 @@ def start(payload: dict, fresh: bool = False) -> None:
 
 
 def open_cached(k: str) -> None:
-    """打开缓存里的报告（第一层缓存）。
-
-    Word 文件按缓存的报告内容重新导出，这样水印、版式等导出格式的改进对历史报告同样生效；
-    重新导出失败时才用当时存下的文件。
-    """
+    """打开已保存的报告，使用当前版式重新导出 PDF。"""
     from app.nodes.render import write_pdfs
 
     r = cache.report_get(k, UID)
     if r is None:
-        st.error("这份报告已无法读取（系统升级后旧缓存失效），请重新评估。")
+        st.error("这份历史报告暂时无法读取。")
         return
     p = r["payload"]
-    stem = Path(__file__).resolve().parent.parent / "outputs" / f"cached_{k[:12]}"
-    stem.parent.mkdir(exist_ok=True)
+    stem = settings.output_dir / f"cached_{k[:12]}"
+    stem.parent.mkdir(parents=True, exist_ok=True)
     try:
         path, concise = write_pdfs(p["report"], stem)
     except Exception:                            # 重新导出失败时用当时存下的标准版文件
@@ -178,24 +175,24 @@ def open_cached(k: str) -> None:
 
 
 def save_report(v: dict, keep: list[str]) -> None:
-    """报告生成后存入第一层缓存；降级或引用校验未通过的报告不存，避免把不稳定的结果当成定论复用。"""
+    """报告生成后保存到当前用户的历史记录。"""
     rep = v.get("report") or {}
     if rep.get("degraded") and llm.unavailable_reason(rep.get("degraded_notes", [])) and ss.get("charge"):
         accounts.refund(ss.charge["charge_id"], "大模型不可用，本次评估退回")     # 结论由规则兜底，不收费
         ss.flash = "大模型暂时不可用，本次评估的费用已退回。"
-    if not ss.get("payload") or rep.get("flagged") or rep.get("degraded"):
+    if not rep or not ss.get("payload"):
         return
-    full = {**ss.payload, "goods": [(g.code, g.name) for g in v.get("goods", [])], "keep": sorted(keep)}
+    goods = v.get("goods", [])
+    confirmed = {"goods": [(g.code, g.name) for g in goods], "keep": sorted(keep)}
     payload = {"report": rep, "timings": v.get("timings", {}), "trace": v.get("trace", []),
                "retry_count": v.get("retry_count", 0), "payload": ss.payload,
-               "prefix_key": cache.key(ss.payload, cache.versions()),
-               "goods_names": [g.name for g in v.get("goods", [])]}
+               "goods_names": [g.name for g in goods]}
     try:
-        docx = Path(v["report_path"]).read_bytes()
-        cache.report_put(cache.report_key(full, UID), ss.payload["scenario"], ss.payload["query_mark"],
-                         rep.get("title", ""), payload, docx, user_id=UID)
-    except Exception as e:                       # 缓存失败不影响本次报告
-        st.caption(f"报告未能存入缓存：{e}")
+        pdf = Path(v["report_path"]).read_bytes()
+        cache.report_save(ss.payload, confirmed, payload, pdf, user_id=UID, run_id=ss.tid)
+    except Exception:
+        logging.getLogger(__name__).exception("Could not save evaluation report")
+        ss.flash_err = "本次报告未能保存到历史记录。你可以先下载 PDF。"
 
 
 # ---------------- 登录 ----------------
@@ -464,8 +461,8 @@ elif ss.stage == "report":
     rep = v["report"]
     if ss.get("cached"):
         cc = st.columns([3, 1.3])
-        cc[0].markdown(style.note(f"<b>复用缓存</b>　这是 {esc(v['cached_at'].replace('T', ' '))} 的评估结果；"
-                                  "输入、商标数据、提示词和模型版本都与当时相同。", "info"), unsafe_allow_html=True)
+        cc[0].markdown(style.note(f"<b>已保存的报告</b>　保存于 {esc(v['cached_at'].replace('T', ' '))}。", "info"),
+                       unsafe_allow_html=True)
         if ss.get("payload") and cc[1].button(f"重新评估（{pricing.COST_QUERY} 积分）", use_container_width=True,
                                               help="不复用缓存，重新调用大模型"):
             start(ss.payload, fresh=True)

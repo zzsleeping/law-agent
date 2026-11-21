@@ -98,3 +98,38 @@ def test_reports_are_private_per_user(tmp_path, monkeypatch):
     assert cache.report_get(k1, 1) is not None and cache.report_get(k1, 2) is None
     assert cache.report_find(inputs, 1) and cache.report_find(inputs, 2) == []
     assert cache.report_recent(user_id=1) and cache.report_recent(user_id=2) == []
+
+
+@pytest.mark.parametrize("warning", ["degraded", "flagged"])
+def test_history_keeps_reports_with_warnings_without_replacing_reusable_report(tmp_path, monkeypatch, warning):
+    monkeypatch.setattr(settings, "cache_path", tmp_path / "cache.sqlite")
+    monkeypatch.setattr(settings, "cache_enabled", True)
+    inputs = {"scenario": "pre_filing", "query_mark": "茗悦", "goods_desc": "茶饮料"}
+    confirmed = {"goods": [("300001", "茶饮料")], "keep": ["A/30"]}
+    valid = {"report": {"title": "常规报告"}}
+    limited = {"report": {"title": "带提示的报告", warning: True}}
+
+    cache.report_save(inputs, confirmed, valid, b"standard", user_id=7, run_id="first")
+    cache.report_save(inputs, confirmed, limited, b"limited", user_id=7, run_id="second")
+
+    reports = {r["title"]: r["key"] for r in cache.report_recent(user_id=7)}
+    assert set(reports) == {"常规报告", "带提示的报告"}
+    saved = cache.report_get(reports["带提示的报告"], 7)
+    assert saved["payload"] == limited and saved["docx"] == b"limited"
+    assert cache.report_get(reports["带提示的报告"], 8) is None
+    assert [r["key"] for r in cache.report_find(inputs, 7)] == [reports["常规报告"]]
+
+
+def test_history_stays_available_when_reuse_is_disabled(tmp_path, monkeypatch):
+    monkeypatch.setattr(settings, "cache_path", tmp_path / "cache.sqlite")
+    monkeypatch.setattr(settings, "cache_enabled", False)
+    inputs = {"scenario": "pre_filing", "query_mark": "茗悦"}
+    payload = {"report": {"title": "评估报告"}}
+
+    cache.report_save(inputs, {}, payload, b"pdf", user_id=7, run_id="one")
+
+    [row] = cache.report_recent(user_id=7)
+    assert cache.report_get(row["key"], 7)["payload"] == payload
+    assert cache.report_find(inputs, 7) == []
+    monkeypatch.setattr(settings, "cache_enabled", True)
+    assert cache.report_find(inputs, 7) == []

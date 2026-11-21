@@ -1,8 +1,8 @@
 """两层缓存（本地 SQLite，settings.cache_path）。
 
-第一层：整份报告。键 = 全部用户输入（场景、商标、商品描述、确认的商品项、日期、引证、保留的候选）
+第一层：评估历史与整份报告复用。常规报告的键 = 全部用户输入（场景、商标、商品描述、确认的商品项、日期、引证、保留的候选）
         + 数据快照日期 + 提示词与模型版本 + REPORT_VERSION。同样的查询再来时页面提示“复用上次结果”，
-        用户可以查看上次报告，也可以重新评估。报告同时存下 Word 文件，刷新页面后也能找回（结果持久化）。
+        用户可以查看上次报告，也可以重新评估。历史报告同时存下 PDF，关闭缓存也可查看。
 第二层：每次大模型调用。键 = 模型名 + 提示词模板 + 填入的变量（可排除与结论无关的变量，如判定时的评估日期）。
         判定按名称组调用，所以这一层就是“按在先商标组缓存判定”：组的文字证据、商品关系、在先状态都没变，
         就直接复用上次的判定，不同查询之间也一致；解析、检索规划、写结论同理，整条流程因此可复现。
@@ -82,8 +82,6 @@ def report_key(inputs: dict, user_id: int | None = None) -> str:
 
 def report_get(k: str, user_id: int | None = None) -> dict | None:
     """返回 {"created", "payload", "docx"}；没有、不属于该用户或无法读取（代码改动后反序列化失败）时返回 None。"""
-    if not enabled():
-        return None
     with _conn() as c:
         row = c.execute("SELECT created, payload, docx FROM reports WHERE key=? AND user_id IS ?", (k, user_id)).fetchone()
     if not row:
@@ -96,12 +94,21 @@ def report_get(k: str, user_id: int | None = None) -> dict | None:
 
 def report_put(k: str, scenario: str, query: str, title: str, payload: dict, docx: bytes,
                user_id: int | None = None) -> None:
-    if not enabled():
-        return
     with _conn() as c:
         c.execute("INSERT OR REPLACE INTO reports (key, created, scenario, query, title, payload, docx, user_id) "
                   "VALUES (?,?,?,?,?,?,?,?)", (k, datetime.now().isoformat(timespec="seconds"), scenario, query, title,
                                                pickle.dumps(payload), docx, user_id))
+
+
+def report_save(inputs: dict, confirmed: dict, payload: dict, pdf: bytes, *, user_id: int, run_id: str) -> None:
+    """记录已生成的报告，只有通过校验且未降级的报告可用于同输入复用。"""
+    report = payload["report"]
+    if enabled() and not (report.get("flagged") or report.get("degraded")):
+        k = report_key({**inputs, **confirmed}, user_id)
+        payload = {**payload, "prefix_key": key(inputs, versions())}
+    else:
+        k = key("history", user_id, run_id)
+    report_put(k, inputs["scenario"], inputs["query_mark"], report.get("title", ""), payload, pdf, user_id)
 
 
 def report_find(prefix_inputs: dict, user_id: int | None = None) -> list[dict]:
@@ -124,8 +131,6 @@ def report_find(prefix_inputs: dict, user_id: int | None = None) -> list[dict]:
 
 
 def report_recent(limit: int = 10, user_id: int | None = None) -> list[dict]:
-    if not enabled():
-        return []
     with _conn() as c:
         rows = c.execute("SELECT key, created, scenario, query, title FROM reports WHERE user_id IS ? "
                          "ORDER BY created DESC LIMIT ?", (user_id, limit)).fetchall()
